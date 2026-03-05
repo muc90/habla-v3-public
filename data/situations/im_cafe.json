@@ -1,0 +1,365 @@
+{
+  "id": "im_cafe_bar",
+  "label": "Im Café / Bar",
+  "icon": "☕",
+  "difficulty": "A1",
+  "recommended": false,
+  "dialog": [
+    {
+      "situation_context": null,
+      "npc_prompt_es": "¡Hola! ¿En qué le puedo ayudar?",
+      "npc_prompt_de": "Hallo! Womit kann ich Ihnen helfen?",
+      "npc_reaction_es": "¡Claro! Pasen por aquí, por favor.",
+      "target_sentence": "¿Hay una mesa para dos?",
+      "tiles": [
+        "¿Hay",
+        "una",
+        "mesa",
+        "para",
+        "dos?",
+        "silla",
+        "menú"
+      ]
+    },
+    {
+      "situation_context": "Der Kellner kommt an euren Tisch.",
+      "npc_prompt_es": "¡Buenos días! ¿Qué desea tomar?",
+      "npc_prompt_de": "Guten Morgen! Was möchten Sie trinken?",
+      "npc_reaction_es": "¡Perfecto! Enseguida se lo traigo.",
+      "target_sentence": "Quiero un café, por favor.",
+      "tiles": [
+        "Quiero",
+        "un",
+        "café,",
+        "por",
+        "favor.",
+        "té",
+        "azúcar"
+      ]
+    },
+    {
+      "situation_context": "Nach dem Trinken — der Kellner kommt vorbei.",
+      "npc_prompt_es": "¿Todo bien? ¿Necesita algo más?",
+      "npc_prompt_de": "Alles gut? Brauchen Sie etwas?",
+      "npc_reaction_es": "¡Ahora mismo! Un momentito.",
+      "target_sentence": "¿Me traes la cuenta, por favor?",
+      "tiles": [
+        "¿Me",
+        "traes",
+        "la",
+        "cuenta,",
+        "por",
+        "favor?",
+        "llevas",
+        "recibo"
+      ]
+    },
+    {
+      "situation_context": "Der Kellner fragt, wie du zahlen möchtest.",
+      "npc_prompt_es": "¿Cómo desea pagar?",
+      "npc_prompt_de": "Wie möchten Sie zahlen?",
+      "npc_reaction_es": "¡Perfecto! Aquí tiene el datáfono.",
+      "target_sentence": "Pago con tarjeta, por favor.",
+      "tiles": [
+        "Pago",
+        "con",
+        "tarjeta,",
+        "por",
+        "favor.",
+        "efectivo",
+        "propina"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "im_cafe_bar_01",
+      "de": "Ich nehme einen Kaffee, bitte.",
+      "es": "Quiero un café, por favor.",
+      "stufe1_bildkarte": {
+        "image_query": "a single espresso cup on a white saucer on a wooden café counter, steam rising",
+        "image_category": "food",
+        "target_word_es": "un café",
+        "target_word_de": "einen Kaffee",
+        "image_url": "https://xbpwkidtyzejoqmnwwlf.supabase.co/storage/v1/object/public/situation-images/im_cafe/im_cafe_bar_01.png"
+      },
+      "stufe2_el_intruso": {
+        "group_hint": "Getränke",
+        "correct_words": [
+          "el té",
+          "el zumo",
+          "el agua"
+        ],
+        "intruder": "la silla",
+        "intruder_category": "Möbel"
+      },
+      "stufe3_conjugacion": {
+        "verb_infinitive": "querer",
+        "verb_de": "wollen",
+        "tense": "Presente",
+        "context_sentence": "___ un café, por favor.",
+        "forms": [
+          {
+            "pronoun_es": "yo",
+            "pronoun_de": "ich",
+            "form": "quiero"
+          },
+          {
+            "pronoun_es": "tú",
+            "pronoun_de": "du",
+            "form": "quieres"
+          },
+          {
+            "pronoun_es": "él",
+            "pronoun_de": "er",
+            "form": "quiere"
+          }
+        ]
+      },
+      "stufe4_gramatica": {
+        "correct_sentence": "Quiero un café, por favor.",
+        "wrong_sentence": "Quiero el café, por favor.",
+        "error_highlight": "el",
+        "correct_highlight": "un",
+        "explanation_de": "Bei einer Bestellung benutzt man 'un' (unbestimmt), nicht 'el'."
+      },
+      "stufe5_conversacion": {
+        "situation_context": "Du bestellst an der Theke einen Kaffee, freundlich und kurz.",
+        "npc_prompt_es": "¡Buenos días! ¿Qué desea tomar?",
+        "npc_prompt_de": "Guten Morgen! Was möchten Sie trinken?",
+        "npc_reaction_es": "¡Perfecto! Enseguida se lo traigo.",
+        "target_sentence": "Quiero un café, por favor.",
+        "tiles": [
+          "Quiero",
+          "un",
+          "café,",
+          "por",
+          "favor.",
+          "té",
+          "azúcar"
+        ],
+        "distractor_tiles": [
+          "té",
+          "azúcar"
+        ]
+      }
+    },
+    {
+      "id": "im_cafe_bar_02",
+      "de": "Gibt es einen Tisch für zwei?",
+      "es": "¿Hay una mesa para dos?",
+      "stufe1_bildkarte": {
+        "image_query": "two chairs at a small round café table on a sunny terrace",
+        "image_category": "places",
+        "target_word_es": "una mesa",
+        "target_word_de": "einen Tisch",
+        "image_url": "https://xbpwkidtyzejoqmnwwlf.supabase.co/storage/v1/object/public/situation-images/im_cafe/im_cafe_bar_02.png"
+      },
+      "stufe2_el_intruso": {
+        "group_hint": "Möbel",
+        "correct_words": [
+          "la silla",
+          "la mesa",
+          "el taburete"
+        ],
+        "intruder": "el café",
+        "intruder_category": "Getränke"
+      },
+      "stufe3_conjugacion": {
+        "verb_infinitive": "haber",
+        "verb_de": "geben / existieren",
+        "tense": "Presente",
+        "context_sentence": "¿___ una mesa para dos?",
+        "forms": [
+          {
+            "pronoun_es": "ahora",
+            "pronoun_de": "jetzt",
+            "form": "hay"
+          },
+          {
+            "pronoun_es": "antes",
+            "pronoun_de": "früher",
+            "form": "había"
+          },
+          {
+            "pronoun_es": "ayer",
+            "pronoun_de": "gestern",
+            "form": "hubo"
+          }
+        ]
+      },
+      "stufe4_gramatica": {
+        "correct_sentence": "¿Hay una mesa para dos?",
+        "wrong_sentence": "Está una mesa para dos?",
+        "error_highlight": "Está",
+        "correct_highlight": "Hay",
+        "explanation_de": "Für Existenzfragen nutzt man 'hay', nicht 'estar'."
+      },
+      "stufe5_conversacion": {
+        "situation_context": "Du fragst kurz, ob ein Tisch für euch frei ist.",
+        "npc_prompt_es": "¡Hola! ¿En qué le puedo ayudar?",
+        "npc_prompt_de": "Hallo! Womit kann ich Ihnen helfen?",
+        "npc_reaction_es": "¡Claro! Pasen por aquí, por favor.",
+        "target_sentence": "¿Hay una mesa para dos?",
+        "tiles": [
+          "¿Hay",
+          "una",
+          "mesa",
+          "para",
+          "dos?",
+          "silla",
+          "menú"
+        ],
+        "distractor_tiles": [
+          "silla",
+          "menú"
+        ]
+      }
+    },
+    {
+      "id": "im_cafe_bar_03",
+      "de": "Ich zahle mit Karte, bitte.",
+      "es": "Pago con tarjeta, por favor.",
+      "stufe1_bildkarte": {
+        "image_query": "a hand holding a credit card tapping a contactless payment terminal",
+        "image_category": "business",
+        "target_word_es": "la tarjeta",
+        "target_word_de": "die Karte",
+        "image_url": "https://xbpwkidtyzejoqmnwwlf.supabase.co/storage/v1/object/public/situation-images/im_cafe/im_cafe_bar_03.png"
+      },
+      "stufe2_el_intruso": {
+        "group_hint": "Zahlungsmittel",
+        "correct_words": [
+          "la tarjeta",
+          "el efectivo",
+          "la moneda"
+        ],
+        "intruder": "la taza",
+        "intruder_category": "Geschirr"
+      },
+      "stufe3_conjugacion": {
+        "verb_infinitive": "pagar",
+        "verb_de": "bezahlen",
+        "tense": "Presente",
+        "context_sentence": "___ con tarjeta.",
+        "forms": [
+          {
+            "pronoun_es": "yo",
+            "pronoun_de": "ich",
+            "form": "pago"
+          },
+          {
+            "pronoun_es": "tú",
+            "pronoun_de": "du",
+            "form": "pagas"
+          },
+          {
+            "pronoun_es": "nosotros",
+            "pronoun_de": "wir",
+            "form": "pagamos"
+          }
+        ]
+      },
+      "stufe4_gramatica": {
+        "correct_sentence": "Pago con tarjeta, por favor.",
+        "wrong_sentence": "Pagas con tarjeta, por favor.",
+        "error_highlight": "Pagas",
+        "correct_highlight": "Pago",
+        "explanation_de": "Du meinst 'ich' — die richtige Form ist 'pago'."
+      },
+      "stufe5_conversacion": {
+        "situation_context": "Du sagst, wie du bezahlen möchtest.",
+        "npc_prompt_es": "¿Cómo desea pagar?",
+        "npc_prompt_de": "Wie möchten Sie zahlen?",
+        "npc_reaction_es": "¡Perfecto! Aquí tiene el datáfono.",
+        "target_sentence": "Pago con tarjeta, por favor.",
+        "tiles": [
+          "Pago",
+          "con",
+          "tarjeta,",
+          "por",
+          "favor.",
+          "efectivo",
+          "propina"
+        ],
+        "distractor_tiles": [
+          "efectivo",
+          "propina"
+        ]
+      }
+    },
+    {
+      "id": "im_cafe_bar_04",
+      "de": "Bringst du mir die Rechnung, bitte?",
+      "es": "¿Me traes la cuenta, por favor?",
+      "stufe1_bildkarte": {
+        "image_query": "a waiter handing a folded bill on a small tray to a customer at a café table",
+        "image_category": "people",
+        "target_word_es": "la cuenta",
+        "target_word_de": "die Rechnung",
+        "image_url": "https://xbpwkidtyzejoqmnwwlf.supabase.co/storage/v1/object/public/situation-images/im_cafe/im_cafe_bar_04.png"
+      },
+      "stufe2_el_intruso": {
+        "group_hint": "Dokumente / Belege",
+        "correct_words": [
+          "la cuenta",
+          "el recibo",
+          "la factura"
+        ],
+        "intruder": "el té",
+        "intruder_category": "Getränke"
+      },
+      "stufe3_conjugacion": {
+        "verb_infinitive": "traer",
+        "verb_de": "bringen",
+        "tense": "Presente",
+        "context_sentence": "¿Me ___ la cuenta, por favor?",
+        "forms": [
+          {
+            "pronoun_es": "tú",
+            "pronoun_de": "du",
+            "form": "traes"
+          },
+          {
+            "pronoun_es": "usted",
+            "pronoun_de": "Sie (förmlich)",
+            "form": "trae"
+          },
+          {
+            "pronoun_es": "yo",
+            "pronoun_de": "ich",
+            "form": "traigo"
+          }
+        ]
+      },
+      "stufe4_gramatica": {
+        "correct_sentence": "¿Me traes la cuenta, por favor?",
+        "wrong_sentence": "¿Te traes la cuenta, por favor?",
+        "error_highlight": "Te",
+        "correct_highlight": "Me",
+        "explanation_de": "Du bittest für dich — deshalb 'me', nicht 'te'."
+      },
+      "stufe5_conversacion": {
+        "situation_context": "Du bittest den Kellner freundlich um die Rechnung.",
+        "npc_prompt_es": "¿Todo bien? ¿Necesita algo más?",
+        "npc_prompt_de": "Alles gut? Brauchen Sie etwas?",
+        "npc_reaction_es": "¡Ahora mismo! Un momentito.",
+        "target_sentence": "¿Me traes la cuenta, por favor?",
+        "tiles": [
+          "¿Me",
+          "traes",
+          "la",
+          "cuenta,",
+          "por",
+          "favor?",
+          "llevas",
+          "recibo"
+        ],
+        "distractor_tiles": [
+          "llevas",
+          "recibo"
+        ]
+      }
+    }
+  ]
+}

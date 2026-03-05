@@ -1,0 +1,520 @@
+[
+  {
+    "id": "a1_01",
+    "de": "Ich esse einen Apfel.",
+    "words": ["Yo", "como", "una", "manzana"],
+    "distractors": ["él", "bebo", "un"],
+    "hint": "Subjekt + comer + Artikel + Nomen"
+  },
+  {
+    "id": "a1_02",
+    "de": "Sie ist meine Mutter.",
+    "words": ["Ella", "es", "mi", "madre"],
+    "distractors": ["él", "son", "su"],
+    "hint": "Subjekt + ser + Possessiv + Nomen"
+  },
+  {
+    "id": "a1_03",
+    "de": "Ich heiße Carlos.",
+    "words": ["Me", "llamo", "Carlos"],
+    "distractors": ["Te", "llamas", "Yo"],
+    "hint": "Reflexivpronomen + llamarse"
+  },
+  {
+    "id": "a1_04",
+    "de": "Das Buch ist auf dem Tisch.",
+    "words": ["El", "libro", "está", "en", "la", "mesa"],
+    "distractors": ["es", "un", "al"],
+    "hint": "Artikel + Nomen + estar + en + Artikel + Nomen"
+  },
+  {
+    "id": "a1_05",
+    "de": "Er trinkt Wasser.",
+    "words": ["Él", "bebe", "agua"],
+    "distractors": ["come", "Ella", "un"],
+    "hint": "Subjekt + beber + Nomen"
+  },
+  {
+    "id": "a1_06",
+    "de": "Ich lerne Spanisch.",
+    "words": ["Yo", "aprendo", "español"],
+    "distractors": ["aprendes", "hablar", "él"],
+    "hint": "Subjekt + aprender + Sprache"
+  },
+  {
+    "id": "a1_07",
+    "de": "Wir haben ein Haus.",
+    "words": ["Nosotros", "tenemos", "una", "casa"],
+    "distractors": ["tienen", "un", "ella"],
+    "hint": "Subjekt + tener + Artikel + Nomen"
+  },
+  {
+    "id": "a1_08",
+    "de": "Das Wetter ist schön.",
+    "words": ["El", "tiempo", "está", "bien"],
+    "distractors": ["es", "hace", "la"],
+    "hint": "Artikel + Nomen + estar + Adjektiv"
+  },
+  {
+    "id": "a1_09",
+    "de": "Ich gehe zur Schule.",
+    "words": ["Yo", "voy", "a", "la", "escuela"],
+    "distractors": ["va", "al", "él"],
+    "hint": "Subjekt + ir + a + Artikel + Nomen"
+  },
+  {
+    "id": "a1_10",
+    "de": "Sie sprechen Spanisch.",
+    "words": ["Ellos", "hablan", "español"],
+    "distractors": ["habla", "Ellas", "hablar"],
+    "hint": "Subjekt (Plural) + hablar + Sprache"
+  },
+  {
+    "id": "a1_11",
+    "de": "Der Hund ist groß.",
+    "words": ["El", "perro", "es", "grande"],
+    "distractors": ["está", "la", "pequeño"],
+    "hint": "Artikel + Nomen + ser + Adjektiv"
+  },
+  {
+    "id": "a1_12",
+    "de": "Ich habe einen Bruder.",
+    "words": ["Yo", "tengo", "un", "hermano"],
+    "distractors": ["tienes", "una", "hermana"],
+    "hint": "Subjekt + tener + Artikel + Nomen"
+  },
+  {
+    "id": "a1_13",
+    "de": "Die Stadt ist sehr schön.",
+    "words": ["La", "ciudad", "es", "muy", "bonita"],
+    "distractors": ["está", "El", "bien"],
+    "hint": "Artikel + Nomen + ser + muy + Adjektiv"
+  },
+  {
+    "id": "a1_14",
+    "de": "Wir essen Pizza.",
+    "words": ["Nosotros", "comemos", "pizza"],
+    "distractors": ["come", "Ellos", "comer"],
+    "hint": "Subjekt + comer + Nomen"
+  },
+  {
+    "id": "a1_15",
+    "de": "Er arbeitet in einem Büro.",
+    "words": ["Él", "trabaja", "en", "una", "oficina"],
+    "distractors": ["trabajan", "un", "Yo"],
+    "hint": "Subjekt + trabajar + en + Artikel + Nomen"
+  },
+  {
+    "id": "a1_16",
+    "de": "Das Mädchen schläft.",
+    "words": ["La", "niña", "duerme"],
+    "distractors": ["El", "niño", "duermen"],
+    "hint": "Artikel + Nomen + dormir"
+  },
+  {
+    "id": "a1_17",
+    "de": "Ich bin müde.",
+    "words": ["Yo", "estoy", "cansado"],
+    "distractors": ["soy", "Él", "cansada"],
+    "hint": "Subjekt + estar + Adjektiv (Zustand)"
+  },
+  {
+    "id": "a1_18",
+    "de": "Sie liest ein Buch.",
+    "words": ["Ella", "lee", "un", "libro"],
+    "distractors": ["Él", "leer", "una"],
+    "hint": "Subjekt + leer + Artikel + Nomen"
+  },
+  {
+    "id": "a1_19",
+    "de": "Wir spielen Fußball.",
+    "words": ["Nosotros", "jugamos", "al", "fútbol"],
+    "distractors": ["juegan", "a", "Ellos"],
+    "hint": "Subjekt + jugar + al + Nomen"
+  },
+  {
+    "id": "a1_20",
+    "de": "Er ist aus Deutschland.",
+    "words": ["Él", "es", "de", "Alemania"],
+    "distractors": ["está", "Ella", "en"],
+    "hint": "Subjekt + ser + de + Land"
+  },
+  {
+    "id": "a1_21",
+    "de": "Die Katze ist auf dem Sofa.",
+    "words": ["El", "gato", "está", "en", "el", "sofá"],
+    "distractors": ["es", "la", "un"],
+    "hint": "Artikel + Nomen + estar + en + Artikel + Nomen"
+  },
+  {
+    "id": "a1_22",
+    "de": "Ich möchte Kaffee.",
+    "words": ["Yo", "quiero", "café"],
+    "distractors": ["quieres", "Él", "un"],
+    "hint": "Subjekt + querer + Nomen"
+  },
+  {
+    "id": "a1_23",
+    "de": "Sie kocht jeden Tag.",
+    "words": ["Ella", "cocina", "todos", "los", "días"],
+    "distractors": ["cocino", "cada", "Yo"],
+    "hint": "Subjekt + cocinar + todos + los + días"
+  },
+  {
+    "id": "a1_24",
+    "de": "Das Kind spielt im Park.",
+    "words": ["El", "niño", "juega", "en", "el", "parque"],
+    "distractors": ["juegan", "la", "al"],
+    "hint": "Artikel + Nomen + jugar + en + el + Nomen"
+  },
+  {
+    "id": "a1_25",
+    "de": "Ich wohne in Madrid.",
+    "words": ["Yo", "vivo", "en", "Madrid"],
+    "distractors": ["vives", "Él", "a"],
+    "hint": "Subjekt + vivir + en + Stadt"
+  },
+  {
+    "id": "a1_26",
+    "de": "Wie viel kostet das?",
+    "words": ["¿Cuánto", "cuesta", "esto?"],
+    "distractors": ["cuestan", "eso", "esta"],
+    "hint": "¿Cuánto + costar + Demonstrativpronomen?"
+  },
+  {
+    "id": "a1_27",
+    "de": "Ich kaufe Brot im Supermarkt.",
+    "words": ["Yo", "compro", "pan", "en", "el", "supermercado"],
+    "distractors": ["compras", "Ella", "al"],
+    "hint": "Subjekt + comprar + Nomen + en + el + Nomen"
+  },
+  {
+    "id": "a1_28",
+    "de": "Mein Vater fährt Auto.",
+    "words": ["Mi", "padre", "conduce", "el", "coche"],
+    "distractors": ["conducen", "su", "un"],
+    "hint": "Possessiv + Nomen + conducir + Artikel + Nomen"
+  },
+  {
+    "id": "a1_29",
+    "de": "Du nimmst den Bus.",
+    "words": ["Tú", "coges", "el", "autobús"],
+    "distractors": ["coge", "Yo", "un"],
+    "hint": "Subjekt + coger + Artikel + Nomen"
+  },
+  {
+    "id": "a1_30",
+    "de": "Es gibt einen Supermarkt hier.",
+    "words": ["Hay", "un", "supermercado", "aquí"],
+    "distractors": ["Está", "una", "allí"],
+    "hint": "hay + Artikel + Nomen + Adverb"
+  },
+  {
+    "id": "a1_31",
+    "de": "Ich brauche Hilfe.",
+    "words": ["Yo", "necesito", "ayuda"],
+    "distractors": ["necesitas", "Él", "un"],
+    "hint": "Subjekt + necesitar + Nomen"
+  },
+  {
+    "id": "a1_32",
+    "de": "Mir gefällt Musik.",
+    "words": ["Me", "gusta", "la", "música"],
+    "distractors": ["gusto", "Le", "el"],
+    "hint": "Me + gustar + Artikel + Nomen"
+  },
+  {
+    "id": "a1_33",
+    "de": "Ihr mögt Fußball.",
+    "words": ["Os", "gusta", "el", "fútbol"],
+    "distractors": ["Les", "gustan", "la"],
+    "hint": "Os + gustar + Artikel + Nomen"
+  },
+  {
+    "id": "a1_34",
+    "de": "Kannst du mir helfen?",
+    "words": ["¿Puedes", "ayudarme?"],
+    "distractors": ["Puede", "¿Puedo", "ayudarte?"],
+    "hint": "poder (2. Person) + Infinitiv + Reflexivpronomen"
+  },
+  {
+    "id": "a1_35",
+    "de": "Ich höre Musik.",
+    "words": ["Yo", "escucho", "música"],
+    "distractors": ["escuchas", "Él", "la"],
+    "hint": "Subjekt + escuchar + Nomen"
+  },
+  {
+    "id": "a1_36",
+    "de": "Wir kommen um acht Uhr an.",
+    "words": ["Nosotros", "llegamos", "a", "las", "ocho"],
+    "distractors": ["llegamos", "los", "al"],
+    "hint": "Subjekt + llegar + a + las + Uhrzeit"
+  },
+  {
+    "id": "a1_37",
+    "de": "Er geht um sieben Uhr aus dem Haus.",
+    "words": ["Él", "sale", "de", "casa", "a", "las", "siete"],
+    "distractors": ["salen", "al", "Ella"],
+    "hint": "Subjekt + salir + de + casa + a + las + Uhrzeit"
+  },
+  {
+    "id": "a1_38",
+    "de": "Was machst du am Wochenende?",
+    "words": ["¿Qué", "haces", "el", "fin", "de", "semana?"],
+    "distractors": ["hace", "un", "¿Cómo"],
+    "hint": "¿Qué + hacer (2. P.) + el fin de semana?"
+  },
+  {
+    "id": "a1_39",
+    "de": "Ich schreibe eine E-Mail.",
+    "words": ["Yo", "escribo", "un", "correo", "electrónico"],
+    "distractors": ["escribes", "una", "Ella"],
+    "hint": "Subjekt + escribir + Artikel + Nomen"
+  },
+  {
+    "id": "a1_40",
+    "de": "Sie studiert an der Universität.",
+    "words": ["Ella", "estudia", "en", "la", "universidad"],
+    "distractors": ["estudian", "una", "Yo"],
+    "hint": "Subjekt + estudiar + en + la + Nomen"
+  },
+  {
+    "id": "a1_41",
+    "de": "Ich öffne das Fenster.",
+    "words": ["Yo", "abro", "la", "ventana"],
+    "distractors": ["abres", "el", "cierro"],
+    "hint": "Subjekt + abrir + Artikel + Nomen"
+  },
+  {
+    "id": "a1_42",
+    "de": "Die Kinder schließen die Tür.",
+    "words": ["Los", "niños", "cierran", "la", "puerta"],
+    "distractors": ["cierra", "El", "una"],
+    "hint": "Artikel + Nomen + cerrar + Artikel + Nomen"
+  },
+  {
+    "id": "a1_43",
+    "de": "Ich warte auf den Zug.",
+    "words": ["Yo", "espero", "el", "tren"],
+    "distractors": ["esperas", "un", "al"],
+    "hint": "Subjekt + esperar + Artikel + Nomen"
+  },
+  {
+    "id": "a1_44",
+    "de": "Wir suchen ein Hotel.",
+    "words": ["Nosotros", "buscamos", "un", "hotel"],
+    "distractors": ["buscan", "una", "Ellos"],
+    "hint": "Subjekt + buscar + Artikel + Nomen"
+  },
+  {
+    "id": "a1_45",
+    "de": "Er gibt mir sein Buch.",
+    "words": ["Él", "me", "da", "su", "libro"],
+    "distractors": ["le", "mi", "dan"],
+    "hint": "Subjekt + Dativobjekt + dar + Possessiv + Nomen"
+  },
+  {
+    "id": "a1_46",
+    "de": "Ich weiß nicht.",
+    "words": ["Yo", "no", "sé"],
+    "distractors": ["sabes", "Él", "sabe"],
+    "hint": "Subjekt + no + saber (1. Person)"
+  },
+  {
+    "id": "a1_47",
+    "de": "Siehst du das Meer?",
+    "words": ["¿Ves", "el", "mar?"],
+    "distractors": ["¿Ve", "la", "¿Veo"],
+    "hint": "ver (2. Person) + Artikel + Nomen"
+  },
+  {
+    "id": "a1_48",
+    "de": "Meine Schwester trägt eine rote Jacke.",
+    "words": ["Mi", "hermana", "lleva", "una", "chaqueta", "roja"],
+    "distractors": ["llevan", "Su", "un"],
+    "hint": "Possessiv + Nomen + llevar + Artikel + Nomen + Adjektiv"
+  },
+  {
+    "id": "a1_49",
+    "de": "Ich werde morgen Spanisch lernen.",
+    "words": ["Yo", "voy", "a", "aprender", "español", "mañana"],
+    "distractors": ["vas", "aprendo", "Él"],
+    "hint": "ir + a + Infinitiv (Zukunft)"
+  },
+  {
+    "id": "a1_50",
+    "de": "Wo ist der Bahnhof?",
+    "words": ["¿Dónde", "está", "la", "estación?"],
+    "distractors": ["es", "el", "¿Cuándo"],
+    "hint": "¿Dónde + estar + Artikel + Nomen?"
+  },
+  {
+    "id": "a1_02",
+    "de": "Sie ist meine Mutter.",
+    "words": ["Ella", "es", "mi", "madre"],
+    "distractors": ["él", "son", "su"],
+    "hint": "Subjekt + ser + Possessiv + Nomen"
+  },
+  {
+    "id": "a1_03",
+    "de": "Ich heiße Carlos.",
+    "words": ["Me", "llamo", "Carlos"],
+    "distractors": ["Te", "llamas", "Yo"],
+    "hint": "Reflexivpronomen + llamarse"
+  },
+  {
+    "id": "a1_04",
+    "de": "Das Buch ist auf dem Tisch.",
+    "words": ["El", "libro", "está", "en", "la", "mesa"],
+    "distractors": ["es", "un", "al"],
+    "hint": "Artikel + Nomen + estar + Präposition + Artikel + Nomen"
+  },
+  {
+    "id": "a1_05",
+    "de": "Er trinkt Wasser.",
+    "words": ["Él", "bebe", "agua"],
+    "distractors": ["come", "Ella", "un"],
+    "hint": "Subjekt + beber + Nomen"
+  },
+  {
+    "id": "a1_06",
+    "de": "Ich lerne Spanisch.",
+    "words": ["Yo", "aprendo", "español"],
+    "distractors": ["aprendes", "hablar", "él"],
+    "hint": "Subjekt + aprender + Sprache"
+  },
+  {
+    "id": "a1_07",
+    "de": "Wir haben ein Haus.",
+    "words": ["Nosotros", "tenemos", "una", "casa"],
+    "distractors": ["tienen", "un", "ella"],
+    "hint": "Subjekt + tener + Artikel + Nomen"
+  },
+  {
+    "id": "a1_08",
+    "de": "Das Wetter ist schön.",
+    "words": ["El", "tiempo", "está", "bien"],
+    "distractors": ["es", "hace", "la"],
+    "hint": "Artikel + Nomen + estar + Adjektiv"
+  },
+  {
+    "id": "a1_09",
+    "de": "Ich gehe zur Schule.",
+    "words": ["Yo", "voy", "a", "la", "escuela"],
+    "distractors": ["va", "al", "él"],
+    "hint": "Subjekt + ir + a + Artikel + Nomen"
+  },
+  {
+    "id": "a1_10",
+    "de": "Sie sprechen Spanisch.",
+    "words": ["Ellos", "hablan", "español"],
+    "distractors": ["habla", "Ellas", "hablar"],
+    "hint": "Subjekt (Plural) + hablar + Sprache"
+  },
+  {
+    "id": "a1_11",
+    "de": "Der Hund ist groß.",
+    "words": ["El", "perro", "es", "grande"],
+    "distractors": ["está", "la", "pequeño"],
+    "hint": "Artikel + Nomen + ser + Adjektiv"
+  },
+  {
+    "id": "a1_12",
+    "de": "Ich habe einen Bruder.",
+    "words": ["Yo", "tengo", "un", "hermano"],
+    "distractors": ["tienes", "una", "hermana"],
+    "hint": "Subjekt + tener + Artikel + Nomen"
+  },
+  {
+    "id": "a1_13",
+    "de": "Die Stadt ist sehr schön.",
+    "words": ["La", "ciudad", "es", "muy", "bonita"],
+    "distractors": ["está", "El", "bien"],
+    "hint": "Artikel + Nomen + ser + muy + Adjektiv"
+  },
+  {
+    "id": "a1_14",
+    "de": "Wir essen Pizza.",
+    "words": ["Nosotros", "comemos", "pizza"],
+    "distractors": ["come", "Ellos", "comer"],
+    "hint": "Subjekt + comer + Nomen"
+  },
+  {
+    "id": "a1_15",
+    "de": "Er arbeitet in einem Büro.",
+    "words": ["Él", "trabaja", "en", "una", "oficina"],
+    "distractors": ["trabajan", "un", "Yo"],
+    "hint": "Subjekt + trabajar + en + Artikel + Nomen"
+  },
+  {
+    "id": "a1_16",
+    "de": "Das Mädchen schläft.",
+    "words": ["La", "niña", "duerme"],
+    "distractors": ["El", "niño", "duermen"],
+    "hint": "Artikel + Nomen + dormir"
+  },
+  {
+    "id": "a1_17",
+    "de": "Ich bin müde.",
+    "words": ["Yo", "estoy", "cansado"],
+    "distractors": ["soy", "Él", "cansada"],
+    "hint": "Subjekt + estar + Adjektiv (Zustand)"
+  },
+  {
+    "id": "a1_18",
+    "de": "Sie liest ein Buch.",
+    "words": ["Ella", "lee", "un", "libro"],
+    "distractors": ["Él", "leer", "una"],
+    "hint": "Subjekt + leer + Artikel + Nomen"
+  },
+  {
+    "id": "a1_19",
+    "de": "Wir spielen Fußball.",
+    "words": ["Nosotros", "jugamos", "al", "fútbol"],
+    "distractors": ["juegan", "a", "Ellos"],
+    "hint": "Subjekt + jugar + al + Nomen"
+  },
+  {
+    "id": "a1_20",
+    "de": "Er ist aus Deutschland.",
+    "words": ["Él", "es", "de", "Alemania"],
+    "distractors": ["está", "Ella", "en"],
+    "hint": "Subjekt + ser + de + Land"
+  },
+  {
+    "id": "a1_21",
+    "de": "Die Katze ist auf dem Sofa.",
+    "words": ["El", "gato", "está", "en", "el", "sofá"],
+    "distractors": ["es", "la", "un"],
+    "hint": "Artikel + Nomen + estar + Präposition + Artikel + Nomen"
+  },
+  {
+    "id": "a1_22",
+    "de": "Ich möchte Kaffee.",
+    "words": ["Yo", "quiero", "café"],
+    "distractors": ["quieres", "Él", "un"],
+    "hint": "Subjekt + querer + Nomen"
+  },
+  {
+    "id": "a1_23",
+    "de": "Sie koche jeden Tag.",
+    "words": ["Ella", "cocina", "todos", "los", "días"],
+    "distractors": ["cocino", "cada", "Yo"],
+    "hint": "Subjekt + cocinar + todos + los + días"
+  },
+  {
+    "id": "a1_24",
+    "de": "Das Kind spielt im Park.",
+    "words": ["El", "niño", "juega", "en", "el", "parque"],
+    "distractors": ["juegan", "la", "al"],
+    "hint": "Artikel + Nomen + jugar + en + el + Nomen"
+  },
+  {
+    "id": "a1_25",
+    "de": "Ich wohne in Madrid.",
+    "words": ["Yo", "vivo", "en", "Madrid"],
+    "distractors": ["vives", "Él", "a"],
+    "hint": "Subjekt + vivir + en + Stadt"
+  }
+]

@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-03-03T11:00:37.638Z",
+  "dialect": "es_andalucia",
+  "entries": [
+    {
+      "id": "zah_002",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "uno",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_003",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "dos",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_004",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "tres",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_005",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "cuatro",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_006",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "cinco",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_007",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "seis",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_008",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "siete",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_009",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "ocho",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_010",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "nueve",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "zah_011",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "diez",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "l1w_l1_2_vino_tinto",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "vino tinto",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "l1w_l1_4_vivo",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "vivo",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "l1w_l1_6_me_levanto",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "me levanto",
+      "source": {
+        "chapter": "l1-6",
+        "kind": "S4.answerEs"
+      }
+    },
+    {
+      "id": "l1w_l1_8_donde_esta",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "¿dónde está…?",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "S4.answerEs"
+      }
+    }
+  ]
+}

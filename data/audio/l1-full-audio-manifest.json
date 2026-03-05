@@ -1,0 +1,721 @@
+{
+  "generatedAt": "2026-03-03T10:31:47.681Z",
+  "dialect": "es_andalucia",
+  "entries": [
+    {
+      "id": "l1f_l1_1_s2_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero un café.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero agua, por favor.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿Hay pan?",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero una cerveza, por favor.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_5",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿Me traes la carta?",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_6",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "La cuenta, por favor.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 6
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_7",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero un té.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 7
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_8",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero leche, por favor.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 8
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_9",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero un pastel.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 9
+      }
+    },
+    {
+      "id": "l1f_l1_1_s2_10",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero una mesa, por favor.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.s2sentence",
+        "index": 10
+      }
+    },
+    {
+      "id": "l1f_l1_1_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero un café, por favor.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_1_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Muchas gracias, Carlos!",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_1_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Perdona, ¿dónde está el baño?",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_1_s3_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero la cuenta, por favor.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S3_EX.full",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_1_s3_5",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¡Gracias! Está muy rico.",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S3_EX.full",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1f_l1_1_s3_6",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Perdona, ¿me traes la carta?",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S3_EX.full",
+        "index": 6
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero ver el menú.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Llamo al camarero.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero una sopa.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero pollo, por favor.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_5",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero una ensalada.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_6",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero vino, por favor.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 6
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_7",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "De postre, quiero flan.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 7
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_8",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Dejo propina para el camarero.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 8
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_9",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero carne, por favor.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 9
+      }
+    },
+    {
+      "id": "l1f_l1_2_s2_10",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero arroz con pollo.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.s2sentence",
+        "index": 10
+      }
+    },
+    {
+      "id": "l1f_l1_2_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿Me traes el menú, por favor?",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_2_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "De segundo, pollo asado.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_2_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Perdona, ¿puedes traerme más pan?",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_2_s3_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "De postre, quiero flan.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S3_EX.full",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_2_s3_5",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿Tienes vino tinto?",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S3_EX.full",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1f_l1_2_s3_6",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¡Gracias! La comida estuvo deliciosa.",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S3_EX.full",
+        "index": 6
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¡Hola, Carlos!",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Vale, adiós.",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Buenos días, Ana.",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Buenas tardes, Carlos.",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_5",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Buenas noches, hasta mañana.",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_6",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Bueno, nos vemos.",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 6
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_7",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¡Mucho gusto!",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 7
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_8",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿Cómo estás?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 8
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_9",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Me llamo Carlos, ¿y tú?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 9
+      }
+    },
+    {
+      "id": "l1f_l1_3_s2_10",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿De dónde eres?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.s2sentence",
+        "index": 10
+      }
+    },
+    {
+      "id": "l1f_l1_3_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Buenos días, señor García!",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_3_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Hola, María. ¿Cómo estás?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_3_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Hola, yo me llamo Ana. ¿Y tú?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_3_s3_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Encantada, mucho gusto.",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S3_EX.full",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_3_s3_5",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿De dónde eres?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S3_EX.full",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1f_l1_3_s3_6",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¡Fue un placer! Nos vemos, Carlos!",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S3_EX.full",
+        "index": 6
+      }
+    },
+    {
+      "id": "l1f_l1_4_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Yo vivo en mi casa.",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_4_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Abre la puerta.",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_4_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Cierra la ventana porque hace frío.",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_4_s3_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Esta es mi casa.",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S3_EX.full",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_5_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "¿Cuánto cuesta?",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_5_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Quiero comprar eso, por favor.",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_5_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Pago con tarjeta.",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_5_s3_4",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Voy a la caja para pagar.",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "S3_EX.full",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1f_l1_6_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Yo me levanto a las ocho.",
+      "source": {
+        "chapter": "l1-6",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_6_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Después, desayuno.",
+      "source": {
+        "chapter": "l1-6",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_6_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Por la noche duermo temprano.",
+      "source": {
+        "chapter": "l1-6",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_7_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Mi madre se llama Ana.",
+      "source": {
+        "chapter": "l1-7",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_7_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Mi padre trabaja en Madrid.",
+      "source": {
+        "chapter": "l1-7",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_7_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Tengo una hija pequeña.",
+      "source": {
+        "chapter": "l1-7",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1f_l1_8_s3_1",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "Gira a la izquierda.",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "S3_EX.full",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1f_l1_8_s3_2",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "La estación está cerca de aquí.",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "S3_EX.full",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1f_l1_8_s3_3",
+      "type": "full",
+      "dialect": "es_andalucia",
+      "text": "El aeropuerto está muy lejos.",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "S3_EX.full",
+        "index": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "arb_001",
+    "de": "der Beruf",
+    "es": "la profesión",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la pɾofeˈsjon",
+      "simplified": "la pro-fe-SJON",
+      "tip": "Vier Silben, Betonung auf 'sión'"
+    },
+    "dialects": {
+      "es_castilla": "la profesión",
+      "es_andalucia": "el trabajo",
+      "es_cataluna": "la professió",
+      "es_canarias": "el trabajo",
+      "lat_mx": "el trabajo",
+      "lat_ar": "el trabajo",
+      "lat_co": "el trabajo",
+      "lat_cl": "la pega (informell)",
+      "lat_pe": "la chamba",
+      "lat_ve": "el trabajo",
+      "lat_cu": "el trabajo",
+      "lat_do": "el trabajo"
+    },
+    "example_de": "Was ist dein Beruf?",
+    "example_es": "¿Cuál es tu profesión?",
+    "tags": [
+      "arbeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_002",
+    "de": "das Büro",
+    "es": "la oficina",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ofiˈθina",
+      "simplified": "la o-fi-ZI-na",
+      "tip": "In Lateinamerika 'o-fi-SI-na'"
+    },
+    "dialects": {
+      "es_castilla": "la oficina",
+      "es_andalucia": "la oficina",
+      "es_cataluna": "l'oficina",
+      "es_canarias": "la oficina",
+      "lat_mx": "la oficina",
+      "lat_ar": "la oficina",
+      "lat_co": "la oficina",
+      "lat_cl": "la oficina",
+      "lat_pe": "la oficina",
+      "lat_ve": "la oficina",
+      "lat_cu": "la oficina",
+      "lat_do": "la oficina"
+    },
+    "example_de": "Ich arbeite im Büro.",
+    "example_es": "Trabajo en la oficina.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_003",
+    "de": "die Besprechung",
+    "es": "la reunión",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la reuˈnjon",
+      "simplified": "la re-u-NJON",
+      "tip": "Das 'reu' als schneller Diphthong, Betonung auf 'nión'"
+    },
+    "dialects": {
+      "es_castilla": "la reunión",
+      "es_andalucia": "la reunión",
+      "es_cataluna": "la reunió",
+      "es_canarias": "la reunión",
+      "lat_mx": "la junta",
+      "lat_ar": "la reunión",
+      "lat_co": "la reunión",
+      "lat_cl": "la reunión",
+      "lat_pe": "la reunión",
+      "lat_ve": "la reunión",
+      "lat_cu": "la reunión",
+      "lat_do": "la reunión"
+    },
+    "example_de": "Das Meeting beginnt um 10 Uhr.",
+    "example_es": "La reunión empieza a las diez.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_004",
+    "de": "der Chef",
+    "es": "el jefe",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈxefe",
+      "simplified": "el CHE-fe",
+      "tip": "Das 'j' klingt wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "el jefe",
+      "es_andalucia": "el jefe",
+      "es_cataluna": "el cap",
+      "es_canarias": "el jefe",
+      "lat_mx": "el jefe",
+      "lat_ar": "el jefe",
+      "lat_co": "el jefe",
+      "lat_cl": "el jefe",
+      "lat_pe": "el jefe",
+      "lat_ve": "el jefe",
+      "lat_cu": "el jefe",
+      "lat_do": "el jefe"
+    },
+    "example_de": "Mein Chef ist sehr streng.",
+    "example_es": "Mi jefe es muy estricto.",
+    "tags": [
+      "personen",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_005",
+    "de": "der Kollege",
+    "es": "el compañero de trabajo",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el kompaˈɲeɾo",
+      "simplified": "el kom-pa-NYE-ro",
+      "tip": "Das 'ñ' wie 'ny', Betonung auf 'ñe'"
+    },
+    "dialects": {
+      "es_castilla": "el compañero de trabajo",
+      "es_andalucia": "el compañero",
+      "es_cataluna": "el company de feina",
+      "es_canarias": "el compañero",
+      "lat_mx": "el compañero de trabajo",
+      "lat_ar": "el compañero de trabajo",
+      "lat_co": "el compañero",
+      "lat_cl": "el compañero",
+      "lat_pe": "el colega",
+      "lat_ve": "el compañero",
+      "lat_cu": "el compañero",
+      "lat_do": "el compañero"
+    },
+    "example_de": "Meine Kollegin ist sehr hilfsbereit.",
+    "example_es": "Mi compañera de trabajo es muy servicial.",
+    "tags": [
+      "personen",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_006",
+    "de": "das Gehalt",
+    "es": "el sueldo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ˈswelðo",
+      "simplified": "el SWEL-do",
+      "tip": "Das 'ue' als Diphthong, weiches 'd'"
+    },
+    "dialects": {
+      "es_castilla": "el sueldo",
+      "es_andalucia": "el sueldo",
+      "es_cataluna": "el sou",
+      "es_canarias": "el sueldo",
+      "lat_mx": "el sueldo",
+      "lat_ar": "el sueldo",
+      "lat_co": "el sueldo",
+      "lat_cl": "el sueldo",
+      "lat_pe": "el sueldo",
+      "lat_ve": "el salario",
+      "lat_cu": "el salario",
+      "lat_do": "el salario"
+    },
+    "example_de": "Ich möchte eine Gehaltserhöhung beantragen.",
+    "example_es": "Quiero pedir un aumento de sueldo.",
+    "tags": [
+      "finanzen",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_007",
+    "de": "die Arbeitsstelle",
+    "es": "el puesto de trabajo",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈpwesto",
+      "simplified": "el PWES-to",
+      "tip": "Das 'ue' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "el puesto de trabajo",
+      "es_andalucia": "el empleo",
+      "es_cataluna": "la feina",
+      "es_canarias": "el puesto",
+      "lat_mx": "el puesto",
+      "lat_ar": "el puesto",
+      "lat_co": "el cargo",
+      "lat_cl": "el puesto",
+      "lat_pe": "el puesto",
+      "lat_ve": "el cargo",
+      "lat_cu": "el empleo",
+      "lat_do": "el puesto"
+    },
+    "example_de": "Ich suche eine neue Arbeitsstelle.",
+    "example_es": "Estoy buscando un nuevo puesto de trabajo.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_008",
+    "de": "kündigen",
+    "es": "renunciar",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "renuɲˈθjaɾ",
+      "simplified": "re-nun-SJAR",
+      "tip": "Das 'c' vor 'i' wie 'th' in Spanien, wie 's' in Lateinamerika"
+    },
+    "dialects": {
+      "es_castilla": "renunciar",
+      "es_andalucia": "renunciar",
+      "es_cataluna": "renunciar",
+      "es_canarias": "renunciar",
+      "lat_mx": "renunciar",
+      "lat_ar": "renunciar",
+      "lat_co": "renunciar",
+      "lat_cl": "renunciar",
+      "lat_pe": "renunciar",
+      "lat_ve": "renunciar",
+      "lat_cu": "renunciar",
+      "lat_do": "renunciar"
+    },
+    "example_de": "Er hat gekündigt.",
+    "example_es": "Él ha renunciado.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_008b",
+    "de": "entlassen werden",
+    "es": "ser despedido",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "seɾ despeˈðiðo",
+      "simplified": "ser des-pe-DI-do",
+      "tip": "Passivkonstruktion, das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "ser despedido",
+      "es_andalucia": "ser despedido",
+      "es_cataluna": "ser acomiadat",
+      "es_canarias": "ser despedido",
+      "lat_mx": "ser corrido",
+      "lat_ar": "ser echado",
+      "lat_co": "ser despedido",
+      "lat_cl": "ser echado",
+      "lat_pe": "ser despedido",
+      "lat_ve": "ser botado",
+      "lat_cu": "ser despedido",
+      "lat_do": "ser despedido"
+    },
+    "example_de": "Sie wurde entlassen.",
+    "example_es": "Ella fue despedida.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_009",
+    "de": "das Vorstellungsgespräch",
+    "es": "la entrevista de trabajo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la entreˈβista",
+      "simplified": "la en-tre-BIS-ta",
+      "tip": "Das 'v' wie weiches 'b', Betonung auf 'vis'"
+    },
+    "dialects": {
+      "es_castilla": "la entrevista de trabajo",
+      "es_andalucia": "la entrevista",
+      "es_cataluna": "l'entrevista de feina",
+      "es_canarias": "la entrevista",
+      "lat_mx": "la entrevista de trabajo",
+      "lat_ar": "la entrevista laboral",
+      "lat_co": "la entrevista de trabajo",
+      "lat_cl": "la entrevista",
+      "lat_pe": "la entrevista",
+      "lat_ve": "la entrevista",
+      "lat_cu": "la entrevista",
+      "lat_do": "la entrevista"
+    },
+    "example_de": "Ich habe morgen ein Vorstellungsgespräch.",
+    "example_es": "Mañana tengo una entrevista de trabajo.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_010",
+    "de": "der Lebenslauf",
+    "es": "el currículum",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el kuˈrikulum",
+      "simplified": "el ku-RI-ku-lum",
+      "tip": "Vier Silben, Betonung auf 'ri'"
+    },
+    "dialects": {
+      "es_castilla": "el currículum",
+      "es_andalucia": "el currículo",
+      "es_cataluna": "el currículum",
+      "es_canarias": "el currículum",
+      "lat_mx": "el currículum",
+      "lat_ar": "el currículum",
+      "lat_co": "la hoja de vida",
+      "lat_cl": "el currículum",
+      "lat_pe": "el currículum",
+      "lat_ve": "el currículum",
+      "lat_cu": "el currículum",
+      "lat_do": "el currículum"
+    },
+    "example_de": "Bitte senden Sie Ihren Lebenslauf.",
+    "example_es": "Por favor envíe su currículum.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_011",
+    "de": "der Urlaub",
+    "es": "las vacaciones",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "las βakaˈθjones",
+      "simplified": "las ba-ka-SJO-nes",
+      "tip": "In Lateinamerika ohne 'th'-Laut"
+    },
+    "dialects": {
+      "es_castilla": "las vacaciones",
+      "es_andalucia": "las vacaciones",
+      "es_cataluna": "les vacances",
+      "es_canarias": "las vacaciones",
+      "lat_mx": "las vacaciones",
+      "lat_ar": "las vacaciones",
+      "lat_co": "las vacaciones",
+      "lat_cl": "las vacaciones",
+      "lat_pe": "las vacaciones",
+      "lat_ve": "las vacaciones",
+      "lat_cu": "las vacaciones",
+      "lat_do": "las vacaciones"
+    },
+    "example_de": "Im August nehme ich Urlaub.",
+    "example_es": "En agosto me tomo las vacaciones.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_012",
+    "de": "der Direktor",
+    "es": "el director",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el diɾekˈtoɾ",
+      "simplified": "el di-rek-TOR",
+      "tip": "Drei Silben, Betonung auf 'tor'"
+    },
+    "dialects": {
+      "es_castilla": "el director",
+      "es_andalucia": "el director",
+      "es_cataluna": "el director",
+      "es_canarias": "el director",
+      "lat_mx": "el director",
+      "lat_ar": "el director",
+      "lat_co": "el director",
+      "lat_cl": "el director",
+      "lat_pe": "el director",
+      "lat_ve": "el director",
+      "lat_cu": "el director",
+      "lat_do": "el director"
+    },
+    "example_de": "Der Direktor hat uns angerufen.",
+    "example_es": "El director nos ha llamado.",
+    "tags": [
+      "personen",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_013",
+    "de": "die Aufgabe",
+    "es": "la tarea",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la taˈɾea",
+      "simplified": "la ta-RE-a",
+      "tip": "Drei Silben, Betonung auf 're'"
+    },
+    "dialects": {
+      "es_castilla": "la tarea",
+      "es_andalucia": "la tarea",
+      "es_cataluna": "la tasca",
+      "es_canarias": "la tarea",
+      "lat_mx": "la tarea",
+      "lat_ar": "la tarea",
+      "lat_co": "la tarea",
+      "lat_cl": "la tarea",
+      "lat_pe": "la tarea",
+      "lat_ve": "la tarea",
+      "lat_cu": "la tarea",
+      "lat_do": "la tarea"
+    },
+    "example_de": "Ich habe viele Aufgaben heute.",
+    "example_es": "Hoy tengo muchas tareas.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_013b",
+    "de": "das Projekt",
+    "es": "el proyecto",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el pɾoˈʝekto",
+      "simplified": "el pro-JEK-to",
+      "tip": "Das 'y' klingt wie weiches 'j', Betonung auf 'jek'"
+    },
+    "dialects": {
+      "es_castilla": "el proyecto",
+      "es_andalucia": "el proyecto",
+      "es_cataluna": "el projecte",
+      "es_canarias": "el proyecto",
+      "lat_mx": "el proyecto",
+      "lat_ar": "el proyecto",
+      "lat_co": "el proyecto",
+      "lat_cl": "el proyecto",
+      "lat_pe": "el proyecto",
+      "lat_ve": "el proyecto",
+      "lat_cu": "el proyecto",
+      "lat_do": "el proyecto"
+    },
+    "example_de": "Ich arbeite an einem neuen Projekt.",
+    "example_es": "Estoy trabajando en un nuevo proyecto.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_014",
+    "de": "die Frist",
+    "es": "el plazo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ˈplaθo",
+      "simplified": "el PLA-so",
+      "tip": "In Lateinamerika 'PLA-so', in Spanien 'PLA-tho'"
+    },
+    "dialects": {
+      "es_castilla": "el plazo",
+      "es_andalucia": "el plazo",
+      "es_cataluna": "el termini",
+      "es_canarias": "el plazo",
+      "lat_mx": "el plazo",
+      "lat_ar": "el plazo",
+      "lat_co": "el plazo",
+      "lat_cl": "el plazo",
+      "lat_pe": "el plazo",
+      "lat_ve": "el plazo",
+      "lat_cu": "el plazo",
+      "lat_do": "el plazo"
+    },
+    "example_de": "Die Frist ist nächste Woche.",
+    "example_es": "El plazo es la semana que viene.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_015",
+    "de": "arbeiten",
+    "es": "trabajar",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "tɾaβaˈxaɾ",
+      "simplified": "tra-ba-CHAR",
+      "tip": "Das 'j' wie Rachen-'ch', das 'v' wie weiches 'b', Betonung auf 'jar'"
+    },
+    "dialects": {
+      "es_castilla": "trabajar",
+      "es_andalucia": "trabajar",
+      "es_cataluna": "treballar",
+      "es_canarias": "trabajar",
+      "lat_mx": "trabajar",
+      "lat_ar": "trabajar",
+      "lat_co": "trabajar",
+      "lat_cl": "trabajar",
+      "lat_pe": "trabajar",
+      "lat_ve": "trabajar",
+      "lat_cu": "trabajar",
+      "lat_do": "trabajar"
+    },
+    "example_de": "Ich arbeite seit fünf Jahren hier.",
+    "example_es": "Trabajo aquí desde hace cinco años.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_016",
+    "de": "die E-Mail schreiben",
+    "es": "escribir un correo electrónico",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "esˈkɾiβiɾ un koˈreo elektˈɾoniko",
+      "simplified": "es-kri-BIR un ko-RE-o e-lek-TRO-ni-ko",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el correo electrónico",
+      "es_andalucia": "el email",
+      "es_cataluna": "el correu electrònic",
+      "es_canarias": "el correo electrónico",
+      "lat_mx": "el correo electrónico",
+      "lat_ar": "el mail",
+      "lat_co": "el correo",
+      "lat_cl": "el email",
+      "lat_pe": "el correo electrónico",
+      "lat_ve": "el correo",
+      "lat_cu": "el correo",
+      "lat_do": "el email"
+    },
+    "example_de": "Kannst du mir eine E-Mail schreiben?",
+    "example_es": "¿Puedes escribirme un correo?",
+    "tags": [
+      "kommunikation",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_017",
+    "de": "die Präsentation",
+    "es": "la presentación",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la pɾesentaˈθjon",
+      "simplified": "la pre-sen-ta-SJON",
+      "tip": "In Lateinamerika 'pre-sen-ta-SJON', in Spanien 'pre-then-ta-SJON'"
+    },
+    "dialects": {
+      "es_castilla": "la presentación",
+      "es_andalucia": "la presentación",
+      "es_cataluna": "la presentació",
+      "es_canarias": "la presentación",
+      "lat_mx": "la presentación",
+      "lat_ar": "la presentación",
+      "lat_co": "la presentación",
+      "lat_cl": "la presentación",
+      "lat_pe": "la presentación",
+      "lat_ve": "la presentación",
+      "lat_cu": "la presentación",
+      "lat_do": "la presentación"
+    },
+    "example_de": "Ich halte morgen eine Präsentation.",
+    "example_es": "Mañana hago una presentación.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_018",
+    "de": "das Formular",
+    "es": "el formulario",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el foɾmuˈlaɾjo",
+      "simplified": "el for-mu-LA-rjo",
+      "tip": "Fünf Silben, Betonung auf 'la'"
+    },
+    "dialects": {
+      "es_castilla": "el formulario",
+      "es_andalucia": "el formulario",
+      "es_cataluna": "el formulari",
+      "es_canarias": "el formulario",
+      "lat_mx": "el formulario",
+      "lat_ar": "el formulario",
+      "lat_co": "el formulario",
+      "lat_cl": "el formulario",
+      "lat_pe": "el formulario",
+      "lat_ve": "el formulario",
+      "lat_cu": "el formulario",
+      "lat_do": "el formulario"
+    },
+    "example_de": "Bitte füllen Sie das Formular aus.",
+    "example_es": "Por favor rellene el formulario.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_019",
+    "de": "der Vertrag",
+    "es": "el contrato",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el konˈtɾato",
+      "simplified": "el kon-TRA-to",
+      "tip": "Das 'tr' klar aussprechen, Betonung auf 'tra'"
+    },
+    "dialects": {
+      "es_castilla": "el contrato",
+      "es_andalucia": "el contrato",
+      "es_cataluna": "el contracte",
+      "es_canarias": "el contrato",
+      "lat_mx": "el contrato",
+      "lat_ar": "el contrato",
+      "lat_co": "el contrato",
+      "lat_cl": "el contrato",
+      "lat_pe": "el contrato",
+      "lat_ve": "el contrato",
+      "lat_cu": "el contrato",
+      "lat_do": "el contrato"
+    },
+    "example_de": "Ich habe einen befristeten Vertrag.",
+    "example_es": "Tengo un contrato temporal.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_020",
+    "de": "der Mitarbeiter",
+    "es": "el empleado",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el empleˈaðo",
+      "simplified": "el em-ple-A-do",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el empleado",
+      "es_andalucia": "el empleado",
+      "es_cataluna": "l'empleat",
+      "es_canarias": "el empleado",
+      "lat_mx": "el empleado",
+      "lat_ar": "el empleado",
+      "lat_co": "el empleado",
+      "lat_cl": "el empleado",
+      "lat_pe": "el empleado",
+      "lat_ve": "el empleado",
+      "lat_cu": "el trabajador",
+      "lat_do": "el empleado"
+    },
+    "example_de": "Das Unternehmen hat 200 Mitarbeiter.",
+    "example_es": "La empresa tiene 200 empleados.",
+    "tags": [
+      "personen",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_021",
+    "de": "das Unternehmen",
+    "es": "la empresa",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la emˈpɾesa",
+      "simplified": "la em-PRE-sa",
+      "tip": "Das 'pr' ohne vokalischen Einschub"
+    },
+    "dialects": {
+      "es_castilla": "la empresa",
+      "es_andalucia": "la empresa",
+      "es_cataluna": "l'empresa",
+      "es_canarias": "la empresa",
+      "lat_mx": "la empresa",
+      "lat_ar": "la empresa",
+      "lat_co": "la empresa",
+      "lat_cl": "la empresa",
+      "lat_pe": "la empresa",
+      "lat_ve": "la empresa",
+      "lat_cu": "la empresa",
+      "lat_do": "la empresa"
+    },
+    "example_de": "Ich arbeite für eine große Firma.",
+    "example_es": "Trabajo para una empresa grande.",
+    "tags": [
+      "orte",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_022",
+    "de": "pünktlich",
+    "es": "puntual",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "punˈtwal",
+      "simplified": "pun-TWAL",
+      "tip": "Betonung auf 'tual', das 'ua' wie 'wa'"
+    },
+    "dialects": {
+      "es_castilla": "puntual",
+      "es_andalucia": "puntual",
+      "es_cataluna": "puntual",
+      "es_canarias": "puntual",
+      "lat_mx": "puntual",
+      "lat_ar": "puntual",
+      "lat_co": "puntual",
+      "lat_cl": "puntual",
+      "lat_pe": "puntual",
+      "lat_ve": "puntual",
+      "lat_cu": "puntual",
+      "lat_do": "puntual"
+    },
+    "example_de": "Bitte sei pünktlich.",
+    "example_es": "Por favor, sé puntual.",
+    "tags": [
+      "adjektive",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_023",
+    "de": "das Praktikum",
+    "es": "las prácticas",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "las ˈpɾaktisas",
+      "simplified": "las PRAK-ti-sas",
+      "tip": "In Spanien 'las PRÁKTIKIAS'"
+    },
+    "dialects": {
+      "es_castilla": "las prácticas",
+      "es_andalucia": "las prácticas",
+      "es_cataluna": "les pràctiques",
+      "es_canarias": "las prácticas",
+      "lat_mx": "la pasantía",
+      "lat_ar": "la pasantía",
+      "lat_co": "la pasantía",
+      "lat_cl": "la práctica",
+      "lat_pe": "la práctica profesional",
+      "lat_ve": "la pasantía",
+      "lat_cu": "la práctica",
+      "lat_do": "la pasantía"
+    },
+    "example_de": "Ich mache ein Praktikum bei einer Bank.",
+    "example_es": "Estoy haciendo las prácticas en un banco.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_024",
+    "de": "die Überstunden",
+    "es": "las horas extras",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "las ˈoɾas ˈekstas",
+      "simplified": "las O-ras EX-tras",
+      "tip": "Das 'h' ist stumm, das 'x' klar aussprechen"
+    },
+    "dialects": {
+      "es_castilla": "las horas extras",
+      "es_andalucia": "las horas extras",
+      "es_cataluna": "les hores extres",
+      "es_canarias": "las horas extras",
+      "lat_mx": "el tiempo extra",
+      "lat_ar": "las horas extra",
+      "lat_co": "las horas extras",
+      "lat_cl": "las horas extra",
+      "lat_pe": "las horas extras",
+      "lat_ve": "las horas extras",
+      "lat_cu": "las horas extra",
+      "lat_do": "las horas extras"
+    },
+    "example_de": "Ich mache diese Woche Überstunden.",
+    "example_es": "Esta semana hago horas extras.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_025",
+    "de": "im Homeoffice arbeiten",
+    "es": "el teletrabajo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el teleˈtɾaβaxo",
+      "simplified": "el te-le-TRA-ba-cho",
+      "tip": "Das 'j' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "el teletrabajo",
+      "es_andalucia": "el teletrabajo",
+      "es_cataluna": "el teletreball",
+      "es_canarias": "el teletrabajo",
+      "lat_mx": "el home office",
+      "lat_ar": "el home office",
+      "lat_co": "el trabajo remoto",
+      "lat_cl": "el trabajo remoto",
+      "lat_pe": "el trabajo remoto",
+      "lat_ve": "el teletrabajo",
+      "lat_cu": "el trabajo a distancia",
+      "lat_do": "trabajar desde casa"
+    },
+    "example_de": "Heute arbeite ich im Homeoffice.",
+    "example_es": "Hoy trabajo desde casa.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_026",
+    "de": "die Abteilung",
+    "es": "el departamento",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el depaɾtaˈmento",
+      "simplified": "el de-par-ta-MEN-to",
+      "tip": "Fünf Silben, Betonung auf 'men'"
+    },
+    "dialects": {
+      "es_castilla": "el departamento",
+      "es_andalucia": "el departamento",
+      "es_cataluna": "el departament",
+      "es_canarias": "el departamento",
+      "lat_mx": "el departamento",
+      "lat_ar": "la sección",
+      "lat_co": "el departamento",
+      "lat_cl": "el departamento",
+      "lat_pe": "el área",
+      "lat_ve": "el departamento",
+      "lat_cu": "el departamento",
+      "lat_do": "el departamento"
+    },
+    "example_de": "Ich arbeite in der Marketingabteilung.",
+    "example_es": "Trabajo en el departamento de marketing.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_027",
+    "de": "die Beförderung",
+    "es": "el ascenso",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el asˈθenso",
+      "simplified": "el as-SEN-so",
+      "tip": "In Lateinamerika beide 's'-Laute"
+    },
+    "dialects": {
+      "es_castilla": "el ascenso",
+      "es_andalucia": "el ascenso",
+      "es_cataluna": "l'ascens",
+      "es_canarias": "el ascenso",
+      "lat_mx": "el ascenso",
+      "lat_ar": "el ascenso",
+      "lat_co": "el ascenso",
+      "lat_cl": "el ascenso",
+      "lat_pe": "el ascenso",
+      "lat_ve": "el ascenso",
+      "lat_cu": "el ascenso",
+      "lat_do": "la promoción"
+    },
+    "example_de": "Er hat eine Beförderung bekommen.",
+    "example_es": "Él ha conseguido un ascenso.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_028",
+    "de": "der Selbstständige",
+    "es": "el autónomo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el auˈtonomo",
+      "simplified": "el au-TO-no-mo",
+      "tip": "Vier Silben, Betonung auf 'to'"
+    },
+    "dialects": {
+      "es_castilla": "el autónomo",
+      "es_andalucia": "el autónomo",
+      "es_cataluna": "l'autònom",
+      "es_canarias": "el autónomo",
+      "lat_mx": "el freelancer",
+      "lat_ar": "el freelancer",
+      "lat_co": "el independiente",
+      "lat_cl": "el freelancer",
+      "lat_pe": "el independiente",
+      "lat_ve": "el independiente",
+      "lat_cu": "el cuentapropista",
+      "lat_do": "el freelancer"
+    },
+    "example_de": "Ich bin selbstständig.",
+    "example_es": "Soy autónomo.",
+    "tags": [
+      "personen",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_029",
+    "de": "die Konferenz",
+    "es": "la conferencia",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la konfeˈɾenθja",
+      "simplified": "la kon-fe-REN-sja",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la conferencia",
+      "es_andalucia": "la conferencia",
+      "es_cataluna": "la conferència",
+      "es_canarias": "la conferencia",
+      "lat_mx": "la conferencia",
+      "lat_ar": "la conferencia",
+      "lat_co": "la conferencia",
+      "lat_cl": "la conferencia",
+      "lat_pe": "la conferencia",
+      "lat_ve": "la conferencia",
+      "lat_cu": "la conferencia",
+      "lat_do": "la conferencia"
+    },
+    "example_de": "Die Konferenz dauert drei Tage.",
+    "example_es": "La conferencia dura tres días.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_030",
+    "de": "die Fähigkeit",
+    "es": "la habilidad",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la aβiliˈðað",
+      "simplified": "la a-bi-li-DAD",
+      "tip": "Das 'h' summ, das 'v' wie 'b', das 'dad' am Ende sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la habilidad",
+      "es_andalucia": "la habilidad",
+      "es_cataluna": "l'habilitat",
+      "es_canarias": "la habilidad",
+      "lat_mx": "la habilidad",
+      "lat_ar": "la habilidad",
+      "lat_co": "la habilidad",
+      "lat_cl": "la habilidad",
+      "lat_pe": "la habilidad",
+      "lat_ve": "la habilidad",
+      "lat_cu": "la habilidad",
+      "lat_do": "la habilidad"
+    },
+    "example_de": "Welche Fähigkeiten besitzt du?",
+    "example_es": "¿Qué habilidades tienes?",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_031",
+    "de": "der Ingenieur",
+    "es": "el ingeniero",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el inxeˈnjeɾo",
+      "simplified": "el in-che-NJE-ro",
+      "tip": "Das 'g' klingt wie Rachen-'ch', Betonung auf 'nje'"
+    },
+    "dialects": {
+      "es_castilla": "el ingeniero",
+      "es_andalucia": "el ingeniero",
+      "es_cataluna": "l'enginyer",
+      "es_canarias": "el ingeniero",
+      "lat_mx": "el ingeniero",
+      "lat_ar": "el ingeniero",
+      "lat_co": "el ingeniero",
+      "lat_cl": "el ingeniero",
+      "lat_pe": "el ingeniero",
+      "lat_ve": "el ingeniero",
+      "lat_cu": "el ingeniero",
+      "lat_do": "el ingeniero"
+    },
+    "example_de": "Mein Bruder ist Ingenieur.",
+    "example_es": "Mi hermano es ingeniero.",
+    "tags": [
+      "berufe",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_032",
+    "de": "der Lehrer",
+    "es": "el profesor",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el pɾofeˈsoɾ",
+      "simplified": "el pro-fe-SOR",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el profesor",
+      "es_andalucia": "el profesor",
+      "es_cataluna": "el professor",
+      "es_canarias": "el profesor",
+      "lat_mx": "el maestro",
+      "lat_ar": "el profesor",
+      "lat_co": "el profesor",
+      "lat_cl": "el profesor",
+      "lat_pe": "el profesor",
+      "lat_ve": "el profesor",
+      "lat_cu": "el maestro",
+      "lat_do": "el maestro"
+    },
+    "example_de": "Meine Lehrerin ist sehr geduldig.",
+    "example_es": "Mi profesora es muy paciente.",
+    "tags": [
+      "berufe",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_033",
+    "de": "der Anwalt",
+    "es": "el abogado",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el aβoˈɣaðo",
+      "simplified": "el a-bo-GA-do",
+      "tip": "Das 'v' wie weiches 'b', das 'g' sehr weich zwischen Vokalen"
+    },
+    "dialects": {
+      "es_castilla": "el abogado",
+      "es_andalucia": "el abogado",
+      "es_cataluna": "l'advocat",
+      "es_canarias": "el abogado",
+      "lat_mx": "el abogado",
+      "lat_ar": "el abogado",
+      "lat_co": "el abogado",
+      "lat_cl": "el abogado",
+      "lat_pe": "el abogado",
+      "lat_ve": "el abogado",
+      "lat_cu": "el abogado",
+      "lat_do": "el abogado"
+    },
+    "example_de": "Ich brauche einen Anwalt.",
+    "example_es": "Necesito un abogado.",
+    "tags": [
+      "berufe",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_034",
+    "de": "der Koch",
+    "es": "el cocinero",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el koθiˈneɾo",
+      "simplified": "el ko-si-NE-ro",
+      "tip": "In Spanien 'ko-thi-NE-ro', in Lateinamerika 'ko-si-NE-ro'"
+    },
+    "dialects": {
+      "es_castilla": "el cocinero",
+      "es_andalucia": "el cocinero",
+      "es_cataluna": "el cuiner",
+      "es_canarias": "el cocinero",
+      "lat_mx": "el cocinero",
+      "lat_ar": "el cocinero",
+      "lat_co": "el cocinero",
+      "lat_cl": "el cocinero",
+      "lat_pe": "el cocinero",
+      "lat_ve": "el cocinero",
+      "lat_cu": "el cocinero",
+      "lat_do": "el cocinero"
+    },
+    "example_de": "Er ist Koch in einem Restaurant.",
+    "example_es": "Es cocinero en un restaurante.",
+    "tags": [
+      "berufe",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_035",
+    "de": "der Krankenpfleger",
+    "es": "el enfermero",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el emfeɾˈmeɾo",
+      "simplified": "el en-fer-ME-ro",
+      "tip": "Vier Silben, Betonung auf 'me'"
+    },
+    "dialects": {
+      "es_castilla": "el enfermero",
+      "es_andalucia": "el enfermero",
+      "es_cataluna": "l'infermer",
+      "es_canarias": "el enfermero",
+      "lat_mx": "el enfermero",
+      "lat_ar": "el enfermero",
+      "lat_co": "el enfermero",
+      "lat_cl": "el enfermero",
+      "lat_pe": "el enfermero",
+      "lat_ve": "el enfermero",
+      "lat_cu": "el enfermero",
+      "lat_do": "el enfermero"
+    },
+    "example_de": "Die Krankenschwester arbeitet Nachtschicht.",
+    "example_es": "La enfermera trabaja el turno de noche.",
+    "tags": [
+      "berufe",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_036",
+    "de": "der Buchhalter",
+    "es": "el contable",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el konˈtaβle",
+      "simplified": "el kon-TA-ble",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el contable",
+      "es_andalucia": "el contable",
+      "es_cataluna": "el comptable",
+      "es_canarias": "el contable",
+      "lat_mx": "el contador",
+      "lat_ar": "el contador",
+      "lat_co": "el contador",
+      "lat_cl": "el contador",
+      "lat_pe": "el contador",
+      "lat_ve": "el contador",
+      "lat_cu": "el contador",
+      "lat_do": "el contador"
+    },
+    "example_de": "Der Buchhalter prüft die Rechnungen.",
+    "example_es": "El contable revisa las facturas.",
+    "tags": [
+      "berufe",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_037",
+    "de": "der Polizist",
+    "es": "el policía",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el poliˈθia",
+      "simplified": "el po-li-SI-a",
+      "tip": "In Lateinamerika 'po-li-SI-a', in Spanien 'po-li-THI-a'"
+    },
+    "dialects": {
+      "es_castilla": "el policía",
+      "es_andalucia": "el policía",
+      "es_cataluna": "el policia",
+      "es_canarias": "el policía",
+      "lat_mx": "el policía",
+      "lat_ar": "el policía",
+      "lat_co": "el policía",
+      "lat_cl": "el carabinero",
+      "lat_pe": "el policía",
+      "lat_ve": "el policía",
+      "lat_cu": "el policía",
+      "lat_do": "el policía"
+    },
+    "example_de": "Der Polizist hat uns angehalten.",
+    "example_es": "El policía nos ha parado.",
+    "tags": [
+      "berufe",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_038",
+    "de": "die Stellenanzeige",
+    "es": "la oferta de trabajo",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la oˈfeɾta ðe tɾaˈβaxo",
+      "simplified": "la o-FER-ta de tra-BA-cho",
+      "tip": "Drei Wörter, Betonung auf 'fer' und 'ba'"
+    },
+    "dialects": {
+      "es_castilla": "la oferta de trabajo",
+      "es_andalucia": "la oferta de trabajo",
+      "es_cataluna": "l'oferta de feina",
+      "es_canarias": "la oferta de trabajo",
+      "lat_mx": "la oferta de trabajo",
+      "lat_ar": "la oferta laboral",
+      "lat_co": "la oferta de empleo",
+      "lat_cl": "la oferta de trabajo",
+      "lat_pe": "la oferta de trabajo",
+      "lat_ve": "la oferta de empleo",
+      "lat_cu": "la oferta de trabajo",
+      "lat_do": "la oferta de trabajo"
+    },
+    "example_de": "Ich habe eine Stellenanzeige gesehen.",
+    "example_es": "He visto una oferta de trabajo.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_039",
+    "de": "sich bewerben",
+    "es": "solicitar un empleo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "soliθiˈtaɾ un emˈpleo",
+      "simplified": "so-li-si-TAR un em-PLE-o",
+      "tip": "In Lateinamerika 'so-li-si-TAR'"
+    },
+    "dialects": {
+      "es_castilla": "solicitar un empleo",
+      "es_andalucia": "solicitar trabajo",
+      "es_cataluna": "sol·licitar una feina",
+      "es_canarias": "solicitar un empleo",
+      "lat_mx": "aplicar a un trabajo",
+      "lat_ar": "postularse a un trabajo",
+      "lat_co": "aplicar a un empleo",
+      "lat_cl": "postularse",
+      "lat_pe": "postularse",
+      "lat_ve": "aplicar a un trabajo",
+      "lat_cu": "solicitar empleo",
+      "lat_do": "solicitar un trabajo"
+    },
+    "example_de": "Ich bewerbe mich um die Stelle.",
+    "example_es": "Me estoy postulando al puesto.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_040",
+    "de": "die Gehaltserhöhung",
+    "es": "el aumento de sueldo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el auˈmento ðe ˈswelðo",
+      "simplified": "el au-MEN-to de SWEL-do",
+      "tip": "Drei Wörter, Betonung auf 'men' und im Diphthong 'swel'"
+    },
+    "dialects": {
+      "es_castilla": "el aumento de sueldo",
+      "es_andalucia": "el aumento de sueldo",
+      "es_cataluna": "l'augment de sou",
+      "es_canarias": "el aumento de sueldo",
+      "lat_mx": "el aumento de sueldo",
+      "lat_ar": "el aumento de sueldo",
+      "lat_co": "el aumento de salario",
+      "lat_cl": "el aumento de sueldo",
+      "lat_pe": "el aumento de sueldo",
+      "lat_ve": "el aumento de sueldo",
+      "lat_cu": "el aumento de salario",
+      "lat_do": "el aumento de sueldo"
+    },
+    "example_de": "Ich möchte eine Gehaltserhöhung beantragen.",
+    "example_es": "Quiero pedir un aumento de sueldo.",
+    "tags": [
+      "finanzen",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_041",
+    "de": "die Arbeitslosigkeit",
+    "es": "el desempleo",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el desemˈpleo",
+      "simplified": "el de-sem-PLE-o",
+      "tip": "Vier Silben, Betonung auf 'ple'"
+    },
+    "dialects": {
+      "es_castilla": "el desempleo",
+      "es_andalucia": "el paro",
+      "es_cataluna": "l'atur",
+      "es_canarias": "el paro",
+      "lat_mx": "el desempleo",
+      "lat_ar": "el desempleo",
+      "lat_co": "el desempleo",
+      "lat_cl": "el desempleo",
+      "lat_pe": "el desempleo",
+      "lat_ve": "el desempleo",
+      "lat_cu": "el desempleo",
+      "lat_do": "el desempleo"
+    },
+    "example_de": "Die Arbeitslosigkeit ist gestiegen.",
+    "example_es": "El desempleo ha aumentado.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_042",
+    "de": "Vollzeit",
+    "es": "a tiempo completo",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "a ˈtjempo komˈpleto",
+      "simplified": "a TJEM-po kom-PLE-to",
+      "tip": "Drei Wörter, Betonung auf 'tjem' und 'ple'"
+    },
+    "dialects": {
+      "es_castilla": "a tiempo completo",
+      "es_andalucia": "a tiempo completo",
+      "es_cataluna": "a temps complet",
+      "es_canarias": "a tiempo completo",
+      "lat_mx": "tiempo completo",
+      "lat_ar": "tiempo completo",
+      "lat_co": "tiempo completo",
+      "lat_cl": "jornada completa",
+      "lat_pe": "tiempo completo",
+      "lat_ve": "tiempo completo",
+      "lat_cu": "tiempo completo",
+      "lat_do": "tiempo completo"
+    },
+    "example_de": "Ich arbeite Vollzeit.",
+    "example_es": "Trabajo a tiempo completo.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_043",
+    "de": "Teilzeit",
+    "es": "a media jornada",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "a ˈmeðja xoɾˈnaða",
+      "simplified": "a ME-dja chor-NA-da",
+      "tip": "Das 'j' wie Rachen-'ch', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "a media jornada",
+      "es_andalucia": "a media jornada",
+      "es_cataluna": "a mitja jornada",
+      "es_canarias": "a media jornada",
+      "lat_mx": "medio tiempo",
+      "lat_ar": "medio tiempo",
+      "lat_co": "medio tiempo",
+      "lat_cl": "media jornada",
+      "lat_pe": "medio tiempo",
+      "lat_ve": "medio tiempo",
+      "lat_cu": "medio tiempo",
+      "lat_do": "medio tiempo"
+    },
+    "example_de": "Ich arbeite Teilzeit, 20 Stunden die Woche.",
+    "example_es": "Trabajo a media jornada, 20 horas a la semana.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_044",
+    "de": "die Pause",
+    "es": "el descanso",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el desˈkanso",
+      "simplified": "el des-KAN-so",
+      "tip": "Drei Silben, Betonung auf 'kan'"
+    },
+    "dialects": {
+      "es_castilla": "el descanso",
+      "es_andalucia": "el descanso",
+      "es_cataluna": "el descans",
+      "es_canarias": "el descanso",
+      "lat_mx": "el descanso",
+      "lat_ar": "el descanso",
+      "lat_co": "el descanso",
+      "lat_cl": "el descanso",
+      "lat_pe": "el descanso",
+      "lat_ve": "el descanso",
+      "lat_cu": "el descanso",
+      "lat_do": "el descanso"
+    },
+    "example_de": "Wir machen eine kurze Pause.",
+    "example_es": "Hacemos un pequeño descanso.",
+    "tags": [
+      "arbeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_045",
+    "de": "der Bericht",
+    "es": "el informe",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el imˈfoɾme",
+      "simplified": "el in-FOR-me",
+      "tip": "Drei Silben, Betonung auf 'for'"
+    },
+    "dialects": {
+      "es_castilla": "el informe",
+      "es_andalucia": "el informe",
+      "es_cataluna": "l'informe",
+      "es_canarias": "el informe",
+      "lat_mx": "el informe",
+      "lat_ar": "el informe",
+      "lat_co": "el informe",
+      "lat_cl": "el informe",
+      "lat_pe": "el informe",
+      "lat_ve": "el informe",
+      "lat_cu": "el informe",
+      "lat_do": "el informe"
+    },
+    "example_de": "Kannst du den Bericht bis Freitag fertigstellen?",
+    "example_es": "¿Puedes terminar el informe para el viernes?",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_046",
+    "de": "unterschreiben",
+    "es": "firmar",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "fiɾˈmaɾ",
+      "simplified": "fir-MAR",
+      "tip": "Zwei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "firmar",
+      "es_andalucia": "firmar",
+      "es_cataluna": "firmar",
+      "es_canarias": "firmar",
+      "lat_mx": "firmar",
+      "lat_ar": "firmar",
+      "lat_co": "firmar",
+      "lat_cl": "firmar",
+      "lat_pe": "firmar",
+      "lat_ve": "firmar",
+      "lat_cu": "firmar",
+      "lat_do": "firmar"
+    },
+    "example_de": "Bitte unterschreiben Sie hier.",
+    "example_es": "Por favor, firme aquí.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_047",
+    "de": "der Kunde",
+    "es": "el cliente",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈkljente",
+      "simplified": "el KLJEN-te",
+      "tip": "Das 'ie' als Diphthong 'je'"
+    },
+    "dialects": {
+      "es_castilla": "el cliente",
+      "es_andalucia": "el cliente",
+      "es_cataluna": "el client",
+      "es_canarias": "el cliente",
+      "lat_mx": "el cliente",
+      "lat_ar": "el cliente",
+      "lat_co": "el cliente",
+      "lat_cl": "el cliente",
+      "lat_pe": "el cliente",
+      "lat_ve": "el cliente",
+      "lat_cu": "el cliente",
+      "lat_do": "el cliente"
+    },
+    "example_de": "Der Kunde ist immer zufrieden.",
+    "example_es": "El cliente siempre está satisfecho.",
+    "tags": [
+      "personen",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_048",
+    "de": "die Lieferung",
+    "es": "la entrega",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la enˈtɾeɣa",
+      "simplified": "la en-TRE-ga",
+      "tip": "Drei Silben, das 'g' sehr weich am Ende"
+    },
+    "dialects": {
+      "es_castilla": "la entrega",
+      "es_andalucia": "la entrega",
+      "es_cataluna": "el lliurament",
+      "es_canarias": "la entrega",
+      "lat_mx": "la entrega",
+      "lat_ar": "la entrega",
+      "lat_co": "la entrega",
+      "lat_cl": "la entrega",
+      "lat_pe": "la entrega",
+      "lat_ve": "la entrega",
+      "lat_cu": "la entrega",
+      "lat_do": "la entrega"
+    },
+    "example_de": "Die Lieferung kommt morgen an.",
+    "example_es": "La entrega llega mañana.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_049",
+    "de": "organisieren",
+    "es": "organizar",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "oɾɣaniˈθaɾ",
+      "simplified": "or-ga-ni-SAR",
+      "tip": "In Lateinamerika 'or-ga-ni-SAR', in Spanien 'or-ga-ni-THAR'"
+    },
+    "dialects": {
+      "es_castilla": "organizar",
+      "es_andalucia": "organizar",
+      "es_cataluna": "organitzar",
+      "es_canarias": "organizar",
+      "lat_mx": "organizar",
+      "lat_ar": "organizar",
+      "lat_co": "organizar",
+      "lat_cl": "organizar",
+      "lat_pe": "organizar",
+      "lat_ve": "organizar",
+      "lat_cu": "organizar",
+      "lat_do": "organizar"
+    },
+    "example_de": "Ich muss das Event organisieren.",
+    "example_es": "Tengo que organizar el evento.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_050",
+    "de": "der Termin",
+    "es": "la cita",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈθita",
+      "simplified": "la SI-ta",
+      "tip": "In Lateinamerika 'SI-ta', in Spanien 'THI-ta'"
+    },
+    "dialects": {
+      "es_castilla": "la cita",
+      "es_andalucia": "la cita",
+      "es_cataluna": "la cita",
+      "es_canarias": "la cita",
+      "lat_mx": "la cita",
+      "lat_ar": "la cita",
+      "lat_co": "la cita",
+      "lat_cl": "la hora",
+      "lat_pe": "la cita",
+      "lat_ve": "la cita",
+      "lat_cu": "la cita",
+      "lat_do": "la cita"
+    },
+    "example_de": "Ich habe einen Termin um drei Uhr.",
+    "example_es": "Tengo una cita a las tres.",
+    "tags": [
+      "arbeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_051",
+    "de": "der Schreibtisch",
+    "es": "el escritorio",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el eskɾiˈtoɾjo",
+      "simplified": "el es-kri-TO-rjo",
+      "tip": "Vier Silben, Betonung auf 'to'"
+    },
+    "dialects": {
+      "es_castilla": "el escritorio",
+      "es_andalucia": "el escritorio",
+      "es_cataluna": "l'escriptori",
+      "es_canarias": "el escritorio",
+      "lat_mx": "el escritorio",
+      "lat_ar": "el escritorio",
+      "lat_co": "el escritorio",
+      "lat_cl": "el escritorio",
+      "lat_pe": "el escritorio",
+      "lat_ve": "el escritorio",
+      "lat_cu": "el escritorio",
+      "lat_do": "el escritorio"
+    },
+    "example_de": "Mein Schreibtisch ist sehr unordentlich.",
+    "example_es": "Mi escritorio está muy desordenado.",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "arb_052",
+    "de": "das Team",
+    "es": "el equipo",
+    "category": "arbeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el eˈkipo",
+      "simplified": "el e-KI-po",
+      "tip": "Drei Silben, Betonung auf 'ki'"
+    },
+    "dialects": {
+      "es_castilla": "el equipo",
+      "es_andalucia": "el equipo",
+      "es_cataluna": "l'equip",
+      "es_canarias": "el equipo",
+      "lat_mx": "el equipo",
+      "lat_ar": "el equipo",
+      "lat_co": "el equipo",
+      "lat_cl": "el equipo",
+      "lat_pe": "el equipo",
+      "lat_ve": "el equipo",
+      "lat_cu": "el equipo",
+      "lat_do": "el equipo"
+    },
+    "example_de": "Unser Team arbeitet sehr gut zusammen.",
+    "example_es": "Nuestro equipo trabaja muy bien juntos.",
+    "tags": [
+      "arbeit",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_053",
+    "de": "die Verantwortung",
+    "es": "la responsabilidad",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la responsaβiliˈðað",
+      "simplified": "la res-pon-sa-bi-li-DAD",
+      "tip": "Sechs Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "la responsabilidad",
+      "es_andalucia": "la responsabilidad",
+      "es_cataluna": "la responsabilitat",
+      "es_canarias": "la responsabilidad",
+      "lat_mx": "la responsabilidad",
+      "lat_ar": "la responsabilidad",
+      "lat_co": "la responsabilidad",
+      "lat_cl": "la responsabilidad",
+      "lat_pe": "la responsabilidad",
+      "lat_ve": "la responsabilidad",
+      "lat_cu": "la responsabilidad",
+      "lat_do": "la responsabilidad"
+    },
+    "example_de": "Das ist deine Verantwortung.",
+    "example_es": "Esa es tu responsabilidad.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_054",
+    "de": "die Erfahrung",
+    "es": "la experiencia",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ekspeˈɾjenθja",
+      "simplified": "la eks-pe-RJEN-sja",
+      "tip": "Vier Silben, Betonung auf 'rjen'"
+    },
+    "dialects": {
+      "es_castilla": "la experiencia",
+      "es_andalucia": "la experiencia",
+      "es_cataluna": "l'experiència",
+      "es_canarias": "la experiencia",
+      "lat_mx": "la experiencia",
+      "lat_ar": "la experiencia",
+      "lat_co": "la experiencia",
+      "lat_cl": "la experiencia",
+      "lat_pe": "la experiencia",
+      "lat_ve": "la experiencia",
+      "lat_cu": "la experiencia",
+      "lat_do": "la experiencia"
+    },
+    "example_de": "Ich habe fünf Jahre Erfahrung.",
+    "example_es": "Tengo cinco años de experiencia.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_055",
+    "de": "planen",
+    "es": "planificar",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "planiˈfikaɾ",
+      "simplified": "pla-ni-fi-KAR",
+      "tip": "Vier Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "planificar",
+      "es_andalucia": "planificar",
+      "es_cataluna": "planificar",
+      "es_canarias": "planificar",
+      "lat_mx": "planear",
+      "lat_ar": "planificar",
+      "lat_co": "planear",
+      "lat_cl": "planificar",
+      "lat_pe": "planificar",
+      "lat_ve": "planificar",
+      "lat_cu": "planificar",
+      "lat_do": "planificar"
+    },
+    "example_de": "Wir müssen das nächste Quartal planen.",
+    "example_es": "Tenemos que planificar el próximo trimestre.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_056",
+    "de": "die Kündigung",
+    "es": "el despido",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el desˈpiðo",
+      "simplified": "el des-PI-do",
+      "tip": "Drei Silben, das 'd' am Ende sehr weich, Betonung auf 'pi'"
+    },
+    "dialects": {
+      "es_castilla": "el despido",
+      "es_andalucia": "el despido",
+      "es_cataluna": "l'acomiadament",
+      "es_canarias": "el despido",
+      "lat_mx": "el despido",
+      "lat_ar": "el despido",
+      "lat_co": "el despido",
+      "lat_cl": "el despido",
+      "lat_pe": "el despido",
+      "lat_ve": "el despido",
+      "lat_cu": "el despido",
+      "lat_do": "el despido"
+    },
+    "example_de": "Er hat eine Kündigung erhalten.",
+    "example_es": "Él ha recibido un despido.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_057",
+    "de": "die Qualifikation",
+    "es": "la cualificación",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la kwалifikаˈθjon",
+      "simplified": "la kwa-li-fi-ka-SJON",
+      "tip": "In Lateinamerika 'la calificación', in Spanien 'kwa-li-fi-ka-THJON'"
+    },
+    "dialects": {
+      "es_castilla": "la cualificación",
+      "es_andalucia": "la cualificación",
+      "es_cataluna": "la qualificació",
+      "es_canarias": "la cualificación",
+      "lat_mx": "la calificación",
+      "lat_ar": "la calificación",
+      "lat_co": "la calificación",
+      "lat_cl": "la calificación",
+      "lat_pe": "la calificación",
+      "lat_ve": "la calificación",
+      "lat_cu": "la calificación",
+      "lat_do": "la calificación"
+    },
+    "example_de": "Welche Qualifikationen hast du?",
+    "example_es": "¿Qué cualificaciones tienes?",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_058",
+    "de": "der Rentner",
+    "es": "el jubilado",
+    "category": "arbeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el xuβiˈlaðo",
+      "simplified": "el chu-bi-LA-do",
+      "tip": "Das 'j' wie Rachen-'ch', das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el jubilado",
+      "es_andalucia": "el jubilado",
+      "es_cataluna": "el jubilat",
+      "es_canarias": "el jubilado",
+      "lat_mx": "el jubilado",
+      "lat_ar": "el jubilado",
+      "lat_co": "el pensionado",
+      "lat_cl": "el jubilado",
+      "lat_pe": "el jubilado",
+      "lat_ve": "el pensionado",
+      "lat_cu": "el jubilado",
+      "lat_do": "el pensionado"
+    },
+    "example_de": "Mein Vater ist jetzt Rentner.",
+    "example_es": "Mi padre ya está jubilado.",
+    "tags": [
+      "personen",
+      "A2"
+    ]
+  },
+  {
+    "id": "arb_059",
+    "de": "die Weiterbildung",
+    "es": "la formación continua",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la foɾmaˈθjon konˈtinwa",
+      "simplified": "la for-ma-SJON kon-TIN-wa",
+      "tip": "In Lateinamerika ohne 'th'-Laut"
+    },
+    "dialects": {
+      "es_castilla": "la formación continua",
+      "es_andalucia": "la formación continua",
+      "es_cataluna": "la formació contínua",
+      "es_canarias": "la formación continua",
+      "lat_mx": "la capacitación",
+      "lat_ar": "la capacitación",
+      "lat_co": "la capacitación",
+      "lat_cl": "la capacitación",
+      "lat_pe": "la capacitación",
+      "lat_ve": "la formación continua",
+      "lat_cu": "la capacitación",
+      "lat_do": "la capacitación"
+    },
+    "example_de": "Weiterbildung ist wichtig für die Karriere.",
+    "example_es": "La formación continua es importante para la carrera.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  },
+  {
+    "id": "arb_060",
+    "de": "das Netzwerk",
+    "es": "la red de contactos",
+    "category": "arbeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la reð ðe konˈtaktos",
+      "simplified": "la red de kon-TAK-tos",
+      "tip": "Drei Wörter, Betonung auf 'tak'"
+    },
+    "dialects": {
+      "es_castilla": "la red de contactos",
+      "es_andalucia": "la red de contactos",
+      "es_cataluna": "la xarxa de contactes",
+      "es_canarias": "la red de contactos",
+      "lat_mx": "la red de contactos",
+      "lat_ar": "la red de contactos",
+      "lat_co": "la red de contactos",
+      "lat_cl": "la red de contactos",
+      "lat_pe": "la red de contactos",
+      "lat_ve": "la red de contactos",
+      "lat_cu": "la red de contactos",
+      "lat_do": "la red de contactos"
+    },
+    "example_de": "Ein gutes Netzwerk ist wichtig im Beruf.",
+    "example_es": "Una buena red de contactos es importante en el trabajo.",
+    "tags": [
+      "arbeit",
+      "B1"
+    ]
+  }
+]

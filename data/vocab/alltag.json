@@ -1,0 +1,2083 @@
+[
+  {
+    "id": "all_001",
+    "de": "die Wohnung",
+    "es": "el apartamento",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el apaɾtaˈmento",
+      "simplified": "el a-par-ta-MEN-to",
+      "tip": "Fünf Silben, Betonung auf 'men'"
+    },
+    "dialects": {
+      "es_castilla": "el apartamento",
+      "es_andalucia": "el piso",
+      "es_cataluna": "el pis",
+      "es_canarias": "el apartamento",
+      "lat_mx": "el departamento",
+      "lat_ar": "el departamento",
+      "lat_co": "el apartamento",
+      "lat_cl": "el departamento",
+      "lat_pe": "el departamento",
+      "lat_ve": "el apartamento",
+      "lat_cu": "el apartamento",
+      "lat_do": "el apartamento"
+    },
+    "example_de": "Meine Wohnung ist im dritten Stock.",
+    "example_es": "Mi apartamento está en el tercer piso.",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_002",
+    "de": "das Haus",
+    "es": "la casa",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈkasa",
+      "simplified": "la KA-sa",
+      "tip": "Klares 'a', weiches 's' in der Mitte"
+    },
+    "dialects": {
+      "es_castilla": "la casa",
+      "es_andalucia": "la casa",
+      "es_cataluna": "la casa",
+      "es_canarias": "la casa",
+      "lat_mx": "la casa",
+      "lat_ar": "la casa",
+      "lat_co": "la casa",
+      "lat_cl": "la casa",
+      "lat_pe": "la casa",
+      "lat_ve": "la casa",
+      "lat_cu": "la casa",
+      "lat_do": "la casa"
+    },
+    "example_de": "Ich gehe nach Hause.",
+    "example_es": "Me voy a casa.",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_003",
+    "de": "einkaufen gehen",
+    "es": "ir de compras",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "iɾ de ˈkompɾas",
+      "simplified": "ir de KOM-pras",
+      "tip": "Das 'pr' klar aussprechen, kein eingeschobenes Vokal"
+    },
+    "dialects": {
+      "es_castilla": "ir de compras",
+      "es_andalucia": "ir de compras",
+      "es_cataluna": "anar a comprar",
+      "es_canarias": "ir de compras",
+      "lat_mx": "ir de compras",
+      "lat_ar": "ir de compras",
+      "lat_co": "ir de compras",
+      "lat_cl": "ir de compras",
+      "lat_pe": "ir de compras",
+      "lat_ve": "ir de compras",
+      "lat_cu": "ir de compras",
+      "lat_do": "ir de compras"
+    },
+    "example_de": "Ich gehe am Samstag einkaufen.",
+    "example_es": "El sábado voy de compras.",
+    "tags": [
+      "aktivitäten",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_004",
+    "de": "der Supermarkt",
+    "es": "el supermercado",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el supeɾmeɾˈkaðo",
+      "simplified": "el su-per-mer-KA-do",
+      "tip": "Fünf Silben, Betonung auf 'ka'"
+    },
+    "dialects": {
+      "es_castilla": "el supermercado",
+      "es_andalucia": "el supermercado",
+      "es_cataluna": "el supermercat",
+      "es_canarias": "el supermercado",
+      "lat_mx": "el súper",
+      "lat_ar": "el supermercado",
+      "lat_co": "el supermercado",
+      "lat_cl": "el supermercado",
+      "lat_pe": "el supermercado",
+      "lat_ve": "el supermercado",
+      "lat_cu": "el mercado",
+      "lat_do": "el supermercado"
+    },
+    "example_de": "Ich muss heute noch zum Supermarkt.",
+    "example_es": "Hoy todavía tengo que ir al supermercado.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_005",
+    "de": "am Morgen",
+    "es": "por la mañana",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "poɾ la maˈɲana",
+      "simplified": "por la ma-NYA-na",
+      "tip": "Das 'ñ' klingt wie 'ny', Betonung auf 'ña'"
+    },
+    "dialects": {
+      "es_castilla": "por la mañana",
+      "es_andalucia": "por la mañana",
+      "es_cataluna": "al matí",
+      "es_canarias": "por la mañana",
+      "lat_mx": "por la mañana",
+      "lat_ar": "por la mañana",
+      "lat_co": "en la mañana",
+      "lat_cl": "en la mañana",
+      "lat_pe": "por la mañana",
+      "lat_ve": "en la mañana",
+      "lat_cu": "por la mañana",
+      "lat_do": "en la mañana"
+    },
+    "example_de": "Morgens gehe ich laufen.",
+    "example_es": "Por la mañana salgo a correr.",
+    "tags": [
+      "tageszeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_006",
+    "de": "am Abend",
+    "es": "por la noche",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "poɾ la ˈnotʃe",
+      "simplified": "por la NO-tsche",
+      "tip": "Das 'ch' klingt wie im Deutschen 'tsch'"
+    },
+    "dialects": {
+      "es_castilla": "por la noche",
+      "es_andalucia": "por la noche",
+      "es_cataluna": "pel vespre",
+      "es_canarias": "por la noche",
+      "lat_mx": "por la noche",
+      "lat_ar": "a la noche",
+      "lat_co": "en la noche",
+      "lat_cl": "en la noche",
+      "lat_pe": "por la noche",
+      "lat_ve": "en la noche",
+      "lat_cu": "por la noche",
+      "lat_do": "en la noche"
+    },
+    "example_de": "Abends schauen wir oft einen Film.",
+    "example_es": "Por la noche solemos ver una película.",
+    "tags": [
+      "tageszeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_007",
+    "de": "schlafen",
+    "es": "dormir",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "doɾˈmiɾ",
+      "simplified": "dor-MIR",
+      "tip": "Betonung auf letzter Silbe, das 'r' am Ende leicht andeuten"
+    },
+    "dialects": {
+      "es_castilla": "dormir",
+      "es_andalucia": "dormir",
+      "es_cataluna": "dormir",
+      "es_canarias": "dormir",
+      "lat_mx": "dormir",
+      "lat_ar": "dormir",
+      "lat_co": "dormir",
+      "lat_cl": "dormir",
+      "lat_pe": "dormir",
+      "lat_ve": "dormir",
+      "lat_cu": "dormir",
+      "lat_do": "dormir"
+    },
+    "example_de": "Ich schlafe acht Stunden pro Nacht.",
+    "example_es": "Duermo ocho horas por noche.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_008",
+    "de": "aufwachen",
+    "es": "despertarse",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "despeɾˈtaɾse",
+      "simplified": "des-per-TAR-se",
+      "tip": "Reflexives Verb, Betonung auf 'tar'"
+    },
+    "dialects": {
+      "es_castilla": "despertarse",
+      "es_andalucia": "despertarse",
+      "es_cataluna": "despertar-se",
+      "es_canarias": "despertarse",
+      "lat_mx": "despertarse",
+      "lat_ar": "despertarse",
+      "lat_co": "despertarse",
+      "lat_cl": "despertarse",
+      "lat_pe": "despertarse",
+      "lat_ve": "despertarse",
+      "lat_cu": "despertarse",
+      "lat_do": "despertarse"
+    },
+    "example_de": "Ich wache um sieben Uhr auf.",
+    "example_es": "Me despierto a las siete.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_008b",
+    "de": "aufstehen",
+    "es": "levantarse",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "leβanˈtaɾse",
+      "simplified": "le-ban-TAR-se",
+      "tip": "Reflexives Verb, das 'v' wie weiches 'b', Betonung auf 'tar'"
+    },
+    "dialects": {
+      "es_castilla": "levantarse",
+      "es_andalucia": "levantarse",
+      "es_cataluna": "llevar-se",
+      "es_canarias": "levantarse",
+      "lat_mx": "levantarse",
+      "lat_ar": "levantarse",
+      "lat_co": "levantarse",
+      "lat_cl": "levantarse",
+      "lat_pe": "levantarse",
+      "lat_ve": "levantarse",
+      "lat_cu": "levantarse",
+      "lat_do": "levantarse"
+    },
+    "example_de": "Ich stehe um halb acht auf.",
+    "example_es": "Me levanto a las siete y media.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_009",
+    "de": "das Wetter",
+    "es": "el tiempo",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈtjempo",
+      "simplified": "el TJEM-po",
+      "tip": "Das 'ie' als Diphthong 'je' sprechen"
+    },
+    "dialects": {
+      "es_castilla": "el tiempo",
+      "es_andalucia": "el tiempo",
+      "es_cataluna": "el temps",
+      "es_canarias": "el tiempo",
+      "lat_mx": "el tiempo",
+      "lat_ar": "el tiempo",
+      "lat_co": "el clima",
+      "lat_cl": "el tiempo",
+      "lat_pe": "el tiempo",
+      "lat_ve": "el tiempo",
+      "lat_cu": "el tiempo",
+      "lat_do": "el tiempo"
+    },
+    "example_de": "Wie ist das Wetter heute?",
+    "example_es": "¿Cómo está el tiempo hoy?",
+    "tags": [
+      "wetter",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_010",
+    "de": "es regnet",
+    "es": "está lloviendo",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "esˈta ʎoˈβjendo",
+      "simplified": "es-TA jjo-BJEN-do",
+      "tip": "Das 'll' klingt wie ein weiches 'j', Betonung auf 'bjendo'"
+    },
+    "dialects": {
+      "es_castilla": "está lloviendo",
+      "es_andalucia": "está lloviendo",
+      "es_cataluna": "està plovent",
+      "es_canarias": "está lloviendo",
+      "lat_mx": "está lloviendo",
+      "lat_ar": "está lloviendo",
+      "lat_co": "está lloviendo",
+      "lat_cl": "está lloviendo",
+      "lat_pe": "está lloviendo",
+      "lat_ve": "está lloviendo",
+      "lat_cu": "está lloviendo",
+      "lat_do": "está lloviendo"
+    },
+    "example_de": "Es regnet heute den ganzen Tag.",
+    "example_es": "Está lloviendo todo el día.",
+    "tags": [
+      "wetter",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_011",
+    "de": "die Straße",
+    "es": "la calle",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈkaʎe",
+      "simplified": "la KA-lje",
+      "tip": "'ll' = 'lj' in Spanien, 'j' in Lateinamerika (Rioplatense: 'sh')"
+    },
+    "dialects": {
+      "es_castilla": "la calle",
+      "es_andalucia": "la calle",
+      "es_cataluna": "el carrer",
+      "es_canarias": "la calle",
+      "lat_mx": "la calle",
+      "lat_ar": "la calle",
+      "lat_co": "la calle",
+      "lat_cl": "la calle",
+      "lat_pe": "la calle",
+      "lat_ve": "la calle",
+      "lat_cu": "la calle",
+      "lat_do": "la calle"
+    },
+    "example_de": "Diese Straße ist sehr belebt.",
+    "example_es": "Esta calle está muy animada.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_012",
+    "de": "das Handy",
+    "es": "el móvil",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈmoβil",
+      "simplified": "el MO-bil",
+      "tip": "Das 'v' wie weiches 'b', Betonung auf 'mo'"
+    },
+    "dialects": {
+      "es_castilla": "el móvil",
+      "es_andalucia": "el móvil",
+      "es_cataluna": "el mòbil",
+      "es_canarias": "el móvil",
+      "lat_mx": "el celular",
+      "lat_ar": "el celular",
+      "lat_co": "el celular",
+      "lat_cl": "el celular",
+      "lat_pe": "el celular",
+      "lat_ve": "el celular",
+      "lat_cu": "el celular",
+      "lat_do": "el celular"
+    },
+    "example_de": "Ich habe mein Handy vergessen.",
+    "example_es": "Me olvidé el móvil.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_012b",
+    "de": "das Telefon",
+    "es": "el teléfono",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el teˈlefono",
+      "simplified": "el te-LE-fo-no",
+      "tip": "Vier Silben, Betonung auf 'le'"
+    },
+    "dialects": {
+      "es_castilla": "el teléfono",
+      "es_andalucia": "el teléfono",
+      "es_cataluna": "el telèfon",
+      "es_canarias": "el teléfono",
+      "lat_mx": "el teléfono",
+      "lat_ar": "el teléfono",
+      "lat_co": "el teléfono",
+      "lat_cl": "el teléfono",
+      "lat_pe": "el teléfono",
+      "lat_ve": "el teléfono",
+      "lat_cu": "el teléfono",
+      "lat_do": "el teléfono"
+    },
+    "example_de": "Das Telefon klingelt.",
+    "example_es": "Suena el teléfono.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_013",
+    "de": "der Bus",
+    "es": "el autobús",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el autoˈbus",
+      "simplified": "el au-to-BUS",
+      "tip": "Betonung auf der letzten Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el autobús",
+      "es_andalucia": "el autobús",
+      "es_cataluna": "el bus",
+      "es_canarias": "la guagua",
+      "lat_mx": "el camión",
+      "lat_ar": "el colectivo",
+      "lat_co": "el bus",
+      "lat_cl": "la micro",
+      "lat_pe": "el bus",
+      "lat_ve": "el autobús",
+      "lat_cu": "la guagua",
+      "lat_do": "la guagua"
+    },
+    "example_de": "Ich nehme den Bus zur Arbeit.",
+    "example_es": "Tomo el autobús al trabajo.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_014",
+    "de": "die Arbeit",
+    "es": "el trabajo",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el tɾaˈβaxo",
+      "simplified": "el tra-BA-cho",
+      "tip": "Das 'j' klingt wie ein Rachen-'ch', das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el trabajo",
+      "es_andalucia": "el trabajo",
+      "es_cataluna": "el treball",
+      "es_canarias": "el trabajo",
+      "lat_mx": "el trabajo",
+      "lat_ar": "el trabajo",
+      "lat_co": "el trabajo",
+      "lat_cl": "el trabajo",
+      "lat_pe": "el trabajo",
+      "lat_ve": "el trabajo",
+      "lat_cu": "el trabajo",
+      "lat_do": "el trabajo"
+    },
+    "example_de": "Ich gehe zur Arbeit.",
+    "example_es": "Voy al trabajo.",
+    "tags": [
+      "alltag",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_015",
+    "de": "die E-Mail",
+    "es": "el correo",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el koˈreo",
+      "simplified": "el ko-RE-o",
+      "tip": "Drei Silben, Betonung auf 're', doppeltes 'r' gerollt"
+    },
+    "dialects": {
+      "es_castilla": "el correo",
+      "es_andalucia": "el correo",
+      "es_cataluna": "el correu",
+      "es_canarias": "el correo",
+      "lat_mx": "el correo",
+      "lat_ar": "el correo",
+      "lat_co": "el correo",
+      "lat_cl": "el correo",
+      "lat_pe": "el correo",
+      "lat_ve": "el correo",
+      "lat_cu": "el correo",
+      "lat_do": "el correo"
+    },
+    "example_de": "Hast du meine E-Mail bekommen?",
+    "example_es": "¿Has recibido mi correo?",
+    "tags": [
+      "kommunikation",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_016",
+    "de": "die Uhrzeit",
+    "es": "la hora",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈoɾa",
+      "simplified": "la O-ra",
+      "tip": "Das 'h' ist stumm, das 'r' leicht rollen"
+    },
+    "dialects": {
+      "es_castilla": "la hora",
+      "es_andalucia": "la hora",
+      "es_cataluna": "l'hora",
+      "es_canarias": "la hora",
+      "lat_mx": "la hora",
+      "lat_ar": "la hora",
+      "lat_co": "la hora",
+      "lat_cl": "la hora",
+      "lat_pe": "la hora",
+      "lat_ve": "la hora",
+      "lat_cu": "la hora",
+      "lat_do": "la hora"
+    },
+    "example_de": "Wie viel Uhr ist es?",
+    "example_es": "¿Qué hora es?",
+    "tags": [
+      "zeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_017",
+    "de": "heute",
+    "es": "hoy",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "oi",
+      "simplified": "oi",
+      "tip": "Sehr kurz, das 'h' ist stumm"
+    },
+    "dialects": {
+      "es_castilla": "hoy",
+      "es_andalucia": "hoy",
+      "es_cataluna": "avui",
+      "es_canarias": "hoy",
+      "lat_mx": "hoy",
+      "lat_ar": "hoy",
+      "lat_co": "hoy",
+      "lat_cl": "hoy",
+      "lat_pe": "hoy",
+      "lat_ve": "hoy",
+      "lat_cu": "hoy",
+      "lat_do": "hoy"
+    },
+    "example_de": "Heute habe ich viel zu tun.",
+    "example_es": "Hoy tengo mucho que hacer.",
+    "tags": [
+      "zeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_018",
+    "de": "morgen (nächster Tag)",
+    "es": "mañana",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "maˈɲana",
+      "simplified": "ma-NYA-na",
+      "tip": "Das 'ñ' klingt wie 'ny', Betonung auf 'ña'. Bedeutet auch 'Morgen'"
+    },
+    "dialects": {
+      "es_castilla": "mañana",
+      "es_andalucia": "mañana",
+      "es_cataluna": "demà",
+      "es_canarias": "mañana",
+      "lat_mx": "mañana",
+      "lat_ar": "mañana",
+      "lat_co": "mañana",
+      "lat_cl": "mañana",
+      "lat_pe": "mañana",
+      "lat_ve": "mañana",
+      "lat_cu": "mañana",
+      "lat_do": "mañana"
+    },
+    "example_de": "Morgen fahre ich nach Madrid.",
+    "example_es": "Mañana viajo a Madrid.",
+    "tags": [
+      "zeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_019",
+    "de": "das Geld",
+    "es": "el dinero",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el diˈneɾo",
+      "simplified": "el di-NE-ro",
+      "tip": "Drei Silben, Betonung auf 'ne', das 'r' leicht rollen"
+    },
+    "dialects": {
+      "es_castilla": "el dinero",
+      "es_andalucia": "el dinero",
+      "es_cataluna": "els diners",
+      "es_canarias": "el dinero",
+      "lat_mx": "el dinero",
+      "lat_ar": "el dinero",
+      "lat_co": "la plata",
+      "lat_cl": "la plata",
+      "lat_pe": "el dinero",
+      "lat_ve": "el dinero",
+      "lat_cu": "el dinero",
+      "lat_do": "el dinero"
+    },
+    "example_de": "Ich habe kein Geld mehr.",
+    "example_es": "Ya no me queda dinero.",
+    "tags": [
+      "finanzen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_020",
+    "de": "zahlen",
+    "es": "pagar",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "paˈɣaɾ",
+      "simplified": "pa-GAR",
+      "tip": "Das 'g' sehr weich zwischen Vokalen, Betonung auf 'gar'"
+    },
+    "dialects": {
+      "es_castilla": "pagar",
+      "es_andalucia": "pagar",
+      "es_cataluna": "pagar",
+      "es_canarias": "pagar",
+      "lat_mx": "pagar",
+      "lat_ar": "pagar",
+      "lat_co": "pagar",
+      "lat_cl": "pagar",
+      "lat_pe": "pagar",
+      "lat_ve": "pagar",
+      "lat_cu": "pagar",
+      "lat_do": "pagar"
+    },
+    "example_de": "Wie möchten Sie zahlen?",
+    "example_es": "¿Cómo desea pagar?",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_021",
+    "de": "sprechen",
+    "es": "hablar",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "aˈβlaɾ",
+      "simplified": "a-BLAR",
+      "tip": "Das 'h' ist stumm, das 'b' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "hablar",
+      "es_andalucia": "hablar",
+      "es_cataluna": "parlar",
+      "es_canarias": "hablar",
+      "lat_mx": "hablar",
+      "lat_ar": "hablar",
+      "lat_co": "hablar",
+      "lat_cl": "hablar",
+      "lat_pe": "hablar",
+      "lat_ve": "hablar",
+      "lat_cu": "hablar",
+      "lat_do": "hablar"
+    },
+    "example_de": "Ich spreche etwas Spanisch.",
+    "example_es": "Hablo un poco de español.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_022",
+    "de": "verstehen",
+    "es": "entender",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "entenˈdeɾ",
+      "simplified": "en-ten-DER",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "entender",
+      "es_andalucia": "entender",
+      "es_cataluna": "entendre",
+      "es_canarias": "entender",
+      "lat_mx": "entender",
+      "lat_ar": "entender",
+      "lat_co": "entender",
+      "lat_cl": "entender",
+      "lat_pe": "entender",
+      "lat_ve": "entender",
+      "lat_cu": "entender",
+      "lat_do": "entender"
+    },
+    "example_de": "Ich verstehe das nicht.",
+    "example_es": "No entiendo eso.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_023",
+    "de": "helfen",
+    "es": "ayudar",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aʝuˈðaɾ",
+      "simplified": "a-ju-DAR",
+      "tip": "Das 'y' klingt wie weiches 'j', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "ayudar",
+      "es_andalucia": "ayudar",
+      "es_cataluna": "ajudar",
+      "es_canarias": "ayudar",
+      "lat_mx": "ayudar",
+      "lat_ar": "ayudar",
+      "lat_co": "ayudar",
+      "lat_cl": "ayudar",
+      "lat_pe": "ayudar",
+      "lat_ve": "ayudar",
+      "lat_cu": "ayudar",
+      "lat_do": "ayudar"
+    },
+    "example_de": "Kannst du mir helfen?",
+    "example_es": "¿Puedes ayudarme?",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_024",
+    "de": "brauchen",
+    "es": "necesitar",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "neθesiˈtaɾ",
+      "simplified": "ne-ze-si-TAR",
+      "tip": "In Lateinamerika alle 's'-Laute, in Spanien 'ne-the-si-TAR'"
+    },
+    "dialects": {
+      "es_castilla": "necesitar",
+      "es_andalucia": "necesitar",
+      "es_cataluna": "necessitar",
+      "es_canarias": "necesitar",
+      "lat_mx": "necesitar",
+      "lat_ar": "necesitar",
+      "lat_co": "necesitar",
+      "lat_cl": "necesitar",
+      "lat_pe": "necesitar",
+      "lat_ve": "necesitar",
+      "lat_cu": "necesitar",
+      "lat_do": "necesitar"
+    },
+    "example_de": "Ich brauche Hilfe.",
+    "example_es": "Necesito ayuda.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_025",
+    "de": "suchen",
+    "es": "buscar",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "busˈkaɾ",
+      "simplified": "bus-KAR",
+      "tip": "Das 'sc' klingt einfach wie 'sk'"
+    },
+    "dialects": {
+      "es_castilla": "buscar",
+      "es_andalucia": "buscar",
+      "es_cataluna": "buscar",
+      "es_canarias": "buscar",
+      "lat_mx": "buscar",
+      "lat_ar": "buscar",
+      "lat_co": "buscar",
+      "lat_cl": "buscar",
+      "lat_pe": "buscar",
+      "lat_ve": "buscar",
+      "lat_cu": "buscar",
+      "lat_do": "buscar"
+    },
+    "example_de": "Ich suche meinen Schlüssel.",
+    "example_es": "Estoy buscando mis llaves.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_026",
+    "de": "glücklich",
+    "es": "feliz",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "feˈliθ",
+      "simplified": "fe-LIS",
+      "tip": "In Lateinamerika 'fe-LIS', in Spanien 'fe-LITH'"
+    },
+    "dialects": {
+      "es_castilla": "feliz",
+      "es_andalucia": "feliz",
+      "es_cataluna": "feliç",
+      "es_canarias": "feliz",
+      "lat_mx": "feliz",
+      "lat_ar": "feliz",
+      "lat_co": "feliz",
+      "lat_cl": "feliz",
+      "lat_pe": "feliz",
+      "lat_ve": "feliz",
+      "lat_cu": "feliz",
+      "lat_do": "feliz"
+    },
+    "example_de": "Ich bin sehr glücklich hier.",
+    "example_es": "Estoy muy feliz aquí.",
+    "tags": [
+      "gefühle",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_026b",
+    "de": "froh",
+    "es": "contento",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "konˈtento",
+      "simplified": "kon-TEN-to",
+      "tip": "Drei Silben, Betonung auf 'ten'"
+    },
+    "dialects": {
+      "es_castilla": "contento",
+      "es_andalucia": "contento",
+      "es_cataluna": "content",
+      "es_canarias": "contento",
+      "lat_mx": "contento",
+      "lat_ar": "contento",
+      "lat_co": "contento",
+      "lat_cl": "contento",
+      "lat_pe": "contento",
+      "lat_ve": "contento",
+      "lat_cu": "contento",
+      "lat_do": "contento"
+    },
+    "example_de": "Ich bin froh, dass du da bist.",
+    "example_es": "Estoy contento de que estés aquí.",
+    "tags": [
+      "gefühle",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_027",
+    "de": "müde",
+    "es": "cansado",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "kanˈsaðo",
+      "simplified": "kan-SA-do",
+      "tip": "Das 'd' sehr weich am Ende"
+    },
+    "dialects": {
+      "es_castilla": "cansado",
+      "es_andalucia": "cansado",
+      "es_cataluna": "cansat",
+      "es_canarias": "cansado",
+      "lat_mx": "cansado",
+      "lat_ar": "cansado",
+      "lat_co": "cansado",
+      "lat_cl": "cansado",
+      "lat_pe": "cansado",
+      "lat_ve": "cansado",
+      "lat_cu": "cansado",
+      "lat_do": "cansado"
+    },
+    "example_de": "Ich bin heute sehr müde.",
+    "example_es": "Hoy estoy muy cansado.",
+    "tags": [
+      "gefühle",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_028",
+    "de": "der Arzt",
+    "es": "el médico",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈmeðiko",
+      "simplified": "el ME-di-ko",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el médico",
+      "es_andalucia": "el médico",
+      "es_cataluna": "el metge",
+      "es_canarias": "el médico",
+      "lat_mx": "el médico",
+      "lat_ar": "el médico",
+      "lat_co": "el médico",
+      "lat_cl": "el médico",
+      "lat_pe": "el médico",
+      "lat_ve": "el médico",
+      "lat_cu": "el médico",
+      "lat_do": "el médico"
+    },
+    "example_de": "Ich muss zum Arzt.",
+    "example_es": "Tengo que ir al médico.",
+    "tags": [
+      "personen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_029",
+    "de": "die Schule",
+    "es": "la escuela",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la esˈkwela",
+      "simplified": "la es-KWE-la",
+      "tip": "Das 'ue' als Diphthong 'we', Betonung auf 'kwe'"
+    },
+    "dialects": {
+      "es_castilla": "la escuela",
+      "es_andalucia": "el colegio",
+      "es_cataluna": "l'escola",
+      "es_canarias": "la escuela",
+      "lat_mx": "la escuela",
+      "lat_ar": "la escuela",
+      "lat_co": "el colegio",
+      "lat_cl": "el colegio",
+      "lat_pe": "el colegio",
+      "lat_ve": "la escuela",
+      "lat_cu": "la escuela",
+      "lat_do": "la escuela"
+    },
+    "example_de": "Die Kinder gehen in die Schule.",
+    "example_es": "Los niños van a la escuela.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_030",
+    "de": "das Zimmer",
+    "es": "la habitación",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la aβitaˈθjon",
+      "simplified": "la a-bi-ta-SJON",
+      "tip": "In Lateinamerika ohne 'th'-Laut, vier Silben, Betonung auf 'ción'"
+    },
+    "dialects": {
+      "es_castilla": "la habitación",
+      "es_andalucia": "la habitación",
+      "es_cataluna": "l'habitació",
+      "es_canarias": "la habitación",
+      "lat_mx": "la habitación",
+      "lat_ar": "la habitación",
+      "lat_co": "la habitación",
+      "lat_cl": "la habitación",
+      "lat_pe": "la habitación",
+      "lat_ve": "la habitación",
+      "lat_cu": "la habitación",
+      "lat_do": "el cuarto"
+    },
+    "example_de": "Mein Zimmer ist sehr klein.",
+    "example_es": "Mi habitación es muy pequeña.",
+    "tags": [
+      "wohnen",
+      "A2"
+    ]
+  },
+  {
+    "id": "all_031",
+    "de": "spazieren gehen",
+    "es": "dar un paseo",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "daɾ un paˈseo",
+      "simplified": "dar un pa-SE-o",
+      "tip": "Drei Wörter, Betonung auf 'se'"
+    },
+    "dialects": {
+      "es_castilla": "dar un paseo",
+      "es_andalucia": "pasear",
+      "es_cataluna": "passejar",
+      "es_canarias": "dar un paseo",
+      "lat_mx": "dar una vuelta",
+      "lat_ar": "dar una vuelta",
+      "lat_co": "salir a caminar",
+      "lat_cl": "dar una vuelta",
+      "lat_pe": "dar un paseo",
+      "lat_ve": "dar un paseo",
+      "lat_cu": "dar un paseo",
+      "lat_do": "caminar"
+    },
+    "example_de": "Wir gehen abends spazieren.",
+    "example_es": "Por las noches damos un paseo.",
+    "tags": [
+      "aktivitäten",
+      "A2"
+    ]
+  },
+  {
+    "id": "all_032",
+    "de": "lesen",
+    "es": "leer",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "leˈeɾ",
+      "simplified": "le-ER",
+      "tip": "Zwei Silben, beide 'e' deutlich getrennt aussprechen"
+    },
+    "dialects": {
+      "es_castilla": "leer",
+      "es_andalucia": "leer",
+      "es_cataluna": "llegir",
+      "es_canarias": "leer",
+      "lat_mx": "leer",
+      "lat_ar": "leer",
+      "lat_co": "leer",
+      "lat_cl": "leer",
+      "lat_pe": "leer",
+      "lat_ve": "leer",
+      "lat_cu": "leer",
+      "lat_do": "leer"
+    },
+    "example_de": "Ich lese gerne Bücher.",
+    "example_es": "Me gusta leer libros.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_033",
+    "de": "frühstücken",
+    "es": "desayunar",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "desaʝuˈnaɾ",
+      "simplified": "de-sa-ju-NAR",
+      "tip": "Vier Silben, Betonung auf 'nar'"
+    },
+    "dialects": {
+      "es_castilla": "desayunar",
+      "es_andalucia": "desayunar",
+      "es_cataluna": "esmorzar",
+      "es_canarias": "desayunar",
+      "lat_mx": "desayunar",
+      "lat_ar": "desayunar",
+      "lat_co": "desayunar",
+      "lat_cl": "desayunar",
+      "lat_pe": "desayunar",
+      "lat_ve": "desayunar",
+      "lat_cu": "desayunar",
+      "lat_do": "desayunar"
+    },
+    "example_de": "Ich frühstücke jeden Morgen um acht Uhr.",
+    "example_es": "Desayuno cada mañana a las ocho.",
+    "tags": [
+      "essen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_034",
+    "de": "zu Mittag essen",
+    "es": "almorzar",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "almoɾˈθaɾ",
+      "simplified": "al-mor-SAR",
+      "tip": "In Spanien 'al-mor-THAR', in Lateinamerika mit 's'"
+    },
+    "dialects": {
+      "es_castilla": "almorzar",
+      "es_andalucia": "almorzar",
+      "es_cataluna": "dinar",
+      "es_canarias": "almorzar",
+      "lat_mx": "comer",
+      "lat_ar": "almorzar",
+      "lat_co": "almorzar",
+      "lat_cl": "almorzar",
+      "lat_pe": "almorzar",
+      "lat_ve": "almorzar",
+      "lat_cu": "almorzar",
+      "lat_do": "almorzar"
+    },
+    "example_de": "Wir essen um zwei Uhr zu Mittag.",
+    "example_es": "Almorzamos a las dos.",
+    "tags": [
+      "essen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_035",
+    "de": "zu Abend essen",
+    "es": "cenar",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "θeˈnaɾ",
+      "simplified": "se-NAR",
+      "tip": "In Spanien 'the-NAR', in Lateinamerika 'se-NAR'"
+    },
+    "dialects": {
+      "es_castilla": "cenar",
+      "es_andalucia": "cenar",
+      "es_cataluna": "sopar",
+      "es_canarias": "cenar",
+      "lat_mx": "cenar",
+      "lat_ar": "cenar",
+      "lat_co": "cenar",
+      "lat_cl": "cenar",
+      "lat_pe": "cenar",
+      "lat_ve": "cenar",
+      "lat_cu": "cenar",
+      "lat_do": "cenar"
+    },
+    "example_de": "Wir essen heute spät zu Abend.",
+    "example_es": "Hoy cenamos tarde.",
+    "tags": [
+      "essen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_036",
+    "de": "kochen",
+    "es": "cocinar",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "koθiˈnaɾ",
+      "simplified": "ko-si-NAR",
+      "tip": "In Spanien 'ko-thi-NAR', in Lateinamerika 'ko-si-NAR'"
+    },
+    "dialects": {
+      "es_castilla": "cocinar",
+      "es_andalucia": "cocinar",
+      "es_cataluna": "cuinar",
+      "es_canarias": "cocinar",
+      "lat_mx": "cocinar",
+      "lat_ar": "cocinar",
+      "lat_co": "cocinar",
+      "lat_cl": "cocinar",
+      "lat_pe": "cocinar",
+      "lat_ve": "cocinar",
+      "lat_cu": "cocinar",
+      "lat_do": "cocinar"
+    },
+    "example_de": "Ich koche gerne für die Familie.",
+    "example_es": "Me gusta cocinar para la familia.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_037",
+    "de": "putzen",
+    "es": "limpiar",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "limˈpjaɾ",
+      "simplified": "lim-PJAR",
+      "tip": "Das 'pi' schnell als 'pj' sprechen, Betonung auf 'piar'"
+    },
+    "dialects": {
+      "es_castilla": "limpiar",
+      "es_andalucia": "limpiar",
+      "es_cataluna": "netejar",
+      "es_canarias": "limpiar",
+      "lat_mx": "limpiar",
+      "lat_ar": "limpiar",
+      "lat_co": "limpiar",
+      "lat_cl": "limpiar",
+      "lat_pe": "limpiar",
+      "lat_ve": "limpiar",
+      "lat_cu": "limpiar",
+      "lat_do": "limpiar"
+    },
+    "example_de": "Ich putze am Samstag die Wohnung.",
+    "example_es": "Los sábados limpio el apartamento.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_038",
+    "de": "das Badezimmer",
+    "es": "el baño",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈbaɲo",
+      "simplified": "el BA-njo",
+      "tip": "Das 'ñ' klingt wie 'nj', kurz und klar"
+    },
+    "dialects": {
+      "es_castilla": "el baño",
+      "es_andalucia": "el baño",
+      "es_cataluna": "el bany",
+      "es_canarias": "el baño",
+      "lat_mx": "el baño",
+      "lat_ar": "el baño",
+      "lat_co": "el baño",
+      "lat_cl": "el baño",
+      "lat_pe": "el baño",
+      "lat_ve": "el baño",
+      "lat_cu": "el baño",
+      "lat_do": "el baño"
+    },
+    "example_de": "Das Badezimmer ist links.",
+    "example_es": "El baño está a la izquierda.",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_039",
+    "de": "die Küche",
+    "es": "la cocina",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la koˈθina",
+      "simplified": "la ko-SI-na",
+      "tip": "In Spanien 'ko-THI-na', in Lateinamerika 'ko-SI-na'"
+    },
+    "dialects": {
+      "es_castilla": "la cocina",
+      "es_andalucia": "la cocina",
+      "es_cataluna": "la cuina",
+      "es_canarias": "la cocina",
+      "lat_mx": "la cocina",
+      "lat_ar": "la cocina",
+      "lat_co": "la cocina",
+      "lat_cl": "la cocina",
+      "lat_pe": "la cocina",
+      "lat_ve": "la cocina",
+      "lat_cu": "la cocina",
+      "lat_do": "la cocina"
+    },
+    "example_de": "Die Küche ist sehr groß.",
+    "example_es": "La cocina es muy grande.",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_040",
+    "de": "das Wohnzimmer",
+    "es": "el salón",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el saˈlon",
+      "simplified": "el sa-LON",
+      "tip": "Zwei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el salón",
+      "es_andalucia": "el salón",
+      "es_cataluna": "el saló",
+      "es_canarias": "el salón",
+      "lat_mx": "la sala",
+      "lat_ar": "el living",
+      "lat_co": "la sala",
+      "lat_cl": "el living",
+      "lat_pe": "la sala",
+      "lat_ve": "la sala",
+      "lat_cu": "la sala",
+      "lat_do": "la sala"
+    },
+    "example_de": "Wir sitzen im Wohnzimmer.",
+    "example_es": "Estamos sentados en el salón.",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_041",
+    "de": "der Schlüssel",
+    "es": "la llave",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈʎaβe",
+      "simplified": "la JA-be",
+      "tip": "Das 'll' wie weiches 'j', das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "la llave",
+      "es_andalucia": "la llave",
+      "es_cataluna": "la clau",
+      "es_canarias": "la llave",
+      "lat_mx": "la llave",
+      "lat_ar": "la llave",
+      "lat_co": "la llave",
+      "lat_cl": "la llave",
+      "lat_pe": "la llave",
+      "lat_ve": "la llave",
+      "lat_cu": "la llave",
+      "lat_do": "la llave"
+    },
+    "example_de": "Ich habe meinen Schlüssel vergessen.",
+    "example_es": "He olvidado la llave.",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_042",
+    "de": "die Tür",
+    "es": "la puerta",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈpweɾta",
+      "simplified": "la PWER-ta",
+      "tip": "Das 'ue' als Diphthong 'we', Betonung auf 'pwer'"
+    },
+    "dialects": {
+      "es_castilla": "la puerta",
+      "es_andalucia": "la puerta",
+      "es_cataluna": "la porta",
+      "es_canarias": "la puerta",
+      "lat_mx": "la puerta",
+      "lat_ar": "la puerta",
+      "lat_co": "la puerta",
+      "lat_cl": "la puerta",
+      "lat_pe": "la puerta",
+      "lat_ve": "la puerta",
+      "lat_cu": "la puerta",
+      "lat_do": "la puerta"
+    },
+    "example_de": "Bitte schließ die Tür.",
+    "example_es": "Por favor, cierra la puerta.",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_043",
+    "de": "das Fenster",
+    "es": "la ventana",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la βenˈtana",
+      "simplified": "la ben-TA-na",
+      "tip": "Das 'v' wie weiches 'b', Betonung auf 'ta'"
+    },
+    "dialects": {
+      "es_castilla": "la ventana",
+      "es_andalucia": "la ventana",
+      "es_cataluna": "la finestra",
+      "es_canarias": "la ventana",
+      "lat_mx": "la ventana",
+      "lat_ar": "la ventana",
+      "lat_co": "la ventana",
+      "lat_cl": "la ventana",
+      "lat_pe": "la ventana",
+      "lat_ve": "la ventana",
+      "lat_cu": "la ventana",
+      "lat_do": "la ventana"
+    },
+    "example_de": "Kannst du das Fenster öffnen?",
+    "example_es": "¿Puedes abrir la ventana?",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_044",
+    "de": "der Kühlschrank",
+    "es": "el frigorífico",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el fɾiɣoˈɾifiko",
+      "simplified": "el fri-go-RI-fi-ko",
+      "tip": "In Lateinamerika meist 'el refrigerador' oder 'la nevera'"
+    },
+    "dialects": {
+      "es_castilla": "el frigorífico",
+      "es_andalucia": "el frigorífico",
+      "es_cataluna": "la nevera",
+      "es_canarias": "la nevera",
+      "lat_mx": "el refrigerador",
+      "lat_ar": "la heladera",
+      "lat_co": "la nevera",
+      "lat_cl": "el refrigerador",
+      "lat_pe": "el refrigerador",
+      "lat_ve": "la nevera",
+      "lat_cu": "el refrigerador",
+      "lat_do": "la nevera"
+    },
+    "example_de": "Das Bier ist im Kühlschrank.",
+    "example_es": "La cerveza está en el frigorífico.",
+    "tags": [
+      "wohnen",
+      "A2"
+    ]
+  },
+  {
+    "id": "all_045",
+    "de": "der Wecker",
+    "es": "el despertador",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el despeɾtaˈðoɾ",
+      "simplified": "el des-per-ta-DOR",
+      "tip": "Vier Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el despertador",
+      "es_andalucia": "el despertador",
+      "es_cataluna": "el despertador",
+      "es_canarias": "el despertador",
+      "lat_mx": "el despertador",
+      "lat_ar": "el despertador",
+      "lat_co": "el despertador",
+      "lat_cl": "el despertador",
+      "lat_pe": "el despertador",
+      "lat_ve": "el despertador",
+      "lat_cu": "el despertador",
+      "lat_do": "el despertador"
+    },
+    "example_de": "Ich stelle den Wecker auf sieben Uhr.",
+    "example_es": "Pongo el despertador a las siete.",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_046",
+    "de": "duschen",
+    "es": "ducharse",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "duˈtʃaɾse",
+      "simplified": "du-TSCHAR-se",
+      "tip": "Reflexives Verb, 'ch' wie deutsches 'tsch'"
+    },
+    "dialects": {
+      "es_castilla": "ducharse",
+      "es_andalucia": "ducharse",
+      "es_cataluna": "dutxar-se",
+      "es_canarias": "ducharse",
+      "lat_mx": "bañarse",
+      "lat_ar": "ducharse",
+      "lat_co": "ducharse",
+      "lat_cl": "ducharse",
+      "lat_pe": "ducharse",
+      "lat_ve": "ducharse",
+      "lat_cu": "bañarse",
+      "lat_do": "bañarse"
+    },
+    "example_de": "Ich dusche jeden Morgen.",
+    "example_es": "Me ducho cada mañana.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_047",
+    "de": "sich anziehen",
+    "es": "vestirse",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "besˈtiɾse",
+      "simplified": "bes-TIR-se",
+      "tip": "Reflexives Verb, das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "vestirse",
+      "es_andalucia": "vestirse",
+      "es_cataluna": "vestir-se",
+      "es_canarias": "vestirse",
+      "lat_mx": "vestirse",
+      "lat_ar": "vestirse",
+      "lat_co": "vestirse",
+      "lat_cl": "vestirse",
+      "lat_pe": "vestirse",
+      "lat_ve": "vestirse",
+      "lat_cu": "vestirse",
+      "lat_do": "vestirse"
+    },
+    "example_de": "Die Kinder ziehen sich alleine an.",
+    "example_es": "Los niños se visten solos.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_048",
+    "de": "ausgehen",
+    "es": "salir",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "saˈliɾ",
+      "simplified": "sa-LIR",
+      "tip": "Zwei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "salir",
+      "es_andalucia": "salir",
+      "es_cataluna": "sortir",
+      "es_canarias": "salir",
+      "lat_mx": "salir",
+      "lat_ar": "salir",
+      "lat_co": "salir",
+      "lat_cl": "salir",
+      "lat_pe": "salir",
+      "lat_ve": "salir",
+      "lat_cu": "salir",
+      "lat_do": "salir"
+    },
+    "example_de": "Wir gehen heute Abend aus.",
+    "example_es": "Esta noche salimos.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_049",
+    "de": "nach Hause kommen",
+    "es": "volver a casa",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "bolˈβeɾ a ˈkasa",
+      "simplified": "bol-BER a KA-sa",
+      "tip": "Das 'v' wie weiches 'b' am Anfang"
+    },
+    "dialects": {
+      "es_castilla": "volver a casa",
+      "es_andalucia": "volver a casa",
+      "es_cataluna": "tornar a casa",
+      "es_canarias": "volver a casa",
+      "lat_mx": "regresar a casa",
+      "lat_ar": "volver a casa",
+      "lat_co": "llegar a casa",
+      "lat_cl": "llegar a casa",
+      "lat_pe": "regresar a casa",
+      "lat_ve": "volver a casa",
+      "lat_cu": "llegar a casa",
+      "lat_do": "llegar a casa"
+    },
+    "example_de": "Ich komme um sechs Uhr nach Hause.",
+    "example_es": "Vuelvo a casa a las seis.",
+    "tags": [
+      "aktivitäten",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_050",
+    "de": "der Nachbar",
+    "es": "el vecino",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el βeˈθino",
+      "simplified": "el be-SI-no",
+      "tip": "In Spanien 'be-THI-no', in Lateinamerika 'be-SI-no'"
+    },
+    "dialects": {
+      "es_castilla": "el vecino",
+      "es_andalucia": "el vecino",
+      "es_cataluna": "el veí",
+      "es_canarias": "el vecino",
+      "lat_mx": "el vecino",
+      "lat_ar": "el vecino",
+      "lat_co": "el vecino",
+      "lat_cl": "el vecino",
+      "lat_pe": "el vecino",
+      "lat_ve": "el vecino",
+      "lat_cu": "el vecino",
+      "lat_do": "el vecino"
+    },
+    "example_de": "Mein Nachbar ist sehr nett.",
+    "example_es": "Mi vecino es muy simpático.",
+    "tags": [
+      "personen",
+      "A2"
+    ]
+  },
+  {
+    "id": "all_051",
+    "de": "der Aufzug",
+    "es": "el ascensor",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el asθenˈsoɾ",
+      "simplified": "el as-sen-SOR",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el ascensor",
+      "es_andalucia": "el ascensor",
+      "es_cataluna": "l'ascensor",
+      "es_canarias": "el ascensor",
+      "lat_mx": "el elevador",
+      "lat_ar": "el ascensor",
+      "lat_co": "el ascensor",
+      "lat_cl": "el ascensor",
+      "lat_pe": "el ascensor",
+      "lat_ve": "el ascensor",
+      "lat_cu": "el ascensor",
+      "lat_do": "el ascensor"
+    },
+    "example_de": "Der Aufzug ist außer Betrieb.",
+    "example_es": "El ascensor está averiado.",
+    "tags": [
+      "wohnen",
+      "A2"
+    ]
+  },
+  {
+    "id": "all_052",
+    "de": "die Treppe",
+    "es": "la escalera",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la eskaˈleɾa",
+      "simplified": "la es-ka-LE-ra",
+      "tip": "Vier Silben, Betonung auf 'le'"
+    },
+    "dialects": {
+      "es_castilla": "la escalera",
+      "es_andalucia": "la escalera",
+      "es_cataluna": "l'escala",
+      "es_canarias": "la escalera",
+      "lat_mx": "la escalera",
+      "lat_ar": "la escalera",
+      "lat_co": "la escalera",
+      "lat_cl": "la escalera",
+      "lat_pe": "la escalera",
+      "lat_ve": "la escalera",
+      "lat_cu": "la escalera",
+      "lat_do": "la escalera"
+    },
+    "example_de": "Ich nehme lieber die Treppe.",
+    "example_es": "Prefiero usar la escalera.",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_053",
+    "de": "der Briefkasten",
+    "es": "el buzón",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el buˈθon",
+      "simplified": "el bu-SON",
+      "tip": "In Spanien 'bu-THON', in Lateinamerika 'bu-SON'"
+    },
+    "dialects": {
+      "es_castilla": "el buzón",
+      "es_andalucia": "el buzón",
+      "es_cataluna": "la bústia",
+      "es_canarias": "el buzón",
+      "lat_mx": "el buzón",
+      "lat_ar": "el buzón",
+      "lat_co": "el buzón",
+      "lat_cl": "el buzón",
+      "lat_pe": "el buzón",
+      "lat_ve": "el buzón",
+      "lat_cu": "el buzón",
+      "lat_do": "el buzón"
+    },
+    "example_de": "Im Briefkasten liegt ein Brief für dich.",
+    "example_es": "Hay una carta para ti en el buzón.",
+    "tags": [
+      "wohnen",
+      "A2"
+    ]
+  },
+  {
+    "id": "all_054",
+    "de": "die Zahnbürste",
+    "es": "el cepillo de dientes",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el θeˈpiʎo ðe ˈdjentes",
+      "simplified": "el se-PI-jo de DJEN-tes",
+      "tip": "Vier Wörter, Betonung auf 'pi' und 'djen'"
+    },
+    "dialects": {
+      "es_castilla": "el cepillo de dientes",
+      "es_andalucia": "el cepillo de dientes",
+      "es_cataluna": "el raspall de dents",
+      "es_canarias": "el cepillo de dientes",
+      "lat_mx": "el cepillo de dientes",
+      "lat_ar": "el cepillo de dientes",
+      "lat_co": "el cepillo de dientes",
+      "lat_cl": "el cepillo de dientes",
+      "lat_pe": "el cepillo de dientes",
+      "lat_ve": "el cepillo de dientes",
+      "lat_cu": "el cepillo de dientes",
+      "lat_do": "el cepillo de dientes"
+    },
+    "example_de": "Hast du deine Zahnbürste eingepackt?",
+    "example_es": "¿Has metido tu cepillo de dientes?",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_055",
+    "de": "der Spiegel",
+    "es": "el espejo",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el esˈpexo",
+      "simplified": "el es-PE-cho",
+      "tip": "Das 'j' klingt wie ein Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "el espejo",
+      "es_andalucia": "el espejo",
+      "es_cataluna": "el mirall",
+      "es_canarias": "el espejo",
+      "lat_mx": "el espejo",
+      "lat_ar": "el espejo",
+      "lat_co": "el espejo",
+      "lat_cl": "el espejo",
+      "lat_pe": "el espejo",
+      "lat_ve": "el espejo",
+      "lat_cu": "el espejo",
+      "lat_do": "el espejo"
+    },
+    "example_de": "Er schaut in den Spiegel.",
+    "example_es": "Se mira en el espejo.",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_056",
+    "de": "das Handtuch",
+    "es": "la toalla",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la toˈaʎa",
+      "simplified": "la to-A-ja",
+      "tip": "Das 'll' wie weiches 'j' aussprechen"
+    },
+    "dialects": {
+      "es_castilla": "la toalla",
+      "es_andalucia": "la toalla",
+      "es_cataluna": "la tovallola",
+      "es_canarias": "la toalla",
+      "lat_mx": "la toalla",
+      "lat_ar": "la toalla",
+      "lat_co": "la toalla",
+      "lat_cl": "la toalla",
+      "lat_pe": "la toalla",
+      "lat_ve": "la toalla",
+      "lat_cu": "la toalla",
+      "lat_do": "la toalla"
+    },
+    "example_de": "Ich brauche ein Handtuch.",
+    "example_es": "Necesito una toalla.",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_057",
+    "de": "in der Nähe",
+    "es": "cerca",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈθeɾka",
+      "simplified": "SER-ka",
+      "tip": "In Spanien 'THER-ka', in Lateinamerika 'SER-ka'"
+    },
+    "dialects": {
+      "es_castilla": "cerca",
+      "es_andalucia": "cerca",
+      "es_cataluna": "a prop",
+      "es_canarias": "cerca",
+      "lat_mx": "cerca",
+      "lat_ar": "cerca",
+      "lat_co": "cerca",
+      "lat_cl": "cerca",
+      "lat_pe": "cerca",
+      "lat_ve": "cerca",
+      "lat_cu": "cerca",
+      "lat_do": "cerca"
+    },
+    "example_de": "Die Apotheke ist in der Nähe.",
+    "example_es": "La farmacia está cerca.",
+    "tags": [
+      "orientierung",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_058",
+    "de": "weit weg",
+    "es": "lejos",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈlexos",
+      "simplified": "LE-chos",
+      "tip": "Das 'j' wie ein Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "lejos",
+      "es_andalucia": "lejos",
+      "es_cataluna": "lluny",
+      "es_canarias": "lejos",
+      "lat_mx": "lejos",
+      "lat_ar": "lejos",
+      "lat_co": "lejos",
+      "lat_cl": "lejos",
+      "lat_pe": "lejos",
+      "lat_ve": "lejos",
+      "lat_cu": "lejos",
+      "lat_do": "lejos"
+    },
+    "example_de": "Der Bahnhof ist weit weg.",
+    "example_es": "La estación está lejos.",
+    "tags": [
+      "orientierung",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_059",
+    "de": "die Apotheke",
+    "es": "la farmacia",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la faɾˈmaθja",
+      "simplified": "la far-MA-sja",
+      "tip": "In Spanien 'far-MA-thja', in Lateinamerika 'far-MA-sja'"
+    },
+    "dialects": {
+      "es_castilla": "la farmacia",
+      "es_andalucia": "la farmacia",
+      "es_cataluna": "la farmàcia",
+      "es_canarias": "la farmacia",
+      "lat_mx": "la farmacia",
+      "lat_ar": "la farmacia",
+      "lat_co": "la farmacia",
+      "lat_cl": "la farmacia",
+      "lat_pe": "la farmacia",
+      "lat_ve": "la farmacia",
+      "lat_cu": "la farmacia",
+      "lat_do": "la farmacia"
+    },
+    "example_de": "Gibt es hier eine Apotheke?",
+    "example_es": "¿Hay alguna farmacia por aquí?",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_060",
+    "de": "der Abfall",
+    "es": "la basura",
+    "category": "alltag",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la baˈsuɾa",
+      "simplified": "la ba-SU-ra",
+      "tip": "Drei Silben, Betonung auf 'su'"
+    },
+    "dialects": {
+      "es_castilla": "la basura",
+      "es_andalucia": "la basura",
+      "es_cataluna": "les escombraries",
+      "es_canarias": "la basura",
+      "lat_mx": "la basura",
+      "lat_ar": "la basura",
+      "lat_co": "la basura",
+      "lat_cl": "la basura",
+      "lat_pe": "la basura",
+      "lat_ve": "la basura",
+      "lat_cu": "la basura",
+      "lat_do": "la basura"
+    },
+    "example_de": "Kannst du den Abfall rausbringen?",
+    "example_es": "¿Puedes sacar la basura?",
+    "tags": [
+      "wohnen",
+      "A1"
+    ]
+  },
+  {
+    "id": "all_061",
+    "de": "der Strom",
+    "es": "la electricidad",
+    "category": "alltag",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la elektɾiθiˈðað",
+      "simplified": "la e-lek-tri-si-DAD",
+      "tip": "Fünf Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "la electricidad",
+      "es_andalucia": "la electricidad",
+      "es_cataluna": "l'electricitat",
+      "es_canarias": "la electricidad",
+      "lat_mx": "la electricidad",
+      "lat_ar": "la electricidad",
+      "lat_co": "la electricidad",
+      "lat_cl": "la electricidad",
+      "lat_pe": "la electricidad",
+      "lat_ve": "la electricidad",
+      "lat_cu": "la electricidad",
+      "lat_do": "la electricidad"
+    },
+    "example_de": "Der Strom ist ausgefallen.",
+    "example_es": "Se ha cortado la electricidad.",
+    "tags": [
+      "wohnen",
+      "A2"
+    ]
+  },
+  {
+    "id": "all_062",
+    "de": "die Miete",
+    "es": "el alquiler",
+    "category": "alltag",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el alkiˈleɾ",
+      "simplified": "el al-ki-LER",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el alquiler",
+      "es_andalucia": "el alquiler",
+      "es_cataluna": "el lloguer",
+      "es_canarias": "el alquiler",
+      "lat_mx": "la renta",
+      "lat_ar": "el alquiler",
+      "lat_co": "el arriendo",
+      "lat_cl": "el arriendo",
+      "lat_pe": "el alquiler",
+      "lat_ve": "el alquiler",
+      "lat_cu": "el alquiler",
+      "lat_do": "el alquiler"
+    },
+    "example_de": "Die Miete steigt jedes Jahr.",
+    "example_es": "El alquiler sube cada año.",
+    "tags": [
+      "wohnen",
+      "finanzen",
+      "A2"
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "b1_01",
+    "de": "Gestern bin ich sehr spät aufgestanden.",
+    "words": ["Ayer", "me", "levanté", "muy", "tarde"],
+    "distractors": ["levantaba", "Yo", "pronto"],
+    "hint": "Pretérito: me + levantarse + Zeitadverb"
+  },
+  {
+    "id": "b1_02",
+    "de": "Hast du das schon mal gesehen?",
+    "words": ["¿Lo", "has", "visto", "alguna", "vez?"],
+    "distractors": ["¿Le", "habías", "veces?"],
+    "hint": "Pretérito perfecto: haber + Partizip + alguna vez"
+  },
+  {
+    "id": "b1_03",
+    "de": "Wenn ich reich wäre, würde ich reisen.",
+    "words": ["Si", "fuera", "rico,", "viajaría"],
+    "distractors": ["sería", "viajo", "cuando"],
+    "hint": "Konditional: Si + Imperfecto subjuntivo + condicional"
+  },
+  {
+    "id": "b1_04",
+    "de": "Ich hoffe, dass du kommst.",
+    "words": ["Espero", "que", "vengas"],
+    "distractors": ["Espera", "que", "vienes"],
+    "hint": "esperar que + Subjuntivo presente"
+  },
+  {
+    "id": "b1_05",
+    "de": "Er hat die ganze Nacht gearbeitet.",
+    "words": ["Él", "trabajó", "toda", "la", "noche"],
+    "distractors": ["trabajaba", "Ella", "el"],
+    "hint": "Pretérito indefinido + toda la noche"
+  },
+  {
+    "id": "b1_06",
+    "de": "Ich wasche mir die Hände.",
+    "words": ["Me", "lavo", "las", "manos"],
+    "distractors": ["Te", "lavé", "los"],
+    "hint": "Reflexivpronomen + lavarse + definiter Artikel + Körperteil"
+  },
+  {
+    "id": "b1_07",
+    "de": "Als ich jung war, spielte ich oft Fußball.",
+    "words": ["Cuando", "era", "joven,", "jugaba", "al", "fútbol"],
+    "distractors": ["fui", "jugué", "la"],
+    "hint": "Imperfecto: cuando + ser + jugaba (gewohnheitsmäßig)"
+  },
+  {
+    "id": "b1_08",
+    "de": "Es tut mir leid, dass ich zu spät gekommen bin.",
+    "words": ["Siento", "haber", "llegado", "tarde"],
+    "distractors": ["llegar", "llegando", "Me"],
+    "hint": "sentir + haber + Partizip (Perfektinfinitiv)"
+  },
+  {
+    "id": "b1_09",
+    "de": "Sie hat mir gesagt, dass sie krank ist.",
+    "words": ["Ella", "me", "dijo", "que", "estaba", "enferma"],
+    "distractors": ["le", "decía", "era"],
+    "hint": "Vergangenheitserzählung: decir (indefinido) + que + imperfecto"
+  },
+  {
+    "id": "b1_10",
+    "de": "Obwohl er müde war, hat er weitergemacht.",
+    "words": ["Aunque", "estaba", "cansado,", "siguió", "adelante"],
+    "distractors": ["era", "siguiendo", "Porque"],
+    "hint": "aunque + Imperfecto + Indefinido + adelante"
+  },
+  {
+    "id": "b1_11",
+    "de": "Hoffentlich kann sie heute kommen.",
+    "words": ["Ojalá", "que", "pueda", "venir", "hoy"],
+    "distractors": ["puede", "Espero", "viene"],
+    "hint": "Ojalá que + Subjuntivo presente"
+  },
+  {
+    "id": "b1_12",
+    "de": "Je mehr ich übe, desto besser werde ich.",
+    "words": ["Cuanto", "más", "practico,", "mejor", "me", "pongo"],
+    "distractors": ["menos", "peor", "Cuanto"],
+    "hint": "Cuanto más … mejor … (je mehr … desto besser)"
+  },
+  {
+    "id": "b1_13",
+    "de": "Er ließ mich nicht einschlafen.",
+    "words": ["Él", "no", "me", "dejó", "dormir"],
+    "distractors": ["le", "dejaba", "Ella"],
+    "hint": "dejar + Infinitiv (mit Verneinung)"
+  },
+  {
+    "id": "b1_14",
+    "de": "Ich habe angefangen, Klavier zu spielen.",
+    "words": ["He", "empezado", "a", "tocar", "el", "piano"],
+    "distractors": ["empecé", "la", "de"],
+    "hint": "empezar a + Infinitiv (Pretérito perfecto)"
+  },
+  {
+    "id": "b1_15",
+    "de": "Er bat mich, die Tür zu schließen.",
+    "words": ["Me", "pidió", "que", "cerrara", "la", "puerta"],
+    "distractors": ["Le", "cerra", "el"],
+    "hint": "pedir que + Imperfecto subjuntivo (Bitte in der Vergangenheit)"
+  },
+  {
+    "id": "b1_16",
+    "de": "Bevor ich schlafe, lese ich immer.",
+    "words": ["Antes", "de", "dormir,", "siempre", "leo"],
+    "distractors": ["Después", "dormirse,", "nunca"],
+    "hint": "Antes de + Infinitiv + Zeitadverb + Verb"
+  },
+  {
+    "id": "b1_17",
+    "de": "Die Konferenz hatte bereits begonnen.",
+    "words": ["La", "conferencia", "ya", "había", "empezado"],
+    "distractors": ["El", "ha", "comenzó"],
+    "hint": "Plusquamperfecto: ya + haber (pasado) + Partizip"
+  },
+  {
+    "id": "b1_18",
+    "de": "Es wird gesagt, dass das Essen hier gut ist.",
+    "words": ["Se", "dice", "que", "la", "comida", "aquí", "es", "buena"],
+    "distractors": ["Dicen", "está", "el"],
+    "hint": "se + dice que + Aussagesatz (Passivkonstruktion)"
+  },
+  {
+    "id": "b1_19",
+    "de": "Je früher wir ankommen, desto besser.",
+    "words": ["Cuanto", "antes", "lleguemos,", "mejor"],
+    "distractors": ["más", "llegamos,", "peor"],
+    "hint": "Cuanto antes … mejor (Subjuntivo)"
+  },
+  {
+    "id": "b1_20",
+    "de": "Wir hätten früher kommen sollen.",
+    "words": ["Deberíamos", "haber", "llegado", "antes"],
+    "distractors": ["Deberemos", "llegar", "después"],
+    "hint": "deber (condicional) + haber + Partizip (Vorwurf/Bedauern)"
+  }
+]

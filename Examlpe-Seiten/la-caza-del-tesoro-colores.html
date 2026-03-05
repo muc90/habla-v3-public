@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>La Caza del Tesoro de Colores</title>
+
+  <script src="../theme-switcher.js"></script>
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../../src/css/base.css">
+  <link rel="stylesheet" href="../../src/tactile-theme.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.1/dist/mobilenet.min.js"></script>
+
+  <style>
+    :root {
+      --bg: var(--color-bg-base);
+      --ink: var(--color-text-primary);
+      --ink-dim: color-mix(in srgb, var(--color-text-primary) 72%, transparent);
+      --accent: var(--color-accent-primary);
+      --ok: var(--color-correct);
+      --warn: var(--color-wrong);
+      --glass: color-mix(in srgb, var(--color-bg-surface) 70%, transparent);
+      --glass-border: color-mix(in srgb, var(--color-border-default) 80%, transparent);
+      --ring-track: color-mix(in srgb, var(--color-border-default) 56%, transparent);
+      --scan: color-mix(in srgb, var(--color-accent-primary) 95%, transparent);
+      --frame-size: min(62vw, 320px);
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-left: env(safe-area-inset-left, 0px);
+      --safe-right: env(safe-area-inset-right, 0px);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+
+    .app {
+      position: relative;
+      width: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background: radial-gradient(circle at 20% -10%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 40%),
+                  radial-gradient(circle at 80% 110%, color-mix(in srgb, var(--ok) 12%, transparent), transparent 40%),
+                  color-mix(in srgb, var(--bg) 72%, #000);
+    }
+
+    .back-btn {
+      position: fixed;
+      top: max(12px, var(--safe-top));
+      left: max(12px, var(--safe-left));
+      z-index: 60;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+      color: var(--ink);
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 22px color-mix(in srgb, #000 42%, transparent);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+    .back-btn:hover { border-color: color-mix(in srgb, var(--accent) 75%, transparent); }
+
+    video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: none;
+      filter: saturate(1.05) contrast(1.02);
+      background: color-mix(in srgb, var(--bg) 64%, #000);
+    }
+
+    .noise {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(color-mix(in srgb, var(--ink) 3.5%, transparent) 0.6px, transparent 0.6px);
+      background-size: 2px 2px;
+      mix-blend-mode: soft-light;
+      opacity: 0.25;
+    }
+
+    .hud-top {
+      position: absolute;
+      top: max(14px, var(--safe-top));
+      left: max(14px, var(--safe-left));
+      right: max(14px, var(--safe-right));
+      z-index: 30;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .mission-card {
+      min-width: min(94vw, 480px);
+      padding: 10px 14px;
+      border-radius: 16px;
+      border: 1px solid var(--glass-border);
+      background: linear-gradient(165deg, color-mix(in srgb, var(--ink) 9%, transparent), color-mix(in srgb, var(--ink) 2%, transparent)), var(--glass);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px color-mix(in srgb, #000 45%, transparent);
+      pointer-events: auto;
+    }
+
+    .mission-title {
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-dim);
+    }
+
+    .mission-text {
+      margin: 6px 0 0;
+      font-size: clamp(18px, 3.7vw, 24px);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-wrap: balance;
+    }
+
+    .color-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 68px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 14px;
+      border: 1px solid color-mix(in srgb, var(--ink) 35%, transparent);
+      box-shadow: 0 0 18px color-mix(in srgb, var(--ink) 12%, transparent) inset;
+    }
+
+    .scanner-wrap {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    .scanner {
+      position: relative;
+      width: var(--frame-size);
+      height: var(--frame-size);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 6%, transparent), 0 24px 40px color-mix(in srgb, #000 42%, transparent);
+    }
+
+    .scanner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 18px;
+      border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--ink) 5%, transparent), color-mix(in srgb, var(--ink) 1%, transparent));
+    }
+
+    .scan-line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--scan), transparent);
+      box-shadow: 0 0 20px var(--scan);
+      animation: scanY 1.7s linear infinite;
+      opacity: 0.95;
+    }
+
+    @keyframes scanY {
+      0% { top: 4%; }
+      100% { top: 94%; }
+    }
+
+    .corners {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .corner {
+      fill: none;
+      stroke: color-mix(in srgb, var(--accent) 95%, transparent);
+      stroke-width: 5;
+      filter: drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 70%, transparent));
+      animation: pulseCorner 1.2s ease-in-out infinite;
+    }
+
+    @keyframes pulseCorner {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    .progress-ring {
+      position: absolute;
+      inset: -12px;
+      width: calc(100% + 24px);
+      height: calc(100% + 24px);
+      transform: rotate(-90deg);
+      overflow: visible;
+    }
+
+    .progress-track,
+    .progress-value {
+      fill: none;
+      stroke-width: 10;
+      r: 48;
+      cx: 50;
+      cy: 50;
+    }
+
+    .progress-track {
+      stroke: var(--ring-track);
+      opacity: 0.7;
+    }
+
+    .progress-value {
+      stroke: var(--accent);
+      stroke-linecap: round;
+      filter: drop-shadow(0 0 10px color-mix(in srgb, var(--accent) 80%, transparent));
+      transition: stroke 0.2s linear;
+    }
+
+    .hud-bottom {
+      position: absolute;
+      left: max(12px, var(--safe-left));
+      right: max(12px, var(--safe-right));
+      bottom: max(12px, var(--safe-bottom));
+      z-index: 30;
+      display: grid;
+      gap: 10px;
+      pointer-events: none;
+    }
+
+    .status-row,
+    .tf-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--glass-border);
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px color-mix(in srgb, #000 40%, transparent);
+      pointer-events: auto;
+    }
+
+    .status-left { display: flex; gap: 12px; align-items: baseline; }
+    .metric { font-size: 13px; color: var(--ink-dim); }
+    .metric b { color: var(--ink); font-size: 18px; }
+
+    .start-btn {
+      border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+      color: var(--ink);
+      background: linear-gradient(140deg, color-mix(in srgb, var(--accent) 28%, transparent), color-mix(in srgb, var(--accent) 12%, transparent));
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .start-btn:hover { transform: translateY(-1px); box-shadow: 0 0 16px color-mix(in srgb, var(--accent) 35%, transparent); }
+
+    .tf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--ink-dim);
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .egg-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: inline-grid;
+      place-items: center;
+      font-size: 14px;
+      background: color-mix(in srgb, var(--ok) 18%, transparent);
+      border: 1px solid color-mix(in srgb, var(--ok) 50%, transparent);
+      box-shadow: 0 0 12px color-mix(in srgb, var(--ok) 30%, transparent);
+    }
+
+    .hint {
+      font-size: 12px;
+      color: var(--ink-dim);
+    }
+
+    .flash {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle, color-mix(in srgb, var(--ok) 30%, transparent), transparent 55%);
+      opacity: 0;
+      z-index: 25;
+    }
+
+    .flash.active { animation: flashIn 0.55s ease-out; }
+
+    @keyframes flashIn {
+      0% { opacity: 0; }
+      40% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .vibrate { animation: vibrate 260ms linear 1; }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 55;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      background:
+        radial-gradient(circle at 24% 20%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 34%),
+        radial-gradient(circle at 80% 76%, color-mix(in srgb, var(--ok) 12%, transparent), transparent 34%),
+        color-mix(in srgb, var(--bg) 82%, transparent);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .overlay[hidden] { display: none; }
+
+    .overlay-card {
+      width: min(96vw, 520px);
+      border-radius: 24px;
+      border: 1px solid color-mix(in srgb, var(--accent) 34%, transparent);
+      background: linear-gradient(160deg, color-mix(in srgb, var(--ink) 9%, transparent), color-mix(in srgb, var(--ink) 2%, transparent) 54%, color-mix(in srgb, var(--ink) 1%, transparent)), color-mix(in srgb, var(--bg) 86%, transparent);
+      box-shadow: 0 24px 64px color-mix(in srgb, #000 68%, transparent), inset 0 1px 0 color-mix(in srgb, var(--ink) 8%, transparent);
+      padding: 18px 16px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .overlay-card::before {
+      content: '';
+      position: absolute;
+      inset: -40% -20% auto;
+      height: 220px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--accent) 22%, transparent), transparent 68%);
+      pointer-events: none;
+      filter: blur(12px);
+    }
+
+    /* Startscreen im Stil von "Gramática Relámpago" */
+    #loadingOverlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6rem;
+      padding-top: 1.3rem;
+      opacity: 1;
+      transition: opacity 150ms ease;
+    }
+    #loadingOverlay.is-hiding {
+      opacity: 0;
+      pointer-events: none;
+    }
+    #loadingOverlay[hidden] {
+      display: none;
+    }
+    #summaryOverlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1.3rem;
+    }
+    #summaryOverlay .overlay-card {
+      border-radius: 28px;
+      border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      box-shadow:
+        0 10px 44px color-mix(in srgb, #000 62%, transparent),
+        inset 0 1px 0 color-mix(in srgb, var(--ink) 8%, transparent);
+      width: min(92vw, 430px);
+      padding: 0.95rem 0.9rem 0.9rem;
+    }
+    #summaryOverlay .overlay-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      border-radius: inherit;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        color-mix(in srgb, #000 8%, transparent) 2px,
+        color-mix(in srgb, #000 8%, transparent) 4px
+      );
+      opacity: 0.35;
+    }
+    #summaryOverlay .overlay-title {
+      position: relative;
+      z-index: 1;
+      font-family: 'Unbounded', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      letter-spacing: -0.015em;
+      line-height: 1;
+      text-transform: none;
+      color: var(--ink);
+      text-shadow: 0 0 36px color-mix(in srgb, var(--gold) 22%, transparent);
+      font-size: clamp(2rem, 8vw, 2.8rem);
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+    #summaryOverlay .overlay-sub {
+      position: relative;
+      z-index: 1;
+      margin-top: 0.1rem;
+      margin-bottom: 0.75rem;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.82rem;
+      color: var(--ink-dim);
+      text-align: center;
+    }
+    #summaryOverlay .cta-btn {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 100%;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.12rem;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-radius: 999px;
+      border: none;
+      color: color-mix(in srgb, var(--text) 88%, #000);
+      background: var(--gold);
+      box-shadow: 0 5px 0 color-mix(in srgb, var(--gold) 70%, #000), 0 0 28px color-mix(in srgb, var(--gold) 28%, transparent);
+      padding: 0.62rem 0.86rem;
+      margin-top: 0;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+    }
+    #summaryOverlay .cta-btn:hover {
+      filter: brightness(1.04);
+      box-shadow: 0 6px 0 color-mix(in srgb, var(--gold) 70%, #000), 0 0 34px color-mix(in srgb, var(--gold) 34%, transparent);
+      transform: translateY(-1px);
+    }
+    #summaryOverlay .cta-btn:active {
+      transform: translateY(4px);
+      box-shadow: 0 1px 0 color-mix(in srgb, var(--gold) 70%, #000);
+    }
+    #summaryOverlay .summary-actions {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 0.6rem;
+      margin-top: 0.9rem;
+    }
+    #summaryOverlay .cta-btn.menu-btn {
+      background: color-mix(in srgb, var(--accent) 24%, var(--bg));
+      box-shadow: 0 5px 0 color-mix(in srgb, var(--accent) 55%, #000), 0 0 20px color-mix(in srgb, var(--accent) 28%, transparent);
+      color: var(--ink);
+    }
+    #summaryOverlay .cta-btn.menu-btn:hover {
+      box-shadow: 0 6px 0 color-mix(in srgb, var(--accent) 55%, #000), 0 0 26px color-mix(in srgb, var(--accent) 34%, transparent);
+    }
+    #summaryOverlay .cta-btn.menu-btn:active {
+      box-shadow: 0 1px 0 color-mix(in srgb, var(--accent) 55%, #000);
+    }
+    #summaryOverlay[hidden] {
+      display: none;
+    }
+    #loadingOverlay .overlay-card {
+      border-radius: 28px;
+      border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      box-shadow:
+        0 10px 44px color-mix(in srgb, #000 62%, transparent),
+        inset 0 1px 0 color-mix(in srgb, var(--ink) 8%, transparent);
+      width: min(92vw, 430px);
+      padding: 0.9rem 0.82rem 0.82rem;
+    }
+    #loadingOverlay article.overlay-card:nth-child(2) {
+      width: min(88vw, 390px);
+    }
+    #loadingOverlay .overlay-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      border-radius: inherit;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        color-mix(in srgb, #000 8%, transparent) 2px,
+        color-mix(in srgb, #000 8%, transparent) 4px
+      );
+      opacity: 0.35;
+    }
+    .start-title-wrap {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 0.28rem;
+      margin-bottom: 0;
+      width: min(96vw, 520px);
+      text-align: center;
+      pointer-events: none;
+    }
+    .start-title-sub {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.88rem;
+      color: var(--ink-dim);
+      margin: 0;
+    }
+    #loadingOverlay .overlay-title {
+      position: relative;
+      z-index: 1;
+      font-family: 'Unbounded', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      letter-spacing: -0.015em;
+      line-height: 1;
+      text-transform: none;
+      color: var(--ink);
+      text-shadow: 0 0 36px color-mix(in srgb, var(--gold) 22%, transparent);
+      font-size: clamp(2.9rem, 11.5vw, 4.3rem);
+    }
+    #loadingOverlay .overlay-sub {
+      position: relative;
+      z-index: 1;
+      margin-top: 0.15rem;
+      margin-bottom: 0.65rem;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.79rem;
+      color: var(--ink-dim);
+      text-align: center;
+    }
+    #loadingOverlay .task-note {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.82rem;
+      margin: 0;
+    }
+    #loadingOverlay > .task-actions {
+      width: min(88vw, 390px);
+      margin-top: 1.5rem;
+      position: relative;
+      z-index: 3;
+      pointer-events: auto;
+      display: grid;
+      gap: 0.55rem;
+    }
+    #loadingOverlay .cta-btn {
+      position: relative;
+      z-index: 1;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-radius: 999px;
+      border: none;
+      color: color-mix(in srgb, var(--text) 88%, #000);
+      background: var(--gold);
+      box-shadow: 0 5px 0 color-mix(in srgb, var(--gold) 70%, #000), 0 0 28px color-mix(in srgb, var(--gold) 28%, transparent);
+      padding: 0.64rem 0.9rem;
+      margin-top: 0;
+      transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+    }
+    #loadingOverlay .cta-btn:hover {
+      filter: brightness(1.04);
+      box-shadow: 0 6px 0 color-mix(in srgb, var(--gold) 70%, #000), 0 0 34px color-mix(in srgb, var(--gold) 34%, transparent);
+      transform: translateY(-1px);
+    }
+    #loadingOverlay .cta-btn:active {
+      transform: translateY(4px);
+      box-shadow: 0 1px 0 color-mix(in srgb, var(--gold) 70%, #000);
+    }
+    #loadingOverlay .cta-btn:focus-visible {
+      outline: 2px solid color-mix(in srgb, var(--ink) 90%, transparent);
+      outline-offset: 3px;
+      box-shadow: 0 6px 0 color-mix(in srgb, var(--gold) 70%, #000), 0 0 0 4px color-mix(in srgb, var(--gold) 26%, transparent), 0 0 34px color-mix(in srgb, var(--gold) 34%, transparent);
+    }
+
+    .overlay-title {
+      margin: 0;
+      font-size: clamp(26px, 5vw, 36px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      color: var(--accent);
+      text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+
+    .overlay-sub {
+      margin: 10px 0 12px;
+      color: var(--ink-dim);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .task-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 6px;
+      margin: 0 0 8px;
+    }
+    .task-chip {
+      position: relative;
+      border-radius: 16px;
+      border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+      padding: 5px 5px 6px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 9px;
+      letter-spacing: 0.07em;
+      color: color-mix(in srgb, var(--text) 90%, #000);
+      box-shadow:
+        inset 0 0 14px color-mix(in srgb, var(--ink) 16%, transparent),
+        0 8px 20px color-mix(in srgb, #000 28%, transparent);
+      min-height: 52px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      text-transform: uppercase;
+    }
+    .task-chip::before {
+      content: '🎨';
+      font-size: 12px;
+      line-height: 1;
+      opacity: 0.84;
+      filter: drop-shadow(0 2px 4px color-mix(in srgb, #000 25%, transparent));
+    }
+    .task-chip.done {
+      filter: saturate(0.8);
+    }
+    .task-chip.done::after {
+      content: '✓';
+      position: absolute;
+      top: 6px;
+      right: 7px;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--bg) 70%, transparent);
+      color: var(--ink);
+      font-size: 12px;
+      display: grid;
+      place-items: center;
+      border: 1px solid color-mix(in srgb, var(--ink) 40%, transparent);
+      box-shadow: 0 3px 8px color-mix(in srgb, #000 35%, transparent);
+    }
+
+    .task-note {
+      margin: 7px 0 0;
+      font-size: 0.74rem;
+      color: var(--ink-dim);
+      padding: 7px 8px;
+      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
+      background: color-mix(in srgb, var(--ink) 3%, transparent);
+      text-align: center;
+    }
+
+    .cta-btn {
+      width: 100%;
+      margin-top: 12px;
+      border: 1px solid color-mix(in srgb, var(--accent) 58%, transparent);
+      color: var(--ink);
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 34%, transparent), color-mix(in srgb, var(--accent) 14%, transparent));
+      border-radius: 14px;
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+    }
+
+    .summary-kpis {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .kpi {
+      border-radius: 14px;
+      border: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
+      background: color-mix(in srgb, var(--ink) 4.5%, transparent);
+      padding: 10px 8px;
+      text-align: center;
+    }
+    .kpi b { display: block; font-size: 19px; color: var(--ink); }
+    .kpi span { font-size: 11px; color: var(--ink-dim); letter-spacing: 0.06em; text-transform: uppercase; }
+
+    .booklet {
+      margin-top: 12px;
+      border-radius: 16px;
+      border: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
+      background: color-mix(in srgb, var(--ink) 4%, transparent);
+      padding: 10px;
+    }
+    .album-book {
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    .book-cover {
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 32%, transparent) 0%, color-mix(in srgb, var(--accent) 48%, var(--bg)) 100%);
+      border-radius: 14px;
+      padding: 1.2rem 1rem;
+      text-align: center;
+      border: 2px solid color-mix(in srgb, var(--accent) 42%, transparent);
+      box-shadow: 0 8px 0 color-mix(in srgb, #000 45%, transparent), 0 14px 32px color-mix(in srgb, #000 45%, transparent), inset 0 1px 0 color-mix(in srgb, var(--ink) 10%, transparent);
+      animation: book-cover-in 0.7s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .book-cover.out { animation: book-cover-out 0.4s ease forwards; }
+    @keyframes book-cover-in { from{opacity:0;transform:translateY(20px) scale(0.85) rotate(-2deg)} to{opacity:1;transform:none} }
+    @keyframes book-cover-out { to{opacity:0;transform:scale(0.9) translateY(-10px)} }
+    .bc-emoji {
+      font-size: 2.2rem;
+      margin-bottom: 0.22rem;
+      line-height: 1;
+    }
+    .bc-name {
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      color: color-mix(in srgb, var(--ink) 94%, transparent);
+      text-transform: uppercase;
+    }
+    .bc-sub {
+      font-size: 0.56rem;
+      color: color-mix(in srgb, var(--ink) 66%, transparent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-top: 0.24rem;
+    }
+    .book-open {
+      display: none;
+      background: color-mix(in srgb, var(--bg) 94%, transparent);
+      border-radius: 14px;
+      border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+      box-shadow: 0 8px 0 color-mix(in srgb, #000 45%, transparent), inset 0 1px 0 color-mix(in srgb, var(--ink) 4%, transparent);
+      overflow: hidden;
+      animation: book-open-in 0.5s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    @keyframes book-open-in { from{opacity:0;transform:scale(0.9) translateY(12px)} to{opacity:1;transform:none} }
+    .book-header {
+      background: color-mix(in srgb, var(--accent) 24%, transparent);
+      padding: 0.45rem 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
+    }
+    .book-header-lbl {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      color: color-mix(in srgb, var(--ink) 94%, transparent);
+      text-transform: uppercase;
+    }
+    .book-header-num {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.56rem;
+      color: color-mix(in srgb, var(--ink) 72%, transparent);
+    }
+    @keyframes card-fly {
+      0%   { opacity:0; transform:translateY(var(--fy,-90px)) translateX(var(--fx,0px)) rotate(var(--fr,8deg)) scale(1.4); }
+      60%  { opacity:1; }
+      100% { opacity:1; transform:translateY(0) translateX(0) rotate(calc(var(--rot,0)*1deg)) scale(1); }
+    }
+    .album-card { animation: card-fly 0.65s cubic-bezier(0.34,1.56,0.64,1) both; }
+    .booklet-title {
+      margin: 0 0 8px;
+      font-size: 12px;
+      color: var(--ink-dim);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .booklet-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 8px;
+    }
+    .sticker {
+      border-radius: 12px;
+      border: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
+      background: color-mix(in srgb, var(--ink) 5%, transparent);
+      min-height: 62px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 6px;
+      font-size: 12px;
+      color: var(--ink);
+      font-weight: 700;
+      line-height: 1.15;
+    }
+    .sticker-emoji { font-size: 20px; display: block; margin-bottom: 3px; }
+
+    @keyframes vibrate {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-2px, 1px); }
+      50% { transform: translate(2px, -1px); }
+      75% { transform: translate(-1px, -1px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    @media (max-width: 460px) {
+      :root { --frame-size: min(72vw, 290px); }
+      .mission-card { min-width: auto; width: 100%; }
+      .mission-text { font-size: 18px; }
+      .status-row, .tf-row { padding: 9px 10px; }
+      .task-list { grid-template-columns: 1fr; }
+      .summary-kpis { grid-template-columns: 1fr 1fr; }
+      .booklet-grid { grid-template-columns: 1fr 1fr; }
+      .start-title-wrap { margin-bottom: 0.1rem; }
+      .start-title-sub { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="back-btn" href="../index.html#/home">← Zurück</a>
+
+  <div class="app">
+    <video id="video" playsinline muted></video>
+    <canvas id="sampleCanvas" width="80" height="80" hidden></canvas>
+    <canvas id="tfCanvas" width="224" height="224" hidden></canvas>
+
+    <div class="noise"></div>
+    <div class="flash" id="flash"></div>
+
+    <div class="hud-top">
+      <div class="mission-card">
+        <p class="mission-title">Mission</p>
+        <p class="mission-text" id="missionText">¡Busca algo <span class="color-pill" id="colorPill">ROJO</span>!</p>
+      </div>
+    </div>
+
+    <div class="scanner-wrap">
+      <div class="scanner" id="scanner">
+        <svg class="progress-ring" viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="progress-track" />
+          <circle class="progress-value" id="progressCircle" />
+        </svg>
+
+        <div class="scan-line"></div>
+
+        <svg class="corners" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="corner" d="M 6 24 L 6 6 L 24 6" />
+          <path class="corner" d="M 76 6 L 94 6 L 94 24" />
+          <path class="corner" d="M 6 76 L 6 94 L 24 94" />
+          <path class="corner" d="M 76 94 L 94 94 L 94 76" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <div class="status-row">
+        <div class="status-left">
+          <div class="metric">Punkte <b id="score">0</b></div>
+          <div class="metric">Serie <b id="streak">0</b></div>
+        </div>
+        <button class="start-btn" id="startBtn">📷 Kamera starten</button>
+      </div>
+      <div class="tf-row">
+        <div class="tf-badge" id="tfBadge">KI-Easter-Egg wird vorbereitet…</div>
+        <div class="hint" id="scanHint">Scanne Farbe im Rahmen</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="overlay" id="loadingOverlay">
+    <div class="start-title-wrap">
+      <h1 class="overlay-title">La Caza<br>del Tesoro</h1>
+      <p class="start-title-sub">Edición Colores</p>
+    </div>
+    <article class="overlay-card">
+      <p class="overlay-sub">Halte deine Kamera auf die gesuchte Farbe.</p>
+      <div class="task-list" id="taskList"></div>
+    </article>
+    <div class="task-actions">
+      <p class="task-note" id="taskNote">Los geht’s: Finde die drei Farben.</p>
+      <button class="cta-btn" id="beginBtn">🚀 Starten</button>
+    </div>
+  </section>
+
+  <section class="overlay" id="summaryOverlay" hidden>
+    <article class="overlay-card">
+      <h2 class="overlay-title">¡Excelente!</h2>
+      <p class="overlay-sub">Du hast alle 3 Farben gefunden. Hier ist deine Auswertung:</p>
+
+      <div class="summary-kpis">
+        <div class="kpi"><b id="sumScore">0</b><span>Punkte</span></div>
+        <div class="kpi"><b id="sumStreak">0</b><span>Serie</span></div>
+        <div class="kpi"><b id="sumFound">0/3</b><span>Farben</span></div>
+      </div>
+
+      <div class="booklet">
+        <p class="booklet-title">Sammelheft – Farben</p>
+        <div class="album-book" id="albumColors">
+          <div class="book-cover" id="coverColors">
+            <div class="bc-emoji">🎨</div>
+            <div class="bc-name">Farbheft</div>
+            <div class="bc-sub">öffnet sich…</div>
+          </div>
+          <div class="book-open" id="openColors">
+            <div class="book-header">
+              <span class="book-header-lbl">Farbkarten</span>
+              <span class="book-header-num" id="numColors">0 Karten</span>
+            </div>
+            <div class="booklet-grid" id="bookletColors"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="booklet" id="bookletKi">
+        <p class="booklet-title">Sammelheft – KI Sticker</p>
+        <div class="album-book" id="albumKi">
+          <div class="book-cover" id="coverKi">
+            <div class="bc-emoji">🤖</div>
+            <div class="bc-name">KI-Heft</div>
+            <div class="bc-sub">öffnet sich…</div>
+          </div>
+          <div class="book-open" id="openKi">
+            <div class="book-header">
+              <span class="book-header-lbl">KI-Sticker</span>
+              <span class="book-header-num" id="numKi">0 Karten</span>
+            </div>
+            <div class="booklet-grid" id="bookletStickers"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-actions">
+        <button class="cta-btn" id="playAgainBtn">🔁 Nochmal spielen</button>
+        <a class="cta-btn menu-btn" href="../index.html#/home">🏠 Zurück ins Menü</a>
+      </div>
+    </article>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <script>
+    const MISSIONS = [
+      { key: 'rojo', label: 'ROJO', css: '#ff4d6d', speech: 'rojo', hsvRanges: [ [0, 18, 0.35, 0.2], [342, 360, 0.35, 0.2] ] },
+      { key: 'azul', label: 'AZUL', css: '#4f8dff', speech: 'azul', hsvRanges: [ [195, 250, 0.28, 0.18] ] },
+      { key: 'verde', label: 'VERDE', css: '#49dc96', speech: 'verde', hsvRanges: [ [80, 160, 0.28, 0.2] ] },
+      { key: 'amarillo', label: 'AMARILLO', css: '#ffd84d', speech: 'amarillo', hsvRanges: [ [40, 72, 0.3, 0.25] ] },
+      { key: 'naranja', label: 'NARANJA', css: '#ff9f43', speech: 'naranja', hsvRanges: [ [18, 40, 0.32, 0.22] ] },
+      { key: 'morado', label: 'MORADO', css: '#b57bff', speech: 'morado', hsvRanges: [ [260, 312, 0.25, 0.2] ] }
+    ];
+
+    const EGG_MAP = [
+      { keys: ['apple'], icon: '🍎' },
+      { keys: ['banana'], icon: '🍌' },
+      { keys: ['orange'], icon: '🍊' },
+      { keys: ['broccoli'], icon: '🥦' },
+      { keys: ['carrot'], icon: '🥕' },
+      { keys: ['strawberry'], icon: '🍓' },
+      { keys: ['lemon'], icon: '🍋' },
+      { keys: ['mug', 'cup', 'coffee'], icon: '☕' },
+      { keys: ['bottle', 'water bottle'], icon: '🧴' },
+      { keys: ['book'], icon: '📘' },
+      { keys: ['notebook', 'laptop'], icon: '💻' },
+      { keys: ['cellular telephone', 'smartphone'], icon: '📱' },
+      { keys: ['keyboard'], icon: '⌨️' },
+      { keys: ['remote control'], icon: '🎮' },
+      { keys: ['chair'], icon: '🪑' },
+      { keys: ['clock', 'watch'], icon: '🕒' },
+      { keys: ['person', 'man', 'woman', 'boy', 'girl'], icon: '🧍' }
+    ];
+
+    const video = document.getElementById('video');
+    const sampleCanvas = document.getElementById('sampleCanvas');
+    const sampleCtx = sampleCanvas.getContext('2d', { willReadFrequently: true });
+    const tfCanvas = document.getElementById('tfCanvas');
+    const tfCtx = tfCanvas.getContext('2d');
+
+    const missionText = document.getElementById('missionText');
+    const scoreEl = document.getElementById('score');
+    const streakEl = document.getElementById('streak');
+    const startBtn = document.getElementById('startBtn');
+    const tfBadge = document.getElementById('tfBadge');
+    const flash = document.getElementById('flash');
+    const scanHint = document.getElementById('scanHint');
+    const scanner = document.getElementById('scanner');
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    const summaryOverlay = document.getElementById('summaryOverlay');
+    const taskList = document.getElementById('taskList');
+    const taskNote = document.getElementById('taskNote');
+    const beginBtn = document.getElementById('beginBtn');
+    const playAgainBtn = document.getElementById('playAgainBtn');
+    const sumScore = document.getElementById('sumScore');
+    const sumStreak = document.getElementById('sumStreak');
+    const sumFound = document.getElementById('sumFound');
+    const bookletColors = document.getElementById('bookletColors');
+    const bookletStickers = document.getElementById('bookletStickers');
+    const bookletKi = document.getElementById('bookletKi');
+    const coverColors = document.getElementById('coverColors');
+    const openColors = document.getElementById('openColors');
+    const numColors = document.getElementById('numColors');
+    const coverKi = document.getElementById('coverKi');
+    const openKi = document.getElementById('openKi');
+    const numKi = document.getElementById('numKi');
+
+    const progressCircle = document.getElementById('progressCircle');
+    const CIRC = 2 * Math.PI * 48;
+    progressCircle.style.strokeDasharray = String(CIRC);
+    progressCircle.style.strokeDashoffset = String(CIRC);
+
+    const TARGET_MISSIONS = 3;
+
+    let running = false;
+    let locked = false;
+    let score = 0;
+    let streak = 0;
+    let bestStreak = 0;
+    let progress = 0;
+    let currentMission = MISSIONS[0];
+    let missionSet = [];
+    let missionIndex = 0;
+    let completedMissions = [];
+    let collectedStickers = [];
+    let lastColorRatio = 0;
+    let rafId = 0;
+    let streamRef = null;
+    let starting = false;
+
+    let tfModel = null;
+    let tfReady = false;
+    let tfTimer = null;
+    let summaryTimers = [];
+    const MATCH_THRESHOLD = 0.32;
+
+    function clearSummaryTimers() {
+      summaryTimers.forEach(id => clearTimeout(id));
+      summaryTimers = [];
+    }
+
+    function queueSummaryTimer(fn, ms) {
+      const id = window.setTimeout(fn, ms);
+      summaryTimers.push(id);
+      return id;
+    }
+
+    function resetAlbumVisual(coverEl, openEl, gridEl, numEl, count) {
+      if (!coverEl || !openEl || !gridEl || !numEl) return;
+      coverEl.style.display = '';
+      coverEl.classList.remove('out');
+      openEl.style.display = 'none';
+      gridEl.innerHTML = '';
+      numEl.textContent = `${count} Karten`;
+    }
+
+    function animateAlbumCards({ coverEl, openEl, gridEl, cards, renderCard, startDelay = 0 }) {
+      if (!coverEl || !openEl || !gridEl) return;
+
+      queueSummaryTimer(() => {
+        coverEl.classList.add('out');
+      }, startDelay + 900);
+
+      queueSummaryTimer(() => {
+        coverEl.style.display = 'none';
+        openEl.style.display = 'block';
+
+        cards.forEach((cardData, index) => {
+          const card = document.createElement('div');
+          card.className = 'sticker album-card';
+          const fy = `${(Math.random() * -90 - 40).toFixed(1)}px`;
+          const fx = `${((Math.random() - 0.5) * 80).toFixed(1)}px`;
+          const fr = `${((Math.random() - 0.5) * 35).toFixed(1)}deg`;
+          const rot = ((Math.random() - 0.5) * 4).toFixed(1);
+          card.style.setProperty('--fy', fy);
+          card.style.setProperty('--fx', fx);
+          card.style.setProperty('--fr', fr);
+          card.style.setProperty('--rot', rot);
+          card.style.animationDelay = `${index * 0.12 + 0.05}s`;
+          card.innerHTML = renderCard(cardData);
+          gridEl.appendChild(card);
+        });
+      }, startDelay + 1340);
+    }
+
+    function prepareMissionSet() {
+      missionSet = [...MISSIONS].sort(() => Math.random() - 0.5).slice(0, TARGET_MISSIONS);
+      missionIndex = 0;
+      completedMissions = [];
+      collectedStickers = [];
+      renderTaskList();
+      taskNote.textContent = 'Los geht’s: Finde die drei Farben.';
+    }
+
+    function renderTaskList() {
+      taskList.innerHTML = missionSet.map((m, i) => {
+        const done = i < missionIndex;
+        return `<div class="task-chip${done ? ' done' : ''}" style="background:${m.css};opacity:${done ? 0.65 : 1}">${m.label}</div>`;
+      }).join('');
+    }
+
+    function applyMissionUI() {
+      progressCircle.style.stroke = currentMission.css;
+      missionText.innerHTML = `¡Busca algo <span class="color-pill" id="colorPill">${currentMission.label}</span>!`;
+      const newPill = missionText.querySelector('#colorPill');
+      if (newPill) {
+        newPill.style.background = currentMission.css;
+        newPill.style.color = '#111';
+        newPill.style.borderColor = 'rgba(255,255,255,0.42)';
+      }
+      scanHint.textContent = `Mission ${missionIndex + 1}/${TARGET_MISSIONS}: ${currentMission.label}`;
+    }
+
+    function pickNextMission() {
+      currentMission = missionSet[missionIndex] || missionSet[missionSet.length - 1] || MISSIONS[0];
+      applyMissionUI();
+    }
+
+    function updateProgressRing() {
+      const clamped = Math.max(0, Math.min(1, progress));
+      progressCircle.style.strokeDashoffset = String(CIRC * (1 - clamped));
+    }
+
+    function rgbToHsv(r, g, b) {
+      r /= 255; g /= 255; b /= 255;
+      const max = Math.max(r, g, b), min = Math.min(r, g, b);
+      const d = max - min;
+      let h = 0;
+      if (d !== 0) {
+        switch (max) {
+          case r: h = ((g - b) / d) % 6; break;
+          case g: h = (b - r) / d + 2; break;
+          default: h = (r - g) / d + 4; break;
+        }
+      }
+      h = Math.round(h * 60);
+      if (h < 0) h += 360;
+      return { h, s: max === 0 ? 0 : d / max, v: max };
+    }
+
+    function hsvMatchesMission(h, s, v) {
+      return currentMission.hsvRanges.some(([hMin, hMax, sMin, vMin]) =>
+        h >= hMin && h <= hMax && s >= sMin && v >= vMin
+      );
+    }
+
+    function analyzeCenterColor() {
+      if (!video.videoWidth || !video.videoHeight) return 0;
+      const vw = video.videoWidth;
+      const vh = video.videoHeight;
+      const cropW = Math.floor(vw * 0.22);
+      const cropH = Math.floor(vh * 0.22);
+      const sx = Math.floor((vw - cropW) / 2);
+      const sy = Math.floor((vh - cropH) / 2);
+
+      sampleCtx.drawImage(video, sx, sy, cropW, cropH, 0, 0, sampleCanvas.width, sampleCanvas.height);
+      const image = sampleCtx.getImageData(0, 0, sampleCanvas.width, sampleCanvas.height).data;
+
+      let matches = 0;
+      let count = 0;
+      for (let i = 0; i < image.length; i += 4) {
+        if (image[i + 3] < 10) continue;
+        const { h, s, v } = rgbToHsv(image[i], image[i + 1], image[i + 2]);
+        if (hsvMatchesMission(h, s, v)) matches++;
+        count++;
+      }
+      return count ? matches / count : 0;
+    }
+
+    function playSuccessTone() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const now = ctx.currentTime;
+        const osc1 = ctx.createOscillator();
+        const osc2 = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc1.type = 'triangle';
+        osc2.type = 'sine';
+        osc1.frequency.setValueAtTime(620, now);
+        osc1.frequency.exponentialRampToValueAtTime(920, now + 0.18);
+        osc2.frequency.setValueAtTime(930, now);
+        osc2.frequency.exponentialRampToValueAtTime(1260, now + 0.18);
+        gain.gain.setValueAtTime(0.0001, now);
+        gain.gain.exponentialRampToValueAtTime(0.07, now + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.24);
+        osc1.connect(gain); osc2.connect(gain); gain.connect(ctx.destination);
+        osc1.start(now); osc2.start(now); osc1.stop(now + 0.25); osc2.stop(now + 0.25);
+      } catch (_) {}
+    }
+
+    function speakSuccess() {
+      if (!('speechSynthesis' in window)) return;
+      const utter = new SpeechSynthesisUtterance(`¡Muy bien! Eso es ${currentMission.speech}.`);
+      utter.lang = 'es-ES';
+      utter.rate = 0.95;
+      utter.pitch = 1.03;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utter);
+    }
+
+    function celebrate() {
+      scanner.classList.remove('vibrate');
+      void scanner.offsetWidth;
+      scanner.classList.add('vibrate');
+
+      flash.classList.remove('active');
+      void flash.offsetWidth;
+      flash.classList.add('active');
+
+      if (navigator.vibrate) navigator.vibrate([45, 20, 45]);
+      if (window.confetti) {
+        confetti({ particleCount: 120, spread: 80, origin: { y: 0.62 } });
+        setTimeout(() => confetti({ particleCount: 80, spread: 110, origin: { y: 0.62 } }), 100);
+      }
+      playSuccessTone();
+      speakSuccess();
+    }
+
+    function stopMediaAndLoops() {
+      running = false;
+      cancelAnimationFrame(rafId);
+      clearInterval(tfTimer);
+      tfTimer = null;
+      if (streamRef) {
+        streamRef.getTracks().forEach(t => t.stop());
+        streamRef = null;
+      }
+    }
+
+    function renderSummary() {
+      clearSummaryTimers();
+      sumScore.textContent = String(score);
+      sumStreak.textContent = String(bestStreak);
+      sumFound.textContent = `${completedMissions.length}/${TARGET_MISSIONS}`;
+
+      const colorCards = completedMissions.map(m => ({ label: m.label, css: m.css }));
+      resetAlbumVisual(coverColors, openColors, bookletColors, numColors, colorCards.length);
+      animateAlbumCards({
+        coverEl: coverColors,
+        openEl: openColors,
+        gridEl: bookletColors,
+        cards: colorCards,
+        renderCard: (card) => `<span class="sticker-emoji">🎨</span><span style="color:${card.css}">${card.label}</span>`
+      });
+
+      const stickers = collectedStickers.slice(0, 6);
+      bookletKi.hidden = stickers.length === 0;
+      if (stickers.length > 0) {
+        resetAlbumVisual(coverKi, openKi, bookletStickers, numKi, stickers.length);
+        animateAlbumCards({
+          coverEl: coverKi,
+          openEl: openKi,
+          gridEl: bookletStickers,
+          cards: stickers,
+          renderCard: (card) => `<span class="sticker-emoji">${card.icon}</span><span>${card.color}</span>`,
+          startDelay: 280
+        });
+      } else {
+        if (coverKi) coverKi.style.display = '';
+        if (openKi) openKi.style.display = 'none';
+        bookletStickers.innerHTML = '';
+      }
+    }
+
+    function finishRun() {
+      stopMediaAndLoops();
+      summaryOverlay.hidden = false;
+      renderSummary();
+      loadingOverlay.hidden = true;
+      startBtn.textContent = '✅ Runde beendet';
+    }
+
+    function hideLoadingOverlay() {
+      loadingOverlay.classList.add('is-hiding');
+      window.setTimeout(() => {
+        loadingOverlay.hidden = true;
+        loadingOverlay.classList.remove('is-hiding');
+      }, 150);
+    }
+
+    function onMissionSuccess() {
+      if (locked) return;
+      locked = true;
+      score += 15;
+      streak += 1;
+      bestStreak = Math.max(bestStreak, streak);
+      scoreEl.textContent = String(score);
+      streakEl.textContent = String(streak);
+
+      completedMissions.push(currentMission);
+      missionIndex += 1;
+      renderTaskList();
+      taskNote.textContent = missionIndex < TARGET_MISSIONS
+        ? `Sehr gut! Noch ${TARGET_MISSIONS - missionIndex} Farbe${TARGET_MISSIONS - missionIndex === 1 ? '' : 'n'}.`
+        : 'Perfekt! Alle drei Farben gefunden.';
+
+      celebrate();
+      setTimeout(() => {
+        if (missionIndex >= TARGET_MISSIONS) {
+          finishRun();
+          return;
+        }
+        progress = 0;
+        updateProgressRing();
+        pickNextMission();
+        locked = false;
+      }, 1200);
+    }
+
+    async function initCamera() {
+      const constraints = {
+        audio: false,
+        video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280 }, height: { ideal: 720 } }
+      };
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia(constraints);
+        streamRef = stream;
+        video.srcObject = stream;
+        await video.play();
+        return true;
+      } catch (err) {
+        console.error(err);
+        tfBadge.textContent = 'Kamera-Zugriff fehlgeschlagen. Prüfe HTTPS/Berechtigung.';
+        return false;
+      }
+    }
+
+    function mapPredictionToIcon(label) {
+      const txt = label.toLowerCase();
+      const hit = EGG_MAP.find(item => item.keys.some(k => txt.includes(k)));
+      return hit?.icon || '✨';
+    }
+
+    async function initTensorflowBonus() {
+      if (tfReady) return;
+      if (!window.tf || !window.mobilenet) {
+        tfBadge.textContent = 'KI-Bonus nicht verfügbar (offline/CDN blockiert).';
+        return;
+      }
+      try {
+        tfBadge.textContent = 'KI lädt MobileNet…';
+        tfModel = await window.mobilenet.load();
+        tfReady = true;
+        tfBadge.textContent = 'KI aktiv: erkennt zusätzliche Objekte als Easter Egg.';
+      } catch (err) {
+        console.warn('TF init failed', err);
+        tfBadge.textContent = 'KI-Bonus konnte nicht geladen werden.';
+      }
+    }
+
+    async function runTensorflowTick() {
+      if (!tfReady || !tfModel || !video.videoWidth || locked) return;
+      const vw = video.videoWidth;
+      const vh = video.videoHeight;
+      const cropW = Math.floor(vw * 0.38);
+      const cropH = Math.floor(vh * 0.38);
+      const sx = Math.floor((vw - cropW) / 2);
+      const sy = Math.floor((vh - cropH) / 2);
+      tfCtx.drawImage(video, sx, sy, cropW, cropH, 0, 0, tfCanvas.width, tfCanvas.height);
+
+      try {
+        const preds = await tfModel.classify(tfCanvas, 4);
+        const top = preds.filter(p => p.probability > 0.16);
+        if (!top.length) {
+          tfBadge.textContent = 'KI-Easter-Egg: noch kein klares Objekt erkannt.';
+          return;
+        }
+        const first = top[0];
+        const icon = mapPredictionToIcon(first.className);
+        // Sammelheft: nur speichern, wenn Farbe aktuell passt UND KI >=99%
+        if (icon && icon !== '✨' && first.probability >= 0.99 && lastColorRatio >= MATCH_THRESHOLD) {
+          const stickerKey = `${currentMission.key}:${icon}`;
+          const exists = collectedStickers.some(s => s.key === stickerKey);
+          if (!exists) {
+            collectedStickers.push({ key: stickerKey, icon, color: currentMission.label });
+          }
+        }
+        const labels = top.map(p => `${p.className} ${(p.probability * 100).toFixed(0)}%`).join(' · ');
+        tfBadge.innerHTML = `<span class="egg-icon">${icon}</span> KI sieht: ${labels}`;
+      } catch (err) {
+        console.warn('TF classify failed', err);
+      }
+    }
+
+    function gameLoop() {
+      if (!running) return;
+      const ratio = analyzeCenterColor();
+      lastColorRatio = ratio;
+      if (!locked && ratio >= MATCH_THRESHOLD) progress += 0.022 + (ratio - MATCH_THRESHOLD) * 0.08;
+      else progress -= 0.018;
+
+      progress = Math.max(0, Math.min(1, progress));
+      updateProgressRing();
+      if (!locked && progress >= 0.995) onMissionSuccess();
+      rafId = requestAnimationFrame(gameLoop);
+    }
+
+    async function startGame() {
+      if (running || starting) return;
+      starting = true;
+      const ok = await initCamera();
+      if (!ok) {
+        starting = false;
+        return;
+      }
+
+      startBtn.disabled = true;
+      startBtn.textContent = '✅ Läuft';
+      hideLoadingOverlay();
+      summaryOverlay.hidden = true;
+
+      await initTensorflowBonus();
+      clearInterval(tfTimer);
+      tfTimer = setInterval(runTensorflowTick, 1400);
+
+      running = true;
+      locked = false;
+      pickNextMission();
+      gameLoop();
+      starting = false;
+    }
+
+    function resetRunState() {
+      stopMediaAndLoops();
+      clearSummaryTimers();
+      score = 0;
+      streak = 0;
+      bestStreak = 0;
+      progress = 0;
+      locked = false;
+      scoreEl.textContent = '0';
+      streakEl.textContent = '0';
+      updateProgressRing();
+      startBtn.disabled = false;
+      startBtn.textContent = '📷 Kamera starten';
+      prepareMissionSet();
+      pickNextMission();
+      summaryOverlay.hidden = true;
+      loadingOverlay.classList.remove('is-hiding');
+      loadingOverlay.hidden = false;
+      starting = false;
+    }
+
+    beginBtn.addEventListener('click', startGame);
+    startBtn.addEventListener('click', startGame);
+    playAgainBtn.addEventListener('click', resetRunState);
+
+    resetRunState();
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        cancelAnimationFrame(rafId);
+      } else if (running) {
+        gameLoop();
+      }
+    });
+  </script>
+</body>
+</html>

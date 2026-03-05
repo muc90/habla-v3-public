@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Point & Click · habla</title>
+  <script src="../theme-switcher.js"></script>
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../../src/css/base.css">
+  <link rel="stylesheet" href="../../src/css/components.css">
+  <link rel="stylesheet" href="../../src/tactile-theme.css">
+  <style>
+    /* ══════════════════════════════════════════════════════════
+       DESIGN TOKENS — Tactile Theme
+    ══════════════════════════════════════════════════════════ */
+    :root {
+      --bg-deep:      var(--color-bg-base);
+      --bg-mid:       var(--color-bg-surface);
+      --accent:       var(--color-accent-primary);
+      --correct:      var(--color-correct);
+      --wrong:        var(--color-wrong);
+      --gold:         var(--color-accent-warning);
+      --text:         var(--color-text-primary);
+      --text-dim:     color-mix(in srgb, var(--color-text-primary) 72%, transparent);
+      --mono:        'Space Mono', monospace;
+      --glass:        color-mix(in srgb, var(--color-bg-elevated) 80%, transparent);
+      --glass-border: color-mix(in srgb, var(--color-border-default) 72%, transparent);
+      --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-left: env(safe-area-inset-left, 0px);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+
+    body {
+      font-family: var(--mono);
+      background: var(--bg-deep);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: max(1rem, var(--safe-top)) 1rem max(1rem, var(--safe-bottom));
+      overflow-x: hidden;
+    }
+
+    /* Ambient Blobs */
+    body::before, body::after {
+      content: ''; position: fixed; border-radius: 50%;
+      filter: blur(80px); pointer-events: none; z-index: 0;
+    }
+    body::before {
+      width: 500px; height: 500px; top: -100px; left: -100px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--accent) 10%, transparent) 0%, transparent 70%);
+      animation: blob-drift 14s ease-in-out infinite alternate;
+    }
+    body::after {
+      width: 400px; height: 400px; bottom: -80px; right: -80px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--correct) 7%, transparent) 0%, transparent 70%);
+      animation: blob-drift 18s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes blob-drift { to { transform: translate(40px, 30px) scale(1.1); } }
+
+    /* ── Lade-State ── */
+    #pac-root {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .pac-back-corner {
+      position: fixed !important;
+      top: calc(var(--safe-top) + 10px) !important;
+      left: calc(var(--safe-left) + 10px) !important;
+      z-index: 99999 !important;
+      display: inline-flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.48rem 0.8rem;
+      background: var(--color-accent-primary);
+      border: 1px solid var(--color-accent-primary);
+      border-radius: 14px;
+      color: var(--color-text-inverse);
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      box-shadow: var(--shadow-glow-sky), var(--shadow-md);
+    }
+    .pac-back-corner:focus-visible {
+      outline: 2px solid var(--color-accent-primary);
+      outline-offset: 2px;
+    }
+    .pac-back-corner:hover {
+      transform: translateY(-1px);
+      border-color: var(--color-sky-300);
+      background: var(--color-sky-300);
+    }
+    .pac-back-corner:active { transform: scale(0.97); }
+
+    .pac-loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      color: var(--text-dim);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .pac-loader__spinner {
+      width: 36px; height: 36px;
+      border: 2.5px solid color-mix(in srgb, var(--accent) 18%, transparent);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .pac-error {
+      padding: 1.5rem;
+      background: color-mix(in srgb, var(--wrong) 10%, transparent);
+      border: 1px solid color-mix(in srgb, var(--wrong) 35%, transparent);
+      border-radius: 16px;
+      color: var(--wrong);
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+
+    /* ══════════════════════════════════════════════════════════
+       ENGINE-CSS — Styles für alle von der Engine generierten
+       DOM-Elemente. Diese Klassen werden vom Engine-Modul
+       dynamisch gesetzt.
+    ══════════════════════════════════════════════════════════ */
+
+    /* ── Shell ── */
+    .pac-shell {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    /* ── Header ── */
+    .pac-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.2rem;
+      background: var(--color-bg-surface);
+      border: 1px solid var(--color-border-default);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+    .pac-title {
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: 600;
+      color: var(--color-accent-primary);
+      letter-spacing: 0.04em;
+    }
+    .pac-level {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-text-primary);
+      margin-top: 2px;
+      opacity: 0.75;
+    }
+    .pac-challenge {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+    }
+    .pac-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-left: 0.5rem;
+    }
+    .pac-btn-mini {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.48rem 0.75rem;
+      background: var(--color-bg-elevated);
+      border: 1px solid var(--color-border-default);
+      border-radius: 14px;
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 0.64rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+    }
+    .pac-btn-mini:hover {
+      background: color-mix(in srgb, var(--accent) 15%, transparent);
+      border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+      transform: translateY(-1px);
+    }
+    .pac-btn-mini:active { transform: scale(0.97); }
+    .pac-challenge__label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-text-primary);
+      opacity: 0.72;
+    }
+    .pac-challenge__word {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-accent-primary);
+      letter-spacing: 0.04em;
+    }
+    .pac-animate-in {
+      animation: word-pop 0.4s var(--ease-spring) both;
+    }
+    @keyframes word-pop {
+      0%   { opacity: 0; transform: scale(0.75) translateY(6px); }
+      100% { opacity: 1; transform: scale(1)    translateY(0); }
+    }
+
+    /* ── Szene ── */
+    .pac-scene-wrapper {
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 20px 60px rgba(0,0,0,0.85),
+        0 0 0 1px var(--glass-border),
+        inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+    .pac-scene {
+      position: relative;
+      width: 100%;
+      /* aspect-ratio wird per JS nach Bildladen dynamisch gesetzt */
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--color-bg-base);
+    }
+    .pac-scene__img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      display: block;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    /* ── SVG Overlay ── */
+    .pac-overlay {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      background: transparent;
+    }
+
+    /* ── Zonen ── */
+    .pac-zone {
+      fill: transparent;
+      stroke: transparent;
+      stroke-width: 0.4;
+      cursor: pointer;
+      transition: fill 0.2s ease, stroke 0.2s ease;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .pac-zone:hover {
+      fill: color-mix(in srgb, var(--accent) 13%, transparent);
+      stroke: color-mix(in srgb, var(--accent) 42%, transparent);
+      animation: zone-pulse 1.6s ease-in-out infinite;
+    }
+    @keyframes zone-pulse {
+      0%, 100% { fill: color-mix(in srgb, var(--accent) 7%, transparent); }
+      50%       { fill: color-mix(in srgb, var(--accent) 20%, transparent); }
+    }
+
+    .pac-zone.is-correct {
+      fill:         color-mix(in srgb, var(--correct) 28%, transparent) !important;
+      stroke:       color-mix(in srgb, var(--correct) 80%, transparent) !important;
+      stroke-width: 0.7;
+      animation: correct-flash 0.7s ease-out forwards !important;
+    }
+    @keyframes correct-flash {
+      0%   { fill: color-mix(in srgb, var(--correct) 55%, transparent); filter: drop-shadow(0 0 8px color-mix(in srgb, var(--correct) 80%, transparent)); }
+      60%  { fill: color-mix(in srgb, var(--correct) 30%, transparent); }
+      100% { fill: color-mix(in srgb, var(--correct) 15%, transparent); filter: drop-shadow(0 0 2px color-mix(in srgb, var(--correct) 30%, transparent)); }
+    }
+
+    .pac-zone.is-wrong {
+      fill:         color-mix(in srgb, var(--wrong) 25%, transparent) !important;
+      stroke:       color-mix(in srgb, var(--wrong) 75%, transparent) !important;
+      stroke-width: 0.6;
+      animation: wrong-flash 0.8s ease-out forwards !important;
+    }
+    @keyframes wrong-flash {
+      0%   { fill: color-mix(in srgb, var(--wrong) 50%, transparent); filter: drop-shadow(0 0 8px color-mix(in srgb, var(--wrong) 80%, transparent)); }
+      40%  { fill: color-mix(in srgb, var(--wrong) 30%, transparent); }
+      100% { fill: color-mix(in srgb, var(--wrong) 10%, transparent); filter: drop-shadow(0 0 2px color-mix(in srgb, var(--wrong) 20%, transparent)); }
+    }
+
+    /* ── Szene-Shake ── */
+    .pac-scene.shake {
+      animation: scene-shake 0.38s ease-out;
+    }
+    @keyframes scene-shake {
+      0%   { transform: translateX(0); }
+      16%  { transform: translateX(-7px); }
+      33%  { transform: translateX(6px); }
+      50%  { transform: translateX(-4px); }
+      68%  { transform: translateX(3px); }
+      84%  { transform: translateX(-1px); }
+      100% { transform: translateX(0); }
+    }
+
+    /* ── Toast ── */
+    .pac-toast {
+      position: absolute;
+      top: 10%; left: 50%;
+      transform: translateX(-50%) translateY(-10px);
+      padding: 0.45rem 1.2rem;
+      background: color-mix(in srgb, var(--correct) 14%, transparent);
+      border: 1px solid color-mix(in srgb, var(--correct) 55%, transparent);
+      border-radius: 28px;
+      color: var(--correct);
+      font-family: var(--mono);
+      font-size: 0.90rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 0 24px color-mix(in srgb, var(--correct) 28%, transparent), 0 4px 20px rgba(0,0,0,0.5);
+      transition: opacity 0.2s ease;
+      z-index: 10;
+    }
+    .pac-toast.show {
+      opacity: 1;
+      animation: toast-enter 0.38s var(--ease-spring) both;
+    }
+    .pac-toast.pac-toast--wrong {
+      background: color-mix(in srgb, var(--wrong) 14%, transparent);
+      border-color: color-mix(in srgb, var(--wrong) 55%, transparent);
+      color: var(--wrong);
+      box-shadow: 0 0 24px color-mix(in srgb, var(--wrong) 22%, transparent), 0 4px 20px rgba(0,0,0,0.5);
+    }
+    @keyframes toast-enter {
+      0%   { opacity: 0; transform: translateX(-50%) translateY(-18px) scale(0.82); }
+      100% { opacity: 1; transform: translateX(-50%) translateY(0)      scale(1); }
+    }
+
+    /* ── Wrong Label ── */
+    .pac-wrong-label {
+      position: absolute;
+      padding: 0.22rem 0.55rem;
+      background: color-mix(in srgb, var(--wrong) 20%, transparent);
+      border: 1px solid color-mix(in srgb, var(--wrong) 55%, transparent);
+      border-radius: 8px;
+      color: var(--wrong);
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(-50%);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 11;
+    }
+    .pac-wrong-label.show {
+      animation: label-float 2.2s ease-out forwards;
+    }
+    @keyframes label-float {
+      0%   { opacity: 1; transform: translateX(-50%) translateY(0); }
+      65%  { opacity: 1; transform: translateX(-50%) translateY(-14px); }
+      100% { opacity: 0; transform: translateX(-50%) translateY(-22px); }
+    }
+
+    /* ── Progress ── */
+    .pac-progress-strip {
+      display: flex;
+      justify-content: center;
+      padding: 0.35rem;
+    }
+    .pac-dots {
+      display: flex;
+      gap: 0.55rem;
+      align-items: center;
+    }
+    .pac-dot {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--accent) 18%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+      transition: all 0.35s var(--ease-spring);
+    }
+    .pac-dot.done {
+      background: var(--correct);
+      border-color: var(--correct);
+      box-shadow: 0 0 8px color-mix(in srgb, var(--correct) 55%, transparent);
+    }
+    .pac-dot.active {
+      background: color-mix(in srgb, var(--accent) 50%, transparent);
+      border-color: var(--accent);
+      box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 45%, transparent);
+      transform: scale(1.35);
+    }
+
+    /* ── Victory Screen ── */
+    .pac-victory {
+      position: fixed;
+      inset: 0; z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      background:
+        radial-gradient(circle at 18% 22%, rgba(177,156,217,0.06) 0%, transparent 36%),
+        radial-gradient(circle at 82% 78%, rgba(69,242,181,0.04) 0%, transparent 34%),
+        rgba(10,6,18,0.96);
+      backdrop-filter: blur(6px) saturate(1.01);
+      -webkit-backdrop-filter: blur(6px) saturate(1.01);
+      animation: victory-fade-in 0.5s ease-out both;
+    }
+    .pac-victory[hidden] { display: none; }
+    @keyframes victory-fade-in {
+      from { opacity: 0; transform: scale(0.96); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    .pac-victory__card {
+      position: relative;
+      isolation: isolate;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      padding: 2.1rem 1.8rem 1.65rem;
+      background: var(--color-bg-base);
+      border: 1px solid var(--color-border-strong);
+      border-radius: 30px;
+      box-shadow:
+        0 26px 72px rgba(0,0,0,0.78),
+        0 0 0 1px rgba(255,255,255,0.03) inset,
+        inset 0 1px 0 rgba(255,255,255,0.12),
+        inset 0 -24px 48px rgba(0,0,0,0.20);
+      color: var(--color-text-primary);
+    }
+    .pac-victory__card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(140deg, rgba(177,156,217,0.55), rgba(69,242,181,0.25), rgba(177,156,217,0.18));
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      opacity: 0.9;
+      z-index: -1;
+    }
+    .pac-victory__icon {
+      font-size: 3.7rem;
+      margin-bottom: 0.45rem;
+      filter: drop-shadow(0 0 18px rgba(240,180,41,0.36));
+      animation: icon-pop 0.6s var(--ease-spring) 0.2s both;
+    }
+    @keyframes icon-pop {
+      0%   { transform: scale(0) rotate(-15deg); opacity: 0; }
+      100% { transform: scale(1) rotate(0deg);   opacity: 1; }
+    }
+    .pac-victory__title {
+      font-family: 'Crimson Pro', serif;
+      font-size: 2.2rem;
+      font-style: italic;
+      color: var(--color-text-primary);
+      text-shadow: none;
+      margin-bottom: 0.3rem;
+    }
+    .pac-victory__sub {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.28rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid var(--color-border-default);
+      background: var(--color-bg-elevated);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      color: var(--color-text-primary);
+      margin-bottom: 1.35rem;
+    }
+    .pac-victory__stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-bottom: 1.35rem;
+    }
+    .pac-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.12rem;
+      border-radius: 16px;
+      padding: 0.72rem 0.45rem;
+      background: var(--color-bg-elevated);
+      border: 1px solid var(--color-border-default);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    .pac-stat__val {
+      font-size: 1.72rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      text-shadow: none;
+    }
+    .pac-stat__lbl {
+      font-size: 0.62rem; text-transform: uppercase;
+      letter-spacing: 0.10em; color: var(--color-text-primary);
+    }
+    .pac-btn-restart {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      justify-content: center;
+      width: 100%;
+      padding: 0.82rem 1.05rem;
+      background: color-mix(in srgb, var(--color-bg-elevated) 94%, transparent);
+      border: 1px solid color-mix(in srgb, var(--color-border-default) 85%, transparent);
+      border-radius: 22px;
+      color: var(--color-text-primary);
+      font-family: var(--mono); font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    .pac-btn-restart:hover {
+      background: color-mix(in srgb, var(--color-bg-elevated) 100%, transparent);
+      border-color: color-mix(in srgb, var(--color-accent-primary) 55%, transparent);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.42);
+      transform: translateY(-2px);
+    }
+    .pac-btn-restart:active { transform: scale(0.97); }
+    .pac-victory__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      align-items: stretch;
+    }
+    .pac-btn-next,
+    .pac-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.82rem 1.2rem;
+      border-radius: 22px;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    .pac-btn-next {
+      background: var(--color-accent-primary);
+      border: 1px solid var(--color-accent-primary);
+      color: var(--color-text-inverse);
+    }
+    .pac-btn-next:hover:not(:disabled) {
+      background: var(--color-sky-300);
+      border-color: var(--color-sky-300);
+      box-shadow: var(--shadow-glow-sky), 0 4px 14px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+    }
+    .pac-btn-next:disabled,
+    .pac-btn-secondary:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      body { padding: 0.6rem; }
+      #pac-root { padding-top: 2.2rem; }
+      .pac-header { flex-direction: column; gap: 0.5rem; text-align: center; align-items: center; }
+      .pac-challenge { align-items: center; }
+      .pac-challenge__word { font-size: 1.1rem; }
+      .pac-actions { width: 100%; justify-content: center; }
+      .pac-back-corner { top: calc(var(--safe-top) + 8px) !important; left: calc(var(--safe-left) + 8px) !important; }
+      .pac-victory__card { padding: 1.7rem 1.15rem 1.25rem; }
+      .pac-victory__stats { grid-template-columns: 1fr; }
+      .pac-victory__actions { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<button class="pac-back-corner btn btn--ghost btn--sm" data-pac-global="1" onclick="location.href='../index.html#/reise'" aria-label="Zurück zur Reise">← Zurück</button>
+
+<div id="pac-root">
+  <div class="pac-loader" id="loader">
+    <div class="pac-loader__spinner"></div>
+    <span>Lade Szene…</span>
+  </div>
+</div>
+
+<script type="module">
+  import { PointAndClickEngine } from './point-and-click-engine.js';
+
+  /* ─────────────────────────────────────────────────────────
+     Szene aus URL-Parameter bestimmen: ?scene=cafe
+     Fallback: cafe
+  ───────────────────────────────────────────────────────── */
+  const params    = new URLSearchParams(location.search);
+  const sceneName = params.get('scene') ?? 'cafe';
+  const jsonPath  = `../data/point-and-click/${sceneName}.json`;
+
+  const root   = document.getElementById('pac-root');
+  const loader = document.getElementById('loader');
+
+  const normalize = (s = '') =>
+    s.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+
+  function goBackToRoadmap() {
+    location.href = '../index.html#/reise';
+  }
+
+  async function findNextLessonRoute(config, scene) {
+    try {
+      const res = await fetch('../data/chapters/manifest.json');
+      if (!res.ok) return null;
+      const manifest = await res.json();
+      const regions = manifest?.regions ?? [];
+
+      const sceneToLesson = {
+        cafe: 'l1-1',
+        im_cafe: 'l1-1',
+      };
+
+      const targetLesson = sceneToLesson[normalize(scene)] || null;
+      const titleNorm = normalize(config?.title || '');
+
+      for (const region of regions) {
+        const chapters = region?.chapters ?? [];
+        const idx = chapters.findIndex(ch => {
+          if (targetLesson && ch.lektionId === targetLesson) return true;
+          return normalize(ch.title) === titleNorm;
+        });
+        if (idx >= 0) {
+          const next = chapters[idx + 1];
+          return next?.lektionId ? `../index.html#/lektion/${next.lektionId}` : null;
+        }
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  }
+
+  try {
+    const res    = await fetch(jsonPath);
+    if (!res.ok) throw new Error(`JSON nicht gefunden: ${jsonPath}`);
+    const config = await res.json();
+
+    // Loader entfernen, Engine-Container einsetzen
+    loader.remove();
+    const gameContainer = document.createElement('div');
+    root.appendChild(gameContainer);
+
+    // Seiten-Titel anpassen
+    document.title = `${config.title ?? sceneName} — Point & Click · habla`;
+
+    const nextRoute = await findNextLessonRoute(config, sceneName);
+
+    // Engine starten
+    const engine = new PointAndClickEngine(gameContainer, config, {
+      shuffle:    true,
+      onBack:     () => goBackToRoadmap(),
+      onNext:     nextRoute ? () => { location.href = nextRoute; } : null,
+      onComplete: (stats) => {
+        console.log('[habla] Point & Click abgeschlossen:', stats);
+        // Hier kannst du XP, Supabase-Progress etc. ansteuern
+      },
+    });
+    engine.init();
+
+  } catch (err) {
+    loader.remove();
+    root.innerHTML = `
+      <div class="pac-error">
+        ⚠️ Szene <strong>${sceneName}</strong> konnte nicht geladen werden.<br>
+        ${err.message}<br><br>
+        Verfügbare Szenen werden unter <code>data/point-and-click/</code> abgelegt.<br>
+        Erstelle neue Szenen mit dem <a href="zone-editor.html" style="color:var(--accent)">Zone-Editor</a>.
+      </div>`;
+  }
+</script>
+
+</body>
+</html>

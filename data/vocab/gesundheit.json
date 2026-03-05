@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "ges_001",
+    "de": "die Gesundheit",
+    "es": "la salud",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la saˈluð",
+      "simplified": "la sa-LUD",
+      "tip": "Das 'd' am Ende sehr weich, fast stumm"
+    },
+    "dialects": {
+      "es_castilla": "la salud",
+      "es_andalucia": "la salud",
+      "es_cataluna": "la salut",
+      "es_canarias": "la salud",
+      "lat_mx": "la salud",
+      "lat_ar": "la salud",
+      "lat_co": "la salud",
+      "lat_cl": "la salud",
+      "lat_pe": "la salud",
+      "lat_ve": "la salud",
+      "lat_cu": "la salud",
+      "lat_do": "la salud"
+    },
+    "example_de": "Gesundheit ist das Wichtigste.",
+    "example_es": "La salud es lo más importante.",
+    "tags": [
+      "gesundheit",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_002",
+    "de": "der Arzt",
+    "es": "el médico",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈmeðiko",
+      "simplified": "el ME-di-ko",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el médico",
+      "es_andalucia": "el médico",
+      "es_cataluna": "el metge",
+      "es_canarias": "el médico",
+      "lat_mx": "el doctor",
+      "lat_ar": "el médico",
+      "lat_co": "el médico",
+      "lat_cl": "el médico",
+      "lat_pe": "el médico",
+      "lat_ve": "el médico",
+      "lat_cu": "el médico",
+      "lat_do": "el doctor"
+    },
+    "example_de": "Ich muss zum Arzt.",
+    "example_es": "Tengo que ir al médico.",
+    "tags": [
+      "personen",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_003",
+    "de": "das Krankenhaus",
+    "es": "el hospital",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ospiˈtal",
+      "simplified": "el os-pi-TAL",
+      "tip": "Das 'h' ist stumm, Betonung auf 'tal'"
+    },
+    "dialects": {
+      "es_castilla": "el hospital",
+      "es_andalucia": "el hospital",
+      "es_cataluna": "l'hospital",
+      "es_canarias": "el hospital",
+      "lat_mx": "el hospital",
+      "lat_ar": "el hospital",
+      "lat_co": "el hospital",
+      "lat_cl": "el hospital",
+      "lat_pe": "el hospital",
+      "lat_ve": "el hospital",
+      "lat_cu": "el hospital",
+      "lat_do": "el hospital"
+    },
+    "example_de": "Er ist im Krankenhaus.",
+    "example_es": "Él está en el hospital.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_004",
+    "de": "die Apotheke",
+    "es": "la farmacia",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la faɾˈmaθja",
+      "simplified": "la far-MA-sja",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la farmacia",
+      "es_andalucia": "la farmacia",
+      "es_cataluna": "la farmàcia",
+      "es_canarias": "la farmacia",
+      "lat_mx": "la farmacia",
+      "lat_ar": "la farmacia",
+      "lat_co": "la farmacia",
+      "lat_cl": "la farmacia",
+      "lat_pe": "la botica",
+      "lat_ve": "la farmacia",
+      "lat_cu": "la farmacia",
+      "lat_do": "la farmacia"
+    },
+    "example_de": "Ich brauche Medikamente aus der Apotheke.",
+    "example_es": "Necesito medicamentos de la farmacia.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_005",
+    "de": "krank",
+    "es": "enfermo",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "enˈfeɾmo",
+      "simplified": "en-FER-mo",
+      "tip": "Drei Silben, Betonung auf 'fer'"
+    },
+    "dialects": {
+      "es_castilla": "enfermo",
+      "es_andalucia": "enfermo",
+      "es_cataluna": "malalt",
+      "es_canarias": "enfermo",
+      "lat_mx": "enfermo",
+      "lat_ar": "enfermo",
+      "lat_co": "enfermo",
+      "lat_cl": "enfermo",
+      "lat_pe": "enfermo",
+      "lat_ve": "enfermo",
+      "lat_cu": "enfermo",
+      "lat_do": "enfermo"
+    },
+    "example_de": "Ich bin seit gestern krank.",
+    "example_es": "Estoy enfermo desde ayer.",
+    "tags": [
+      "adjektive",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_006",
+    "de": "der Schmerz",
+    "es": "el dolor",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el doˈloɾ",
+      "simplified": "el do-LOR",
+      "tip": "Betonung auf 'lor', das 'r' rollen"
+    },
+    "dialects": {
+      "es_castilla": "el dolor",
+      "es_andalucia": "el dolor",
+      "es_cataluna": "el dolor",
+      "es_canarias": "el dolor",
+      "lat_mx": "el dolor",
+      "lat_ar": "el dolor",
+      "lat_co": "el dolor",
+      "lat_cl": "el dolor",
+      "lat_pe": "el dolor",
+      "lat_ve": "el dolor",
+      "lat_cu": "el dolor",
+      "lat_do": "el dolor"
+    },
+    "example_de": "Mir tut der Kopf weh.",
+    "example_es": "Me duele la cabeza.",
+    "tags": [
+      "beschwerden",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_007",
+    "de": "die Tablette",
+    "es": "la pastilla",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la pasˈtiʎa",
+      "simplified": "la pas-TI-lja",
+      "tip": "Das 'll' wie weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "la pastilla",
+      "es_andalucia": "la pastilla",
+      "es_cataluna": "la pastilla",
+      "es_canarias": "la pastilla",
+      "lat_mx": "la pastilla",
+      "lat_ar": "la pastilla",
+      "lat_co": "la pastilla",
+      "lat_cl": "la pastilla",
+      "lat_pe": "la pastilla",
+      "lat_ve": "la pastilla",
+      "lat_cu": "la pastilla",
+      "lat_do": "la pastilla"
+    },
+    "example_de": "Nimm diese Tablette dreimal täglich.",
+    "example_es": "Toma esta pastilla tres veces al día.",
+    "tags": [
+      "medikamente",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_008",
+    "de": "das Fieber",
+    "es": "la fiebre",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈfjeβɾe",
+      "simplified": "la FJEB-re",
+      "tip": "Das 'ie' als Diphthong, das 'b' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la fiebre",
+      "es_andalucia": "la fiebre",
+      "es_cataluna": "la febre",
+      "es_canarias": "la fiebre",
+      "lat_mx": "la fiebre",
+      "lat_ar": "la fiebre",
+      "lat_co": "la fiebre",
+      "lat_cl": "la fiebre",
+      "lat_pe": "la fiebre",
+      "lat_ve": "la fiebre",
+      "lat_cu": "la fiebre",
+      "lat_do": "la fiebre"
+    },
+    "example_de": "Ich habe hohes Fieber.",
+    "example_es": "Tengo mucha fiebre.",
+    "tags": [
+      "beschwerden",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_009",
+    "de": "der Husten",
+    "es": "la tos",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la tos",
+      "simplified": "la TOS",
+      "tip": "Sehr kurz und klar"
+    },
+    "dialects": {
+      "es_castilla": "la tos",
+      "es_andalucia": "la tos",
+      "es_cataluna": "la tos",
+      "es_canarias": "la tos",
+      "lat_mx": "la tos",
+      "lat_ar": "la tos",
+      "lat_co": "la tos",
+      "lat_cl": "la tos",
+      "lat_pe": "la tos",
+      "lat_ve": "la tos",
+      "lat_cu": "la tos",
+      "lat_do": "la tos"
+    },
+    "example_de": "Ich habe seit einer Woche Husten.",
+    "example_es": "Tengo tos desde hace una semana.",
+    "tags": [
+      "beschwerden",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_010",
+    "de": "der Arzttermin",
+    "es": "la cita médica",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈθita ˈmeðika",
+      "simplified": "la SI-ta ME-di-ka",
+      "tip": "Das 'c' vor 'i' wie 'th' in Spanien, wie 's' in Lateinamerika"
+    },
+    "dialects": {
+      "es_castilla": "la cita médica",
+      "es_andalucia": "la cita",
+      "es_cataluna": "la cita mèdica",
+      "es_canarias": "la cita",
+      "lat_mx": "la cita",
+      "lat_ar": "el turno médico",
+      "lat_co": "la cita médica",
+      "lat_cl": "la hora (médica)",
+      "lat_pe": "la cita médica",
+      "lat_ve": "la cita médica",
+      "lat_cu": "la consulta",
+      "lat_do": "la cita médica"
+    },
+    "example_de": "Ich habe morgen einen Arzttermin.",
+    "example_es": "Mañana tengo una cita médica.",
+    "tags": [
+      "termine",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_011",
+    "de": "das Rezept",
+    "es": "la receta médica",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la reˈθeta",
+      "simplified": "la re-ZE-ta",
+      "tip": "In Lateinamerika 're-SE-ta'"
+    },
+    "dialects": {
+      "es_castilla": "la receta médica",
+      "es_andalucia": "la receta",
+      "es_cataluna": "la recepta mèdica",
+      "es_canarias": "la receta",
+      "lat_mx": "la receta",
+      "lat_ar": "la receta",
+      "lat_co": "la fórmula médica",
+      "lat_cl": "la receta",
+      "lat_pe": "la receta",
+      "lat_ve": "la receta",
+      "lat_cu": "la receta",
+      "lat_do": "la receta"
+    },
+    "example_de": "Der Arzt hat mir ein Rezept ausgestellt.",
+    "example_es": "El médico me ha dado una receta.",
+    "tags": [
+      "medikamente",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_012",
+    "de": "der Kopf",
+    "es": "la cabeza",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la kaˈβeθa",
+      "simplified": "la ka-BE-sa",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la cabeza",
+      "es_andalucia": "la cabeza",
+      "es_cataluna": "el cap",
+      "es_canarias": "la cabeza",
+      "lat_mx": "la cabeza",
+      "lat_ar": "la cabeza",
+      "lat_co": "la cabeza",
+      "lat_cl": "la cabeza",
+      "lat_pe": "la cabeza",
+      "lat_ve": "la cabeza",
+      "lat_cu": "la cabeza",
+      "lat_do": "la cabeza"
+    },
+    "example_de": "Ich habe Kopfschmerzen.",
+    "example_es": "Me duele la cabeza.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_013",
+    "de": "der Bauch",
+    "es": "el estómago",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el esˈtomaɣo",
+      "simplified": "el es-TO-ma-go",
+      "tip": "Das 'g' sehr weich zwischen Vokalen"
+    },
+    "dialects": {
+      "es_castilla": "el estómago",
+      "es_andalucia": "la barriga",
+      "es_cataluna": "l'estómac",
+      "es_canarias": "el estómago",
+      "lat_mx": "el estómago",
+      "lat_ar": "la panza",
+      "lat_co": "la barriga",
+      "lat_cl": "la guata (informell)",
+      "lat_pe": "la barriga",
+      "lat_ve": "la barriga",
+      "lat_cu": "la barriga",
+      "lat_do": "la barriga"
+    },
+    "example_de": "Mir tut der Bauch weh.",
+    "example_es": "Me duele el estómago.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_014",
+    "de": "der Rücken",
+    "es": "la espalda",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la esˈpalda",
+      "simplified": "la es-PAL-da",
+      "tip": "Drei Silben, Betonung auf 'pal'"
+    },
+    "dialects": {
+      "es_castilla": "la espalda",
+      "es_andalucia": "la espalda",
+      "es_cataluna": "l'esquena",
+      "es_canarias": "la espalda",
+      "lat_mx": "la espalda",
+      "lat_ar": "la espalda",
+      "lat_co": "la espalda",
+      "lat_cl": "la espalda",
+      "lat_pe": "la espalda",
+      "lat_ve": "la espalda",
+      "lat_cu": "la espalda",
+      "lat_do": "la espalda"
+    },
+    "example_de": "Ich habe Rückenschmerzen.",
+    "example_es": "Me duele la espalda.",
+    "tags": [
+      "körper",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_015",
+    "de": "die Erkältung",
+    "es": "el resfriado",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el resˈfɾjaðo",
+      "simplified": "el res-FRJA-do",
+      "tip": "Das 'fr' klar aussprechen"
+    },
+    "dialects": {
+      "es_castilla": "el resfriado",
+      "es_andalucia": "el catarro",
+      "es_cataluna": "el refredat",
+      "es_canarias": "el resfriado",
+      "lat_mx": "el resfriado",
+      "lat_ar": "el resfrío",
+      "lat_co": "el resfriado",
+      "lat_cl": "el resfrío",
+      "lat_pe": "el resfrío",
+      "lat_ve": "el catarro",
+      "lat_cu": "el catarro",
+      "lat_do": "el catarro"
+    },
+    "example_de": "Ich habe eine Erkältung.",
+    "example_es": "Tengo un resfriado.",
+    "tags": [
+      "krankheiten",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_016",
+    "de": "sich ausruhen",
+    "es": "descansar",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "deskanˈsaɾ",
+      "simplified": "des-kan-SAR",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "descansar",
+      "es_andalucia": "descansar",
+      "es_cataluna": "descansar",
+      "es_canarias": "descansar",
+      "lat_mx": "descansar",
+      "lat_ar": "descansar",
+      "lat_co": "descansar",
+      "lat_cl": "descansar",
+      "lat_pe": "descansar",
+      "lat_ve": "descansar",
+      "lat_cu": "descansar",
+      "lat_do": "descansar"
+    },
+    "example_de": "Du musst dich ausruhen.",
+    "example_es": "Necesitas descansar.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_017",
+    "de": "Sport treiben",
+    "es": "hacer deporte",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aˈθeɾ deˈpoɾte",
+      "simplified": "a-ZER de-POR-te",
+      "tip": "In Lateinamerika 'a-SER'"
+    },
+    "dialects": {
+      "es_castilla": "hacer deporte",
+      "es_andalucia": "hacer deporte",
+      "es_cataluna": "fer esport",
+      "es_canarias": "hacer deporte",
+      "lat_mx": "hacer deporte",
+      "lat_ar": "hacer deporte",
+      "lat_co": "hacer deporte",
+      "lat_cl": "hacer deporte",
+      "lat_pe": "hacer deporte",
+      "lat_ve": "hacer deporte",
+      "lat_cu": "hacer deporte",
+      "lat_do": "hacer deporte"
+    },
+    "example_de": "Ich treibe dreimal pro Woche Sport.",
+    "example_es": "Hago deporte tres veces por semana.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_018",
+    "de": "gesund",
+    "es": "saludable",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈsano",
+      "simplified": "SA-no",
+      "tip": "Klares 'a', weiches 'n'"
+    },
+    "dialects": {
+      "es_castilla": "sano",
+      "es_andalucia": "sano",
+      "es_cataluna": "sa",
+      "es_canarias": "sano",
+      "lat_mx": "sano",
+      "lat_ar": "sano",
+      "lat_co": "sano",
+      "lat_cl": "sano",
+      "lat_pe": "sano",
+      "lat_ve": "sano",
+      "lat_cu": "sano",
+      "lat_do": "sano"
+    },
+    "example_de": "Iss gesundes Essen!",
+    "example_es": "¡Come comida sana!",
+    "tags": [
+      "adjektive",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_019",
+    "de": "die Wunde",
+    "es": "la herida",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la eˈɾiða",
+      "simplified": "la e-RI-da",
+      "tip": "Das 'h' ist stumm, das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la herida",
+      "es_andalucia": "la herida",
+      "es_cataluna": "la ferida",
+      "es_canarias": "la herida",
+      "lat_mx": "la herida",
+      "lat_ar": "la herida",
+      "lat_co": "la herida",
+      "lat_cl": "la herida",
+      "lat_pe": "la herida",
+      "lat_ve": "la herida",
+      "lat_cu": "la herida",
+      "lat_do": "la herida"
+    },
+    "example_de": "Die Wunde blutet.",
+    "example_es": "La herida está sangrando.",
+    "tags": [
+      "verletzungen",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_020",
+    "de": "die Krankenversicherung",
+    "es": "el seguro médico",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el seˈɣuɾo ˈmeðiko",
+      "simplified": "el se-GU-ro ME-di-ko",
+      "tip": "Das 'g' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la seguridad social",
+      "es_andalucia": "la seguridad social",
+      "es_cataluna": "la seguretat social",
+      "es_canarias": "el seguro médico",
+      "lat_mx": "el seguro",
+      "lat_ar": "la obra social",
+      "lat_co": "el seguro médico",
+      "lat_cl": "el seguro",
+      "lat_pe": "el seguro",
+      "lat_ve": "el seguro",
+      "lat_cu": "el seguro social",
+      "lat_do": "el seguro médico"
+    },
+    "example_de": "Hast du eine Krankenversicherung?",
+    "example_es": "¿Tienes seguro médico?",
+    "tags": [
+      "gesundheitssystem",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_021",
+    "de": "der Notfall",
+    "es": "la emergencia",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la emeɾˈxenθja",
+      "simplified": "la e-mer-CHEN-sja",
+      "tip": "Das 'g' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la emergencia",
+      "es_andalucia": "la urgencia",
+      "es_cataluna": "l'emergència",
+      "es_canarias": "la emergencia",
+      "lat_mx": "la emergencia",
+      "lat_ar": "la emergencia",
+      "lat_co": "la urgencia",
+      "lat_cl": "la emergencia",
+      "lat_pe": "la emergencia",
+      "lat_ve": "la emergencia",
+      "lat_cu": "la urgencia",
+      "lat_do": "la emergencia"
+    },
+    "example_de": "Bitte rufen Sie einen Krankenwagen!",
+    "example_es": "¡Por favor llame a una ambulancia!",
+    "tags": [
+      "notfall",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_022",
+    "de": "die Krankheit",
+    "es": "la enfermedad",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la enfeɾmeˈðað",
+      "simplified": "la en-fer-me-DAD",
+      "tip": "Das 'd' am Ende sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la enfermedad",
+      "es_andalucia": "la enfermedad",
+      "es_cataluna": "la malaltia",
+      "es_canarias": "la enfermedad",
+      "lat_mx": "la enfermedad",
+      "lat_ar": "la enfermedad",
+      "lat_co": "la enfermedad",
+      "lat_cl": "la enfermedad",
+      "lat_pe": "la enfermedad",
+      "lat_ve": "la enfermedad",
+      "lat_cu": "la enfermedad",
+      "lat_do": "la enfermedad"
+    },
+    "example_de": "Es ist eine ansteckende Krankheit.",
+    "example_es": "Es una enfermedad contagiosa.",
+    "tags": [
+      "krankheiten",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_023",
+    "de": "die Operation",
+    "es": "la operación",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la opeɾaˈθjon",
+      "simplified": "la o-pe-ra-SJON",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la operación",
+      "es_andalucia": "la operación",
+      "es_cataluna": "l'operació",
+      "es_canarias": "la operación",
+      "lat_mx": "la operación",
+      "lat_ar": "la operación",
+      "lat_co": "la cirugía",
+      "lat_cl": "la operación",
+      "lat_pe": "la operación",
+      "lat_ve": "la operación",
+      "lat_cu": "la operación",
+      "lat_do": "la operación"
+    },
+    "example_de": "Er braucht eine Operation.",
+    "example_es": "Él necesita una operación.",
+    "tags": [
+      "medizin",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_024",
+    "de": "die Impfung",
+    "es": "la vacuna",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la βaˈkuna",
+      "simplified": "la ba-KU-na",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "la vacuna",
+      "es_andalucia": "la vacuna",
+      "es_cataluna": "la vacuna",
+      "es_canarias": "la vacuna",
+      "lat_mx": "la vacuna",
+      "lat_ar": "la vacuna",
+      "lat_co": "la vacuna",
+      "lat_cl": "la vacuna",
+      "lat_pe": "la vacuna",
+      "lat_ve": "la vacuna",
+      "lat_cu": "la vacuna",
+      "lat_do": "la vacuna"
+    },
+    "example_de": "Bist du gegen Grippe geimpft?",
+    "example_es": "¿Estás vacunado contra la gripe?",
+    "tags": [
+      "medizin",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_025",
+    "de": "schwindelig",
+    "es": "mareado",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "maɾeˈaðo",
+      "simplified": "ma-re-A-do",
+      "tip": "Vier Silben, Betonung auf 'a', weiches 'd'"
+    },
+    "dialects": {
+      "es_castilla": "mareado",
+      "es_andalucia": "mareado",
+      "es_cataluna": "marejat",
+      "es_canarias": "mareado",
+      "lat_mx": "mareado",
+      "lat_ar": "mareado",
+      "lat_co": "mareado",
+      "lat_cl": "mareado",
+      "lat_pe": "mareado",
+      "lat_ve": "mareado",
+      "lat_cu": "mareado",
+      "lat_do": "mareado"
+    },
+    "example_de": "Mir ist schwindelig.",
+    "example_es": "Estoy mareado.",
+    "tags": [
+      "beschwerden",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_026",
+    "de": "die Allergie",
+    "es": "la alergia",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la aleɾˈxia",
+      "simplified": "la a-ler-CHIA",
+      "tip": "Das 'g' klingt wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la alergia",
+      "es_andalucia": "la alergia",
+      "es_cataluna": "l'al·lèrgia",
+      "es_canarias": "la alergia",
+      "lat_mx": "la alergia",
+      "lat_ar": "la alergia",
+      "lat_co": "la alergia",
+      "lat_cl": "la alergia",
+      "lat_pe": "la alergia",
+      "lat_ve": "la alergia",
+      "lat_cu": "la alergia",
+      "lat_do": "la alergia"
+    },
+    "example_de": "Ich habe eine Pollenallergie.",
+    "example_es": "Tengo alergia al polen.",
+    "tags": [
+      "krankheiten",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_027",
+    "de": "die Ernährung",
+    "es": "la alimentación",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la ˈdjeta",
+      "simplified": "la DJETA",
+      "tip": "Das 'ie' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "la dieta",
+      "es_andalucia": "la dieta",
+      "es_cataluna": "la dieta",
+      "es_canarias": "la dieta",
+      "lat_mx": "la dieta",
+      "lat_ar": "la dieta",
+      "lat_co": "la dieta",
+      "lat_cl": "la dieta",
+      "lat_pe": "la alimentación",
+      "lat_ve": "la dieta",
+      "lat_cu": "la dieta",
+      "lat_do": "la dieta"
+    },
+    "example_de": "Ich achte auf meine Ernährung.",
+    "example_es": "Cuido mi alimentación.",
+    "tags": [
+      "ernährung",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_028",
+    "de": "der Blutdruck",
+    "es": "la presión arterial",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la preˈsjon aɾteˈɾjal",
+      "simplified": "la pre-SJON ar-te-RJAL",
+      "tip": "Zwei Wörter, auf jedes separat achten"
+    },
+    "dialects": {
+      "es_castilla": "la tensión",
+      "es_andalucia": "la tensión",
+      "es_cataluna": "la tensió arterial",
+      "es_canarias": "la tensión",
+      "lat_mx": "la presión arterial",
+      "lat_ar": "la presión arterial",
+      "lat_co": "la tensión",
+      "lat_cl": "la presión arterial",
+      "lat_pe": "la presión",
+      "lat_ve": "la tensión",
+      "lat_cu": "la tensión",
+      "lat_do": "la presión"
+    },
+    "example_de": "Der Arzt misst meinen Blutdruck.",
+    "example_es": "El médico me mide la tensión.",
+    "tags": [
+      "medizin",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_029",
+    "de": "erbrechen",
+    "es": "vomitar",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "bomiˈtaɾ",
+      "simplified": "bo-mi-TAR",
+      "tip": "Das 'v' wie 'b', Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "vomitar",
+      "es_andalucia": "vomitar",
+      "es_cataluna": "vomitar",
+      "es_canarias": "vomitar",
+      "lat_mx": "vomitar",
+      "lat_ar": "vomitar",
+      "lat_co": "vomitar",
+      "lat_cl": "vomitar",
+      "lat_pe": "vomitar",
+      "lat_ve": "vomitar",
+      "lat_cu": "vomitar",
+      "lat_do": "vomitar"
+    },
+    "example_de": "Das Kind hat erbrochen.",
+    "example_es": "El niño ha vomitado.",
+    "tags": [
+      "beschwerden",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_030",
+    "de": "die Krankenschwester",
+    "es": "la enfermera",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el enfeɾˈmeɾo",
+      "simplified": "el en-fer-ME-ro",
+      "tip": "Vier Silben, Betonung auf 'me'"
+    },
+    "dialects": {
+      "es_castilla": "el enfermero",
+      "es_andalucia": "el enfermero",
+      "es_cataluna": "l'infermer",
+      "es_canarias": "la enfermera",
+      "lat_mx": "el enfermero",
+      "lat_ar": "el enfermero",
+      "lat_co": "la enfermera",
+      "lat_cl": "el enfermero",
+      "lat_pe": "la enfermera",
+      "lat_ve": "la enfermera",
+      "lat_cu": "la enfermera",
+      "lat_do": "la enfermera"
+    },
+    "example_de": "Die Krankenschwester ist sehr nett.",
+    "example_es": "La enfermera es muy amable.",
+    "tags": [
+      "personen",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_031",
+    "de": "die Schulter",
+    "es": "el hombro",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈombɾo",
+      "simplified": "el OM-bro",
+      "tip": "Das 'h' ist stumm"
+    },
+    "dialects": {
+      "es_castilla": "el hombro",
+      "es_andalucia": "el hombro",
+      "es_cataluna": "l'espatlla",
+      "es_canarias": "el hombro",
+      "lat_mx": "el hombro",
+      "lat_ar": "el hombro",
+      "lat_co": "el hombro",
+      "lat_cl": "el hombro",
+      "lat_pe": "el hombro",
+      "lat_ve": "el hombro",
+      "lat_cu": "el hombro",
+      "lat_do": "el hombro"
+    },
+    "example_de": "Ich habe Schulterschmerzen.",
+    "example_es": "Me duele el hombro.",
+    "tags": [
+      "körper",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_032",
+    "de": "das Knie",
+    "es": "la rodilla",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la roˈðiʎa",
+      "simplified": "la ro-DI-lja",
+      "tip": "Das 'll' klingt wie weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "la rodilla",
+      "es_andalucia": "la rodilla",
+      "es_cataluna": "el genoll",
+      "es_canarias": "la rodilla",
+      "lat_mx": "la rodilla",
+      "lat_ar": "la rodilla",
+      "lat_co": "la rodilla",
+      "lat_cl": "la rodilla",
+      "lat_pe": "la rodilla",
+      "lat_ve": "la rodilla",
+      "lat_cu": "la rodilla",
+      "lat_do": "la rodilla"
+    },
+    "example_de": "Ich habe mein Knie verletzt.",
+    "example_es": "Me lastimé la rodilla.",
+    "tags": [
+      "körper",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_033",
+    "de": "der Arm",
+    "es": "el brazo",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈbɾaθo",
+      "simplified": "el BRA-so",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "el brazo",
+      "es_andalucia": "el brazo",
+      "es_cataluna": "el braç",
+      "es_canarias": "el brazo",
+      "lat_mx": "el brazo",
+      "lat_ar": "el brazo",
+      "lat_co": "el brazo",
+      "lat_cl": "el brazo",
+      "lat_pe": "el brazo",
+      "lat_ve": "el brazo",
+      "lat_cu": "el brazo",
+      "lat_do": "el brazo"
+    },
+    "example_de": "Er hat sich den Arm gebrochen.",
+    "example_es": "Se rompió el brazo.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_034",
+    "de": "das Bein",
+    "es": "la pierna",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈpjeɾna",
+      "simplified": "la PJER-na",
+      "tip": "Das 'ie' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "la pierna",
+      "es_andalucia": "la pierna",
+      "es_cataluna": "la cama",
+      "es_canarias": "la pierna",
+      "lat_mx": "la pierna",
+      "lat_ar": "la pierna",
+      "lat_co": "la pierna",
+      "lat_cl": "la pierna",
+      "lat_pe": "la pierna",
+      "lat_ve": "la pierna",
+      "lat_cu": "la pierna",
+      "lat_do": "la pierna"
+    },
+    "example_de": "Mein Bein tut weh.",
+    "example_es": "Me duele la pierna.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_035",
+    "de": "die Hand",
+    "es": "la mano",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈmano",
+      "simplified": "la MA-no",
+      "tip": "Einfach und klar, wie Deutsch"
+    },
+    "dialects": {
+      "es_castilla": "la mano",
+      "es_andalucia": "la mano",
+      "es_cataluna": "la mà",
+      "es_canarias": "la mano",
+      "lat_mx": "la mano",
+      "lat_ar": "la mano",
+      "lat_co": "la mano",
+      "lat_cl": "la mano",
+      "lat_pe": "la mano",
+      "lat_ve": "la mano",
+      "lat_cu": "la mano",
+      "lat_do": "la mano"
+    },
+    "example_de": "Gib mir deine Hand.",
+    "example_es": "Dame tu mano.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_036",
+    "de": "der Fuß",
+    "es": "el pie",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈpje",
+      "simplified": "el PJE",
+      "tip": "Sehr kurz, das 'ie' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "el pie",
+      "es_andalucia": "el pie",
+      "es_cataluna": "el peu",
+      "es_canarias": "el pie",
+      "lat_mx": "el pie",
+      "lat_ar": "el pie",
+      "lat_co": "el pie",
+      "lat_cl": "el pie",
+      "lat_pe": "el pie",
+      "lat_ve": "el pie",
+      "lat_cu": "el pie",
+      "lat_do": "el pie"
+    },
+    "example_de": "Mein Fuß schmerzt beim Laufen.",
+    "example_es": "Me duele el pie al caminar.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_037",
+    "de": "der Hals",
+    "es": "la garganta",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ɡaɾˈɡanta",
+      "simplified": "la gar-GAN-ta",
+      "tip": "Das 'g' stimmhaft, Betonung auf 'gan'"
+    },
+    "dialects": {
+      "es_castilla": "la garganta",
+      "es_andalucia": "la garganta",
+      "es_cataluna": "la gola",
+      "es_canarias": "la garganta",
+      "lat_mx": "la garganta",
+      "lat_ar": "la garganta",
+      "lat_co": "la garganta",
+      "lat_cl": "la garganta",
+      "lat_pe": "la garganta",
+      "lat_ve": "la garganta",
+      "lat_cu": "la garganta",
+      "lat_do": "la garganta"
+    },
+    "example_de": "Mir tut der Hals weh.",
+    "example_es": "Me duele la garganta.",
+    "tags": [
+      "körper",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_038",
+    "de": "die Brust",
+    "es": "el pecho",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈpetʃo",
+      "simplified": "el PE-tscho",
+      "tip": "Das 'ch' wie im Deutschen 'tsch'"
+    },
+    "dialects": {
+      "es_castilla": "el pecho",
+      "es_andalucia": "el pecho",
+      "es_cataluna": "el pit",
+      "es_canarias": "el pecho",
+      "lat_mx": "el pecho",
+      "lat_ar": "el pecho",
+      "lat_co": "el pecho",
+      "lat_cl": "el pecho",
+      "lat_pe": "el pecho",
+      "lat_ve": "el pecho",
+      "lat_cu": "el pecho",
+      "lat_do": "el pecho"
+    },
+    "example_de": "Er hat Schmerzen in der Brust.",
+    "example_es": "Tiene dolores en el pecho.",
+    "tags": [
+      "körper",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_039",
+    "de": "das Ohr",
+    "es": "la oreja",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la oˈɾexa",
+      "simplified": "la o-RE-cha",
+      "tip": "Das 'j' klingt wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la oreja",
+      "es_andalucia": "la oreja",
+      "es_cataluna": "l'orella",
+      "es_canarias": "la oreja",
+      "lat_mx": "la oreja",
+      "lat_ar": "la oreja",
+      "lat_co": "la oreja",
+      "lat_cl": "la oreja",
+      "lat_pe": "la oreja",
+      "lat_ve": "la oreja",
+      "lat_cu": "la oreja",
+      "lat_do": "la oreja"
+    },
+    "example_de": "Mein Ohr tut weh.",
+    "example_es": "Me duele la oreja.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_040",
+    "de": "das Auge",
+    "es": "el ojo",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈoxo",
+      "simplified": "el O-cho",
+      "tip": "Beide 'j' klingen wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "el ojo",
+      "es_andalucia": "el ojo",
+      "es_cataluna": "l'ull",
+      "es_canarias": "el ojo",
+      "lat_mx": "el ojo",
+      "lat_ar": "el ojo",
+      "lat_co": "el ojo",
+      "lat_cl": "el ojo",
+      "lat_pe": "el ojo",
+      "lat_ve": "el ojo",
+      "lat_cu": "el ojo",
+      "lat_do": "el ojo"
+    },
+    "example_de": "Mein Auge ist gerötet.",
+    "example_es": "Tengo el ojo rojo.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_041",
+    "de": "die Nase",
+    "es": "la nariz",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la naˈɾiθ",
+      "simplified": "la na-RIS",
+      "tip": "In Lateinamerika 'na-RIS' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "la nariz",
+      "es_andalucia": "la nariz",
+      "es_cataluna": "el nas",
+      "es_canarias": "la nariz",
+      "lat_mx": "la nariz",
+      "lat_ar": "la nariz",
+      "lat_co": "la nariz",
+      "lat_cl": "la nariz",
+      "lat_pe": "la nariz",
+      "lat_ve": "la nariz",
+      "lat_cu": "la nariz",
+      "lat_do": "la nariz"
+    },
+    "example_de": "Meine Nase blutet.",
+    "example_es": "Me sangra la nariz.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_042",
+    "de": "der Zahn",
+    "es": "el diente",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈdjente",
+      "simplified": "el DJEN-te",
+      "tip": "Das 'ie' als kurzer Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "el diente",
+      "es_andalucia": "el diente",
+      "es_cataluna": "la dent",
+      "es_canarias": "el diente",
+      "lat_mx": "el diente",
+      "lat_ar": "el diente",
+      "lat_co": "el diente",
+      "lat_cl": "el diente",
+      "lat_pe": "el diente",
+      "lat_ve": "el diente",
+      "lat_cu": "el diente",
+      "lat_do": "el diente"
+    },
+    "example_de": "Ich habe Zahnschmerzen.",
+    "example_es": "Me duele un diente.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_043",
+    "de": "der Finger",
+    "es": "el dedo",
+    "category": "gesundheit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈdeðo",
+      "simplified": "el DE-do",
+      "tip": "Das mittlere 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el dedo",
+      "es_andalucia": "el dedo",
+      "es_cataluna": "el dit",
+      "es_canarias": "el dedo",
+      "lat_mx": "el dedo",
+      "lat_ar": "el dedo",
+      "lat_co": "el dedo",
+      "lat_cl": "el dedo",
+      "lat_pe": "el dedo",
+      "lat_ve": "el dedo",
+      "lat_cu": "el dedo",
+      "lat_do": "el dedo"
+    },
+    "example_de": "Ich habe mir in den Finger geschnitten.",
+    "example_es": "Me corté el dedo.",
+    "tags": [
+      "körper",
+      "A1"
+    ]
+  },
+  {
+    "id": "ges_044",
+    "de": "die Lunge",
+    "es": "el pulmón",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el pulˈmon",
+      "simplified": "el pul-MON",
+      "tip": "Betonung auf letzter Silbe, das 'n' klingt nasalisiert"
+    },
+    "dialects": {
+      "es_castilla": "el pulmón",
+      "es_andalucia": "el pulmón",
+      "es_cataluna": "el pulmó",
+      "es_canarias": "el pulmón",
+      "lat_mx": "el pulmón",
+      "lat_ar": "el pulmón",
+      "lat_co": "el pulmón",
+      "lat_cl": "el pulmón",
+      "lat_pe": "el pulmón",
+      "lat_ve": "el pulmón",
+      "lat_cu": "el pulmón",
+      "lat_do": "el pulmón"
+    },
+    "example_de": "Rauchen schadet der Lunge.",
+    "example_es": "Fumar daña los pulmones.",
+    "tags": [
+      "körper",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_045",
+    "de": "das Herz",
+    "es": "el corazón",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el koɾaˈθon",
+      "simplified": "el ko-ra-SON",
+      "tip": "In Lateinamerika kein 'th', Betonung auf 'son'"
+    },
+    "dialects": {
+      "es_castilla": "el corazón",
+      "es_andalucia": "el corazón",
+      "es_cataluna": "el cor",
+      "es_canarias": "el corazón",
+      "lat_mx": "el corazón",
+      "lat_ar": "el corazón",
+      "lat_co": "el corazón",
+      "lat_cl": "el corazón",
+      "lat_pe": "el corazón",
+      "lat_ve": "el corazón",
+      "lat_cu": "el corazón",
+      "lat_do": "el corazón"
+    },
+    "example_de": "Sein Herz schlägt zu schnell.",
+    "example_es": "Su corazón late demasiado rápido.",
+    "tags": [
+      "körper",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_046",
+    "de": "die Leber",
+    "es": "el hígado",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ˈiɣaðo",
+      "simplified": "el I-ga-do",
+      "tip": "Das 'h' stumm, 'g' und 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el hígado",
+      "es_andalucia": "el hígado",
+      "es_cataluna": "el fetge",
+      "es_canarias": "el hígado",
+      "lat_mx": "el hígado",
+      "lat_ar": "el hígado",
+      "lat_co": "el hígado",
+      "lat_cl": "el hígado",
+      "lat_pe": "el hígado",
+      "lat_ve": "el hígado",
+      "lat_cu": "el hígado",
+      "lat_do": "el hígado"
+    },
+    "example_de": "Alkohol schadet der Leber.",
+    "example_es": "El alcohol daña el hígado.",
+    "tags": [
+      "körper",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_047",
+    "de": "der Knochen",
+    "es": "el hueso",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ˈweso",
+      "simplified": "el WE-so",
+      "tip": "Das 'h' ist stumm, 'ue' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "el hueso",
+      "es_andalucia": "el hueso",
+      "es_cataluna": "l'os",
+      "es_canarias": "el hueso",
+      "lat_mx": "el hueso",
+      "lat_ar": "el hueso",
+      "lat_co": "el hueso",
+      "lat_cl": "el hueso",
+      "lat_pe": "el hueso",
+      "lat_ve": "el hueso",
+      "lat_cu": "el hueso",
+      "lat_do": "el hueso"
+    },
+    "example_de": "Er hat sich einen Knochen gebrochen.",
+    "example_es": "Se fracturó un hueso.",
+    "tags": [
+      "körper",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_048",
+    "de": "der Muskel",
+    "es": "el músculo",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ˈmuskulo",
+      "simplified": "el MUS-ku-lo",
+      "tip": "Drei Silben, Betonung auf erster Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el músculo",
+      "es_andalucia": "el músculo",
+      "es_cataluna": "el múscul",
+      "es_canarias": "el músculo",
+      "lat_mx": "el músculo",
+      "lat_ar": "el músculo",
+      "lat_co": "el músculo",
+      "lat_cl": "el músculo",
+      "lat_pe": "el músculo",
+      "lat_ve": "el músculo",
+      "lat_cu": "el músculo",
+      "lat_do": "el músculo"
+    },
+    "example_de": "Ich habe einen Muskelkater.",
+    "example_es": "Tengo agujetas en los músculos.",
+    "tags": [
+      "körper",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_049",
+    "de": "die Haut",
+    "es": "la piel",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈpjel",
+      "simplified": "la PJEL",
+      "tip": "Das 'ie' als Diphthong, wird als ein Laut gesprochen"
+    },
+    "dialects": {
+      "es_castilla": "la piel",
+      "es_andalucia": "la piel",
+      "es_cataluna": "la pell",
+      "es_canarias": "la piel",
+      "lat_mx": "la piel",
+      "lat_ar": "la piel",
+      "lat_co": "la piel",
+      "lat_cl": "la piel",
+      "lat_pe": "la piel",
+      "lat_ve": "la piel",
+      "lat_cu": "la piel",
+      "lat_do": "la piel"
+    },
+    "example_de": "Ich habe trockene Haut.",
+    "example_es": "Tengo la piel seca.",
+    "tags": [
+      "körper",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_050",
+    "de": "das Blut",
+    "es": "la sangre",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈsanɡɾe",
+      "simplified": "la SAN-gre",
+      "tip": "Das 'gr' klar aussprechen"
+    },
+    "dialects": {
+      "es_castilla": "la sangre",
+      "es_andalucia": "la sangre",
+      "es_cataluna": "la sang",
+      "es_canarias": "la sangre",
+      "lat_mx": "la sangre",
+      "lat_ar": "la sangre",
+      "lat_co": "la sangre",
+      "lat_cl": "la sangre",
+      "lat_pe": "la sangre",
+      "lat_ve": "la sangre",
+      "lat_cu": "la sangre",
+      "lat_do": "la sangre"
+    },
+    "example_de": "Die Ärztin hat Blut abgenommen.",
+    "example_es": "La doctora me sacó sangre.",
+    "tags": [
+      "medizin",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_051",
+    "de": "der Puls",
+    "es": "el pulso",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ˈpulso",
+      "simplified": "el PUL-so",
+      "tip": "Ähnlich dem Deutschen"
+    },
+    "dialects": {
+      "es_castilla": "el pulso",
+      "es_andalucia": "el pulso",
+      "es_cataluna": "el pols",
+      "es_canarias": "el pulso",
+      "lat_mx": "el pulso",
+      "lat_ar": "el pulso",
+      "lat_co": "el pulso",
+      "lat_cl": "el pulso",
+      "lat_pe": "el pulso",
+      "lat_ve": "el pulso",
+      "lat_cu": "el pulso",
+      "lat_do": "el pulso"
+    },
+    "example_de": "Der Arzt misst meinen Puls.",
+    "example_es": "El médico me toma el pulso.",
+    "tags": [
+      "medizin",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_052",
+    "de": "der Stress",
+    "es": "el estrés",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el esˈtɾes",
+      "simplified": "el es-TRES",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el estrés",
+      "es_andalucia": "el estrés",
+      "es_cataluna": "l'estrès",
+      "es_canarias": "el estrés",
+      "lat_mx": "el estrés",
+      "lat_ar": "el estrés",
+      "lat_co": "el estrés",
+      "lat_cl": "el estrés",
+      "lat_pe": "el estrés",
+      "lat_ve": "el estrés",
+      "lat_cu": "el estrés",
+      "lat_do": "el estrés"
+    },
+    "example_de": "Zu viel Stress ist ungesund.",
+    "example_es": "Demasiado estrés es malo para la salud.",
+    "tags": [
+      "gesundheit",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_053",
+    "de": "die Grippe",
+    "es": "la gripe",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈɡɾipe",
+      "simplified": "la GRI-pe",
+      "tip": "Das 'gr' deutlich aussprechen"
+    },
+    "dialects": {
+      "es_castilla": "la gripe",
+      "es_andalucia": "la gripe",
+      "es_cataluna": "la grip",
+      "es_canarias": "la gripe",
+      "lat_mx": "la gripe",
+      "lat_ar": "la gripe",
+      "lat_co": "la gripa",
+      "lat_cl": "la gripe",
+      "lat_pe": "la gripe",
+      "lat_ve": "la gripe",
+      "lat_cu": "la gripe",
+      "lat_do": "la gripe"
+    },
+    "example_de": "Ich hatte letzte Woche die Grippe.",
+    "example_es": "La semana pasada tuve la gripe.",
+    "tags": [
+      "krankheiten",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_054",
+    "de": "der Krankenwagen",
+    "es": "la ambulancia",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ambuˈlanθja",
+      "simplified": "la am-bu-LAN-sja",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la ambulancia",
+      "es_andalucia": "la ambulancia",
+      "es_cataluna": "l'ambulància",
+      "es_canarias": "la ambulancia",
+      "lat_mx": "la ambulancia",
+      "lat_ar": "la ambulancia",
+      "lat_co": "la ambulancia",
+      "lat_cl": "la ambulancia",
+      "lat_pe": "la ambulancia",
+      "lat_ve": "la ambulancia",
+      "lat_cu": "la ambulancia",
+      "lat_do": "la ambulancia"
+    },
+    "example_de": "Ruft einen Krankenwagen!",
+    "example_es": "¡Llamad una ambulancia!",
+    "tags": [
+      "notfall",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_055",
+    "de": "der Verband",
+    "es": "la venda",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la ˈbenda",
+      "simplified": "la BEN-da",
+      "tip": "Das 'v' wie 'b' gesprochen"
+    },
+    "dialects": {
+      "es_castilla": "la venda",
+      "es_andalucia": "la venda",
+      "es_cataluna": "el embenat",
+      "es_canarias": "la venda",
+      "lat_mx": "la venda",
+      "lat_ar": "la venda",
+      "lat_co": "la venda",
+      "lat_cl": "la venda",
+      "lat_pe": "la venda",
+      "lat_ve": "la venda",
+      "lat_cu": "la venda",
+      "lat_do": "la venda"
+    },
+    "example_de": "Der Arzt legt ihr einen Verband an.",
+    "example_es": "El médico le pone una venda.",
+    "tags": [
+      "verletzungen",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_056",
+    "de": "das Pflaster",
+    "es": "la tirita",
+    "category": "gesundheit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la tiˈɾita",
+      "simplified": "la ti-RI-ta",
+      "tip": "Das mittlere 'r' gerollt"
+    },
+    "dialects": {
+      "es_castilla": "la tirita",
+      "es_andalucia": "la tirita",
+      "es_cataluna": "el pegat",
+      "es_canarias": "la tirita",
+      "lat_mx": "la curita",
+      "lat_ar": "la curita",
+      "lat_co": "la curita",
+      "lat_cl": "el parche",
+      "lat_pe": "la curita",
+      "lat_ve": "la curita",
+      "lat_cu": "el esparadrapo",
+      "lat_do": "la curita"
+    },
+    "example_de": "Ich brauche ein Pflaster für meinen Finger.",
+    "example_es": "Necesito una tirita para el dedo.",
+    "tags": [
+      "verletzungen",
+      "A2"
+    ]
+  },
+  {
+    "id": "ges_057",
+    "de": "sich erholen",
+    "es": "recuperarse",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "rekupeˈɾaɾse",
+      "simplified": "re-ku-pe-RAR-se",
+      "tip": "Betonung auf 'rar', das reflexive Pronomen anhängen"
+    },
+    "dialects": {
+      "es_castilla": "recuperarse",
+      "es_andalucia": "recuperarse",
+      "es_cataluna": "recuperar-se",
+      "es_canarias": "recuperarse",
+      "lat_mx": "recuperarse",
+      "lat_ar": "recuperarse",
+      "lat_co": "recuperarse",
+      "lat_cl": "recuperarse",
+      "lat_pe": "recuperarse",
+      "lat_ve": "recuperarse",
+      "lat_cu": "recuperarse",
+      "lat_do": "recuperarse"
+    },
+    "example_de": "Ich erhole mich langsam von der Krankheit.",
+    "example_es": "Me estoy recuperando poco a poco de la enfermedad.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_058",
+    "de": "die Untersuchung",
+    "es": "el examen médico",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ekˈsamen ˈmeðiko",
+      "simplified": "el ek-SA-men ME-di-ko",
+      "tip": "Zwei Wörter, das 'x' wie 'ks'"
+    },
+    "dialects": {
+      "es_castilla": "el examen médico",
+      "es_andalucia": "la revisión",
+      "es_cataluna": "l'examen mèdic",
+      "es_canarias": "el examen médico",
+      "lat_mx": "el examen médico",
+      "lat_ar": "el examen médico",
+      "lat_co": "el examen médico",
+      "lat_cl": "el examen médico",
+      "lat_pe": "la consulta médica",
+      "lat_ve": "la consulta médica",
+      "lat_cu": "el examen médico",
+      "lat_do": "el examen médico"
+    },
+    "example_de": "Ich gehe zur jährlichen Untersuchung.",
+    "example_es": "Voy al examen médico anual.",
+    "tags": [
+      "medizin",
+      "B1"
+    ]
+  },
+  {
+    "id": "ges_059",
+    "de": "die Krankschreibung",
+    "es": "la baja médica",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la ˈbaxa ˈmeðika",
+      "simplified": "la BA-cha ME-di-ka",
+      "tip": "Das 'j' in baja klingt wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la baja médica",
+      "es_andalucia": "la baja",
+      "es_cataluna": "la baixa mèdica",
+      "es_canarias": "la baja médica",
+      "lat_mx": "la incapacidad médica",
+      "lat_ar": "la licencia médica",
+      "lat_co": "la incapacidad médica",
+      "lat_cl": "la licencia médica",
+      "lat_pe": "el descanso médico",
+      "lat_ve": "el reposo médico",
+      "lat_cu": "la baja médica",
+      "lat_do": "la licencia médica"
+    },
+    "example_de": "Der Arzt hat mir eine Krankschreibung ausgestellt.",
+    "example_es": "El médico me ha dado una baja médica.",
+    "tags": [
+      "gesundheitssystem",
+      "B2"
+    ]
+  },
+  {
+    "id": "ges_060",
+    "de": "bewusstlos",
+    "es": "inconsciente",
+    "category": "gesundheit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "iŋkonˈsjen̪te",
+      "simplified": "in-kon-SJEN-te",
+      "tip": "Vier Silben, Betonung auf 'sjen'"
+    },
+    "dialects": {
+      "es_castilla": "inconsciente",
+      "es_andalucia": "inconsciente",
+      "es_cataluna": "inconscient",
+      "es_canarias": "inconsciente",
+      "lat_mx": "inconsciente",
+      "lat_ar": "inconsciente",
+      "lat_co": "inconsciente",
+      "lat_cl": "inconsciente",
+      "lat_pe": "inconsciente",
+      "lat_ve": "inconsciente",
+      "lat_cu": "inconsciente",
+      "lat_do": "inconsciente"
+    },
+    "example_de": "Der Patient ist bewusstlos.",
+    "example_es": "El paciente está inconsciente.",
+    "tags": [
+      "notfall",
+      "B2"
+    ]
+  }
+]

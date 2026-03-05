@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Gramática Relámpago</title>
+<script src="../theme-switcher.js"></script>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../../src/css/base.css">
+<link rel="stylesheet" href="../../src/tactile-theme.css">
+<style>
+  :root {
+    --yes:      var(--color-correct);
+    --yes-dk:   color-mix(in srgb, var(--color-correct) 68%, var(--color-bg-base));
+    --no:       var(--color-wrong);
+    --no-dk:    color-mix(in srgb, var(--color-wrong) 68%, var(--color-bg-base));
+    --bg:       var(--color-bg-base);
+    --bg2:      var(--color-bg-surface);
+    --card-bg:  var(--color-bg-elevated);
+    --text:     var(--color-text-primary);
+    --text-dim: color-mix(in srgb, var(--color-text-primary) 40%, transparent);
+    --gold:     var(--color-accent-warning);
+    --timer-full: var(--color-accent-warning);
+    --timer-low:  var(--color-wrong);
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Space Mono', monospace;
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: max(1.5rem, var(--safe-top)) 1rem max(1.5rem, var(--safe-bottom));
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-y;
+  }
+
+  /* Scanline effect */
+  body::after {
+    content: '';
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 2px,
+      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
+    );
+  }
+
+  /* Lightning bg flash */
+  #bg-flash {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    opacity: 0; transition: opacity 0.05s;
+  }
+
+  .wrap {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 420px;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 1.4rem;
+  }
+
+  /* ── HEADER ── */
+  .header { text-align: center; }
+  .eyebrow {
+    font-size: 0.55rem; letter-spacing: 0.35em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 0.2rem;
+  }
+  .title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(2.2rem, 10vw, 3.8rem);
+    font-weight: 900; font-style: italic;
+    color: var(--text); line-height: 0.9;
+    text-transform: uppercase;
+    text-shadow: 0 0 40px rgba(255,208,0,0.3), 3px 3px 0 rgba(255,23,68,0.4);
+    letter-spacing: -0.02em;
+  }
+  .title-sub {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 0.82rem; color: var(--text-dim); margin-top: 0.3rem;
+  }
+
+  /* ── LEVEL PILLS ── */
+  .level-pills { display: flex; gap: 0.4rem; justify-content: center; }
+  .level-pill {
+    padding: 0.28rem 0.75rem; border-radius: 999px; font-size: 0.58rem;
+    letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.04); color: var(--text-dim);
+    transition: all 0.2s; font-family: 'Space Mono', monospace;
+  }
+  .level-pill.active {
+    background: var(--gold); border-color: var(--gold);
+    color: #0a0a0a; font-weight: 700;
+    box-shadow: 0 0 16px rgba(255,208,0,0.4);
+  }
+
+  /* ── HUD ── */
+  .hud {
+    width: 100%; display: flex; justify-content: space-between;
+    align-items: center; padding: 0.6rem 1.1rem;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 999px;
+  }
+  .hud-item { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); }
+  .hud-item strong { display: block; font-size: 0.9rem; color: var(--text); margin-top: 1px; letter-spacing: 0; }
+  .hud-streak { font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 900; color: var(--gold); }
+
+  /* ── SWIPE HINT ── */
+  .swipe-hint {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; padding: 0 0.5rem;
+  }
+  .hint-side {
+    font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
+    display: flex; align-items: center; gap: 0.4rem;
+  }
+  .hint-no  { color: var(--no);  }
+  .hint-yes { color: var(--yes); }
+  .hint-arrow { font-size: 1rem; }
+
+  /* ── CARD STACK ── */
+  #card-stack {
+    width: 100%; position: relative;
+    height: 260px;
+  }
+
+  /* Ghost cards behind */
+  .ghost-card {
+    position: absolute; inset: 0;
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 28px;
+    pointer-events: none;
+  }
+  .ghost-card:nth-child(1) { transform: scale(0.94) translateY(10px); opacity: 0.4; }
+  .ghost-card:nth-child(2) { transform: scale(0.97) translateY(5px);  opacity: 0.25; }
+
+  /* Main swipe card */
+  #swipe-card {
+    position: absolute; inset: 0;
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 28px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 1rem; padding: 2rem 1.8rem;
+    cursor: grab; user-select: none;
+    transition: box-shadow 0.15s ease;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.08);
+    will-change: transform;
+    touch-action: none;
+  }
+  #swipe-card:active { cursor: grabbing; }
+
+  /* YES/NO overlay indicators */
+  #card-yes-label, #card-no-label {
+    position: absolute; top: 1.2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem; font-weight: 900; font-style: italic;
+    text-transform: uppercase; letter-spacing: 0.05em;
+    opacity: 0; transition: opacity 0.1s;
+    border: 3px solid; border-radius: 8px;
+    padding: 0.1em 0.4em; transform: rotate(-10deg);
+  }
+  #card-yes-label { right: 1.2rem; color: var(--yes); border-color: var(--yes); transform: rotate(10deg); }
+  #card-no-label  { left:  1.2rem; color: var(--no);  border-color: var(--no);  transform: rotate(-10deg); }
+
+  .card-level-tag {
+    font-size: 0.55rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--text-dim); font-family: 'Space Mono', monospace;
+  }
+
+  #card-sentence {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    font-weight: 700; color: var(--text);
+    text-align: center; line-height: 1.15;
+  }
+  #card-sentence .highlight {
+    color: var(--gold);
+    text-decoration: underline;
+    text-decoration-color: rgba(255,208,0,0.4);
+    text-underline-offset: 4px;
+  }
+
+  #card-question {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 0.88rem; color: var(--text-dim); text-align: center;
+  }
+
+  /* ── TIMER BAR ── */
+  #timer-wrap {
+    width: 100%; height: 6px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 999px; overflow: hidden;
+  }
+  #timer-bar {
+    height: 100%; width: 100%;
+    background: var(--timer-full);
+    border-radius: 999px;
+    transform-origin: left;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 8px rgba(255,208,0,0.5);
+  }
+  #timer-bar.low {
+    background: var(--timer-low);
+    box-shadow: 0 0 12px rgba(255,23,68,0.6);
+    animation: timerPulse 0.4s ease-in-out infinite alternate;
+  }
+  @keyframes timerPulse {
+    from { box-shadow: 0 0 8px rgba(255,23,68,0.4); }
+    to   { box-shadow: 0 0 20px rgba(255,23,68,0.9); }
+  }
+
+  /* ── RESULT OVERLAY (shown on each swipe) ── */
+  #result-flash {
+    position: fixed; inset: 0; z-index: 50;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.5rem; pointer-events: none; opacity: 0;
+  }
+  #result-flash.show-yes { animation: flashYes 0.55s ease forwards; }
+  #result-flash.show-no  { animation: flashNo  0.55s ease forwards; }
+  #result-flash.show-timeout { animation: flashTimeout 0.55s ease forwards; }
+
+  @keyframes flashYes {
+    0%  { opacity: 0; background: rgba(57,255,20,0); }
+    20% { opacity: 1; background: rgba(57,255,20,0.12); }
+    100%{ opacity: 0; background: rgba(57,255,20,0); }
+  }
+  @keyframes flashNo {
+    0%  { opacity: 0; background: rgba(255,23,68,0); }
+    20% { opacity: 1; background: rgba(255,23,68,0.12); }
+    100%{ opacity: 0; background: rgba(255,23,68,0); }
+  }
+  @keyframes flashTimeout {
+    0%  { opacity: 0; background: rgba(255,150,0,0); }
+    20% { opacity: 1; background: rgba(255,150,0,0.15); }
+    100%{ opacity: 0; background: rgba(255,150,0,0); }
+  }
+
+  #result-emoji { font-size: 3.5rem; }
+  #result-text  {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.8rem; font-weight: 900; font-style: italic;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .show-yes #result-text  { color: var(--yes); }
+  .show-no  #result-text  { color: var(--no); }
+  .show-timeout #result-text { color: #FF9500; }
+
+  /* ── EXPLANATION POPUP ── */
+  #explanation-box {
+    width: 100%; padding: 0.9rem 1.2rem;
+    border-radius: 16px; text-align: center;
+    min-height: 2.8rem;
+    display: flex; flex-direction: column; align-items: center;
+    gap: 0.3rem; transition: all 0.3s ease;
+  }
+  #explanation-box.hidden { opacity: 0; pointer-events: none; }
+  #explanation-box.correct { background: rgba(57,255,20,0.07); border: 1px solid rgba(57,255,20,0.25); }
+  #explanation-box.wrong   { background: rgba(255,23,68,0.07);  border: 1px solid rgba(255,23,68,0.2); }
+  #explanation-box.timeout { background: rgba(255,150,0,0.07);  border: 1px solid rgba(255,150,0,0.25); }
+  #expl-main { font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text); }
+  #expl-sub  { font-family: 'Lora', serif; font-style: italic; font-size: 0.78rem; color: var(--text-dim); }
+
+  /* ── SCORE BAR ── */
+  .score-row {
+    width: 100%; display: flex; gap: 0.35rem; justify-content: center; flex-wrap: wrap;
+  }
+  .score-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: rgba(255,255,255,0.08); transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .score-dot.correct { background: var(--yes); border-color: var(--yes); box-shadow: 0 0 6px rgba(57,255,20,0.6); }
+  .score-dot.wrong   { background: var(--no);  border-color: var(--no);  box-shadow: 0 0 6px rgba(255,23,68,0.5); }
+  .score-dot.timeout { background: #FF9500; border-color: #FF9500; }
+  .score-dot.current { animation: dotBlink 0.7s ease-in-out infinite alternate; border-color: var(--gold); }
+  @keyframes dotBlink { from{opacity:0.4} to{opacity:1; box-shadow:0 0 8px rgba(255,208,0,0.7)} }
+
+  /* ── ROUND SUMMARY ── */
+  #summary-screen {
+    display: none; position: fixed; inset: 0; z-index: 100;
+    background: rgba(10,10,10,0.97); backdrop-filter: blur(20px);
+    flex-direction: column; align-items: center; justify-content: center;
+    gap: 1.2rem; text-align: center; padding: 2rem;
+  }
+  #summary-screen.visible { display: flex; }
+  .sum-emoji { font-size: 4rem; animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1); }
+  @keyframes popIn { from{transform:scale(0) rotate(-15deg);opacity:0} to{transform:scale(1);opacity:1} }
+  .sum-title  { font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 900; font-style: italic; text-transform: uppercase; color: var(--text); line-height: 1; }
+  .sum-score  { font-family: 'Space Mono', monospace; font-size: 0.8rem; color: var(--text-dim); }
+  .sum-dots   { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin: 0.3rem 0; }
+  .sum-btn {
+    padding: 0.85rem 2.4rem; font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900; font-style: italic; font-size: 1.3rem; text-transform: uppercase;
+    letter-spacing: 0.05em; background: var(--gold); color: #0a0a0a;
+    border: none; border-radius: 999px; cursor: pointer;
+    box-shadow: 0 5px 0 #b38f00, 0 0 30px rgba(255,208,0,0.3);
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+  .sum-btn:active { transform: translateY(4px); box-shadow: 0 1px 0 #b38f00; }
+  .sum-breakdown { display: flex; gap: 1.5rem; }
+  .sum-stat { text-align: center; }
+  .sum-stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 2.2rem; font-weight: 900; line-height: 1; }
+  .sum-stat-lbl { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); margin-top: 0.2rem; }
+  .correct-num { color: var(--yes); }
+  .wrong-num   { color: var(--no); }
+  .timeout-num { color: #FF9500; }
+</style>
+</head>
+<body>
+
+<div id="bg-flash"></div>
+<div id="result-flash"><div id="result-emoji"></div><div id="result-text"></div></div>
+
+<div class="wrap">
+
+  <div class="header">
+    <div class="eyebrow">Spanisch Training</div>
+    <div class="title">Gramática<br>Relámpago</div>
+    <div class="title-sub">Richtig oder falsch — du hast 5 Sekunden</div>
+  </div>
+
+  <div class="level-pills" id="level-pills">
+    <div class="level-pill active" data-level="A1">A1</div>
+    <div class="level-pill" data-level="A2">A2</div>
+    <div class="level-pill" data-level="B1">B1</div>
+    <div class="level-pill" data-level="B2">B2+</div>
+  </div>
+
+  <div class="hud">
+    <div class="hud-item">Richtig <strong id="hud-correct" style="color:var(--yes)">0</strong></div>
+    <div class="hud-item" style="text-align:center">🔥 <span class="hud-streak" id="hud-streak">0</span></div>
+    <div class="hud-item" style="text-align:right">Falsch <strong id="hud-wrong" style="color:var(--no)">0</strong></div>
+  </div>
+
+  
+  <div class="swipe-hint">
+    <div class="hint-side hint-no"><span class="hint-arrow">←</span> FALSCH</div>
+    <div class="hint-side hint-yes">RICHTIG <span class="hint-arrow">→</span></div>
+  </div>
+
+  
+  <div id="card-stack">
+    <div class="ghost-card"></div>
+    <div class="ghost-card"></div>
+    <div id="swipe-card">
+      <div id="card-yes-label">✓ RICHTIG</div>
+      <div id="card-no-label">✗ FALSCH</div>
+      <div class="card-level-tag" id="card-level-tag">A1 — Presente</div>
+      <div id="card-sentence">—</div>
+      <div id="card-question">Ist dieser Satz korrekt?</div>
+    </div>
+  </div>
+
+  
+  <div id="timer-wrap">
+    <div id="timer-bar"></div>
+  </div>
+
+  
+  <div id="explanation-box" class="hidden">
+    <div id="expl-main"></div>
+    <div id="expl-sub"></div>
+  </div>
+
+  
+  <div class="score-row" id="score-row"></div>
+
+</div>
+
+
+<div id="summary-screen">
+  <div class="sum-emoji" id="sum-emoji">⚡</div>
+  <div class="sum-title" id="sum-title">Runde beendet!</div>
+  <div class="sum-breakdown">
+    <div class="sum-stat"><div class="sum-stat-num correct-num" id="sum-correct">0</div><div class="sum-stat-lbl">Richtig</div></div>
+    <div class="sum-stat"><div class="sum-stat-num wrong-num"   id="sum-wrong">0</div><div class="sum-stat-lbl">Falsch</div></div>
+    <div class="sum-stat"><div class="sum-stat-num timeout-num" id="sum-timeout">0</div><div class="sum-stat-lbl">Zeit</div></div>
+  </div>
+  <div class="sum-dots" id="sum-dots"></div>
+  <div class="sum-score" id="sum-score"></div>
+  <button class="sum-btn" onclick="restartGame()">Nochmal ⚡</button>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════
+// GAME DATA
+// Each card: sentence (Spanish), correct (bool), explanation, rule
+// Wrong sentences have a deliberate grammar error (highlighted)
+// ═══════════════════════════════════════════════
+const DATA = {
+  A1: {
+    tag: "A1 — Presente",
+    cards: [
+      { s: "Yo <h>hablo</h> español.", correct: true,  expl: "✓ hablo — yo + -ar → -o", rule: "Regular -ar, yo" },
+      { s: "Tú <h>hablas</h> muy bien.", correct: true,  expl: "✓ hablas — tú + -ar → -as", rule: "Regular -ar, tú" },
+      { s: "Él <h>habla</h> con su amigo.", correct: true,  expl: "✓ habla — él + -ar → -a", rule: "Regular -ar, él" },
+      { s: "Yo <h>comes</h> una manzana.", correct: false, expl: "✗ yo + comer → como, nicht comes", rule: "-er Verb, yo → -o" },
+      { s: "Nosotros <h>vivimos</h> aquí.", correct: true,  expl: "✓ vivimos — nosotros + -ir → -imos", rule: "Regular -ir, nosotros" },
+      { s: "Ella <h>soy</h> profesora.", correct: false, expl: "✗ ella + ser → es, nicht soy", rule: "ser: ella → es" },
+      { s: "Vosotros <h>coméis</h> bien.", correct: true,  expl: "✓ coméis — vosotros + -er → -éis", rule: "Regular -er, vosotros" },
+      { s: "Ellos <h>van</h> al parque.", correct: true,  expl: "✓ van — ir ist unregelmäßig", rule: "ir: ellos → van" },
+      { s: "Tú <h>tienes</h> un perro.", correct: true,  expl: "✓ tienes — tener ist unregelmäßig", rule: "tener: tú → tienes" },
+      { s: "Yo <h>soy</h> de España.", correct: true,  expl: "✓ soy — ser: yo → soy", rule: "ser: yo → soy" },
+      { s: "Nosotros <h>somos</h> amigos.", correct: true,  expl: "✓ somos — ser: nosotros → somos", rule: "ser: nosotros → somos" },
+      { s: "Él <h>estoy</h> en casa.", correct: false, expl: "✗ él + estar → está, nicht estoy", rule: "estar: él → está" },
+      { s: "Yo <h>quiero</h> un café.", correct: true,  expl: "✓ quiero — querer: yo → quiero (e→ie)", rule: "querer: yo → quiero" },
+      { s: "Ellos <h>queremos</h> pizza.", correct: false, expl: "✗ ellos + querer → quieren, nicht queremos", rule: "querer: ellos → quieren" },
+      { s: "Vosotros <h>vais</h> al cine.", correct: true,  expl: "✓ vais — ir: vosotros → vais", rule: "ir: vosotros → vais" },
+    ]
+  },
+  A2: {
+    tag: "A2 — Indefinido",
+    cards: [
+      { s: "Ayer yo <h>hablé</h> con María.", correct: true,  expl: "✓ hablé — yo + -ar Indefinido → -é", rule: "-ar Indefinido, yo" },
+      { s: "Tú <h>comiste</h> mucho.", correct: true,  expl: "✓ comiste — tú + -er Indefinido → -iste", rule: "-er Indefinido, tú" },
+      { s: "Él <h>fue</h> al médico.", correct: true,  expl: "✓ fue — ir/ser Indefinido: él → fue", rule: "ir/ser: él → fue" },
+      { s: "Nosotros <h>hablamos</h> ayer.", correct: true,  expl: "✓ hablamos — nosotros Indefinido = Presente bei -ar", rule: "-ar: nosotros gleich in beiden Zeiten" },
+      { s: "Ellos <h>fui</h> al supermercado.", correct: false, expl: "✗ ellos + ir → fueron, nicht fui", rule: "ir: ellos → fueron" },
+      { s: "Yo <h>tuve</h> un problema.", correct: true,  expl: "✓ tuve — tener Indefinido: yo → tuve", rule: "tener: yo → tuve" },
+      { s: "Vosotros <h>hicisteis</h> los deberes.", correct: true,  expl: "✓ hicisteis — hacer: vosotros → hicisteis", rule: "hacer: vosotros → hicisteis" },
+      { s: "Ella <h>dije</h> la verdad.", correct: false, expl: "✗ ella + decir → dijo, nicht dije", rule: "decir: ella → dijo" },
+      { s: "Ayer <h>pude</h> dormir bien.", correct: true,  expl: "✓ pude — poder Indefinido: yo → pude", rule: "poder: yo → pude" },
+      { s: "Ellos <h>vivieron</h> en Madrid.", correct: true,  expl: "✓ vivieron — -ir Indefinido: ellos → -ieron", rule: "-ir Indefinido, ellos" },
+      { s: "Tú <h>dijiste</h> algo raro.", correct: true,  expl: "✓ dijiste — decir: tú → dijiste", rule: "decir: tú → dijiste" },
+      { s: "Yo <h>hicé</h> la tarea.", correct: false, expl: "✗ hacer Indefinido: yo → hice (kein Akzent!)", rule: "hacer: yo → hice" },
+    ]
+  },
+  B1: {
+    tag: "B1 — Imperfecto",
+    cards: [
+      { s: "Cuando era niño, <h>comía</h> mucho.", correct: true,  expl: "✓ comía — Imperfecto -er: él/yo → -ía", rule: "Imperfecto -er, él/yo" },
+      { s: "Antes siempre <h>hablabas</h> rápido.", correct: true,  expl: "✓ hablabas — Imperfecto -ar: tú → -abas", rule: "Imperfecto -ar, tú" },
+      { s: "De niño yo <h>ibas</h> al parque.", correct: false, expl: "✗ yo + ir Imperfecto → iba, nicht ibas", rule: "ir Imperfecto: yo → iba" },
+      { s: "Ellos siempre <h>llegaban</h> tarde.", correct: true,  expl: "✓ llegaban — Imperfecto -ar: ellos → -aban", rule: "Imperfecto -ar, ellos" },
+      { s: "Antes ella <h>era</h> muy tímida.", correct: true,  expl: "✓ era — ser Imperfecto: ella → era", rule: "ser: ella → era" },
+      { s: "Nosotros <h>veíamos</h> la tele juntos.", correct: true,  expl: "✓ veíamos — ver Imperfecto: nosotros → veíamos", rule: "ver: nosotros → veíamos" },
+      { s: "Tú siempre <h>querías</h> más.", correct: true,  expl: "✓ querías — Imperfecto: tú → -ías", rule: "Imperfecto -er/-ir, tú" },
+      { s: "Yo <h>éramos</h> estudiante.", correct: false, expl: "✗ yo + ser → era, nicht éramos", rule: "ser: yo → era" },
+      { s: "El perro <h>dormía</h> mucho.", correct: true,  expl: "✓ dormía — dormir Imperfecto: él → dormía", rule: "Imperfecto -ir, él" },
+      { s: "Vosotros <h>podíais</h> venir.", correct: true,  expl: "✓ podíais — Imperfecto: vosotros → -íais", rule: "Imperfecto -er/-ir, vosotros" },
+    ]
+  },
+  B2: {
+    tag: "B2 — Subjuntivo",
+    cards: [
+      { s: "Espero que tú <h>vengas</h> pronto.", correct: true,  expl: "✓ vengas — Subjuntivo: venir, tú → vengas", rule: "Subjuntivo: venir" },
+      { s: "Quiero que él <h>habla</h> contigo.", correct: false, expl: "✗ nach querer que → Subjuntivo: hable", rule: "Subjuntivo nach querer que" },
+      { s: "Es importante que <h>comamos</h> bien.", correct: true,  expl: "✓ comamos — Subjuntivo: comer, nosotros", rule: "Subjuntivo nach es importante que" },
+      { s: "Dudo que ellos <h>tengan</h> razón.", correct: true,  expl: "✓ tengan — Subjuntivo: tener, ellos", rule: "Subjuntivo nach dudar que" },
+      { s: "Espero que vosotros <h>estéis</h> bien.", correct: true,  expl: "✓ estéis — estar Subjuntivo: vosotros → estéis", rule: "estar Subjuntivo" },
+      { s: "Me alegra que ella <h>sea</h> feliz.", correct: true,  expl: "✓ sea — ser Subjuntivo: ella → sea", rule: "ser Subjuntivo" },
+      { s: "Es posible que yo <h>pueda</h> venir.", correct: true,  expl: "✓ pueda — poder Subjuntivo: yo → pueda", rule: "poder Subjuntivo" },
+      { s: "Ojalá que tú <h>tienes</h> suerte.", correct: false, expl: "✗ ojalá immer mit Subjuntivo → tengas", rule: "ojalá + Subjuntivo: tener" },
+      { s: "No creo que él <h>vaya</h> al trabajo.", correct: true,  expl: "✓ vaya — ir Subjuntivo: él → vaya", rule: "no creer que + Subjuntivo" },
+      { s: "Quiero que nosotros <h>hagamos</h> algo.", correct: true,  expl: "✓ hagamos — hacer Subjuntivo: nosotros", rule: "hacer Subjuntivo" },
+      { s: "Es raro que ellos <h>saben</h> tanto.", correct: false, expl: "✗ nach es raro que → Subjuntivo: sepan", rule: "saber Subjuntivo: ellos → sepan" },
+      { s: "Me sorprende que <h>seas</h> tan listo.", correct: true,  expl: "✓ seas — ser Subjuntivo: tú → seas", rule: "ser Subjuntivo, tú" },
+    ]
+  }
+};
+
+// ═══════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════
+const TIMER_MS   = 5000;
+const CARDS_PER_ROUND = 10;
+
+let currentLevel = 'A1';
+let queue        = [];
+let qIdx         = 0;
+let results      = []; // 'correct' | 'wrong' | 'timeout'
+let timerInterval= null;
+let timerStart   = null;
+let cardLocked   = false;
+let streak       = 0;
+let totalCorrect = 0;
+let totalWrong   = 0;
+let totalTimeout = 0;
+
+// Touch/swipe state
+let touchStartX  = 0;
+let touchStartY  = 0;
+let isDragging   = false;
+let currentDragX = 0;
+
+// ═══════════════════════════════════════════════
+// AUDIO
+// ═══════════════════════════════════════════════
+let actx = null;
+function ac() { if (!actx) actx = new (window.AudioContext || window.webkitAudioContext)(); return actx; }
+function tone(f, d, t='sine', v=0.2, delay=0) {
+  const c=ac(), o=c.createOscillator(), g=c.createGain();
+  o.connect(g); g.connect(c.destination);
+  o.type=t; o.frequency.value=f;
+  const s=c.currentTime+delay;
+  g.gain.setValueAtTime(0,s); g.gain.linearRampToValueAtTime(v,s+0.01);
+  g.gain.exponentialRampToValueAtTime(0.001,s+d);
+  o.start(s); o.stop(s+d+0.05);
+}
+function playCorrect() { tone(660,0.08,'sine',0.2); tone(880,0.15,'sine',0.18,0.07); }
+function playWrong()   { tone(220,0.12,'sawtooth',0.18); tone(180,0.18,'sawtooth',0.15,0.1); }
+function playTimeout() { tone(300,0.2,'triangle',0.15); }
+
+// ═══════════════════════════════════════════════
+// INIT / LOAD
+// ═══════════════════════════════════════════════
+function loadLevel(lvl) {
+  currentLevel = lvl;
+  document.querySelectorAll('.level-pill').forEach(p => p.classList.toggle('active', p.dataset.level === lvl));
+  const all = [...DATA[lvl].cards].sort(() => Math.random() - 0.5);
+  queue   = all.slice(0, CARDS_PER_ROUND);
+  qIdx    = 0;
+  results = [];
+  totalCorrect = 0; totalWrong = 0; totalTimeout = 0; streak = 0;
+  updateHUD();
+  buildScoreDots();
+  loadCard();
+}
+
+function loadCard() {
+  stopTimer();
+  cardLocked = false;
+
+  if (qIdx >= queue.length) { showSummary(); return; }
+
+  const card = queue[qIdx];
+  const lvlData = DATA[currentLevel];
+
+  // Render sentence with highlight
+  document.getElementById('card-sentence').innerHTML =
+    card.s.replace(/<h>(.*?)<\/h>/g, '<span class="highlight">$1</span>');
+  document.getElementById('card-level-tag').textContent = lvlData.tag;
+
+  // Reset card position
+  const el = document.getElementById('swipe-card');
+  el.style.transition = 'transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.15s';
+  el.style.transform  = 'translateX(0) rotate(0deg)';
+  el.style.boxShadow  = '';
+  document.getElementById('card-yes-label').style.opacity = '0';
+  document.getElementById('card-no-label').style.opacity  = '0';
+
+  hideExplanation();
+  updateScoreDots();
+  startTimer();
+}
+
+// ═══════════════════════════════════════════════
+// TIMER
+// ═══════════════════════════════════════════════
+function startTimer() {
+  timerStart = performance.now();
+  const bar  = document.getElementById('timer-bar');
+  bar.style.transition = 'none';
+  bar.style.transform  = 'scaleX(1)';
+  bar.className        = '';
+
+  timerInterval = requestAnimationFrame(tickTimer);
+}
+
+function tickTimer(now) {
+  const elapsed  = now - timerStart;
+  const progress = Math.max(0, 1 - elapsed / TIMER_MS);
+  const bar      = document.getElementById('timer-bar');
+  bar.style.transform = `scaleX(${progress})`;
+  if (progress < 0.33 && !bar.classList.contains('low')) bar.classList.add('low');
+
+  if (progress <= 0) {
+    handleTimeout();
+    return;
+  }
+  timerInterval = requestAnimationFrame(tickTimer);
+}
+
+function stopTimer() {
+  if (timerInterval) { cancelAnimationFrame(timerInterval); timerInterval = null; }
+}
+
+// ═══════════════════════════════════════════════
+// ANSWER HANDLING
+// ═══════════════════════════════════════════════
+function handleAnswer(playerSaysCorrect) {
+  if (cardLocked) return;
+  cardLocked = true;
+  stopTimer();
+
+  const card       = queue[qIdx];
+  const isRight    = playerSaysCorrect === card.correct;
+  const result     = isRight ? 'correct' : 'wrong';
+  results.push(result);
+
+  if (isRight) {
+    streak++;
+    totalCorrect++;
+    playCorrect();
+    if (navigator.vibrate) navigator.vibrate([25, 15, 40]);
+    flashResult('show-yes', '⚡', '¡Correcto!');
+  } else {
+    streak = 0;
+    totalWrong++;
+    playWrong();
+    if (navigator.vibrate) navigator.vibrate(70);
+    flashResult('show-no', '✗', 'Falsch!');
+  }
+
+  updateHUD();
+  showExplanation(result, card.expl, card.rule);
+
+  // Animate card off screen
+  const el  = document.getElementById('swipe-card');
+  const dir = playerSaysCorrect ? 1 : -1;
+  el.style.transition = 'transform 0.4s cubic-bezier(0.55,0,1,0.45), opacity 0.4s ease';
+  el.style.transform  = `translateX(${dir * 110}%) rotate(${dir * 18}deg)`;
+  el.style.opacity    = '0';
+
+  setTimeout(() => {
+    el.style.opacity = '1';
+    qIdx++;
+    loadCard();
+  }, 900);
+}
+
+function handleTimeout() {
+  if (cardLocked) return;
+  cardLocked = true;
+  results.push('timeout');
+  totalTimeout++;
+  streak = 0;
+  playTimeout();
+  if (navigator.vibrate) navigator.vibrate(40);
+  flashResult('show-timeout', '⏱', 'Zeit!');
+  updateHUD();
+
+  const card = queue[qIdx];
+  showExplanation('timeout', card.expl, 'Keine Zeit — Antwort: ' + (card.correct ? '✓ Richtig' : '✗ Falsch'));
+
+  const el = document.getElementById('swipe-card');
+  el.style.transition = 'transform 0.3s ease';
+  el.style.transform  = 'scale(0.92)';
+  setTimeout(() => {
+    el.style.transform = 'scale(1)';
+    setTimeout(() => { qIdx++; loadCard(); }, 400);
+  }, 800);
+}
+
+// ═══════════════════════════════════════════════
+// FLASH
+// ═══════════════════════════════════════════════
+function flashResult(cls, emoji, txt) {
+  const el = document.getElementById('result-flash');
+  document.getElementById('result-emoji').textContent = emoji;
+  document.getElementById('result-text').textContent  = txt;
+  el.className = cls;
+  setTimeout(() => el.className = '', 600);
+}
+
+// ═══════════════════════════════════════════════
+// EXPLANATION
+// ═══════════════════════════════════════════════
+function showExplanation(type, main, sub) {
+  const box = document.getElementById('explanation-box');
+  box.className = type;
+  document.getElementById('expl-main').textContent = main;
+  document.getElementById('expl-sub').textContent  = sub;
+}
+function hideExplanation() {
+  document.getElementById('explanation-box').className = 'hidden';
+  document.getElementById('expl-main').textContent = '';
+  document.getElementById('expl-sub').textContent  = '';
+}
+
+// ═══════════════════════════════════════════════
+// HUD & DOTS
+// ═══════════════════════════════════════════════
+function updateHUD() {
+  document.getElementById('hud-correct').textContent = totalCorrect;
+  document.getElementById('hud-wrong').textContent   = totalWrong;
+  document.getElementById('hud-streak').textContent  = streak;
+}
+
+function buildScoreDots() {
+  const row = document.getElementById('score-row');
+  row.innerHTML = '';
+  for (let i = 0; i < queue.length; i++) {
+    const d = document.createElement('div');
+    d.className = 'score-dot' + (i === 0 ? ' current' : '');
+    d.id = `sd-${i}`;
+    row.appendChild(d);
+  }
+}
+
+function updateScoreDots() {
+  for (let i = 0; i < queue.length; i++) {
+    const d = document.getElementById(`sd-${i}`);
+    if (!d) continue;
+    if (i < results.length) {
+      d.className = 'score-dot ' + results[i];
+    } else if (i === qIdx) {
+      d.className = 'score-dot current';
+    } else {
+      d.className = 'score-dot';
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════
+// SUMMARY
+// ═══════════════════════════════════════════════
+function showSummary() {
+  stopTimer();
+  const pct = Math.round((totalCorrect / queue.length) * 100);
+  const emoji = pct >= 80 ? '⚡' : pct >= 50 ? '💪' : '📚';
+  const title = pct >= 80 ? '¡Relámpago!' : pct >= 50 ? 'Gut gemacht!' : 'Weiter üben!';
+
+  document.getElementById('sum-emoji').textContent   = emoji;
+  document.getElementById('sum-title').textContent   = title;
+  document.getElementById('sum-correct').textContent = totalCorrect;
+  document.getElementById('sum-wrong').textContent   = totalWrong;
+  document.getElementById('sum-timeout').textContent = totalTimeout;
+  document.getElementById('sum-score').textContent   = `${pct}% richtig • Level ${currentLevel}`;
+
+  // Mini dots
+  const dots = document.getElementById('sum-dots');
+  dots.innerHTML = '';
+  results.forEach(r => {
+    const d = document.createElement('div');
+    d.className = `score-dot ${r}`;
+    dots.appendChild(d);
+  });
+
+  document.getElementById('summary-screen').classList.add('visible');
+  if (navigator.vibrate) navigator.vibrate([40,20,40,20,80]);
+}
+
+function restartGame() {
+  document.getElementById('summary-screen').classList.remove('visible');
+  loadLevel(currentLevel);
+}
+
+// ═══════════════════════════════════════════════
+// SWIPE / DRAG
+// ═══════════════════════════════════════════════
+const card = document.getElementById('swipe-card');
+
+function onDragStart(x) {
+  if (cardLocked) return;
+  isDragging    = true;
+  touchStartX   = x;
+  currentDragX  = 0;
+  card.style.transition = 'none';
+}
+
+function onDragMove(x) {
+  if (!isDragging || cardLocked) return;
+  currentDragX = x - touchStartX;
+  const rot    = currentDragX * 0.06;
+  card.style.transform = `translateX(${currentDragX}px) rotate(${rot}deg)`;
+
+  // Show YES/NO labels
+  const yesLabel = document.getElementById('card-yes-label');
+  const noLabel  = document.getElementById('card-no-label');
+  const threshold = 30;
+  if (currentDragX > threshold) {
+    yesLabel.style.opacity = Math.min((currentDragX - threshold) / 80, 1).toString();
+    noLabel.style.opacity  = '0';
+    card.style.boxShadow   = `0 8px 40px rgba(57,255,20,${Math.min(currentDragX/200, 0.4)}), inset 0 1px 0 rgba(255,255,255,0.08)`;
+  } else if (currentDragX < -threshold) {
+    noLabel.style.opacity  = Math.min((-currentDragX - threshold) / 80, 1).toString();
+    yesLabel.style.opacity = '0';
+    card.style.boxShadow   = `0 8px 40px rgba(255,23,68,${Math.min(-currentDragX/200, 0.4)}), inset 0 1px 0 rgba(255,255,255,0.08)`;
+  } else {
+    yesLabel.style.opacity = '0';
+    noLabel.style.opacity  = '0';
+    card.style.boxShadow   = '';
+  }
+}
+
+function onDragEnd() {
+  if (!isDragging) return;
+  isDragging = false;
+  const SWIPE_THRESHOLD = 90;
+  if (currentDragX > SWIPE_THRESHOLD) {
+    handleAnswer(true);   // swipe right = richtig
+  } else if (currentDragX < -SWIPE_THRESHOLD) {
+    handleAnswer(false);  // swipe left = falsch
+  } else {
+    // Snap back
+    card.style.transition = 'transform 0.4s cubic-bezier(0.34,1.56,0.64,1)';
+    card.style.transform  = 'translateX(0) rotate(0deg)';
+    card.style.boxShadow  = '';
+    document.getElementById('card-yes-label').style.opacity = '0';
+    document.getElementById('card-no-label').style.opacity  = '0';
+  }
+}
+
+// Touch events
+card.addEventListener('touchstart', e => { onDragStart(e.touches[0].clientX); }, { passive: true });
+card.addEventListener('touchmove',  e => { onDragMove(e.touches[0].clientX); e.preventDefault(); }, { passive: false });
+card.addEventListener('touchend',   ()  => onDragEnd());
+
+// Mouse events (desktop)
+card.addEventListener('mousedown', e => { onDragStart(e.clientX); });
+window.addEventListener('mousemove', e => { if (isDragging) onDragMove(e.clientX); });
+window.addEventListener('mouseup',   ()  => { if (isDragging) onDragEnd(); });
+
+// Keyboard shortcuts
+window.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') handleAnswer(true);
+  if (e.key === 'ArrowLeft')  handleAnswer(false);
+});
+
+// Level pills
+document.querySelectorAll('.level-pill').forEach(p =>
+  p.addEventListener('click', () => { stopTimer(); loadLevel(p.dataset.level); })
+);
+
+// ═══════════════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════════════
+loadLevel('A1');
+</script>
+</body>
+</html>

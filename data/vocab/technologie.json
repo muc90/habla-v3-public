@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "tec_001",
+    "de": "der Computer",
+    "es": "el ordenador",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el oɾdenaˈðoɾ",
+      "simplified": "el or-de-na-DOR",
+      "tip": "In Lateinamerika 'el computador"
+    },
+    "dialects": {
+      "es_castilla": "el ordenador",
+      "es_andalucia": "el ordenador",
+      "es_cataluna": "l'ordinador",
+      "es_canarias": "el ordenador",
+      "lat_mx": "la computadora",
+      "lat_ar": "la computadora",
+      "lat_co": "el computador",
+      "lat_cl": "el computador",
+      "lat_pe": "la computadora",
+      "lat_ve": "la computadora",
+      "lat_cu": "la computadora",
+      "lat_do": "la computadora"
+    },
+    "example_de": "Ich arbeite den ganzen Tag am Computer.",
+    "example_es": "Trabajo todo el día en el ordenador.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_002",
+    "de": "das Smartphone",
+    "es": "el smartphone",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el selularˈsmaɾtfon",
+      "simplified": "el celu",
+      "tip": "Anglizismus, oft verkürzt zu 'el celu' oder 'el móvil'"
+    },
+    "dialects": {
+      "es_castilla": "el smartphone",
+      "es_andalucia": "el móvil",
+      "es_cataluna": "el telèfon intel·ligent",
+      "es_canarias": "el móvil",
+      "lat_mx": "el smartphone",
+      "lat_ar": "el smartphone",
+      "lat_co": "el smartphone",
+      "lat_cl": "el smartphone",
+      "lat_pe": "el celular",
+      "lat_ve": "el smartphone",
+      "lat_cu": "el celular",
+      "lat_do": "el celular"
+    },
+    "example_de": "Ich kann nicht ohne mein Smartphone leben.",
+    "example_es": "No puedo vivir sin mi smartphone.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_003",
+    "de": "das Internet",
+    "es": "el internet",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el inteɾˈnet",
+      "simplified": "el in-ter-NET",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el internet",
+      "es_andalucia": "el internet",
+      "es_cataluna": "l'internet",
+      "es_canarias": "el internet",
+      "lat_mx": "el internet",
+      "lat_ar": "el internet",
+      "lat_co": "el internet",
+      "lat_cl": "el internet",
+      "lat_pe": "el internet",
+      "lat_ve": "el internet",
+      "lat_cu": "el internet",
+      "lat_do": "el internet"
+    },
+    "example_de": "Hast du hier Internetzugang?",
+    "example_es": "¿Tienes acceso a internet aquí?",
+    "tags": [
+      "internet",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_004",
+    "de": "das Passwort",
+    "es": "la contraseña",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la kontɾaˈseɲa",
+      "simplified": "la kon-tra-SE-nya",
+      "tip": "Das 'ñ' wie 'ny'"
+    },
+    "dialects": {
+      "es_castilla": "la contraseña",
+      "es_andalucia": "la contraseña",
+      "es_cataluna": "la contrasenya",
+      "es_canarias": "la contraseña",
+      "lat_mx": "la contraseña",
+      "lat_ar": "la contraseña",
+      "lat_co": "la contraseña",
+      "lat_cl": "la contraseña",
+      "lat_pe": "la contraseña",
+      "lat_ve": "la contraseña",
+      "lat_cu": "la contraseña",
+      "lat_do": "la contraseña"
+    },
+    "example_de": "Ich habe mein Passwort vergessen.",
+    "example_es": "He olvidado mi contraseña.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_005",
+    "de": "die App",
+    "es": "la aplicación",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la aplikaˈθjon",
+      "simplified": "la a-pli-ka-SJON",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la aplicación",
+      "es_andalucia": "la app",
+      "es_cataluna": "l'aplicació",
+      "es_canarias": "la app",
+      "lat_mx": "la aplicación",
+      "lat_ar": "la aplicación",
+      "lat_co": "la aplicación",
+      "lat_cl": "la aplicación",
+      "lat_pe": "la aplicación",
+      "lat_ve": "la aplicación",
+      "lat_cu": "la aplicación",
+      "lat_do": "la app"
+    },
+    "example_de": "Diese App ist sehr nützlich.",
+    "example_es": "Esta aplicación es muy útil.",
+    "tags": [
+      "software",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_006",
+    "de": "herunterladen",
+    "es": "descargar",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "deskaɾˈɣaɾ",
+      "simplified": "des-kar-GAR",
+      "tip": "Das 'g' sehr weich, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "descargar",
+      "es_andalucia": "descargar",
+      "es_cataluna": "descarregar",
+      "es_canarias": "descargar",
+      "lat_mx": "descargar",
+      "lat_ar": "descargar",
+      "lat_co": "descargar",
+      "lat_cl": "descargar",
+      "lat_pe": "descargar",
+      "lat_ve": "descargar",
+      "lat_cu": "descargar",
+      "lat_do": "descargar"
+    },
+    "example_de": "Lade die App herunter.",
+    "example_es": "Descarga la aplicación.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_007",
+    "de": "die Webseite",
+    "es": "la página web",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈpaχina web",
+      "simplified": "la PA-chi-na web",
+      "tip": "Das 'g' wie Rachen-'ch', Anglizismus 'web'"
+    },
+    "dialects": {
+      "es_castilla": "la página web",
+      "es_andalucia": "la página web",
+      "es_cataluna": "el lloc web",
+      "es_canarias": "la página web",
+      "lat_mx": "la página web",
+      "lat_ar": "el sitio web",
+      "lat_co": "la página web",
+      "lat_cl": "el sitio web",
+      "lat_pe": "la página web",
+      "lat_ve": "la página web",
+      "lat_cu": "la página web",
+      "lat_do": "el sitio web"
+    },
+    "example_de": "Die Webseite ist sehr übersichtlich.",
+    "example_es": "La página web es muy clara.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_008",
+    "de": "das WLAN",
+    "es": "el wifi",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈwaifi",
+      "simplified": "el WAI-fi",
+      "tip": "Anglizismus, überall identisch ausgesprochen"
+    },
+    "dialects": {
+      "es_castilla": "el wifi",
+      "es_andalucia": "el wifi",
+      "es_cataluna": "el wifi",
+      "es_canarias": "el wifi",
+      "lat_mx": "el wifi",
+      "lat_ar": "el wifi",
+      "lat_co": "el wifi",
+      "lat_cl": "el wifi",
+      "lat_pe": "el wifi",
+      "lat_ve": "el wifi",
+      "lat_cu": "el wifi",
+      "lat_do": "el wifi"
+    },
+    "example_de": "Wie lautet das WLAN-Passwort?",
+    "example_es": "¿Cuál es la contraseña del wifi?",
+    "tags": [
+      "internet",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_009",
+    "de": "die Kamera",
+    "es": "la cámara",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈkamaɾa",
+      "simplified": "la KÁ-ma-ra",
+      "tip": "Drei Silben, Betonung auf 'ká'"
+    },
+    "dialects": {
+      "es_castilla": "la cámara",
+      "es_andalucia": "la cámara",
+      "es_cataluna": "la càmera",
+      "es_canarias": "la cámara",
+      "lat_mx": "la cámara",
+      "lat_ar": "la cámara",
+      "lat_co": "la cámara",
+      "lat_cl": "la cámara",
+      "lat_pe": "la cámara",
+      "lat_ve": "la cámara",
+      "lat_cu": "la cámara",
+      "lat_do": "la cámara"
+    },
+    "example_de": "Ich habe eine neue Kamera.",
+    "example_es": "Tengo una cámara nueva.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_010",
+    "de": "der Drucker",
+    "es": "la impresora",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la implekˈsoɾa",
+      "simplified": "la im-pre-SO-ra",
+      "tip": "Vier Silben, Betonung auf 'so'"
+    },
+    "dialects": {
+      "es_castilla": "la impresora",
+      "es_andalucia": "la impresora",
+      "es_cataluna": "la impressora",
+      "es_canarias": "la impresora",
+      "lat_mx": "la impresora",
+      "lat_ar": "la impresora",
+      "lat_co": "la impresora",
+      "lat_cl": "la impresora",
+      "lat_pe": "la impresora",
+      "lat_ve": "la impresora",
+      "lat_cu": "la impresora",
+      "lat_do": "la impresora"
+    },
+    "example_de": "Der Drucker funktioniert nicht mehr.",
+    "example_es": "La impresora ya no funciona.",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_011",
+    "de": "der Bildschirm",
+    "es": "la pantalla",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la panˈtaʎa",
+      "simplified": "la pan-TA-lja",
+      "tip": "Das 'll' klingt wie weiches 'j' oder 'lj'"
+    },
+    "dialects": {
+      "es_castilla": "la pantalla",
+      "es_andalucia": "la pantalla",
+      "es_cataluna": "la pantalla",
+      "es_canarias": "la pantalla",
+      "lat_mx": "la pantalla",
+      "lat_ar": "la pantalla",
+      "lat_co": "la pantalla",
+      "lat_cl": "la pantalla",
+      "lat_pe": "la pantalla",
+      "lat_ve": "la pantalla",
+      "lat_cu": "la pantalla",
+      "lat_do": "la pantalla"
+    },
+    "example_de": "Der Bildschirm ist kaputt.",
+    "example_es": "La pantalla está rota.",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_012",
+    "de": "die Tastatur",
+    "es": "el teclado",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el tekˈlaðo",
+      "simplified": "el tek-LA-do",
+      "tip": "Drei Silben, Betonung auf 'la'"
+    },
+    "dialects": {
+      "es_castilla": "el teclado",
+      "es_andalucia": "el teclado",
+      "es_cataluna": "el teclat",
+      "es_canarias": "el teclado",
+      "lat_mx": "el teclado",
+      "lat_ar": "el teclado",
+      "lat_co": "el teclado",
+      "lat_cl": "el teclado",
+      "lat_pe": "el teclado",
+      "lat_ve": "el teclado",
+      "lat_cu": "el teclado",
+      "lat_do": "el teclado"
+    },
+    "example_de": "Die Taste N auf meiner Tastatur klemmt.",
+    "example_es": "La tecla N de mi teclado se atasca.",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_013",
+    "de": "speichern",
+    "es": "guardar",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "ɡwaɾˈðaɾ",
+      "simplified": "gwar-DAR",
+      "tip": "Das 'gu' wie 'gw', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "guardar",
+      "es_andalucia": "guardar",
+      "es_cataluna": "desar",
+      "es_canarias": "guardar",
+      "lat_mx": "guardar",
+      "lat_ar": "guardar",
+      "lat_co": "guardar",
+      "lat_cl": "guardar",
+      "lat_pe": "guardar",
+      "lat_ve": "guardar",
+      "lat_cu": "guardar",
+      "lat_do": "guardar"
+    },
+    "example_de": "Vergiss nicht, zu speichern!",
+    "example_es": "¡No olvides guardar!",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_014",
+    "de": "löschen",
+    "es": "borrar",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "boˈraɾ",
+      "simplified": "bo-RAR",
+      "tip": "Doppeltes 'r' gerollt, Betonung auf 'rar'"
+    },
+    "dialects": {
+      "es_castilla": "borrar",
+      "es_andalucia": "borrar",
+      "es_cataluna": "esborrar",
+      "es_canarias": "borrar",
+      "lat_mx": "borrar",
+      "lat_ar": "borrar",
+      "lat_co": "borrar",
+      "lat_cl": "borrar",
+      "lat_pe": "borrar",
+      "lat_ve": "borrar",
+      "lat_cu": "borrar",
+      "lat_do": "borrar"
+    },
+    "example_de": "Ich habe die Datei versehentlich gelöscht.",
+    "example_es": "He borrado el archivo sin querer.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_015",
+    "de": "die Nachricht",
+    "es": "el mensaje",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el menˈsaxe",
+      "simplified": "el men-SA-che",
+      "tip": "Das 'j' klingt wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "el mensaje",
+      "es_andalucia": "el mensaje",
+      "es_cataluna": "el missatge",
+      "es_canarias": "el mensaje",
+      "lat_mx": "el mensaje",
+      "lat_ar": "el mensaje",
+      "lat_co": "el mensaje",
+      "lat_cl": "el mensaje",
+      "lat_pe": "el mensaje",
+      "lat_ve": "el mensaje",
+      "lat_cu": "el mensaje",
+      "lat_do": "el mensaje"
+    },
+    "example_de": "Ich habe dir eine Nachricht geschickt.",
+    "example_es": "Te he enviado un mensaje.",
+    "tags": [
+      "kommunikation",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_016",
+    "de": "aktualisieren",
+    "es": "actualizar",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "aktwalyθaɾ",
+      "simplified": "ak-tua-li-ZAR",
+      "tip": "Fünf Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "actualizar",
+      "es_andalucia": "actualizar",
+      "es_cataluna": "actualitzar",
+      "es_canarias": "actualizar",
+      "lat_mx": "actualizar",
+      "lat_ar": "actualizar",
+      "lat_co": "actualizar",
+      "lat_cl": "actualizar",
+      "lat_pe": "actualizar",
+      "lat_ve": "actualizar",
+      "lat_cu": "actualizar",
+      "lat_do": "actualizar"
+    },
+    "example_de": "Du solltest dein Betriebssystem aktualisieren.",
+    "example_es": "Deberías actualizar tu sistema operativo.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_017",
+    "de": "der Virus",
+    "es": "el virus",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el ˈbiɾus",
+      "simplified": "el BI-rus",
+      "tip": "Das 'v' wie 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el virus",
+      "es_andalucia": "el virus",
+      "es_cataluna": "el virus",
+      "es_canarias": "el virus",
+      "lat_mx": "el virus",
+      "lat_ar": "el virus",
+      "lat_co": "el virus",
+      "lat_cl": "el virus",
+      "lat_pe": "el virus",
+      "lat_ve": "el virus",
+      "lat_cu": "el virus",
+      "lat_do": "el virus"
+    },
+    "example_de": "Mein Computer hat einen Virus.",
+    "example_es": "Mi ordenador tiene un virus.",
+    "tags": [
+      "sicherheit",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_018",
+    "de": "der Akku",
+    "es": "la batería",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la bateˈɾia",
+      "simplified": "la ba-te-RI-a",
+      "tip": "Vier Silben, Betonung auf 'rí'"
+    },
+    "dialects": {
+      "es_castilla": "la batería",
+      "es_andalucia": "la batería",
+      "es_cataluna": "la bateria",
+      "es_canarias": "la batería",
+      "lat_mx": "la batería",
+      "lat_ar": "la batería",
+      "lat_co": "la batería",
+      "lat_cl": "la batería",
+      "lat_pe": "la batería",
+      "lat_ve": "la batería",
+      "lat_cu": "la batería",
+      "lat_do": "la batería"
+    },
+    "example_de": "Die Batterie ist fast leer.",
+    "example_es": "La batería está casi agotada.",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_019",
+    "de": "hochladen",
+    "es": "subir",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "suˈβiɾ",
+      "simplified": "su-BIR",
+      "tip": "Das 'v' sehr weich, Betonung auf 'bir'"
+    },
+    "dialects": {
+      "es_castilla": "subir",
+      "es_andalucia": "subir",
+      "es_cataluna": "pujar",
+      "es_canarias": "subir",
+      "lat_mx": "subir",
+      "lat_ar": "subir",
+      "lat_co": "subir",
+      "lat_cl": "subir",
+      "lat_pe": "subir",
+      "lat_ve": "subir",
+      "lat_cu": "subir",
+      "lat_do": "subir"
+    },
+    "example_de": "Lade das Foto auf Instagram hoch.",
+    "example_es": "Sube la foto a Instagram.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_020",
+    "de": "das soziale Netzwerk",
+    "es": "la red social",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la reð soˈθjal",
+      "simplified": "la red so-SJAL",
+      "tip": "Das 'd' am Ende von 'red' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la red social",
+      "es_andalucia": "la red social",
+      "es_cataluna": "la xarxa social",
+      "es_canarias": "la red social",
+      "lat_mx": "la red social",
+      "lat_ar": "las redes sociales",
+      "lat_co": "la red social",
+      "lat_cl": "la red social",
+      "lat_pe": "la red social",
+      "lat_ve": "la red social",
+      "lat_cu": "la red social",
+      "lat_do": "la red social"
+    },
+    "example_de": "Ich nutze soziale Netzwerke täglich.",
+    "example_es": "Uso las redes sociales a diario.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_021",
+    "de": "programmieren",
+    "es": "programar",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "pɾoɣɾaˈmaɾ",
+      "simplified": "pro-gra-MAR",
+      "tip": "Das 'g' sehr weich zwischen Konsonanten"
+    },
+    "dialects": {
+      "es_castilla": "programar",
+      "es_andalucia": "programar",
+      "es_cataluna": "programar",
+      "es_canarias": "programar",
+      "lat_mx": "programar",
+      "lat_ar": "programar",
+      "lat_co": "programar",
+      "lat_cl": "programar",
+      "lat_pe": "programar",
+      "lat_ve": "programar",
+      "lat_cu": "programar",
+      "lat_do": "programar"
+    },
+    "example_de": "Ich lerne, mit Python zu programmieren.",
+    "example_es": "Estoy aprendiendo a programar con Python.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_022",
+    "de": "die Datei",
+    "es": "el archivo",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el arˈtʃiβo",
+      "simplified": "el ar-CHI-bo",
+      "tip": "Das 'ch' wie 'tsch', das 'v' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el fichero",
+      "es_andalucia": "el archivo",
+      "es_cataluna": "el fitxer",
+      "es_canarias": "el archivo",
+      "lat_mx": "el archivo",
+      "lat_ar": "el archivo",
+      "lat_co": "el archivo",
+      "lat_cl": "el archivo",
+      "lat_pe": "el archivo",
+      "lat_ve": "el archivo",
+      "lat_cu": "el archivo",
+      "lat_do": "el archivo"
+    },
+    "example_de": "Kannst du mir die Datei schicken?",
+    "example_es": "¿Puedes enviarme el archivo?",
+    "tags": [
+      "software",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_023",
+    "de": "neu starten",
+    "es": "reiniciar",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "rɾeiniˈθjaɾ",
+      "simplified": "re-i-ni-SJAR",
+      "tip": "In Lateinamerika 're-i-ni-SJAR'"
+    },
+    "dialects": {
+      "es_castilla": "reiniciar",
+      "es_andalucia": "reiniciar",
+      "es_cataluna": "reiniciar",
+      "es_canarias": "reiniciar",
+      "lat_mx": "reiniciar",
+      "lat_ar": "reiniciar",
+      "lat_co": "reiniciar",
+      "lat_cl": "reiniciar",
+      "lat_pe": "reiniciar",
+      "lat_ve": "reiniciar",
+      "lat_cu": "reiniciar",
+      "lat_do": "reiniciar"
+    },
+    "example_de": "Starte den Computer neu.",
+    "example_es": "Reinicia el ordenador.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_024",
+    "de": "die Cloud",
+    "es": "la nube",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la ˈnuβe",
+      "simplified": "la NU-be",
+      "tip": "Das 'v' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la nube",
+      "es_andalucia": "la nube",
+      "es_cataluna": "el núvol",
+      "es_canarias": "la nube",
+      "lat_mx": "la nube",
+      "lat_ar": "la nube",
+      "lat_co": "la nube",
+      "lat_cl": "la nube",
+      "lat_pe": "la nube",
+      "lat_ve": "la nube",
+      "lat_cu": "la nube",
+      "lat_do": "la nube"
+    },
+    "example_de": "Meine Fotos liegen in der Cloud.",
+    "example_es": "Mis fotos están guardadas en la nube.",
+    "tags": [
+      "internet",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_025",
+    "de": "das Betriebssystem",
+    "es": "el sistema operativo",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el sisˈtema opeɾaˈtiβo",
+      "simplified": "el sis-TE-ma o-pe-ra-TI-bo",
+      "tip": "Sieben Silben, auf beide Wörter einzeln achten"
+    },
+    "dialects": {
+      "es_castilla": "el sistema operativo",
+      "es_andalucia": "el sistema operativo",
+      "es_cataluna": "el sistema operatiu",
+      "es_canarias": "el sistema operativo",
+      "lat_mx": "el sistema operativo",
+      "lat_ar": "el sistema operativo",
+      "lat_co": "el sistema operativo",
+      "lat_cl": "el sistema operativo",
+      "lat_pe": "el sistema operativo",
+      "lat_ve": "el sistema operativo",
+      "lat_cu": "el sistema operativo",
+      "lat_do": "el sistema operativo"
+    },
+    "example_de": "Welches Betriebssystem verwendest du?",
+    "example_es": "¿Qué sistema operativo usas?",
+    "tags": [
+      "software",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_026",
+    "de": "der Kopfhörer",
+    "es": "los auriculares",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "los auɾikuˈlaɾes",
+      "simplified": "los au-ri-ku-LA-res",
+      "tip": "Fünf Silben, Betonung auf 'la'"
+    },
+    "dialects": {
+      "es_castilla": "los auriculares",
+      "es_andalucia": "los auriculares",
+      "es_cataluna": "els auriculars",
+      "es_canarias": "los auriculares",
+      "lat_mx": "los audífonos",
+      "lat_ar": "los auriculares",
+      "lat_co": "los audífonos",
+      "lat_cl": "los audífonos",
+      "lat_pe": "los audífonos",
+      "lat_ve": "los auriculares",
+      "lat_cu": "los auriculares",
+      "lat_do": "los audífonos"
+    },
+    "example_de": "Ich höre Musik mit meinen Kopfhörern.",
+    "example_es": "Escucho música con mis auriculares.",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_027",
+    "de": "der Lautsprecher",
+    "es": "el altavoz",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el altaˈβoθ",
+      "simplified": "el al-ta-BOS",
+      "tip": "In Lateinamerika 'al-ta-BOS'"
+    },
+    "dialects": {
+      "es_castilla": "el altavoz",
+      "es_andalucia": "el altavoz",
+      "es_cataluna": "l'altaveu",
+      "es_canarias": "el altavoz",
+      "lat_mx": "el parlante",
+      "lat_ar": "el parlante",
+      "lat_co": "el parlante",
+      "lat_cl": "el parlante",
+      "lat_pe": "el parlante",
+      "lat_ve": "el parlante",
+      "lat_cu": "el altavoz",
+      "lat_do": "el parlante"
+    },
+    "example_de": "Der Lautsprecher ist zu laut.",
+    "example_es": "El altavoz está demasiado alto.",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_028",
+    "de": "das Passwort zurücksetzen",
+    "es": "restablecer la contraseña",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "restaβleˈθeɾ",
+      "simplified": "res-ta-ble-ZER",
+      "tip": "Fünf Silben, Betonung auf 'zer'"
+    },
+    "dialects": {
+      "es_castilla": "restablecer la contraseña",
+      "es_andalucia": "restablecer",
+      "es_cataluna": "restablir la contrasenya",
+      "es_canarias": "restablecer",
+      "lat_mx": "recuperar",
+      "lat_ar": "restablecer",
+      "lat_co": "recuperar la contraseña",
+      "lat_cl": "recuperar",
+      "lat_pe": "restablecer",
+      "lat_ve": "restablecer",
+      "lat_cu": "restablecer",
+      "lat_do": "recuperar la contraseña"
+    },
+    "example_de": "Ich muss mein Passwort zurücksetzen.",
+    "example_es": "Necesito restablecer mi contraseña.",
+    "tags": [
+      "sicherheit",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_029",
+    "de": "der Fernseher",
+    "es": "el televisor",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈtele",
+      "simplified": "la TE-le",
+      "tip": "Kurze Kurzform 'la tele', offiziell 'el televisor'"
+    },
+    "dialects": {
+      "es_castilla": "el televisor",
+      "es_andalucia": "la tele",
+      "es_cataluna": "el televisor",
+      "es_canarias": "la tele",
+      "lat_mx": "la televisión",
+      "lat_ar": "el televisor",
+      "lat_co": "el televisor",
+      "lat_cl": "el televisor",
+      "lat_pe": "la televisión",
+      "lat_ve": "el televisor",
+      "lat_cu": "el televisor",
+      "lat_do": "el televisor"
+    },
+    "example_de": "Ich schaue abends oft fern.",
+    "example_es": "Por las noches suelo ver la tele.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_030",
+    "de": "die künstliche Intelligenz",
+    "es": "la inteligencia artificial",
+    "category": "technologie",
+    "difficulty": 4,
+    "pronunciation": {
+      "ipa": "la inteliˈxenθja artiˈθjal",
+      "simplified": "la in-te-li-CHEN-sja ar-ti-SJAL",
+      "tip": "Zwei Wörter, das 'g' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la inteligencia artificial (IA)",
+      "es_andalucia": "la inteligencia artificial",
+      "es_cataluna": "la intel·ligència artificial",
+      "es_canarias": "la inteligencia artificial",
+      "lat_mx": "la inteligencia artificial",
+      "lat_ar": "la inteligencia artificial",
+      "lat_co": "la inteligencia artificial",
+      "lat_cl": "la IA",
+      "lat_pe": "la inteligencia artificial",
+      "lat_ve": "la inteligencia artificial",
+      "lat_cu": "la inteligencia artificial",
+      "lat_do": "la inteligencia artificial"
+    },
+    "example_de": "Künstliche Intelligenz verändert die Welt.",
+    "example_es": "La inteligencia artificial está cambiando el mundo.",
+    "tags": [
+      "zukunft",
+      "B2"
+    ]
+  },
+  {
+    "id": "tec_031",
+    "de": "die Maus",
+    "es": "el ratón",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el raˈton",
+      "simplified": "el ra-TON",
+      "tip": "Betonung auf letzter Silbe, das 'n' nasalisiert"
+    },
+    "dialects": {
+      "es_castilla": "el ratón",
+      "es_andalucia": "el ratón",
+      "es_cataluna": "el ratolí",
+      "es_canarias": "el ratón",
+      "lat_mx": "el ratón",
+      "lat_ar": "el mouse",
+      "lat_co": "el mouse",
+      "lat_cl": "el mouse",
+      "lat_pe": "el mouse",
+      "lat_ve": "el mouse",
+      "lat_cu": "el ratón",
+      "lat_do": "el mouse"
+    },
+    "example_de": "Ich brauche eine neue Maus.",
+    "example_es": "Necesito un ratón nuevo.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_032",
+    "de": "das Ladekabel",
+    "es": "el cable de carga",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈkaβle ðe ˈkaɾɣa",
+      "simplified": "el KA-ble de KAR-ga",
+      "tip": "Das 'v' in cable sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el cable de carga",
+      "es_andalucia": "el cargador",
+      "es_cataluna": "el cable de càrrega",
+      "es_canarias": "el cable",
+      "lat_mx": "el cable de carga",
+      "lat_ar": "el cable cargador",
+      "lat_co": "el cable de carga",
+      "lat_cl": "el cable",
+      "lat_pe": "el cable de carga",
+      "lat_ve": "el cable cargador",
+      "lat_cu": "el cable de carga",
+      "lat_do": "el cable"
+    },
+    "example_de": "Hast du dein Ladekabel vergessen?",
+    "example_es": "¿Has olvidado tu cable de carga?",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_033",
+    "de": "der Stecker",
+    "es": "el enchufe",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el enˈtʃufe",
+      "simplified": "el en-TSCHU-fe",
+      "tip": "Das 'ch' wie 'tsch'"
+    },
+    "dialects": {
+      "es_castilla": "el enchufe",
+      "es_andalucia": "el enchufe",
+      "es_cataluna": "l'endoll",
+      "es_canarias": "el enchufe",
+      "lat_mx": "el enchufe",
+      "lat_ar": "el enchufe",
+      "lat_co": "el enchufe",
+      "lat_cl": "el enchufe",
+      "lat_pe": "el enchufe",
+      "lat_ve": "el enchufe",
+      "lat_cu": "el enchufe",
+      "lat_do": "el enchufe"
+    },
+    "example_de": "Wo ist eine Steckdose?",
+    "example_es": "¿Dónde hay un enchufe?",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_034",
+    "de": "eine E-Mail schicken",
+    "es": "enviar un correo electrónico",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "emˈbjaɾ un koˈreo elekˈtɾoniko",
+      "simplified": "em-BJAR un ko-RE-o e-lek-TRO-ni-ko",
+      "tip": "Oft verkürzt zu 'mandar un mail'"
+    },
+    "dialects": {
+      "es_castilla": "enviar un correo electrónico",
+      "es_andalucia": "mandar un correo",
+      "es_cataluna": "enviar un correu electrònic",
+      "es_canarias": "mandar un correo",
+      "lat_mx": "enviar un correo",
+      "lat_ar": "mandar un correo",
+      "lat_co": "enviar un correo",
+      "lat_cl": "mandar un correo",
+      "lat_pe": "enviar un correo",
+      "lat_ve": "enviar un correo",
+      "lat_cu": "enviar un correo",
+      "lat_do": "mandar un correo"
+    },
+    "example_de": "Ich schicke dir die Unterlagen per E-Mail.",
+    "example_es": "Te envío los documentos por correo electrónico.",
+    "tags": [
+      "kommunikation",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_035",
+    "de": "das Mikrofon",
+    "es": "el micrófono",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el miˈkɾofono",
+      "simplified": "el mi-KRO-fo-no",
+      "tip": "Vier Silben, Betonung auf 'kro'"
+    },
+    "dialects": {
+      "es_castilla": "el micrófono",
+      "es_andalucia": "el micrófono",
+      "es_cataluna": "el micròfon",
+      "es_canarias": "el micrófono",
+      "lat_mx": "el micrófono",
+      "lat_ar": "el micrófono",
+      "lat_co": "el micrófono",
+      "lat_cl": "el micrófono",
+      "lat_pe": "el micrófono",
+      "lat_ve": "el micrófono",
+      "lat_cu": "el micrófono",
+      "lat_do": "el micrófono"
+    },
+    "example_de": "Das Mikrofon funktioniert nicht.",
+    "example_es": "El micrófono no funciona.",
+    "tags": [
+      "geräte",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_036",
+    "de": "der Ordner",
+    "es": "la carpeta",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la kaɾˈpeta",
+      "simplified": "la kar-PE-ta",
+      "tip": "Drei Silben, Betonung auf 'pe'"
+    },
+    "dialects": {
+      "es_castilla": "la carpeta",
+      "es_andalucia": "la carpeta",
+      "es_cataluna": "la carpeta",
+      "es_canarias": "la carpeta",
+      "lat_mx": "la carpeta",
+      "lat_ar": "la carpeta",
+      "lat_co": "la carpeta",
+      "lat_cl": "la carpeta",
+      "lat_pe": "la carpeta",
+      "lat_ve": "la carpeta",
+      "lat_cu": "la carpeta",
+      "lat_do": "la carpeta"
+    },
+    "example_de": "Ich erstelle einen neuen Ordner.",
+    "example_es": "Creo una nueva carpeta.",
+    "tags": [
+      "software",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_037",
+    "de": "der Screenshot",
+    "es": "la captura de pantalla",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la kapˈtuɾa ðe panˈtaʎa",
+      "simplified": "la kap-TU-ra de pan-TA-lja",
+      "tip": "Oft 'el screenshot' verwendet, offiziell 'captura de pantalla'"
+    },
+    "dialects": {
+      "es_castilla": "la captura de pantalla",
+      "es_andalucia": "el pantallazo",
+      "es_cataluna": "la captura de pantalla",
+      "es_canarias": "la captura",
+      "lat_mx": "la captura de pantalla",
+      "lat_ar": "la captura de pantalla",
+      "lat_co": "la captura de pantalla",
+      "lat_cl": "el screenshot",
+      "lat_pe": "la captura de pantalla",
+      "lat_ve": "la captura de pantalla",
+      "lat_cu": "la captura de pantalla",
+      "lat_do": "el screenshot"
+    },
+    "example_de": "Mach einen Screenshot davon.",
+    "example_es": "Haz una captura de pantalla.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_038",
+    "de": "suchen",
+    "es": "buscar",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "busˈkaɾ",
+      "simplified": "bus-KAR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "buscar",
+      "es_andalucia": "buscar",
+      "es_cataluna": "buscar",
+      "es_canarias": "buscar",
+      "lat_mx": "buscar",
+      "lat_ar": "buscar",
+      "lat_co": "buscar",
+      "lat_cl": "buscar",
+      "lat_pe": "buscar",
+      "lat_ve": "buscar",
+      "lat_cu": "buscar",
+      "lat_do": "buscar"
+    },
+    "example_de": "Such das im Internet.",
+    "example_es": "Búscalo en internet.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_039",
+    "de": "die Verbindung",
+    "es": "la conexión",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la konekˈθjon",
+      "simplified": "la ko-nek-SJON",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la conexión",
+      "es_andalucia": "la conexión",
+      "es_cataluna": "la connexió",
+      "es_canarias": "la conexión",
+      "lat_mx": "la conexión",
+      "lat_ar": "la conexión",
+      "lat_co": "la conexión",
+      "lat_cl": "la conexión",
+      "lat_pe": "la conexión",
+      "lat_ve": "la conexión",
+      "lat_cu": "la conexión",
+      "lat_do": "la conexión"
+    },
+    "example_de": "Die Verbindung ist sehr langsam.",
+    "example_es": "La conexión es muy lenta.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_040",
+    "de": "das Tablet",
+    "es": "la tableta",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la taˈβleta",
+      "simplified": "la ta-BLE-ta",
+      "tip": "Das 'v' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la tableta",
+      "es_andalucia": "el tablet",
+      "es_cataluna": "la tauleta",
+      "es_canarias": "el tablet",
+      "lat_mx": "la tableta",
+      "lat_ar": "la tableta",
+      "lat_co": "la tableta",
+      "lat_cl": "el tablet",
+      "lat_pe": "la tableta",
+      "lat_ve": "la tableta",
+      "lat_cu": "la tableta",
+      "lat_do": "el tablet"
+    },
+    "example_de": "Ich lese Bücher auf meinem Tablet.",
+    "example_es": "Leo libros en mi tableta.",
+    "tags": [
+      "geräte",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_041",
+    "de": "die Suchmaschine",
+    "es": "el buscador",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el buskaˈðoɾ",
+      "simplified": "el bus-ka-DOR",
+      "tip": "Betonung auf letzter Silbe, das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el buscador",
+      "es_andalucia": "el buscador",
+      "es_cataluna": "el cercador",
+      "es_canarias": "el buscador",
+      "lat_mx": "el buscador",
+      "lat_ar": "el buscador",
+      "lat_co": "el buscador",
+      "lat_cl": "el buscador",
+      "lat_pe": "el buscador",
+      "lat_ve": "el buscador",
+      "lat_cu": "el buscador",
+      "lat_do": "el buscador"
+    },
+    "example_de": "Google ist die beliebteste Suchmaschine.",
+    "example_es": "Google es el buscador más popular.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_042",
+    "de": "der Anruf",
+    "es": "la llamada",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ʎaˈmaða",
+      "simplified": "la lja-MA-da",
+      "tip": "Das 'll' wie weiches 'j', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la llamada",
+      "es_andalucia": "la llamada",
+      "es_cataluna": "la trucada",
+      "es_canarias": "la llamada",
+      "lat_mx": "la llamada",
+      "lat_ar": "la llamada",
+      "lat_co": "la llamada",
+      "lat_cl": "la llamada",
+      "lat_pe": "la llamada",
+      "lat_ve": "la llamada",
+      "lat_cu": "la llamada",
+      "lat_do": "la llamada"
+    },
+    "example_de": "Ich habe einen Anruf verpasst.",
+    "example_es": "He perdido una llamada.",
+    "tags": [
+      "kommunikation",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_043",
+    "de": "anrufen",
+    "es": "llamar",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ʎaˈmaɾ",
+      "simplified": "lja-MAR",
+      "tip": "Das 'll' wie weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "llamar",
+      "es_andalucia": "llamar",
+      "es_cataluna": "trucar",
+      "es_canarias": "llamar",
+      "lat_mx": "llamar",
+      "lat_ar": "llamar",
+      "lat_co": "llamar",
+      "lat_cl": "llamar",
+      "lat_pe": "llamar",
+      "lat_ve": "llamar",
+      "lat_cu": "llamar",
+      "lat_do": "llamar"
+    },
+    "example_de": "Ruf mich bitte an!",
+    "example_es": "¡Llámame, por favor!",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_044",
+    "de": "der Videoanruf",
+    "es": "la videollamada",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la βiðeoʎaˈmaða",
+      "simplified": "la bi-de-o-lja-MA-da",
+      "tip": "Zusammengesetztes Wort, fünf Silben"
+    },
+    "dialects": {
+      "es_castilla": "la videollamada",
+      "es_andalucia": "la videollamada",
+      "es_cataluna": "la videotrucada",
+      "es_canarias": "la videollamada",
+      "lat_mx": "la videollamada",
+      "lat_ar": "la videollamada",
+      "lat_co": "la videollamada",
+      "lat_cl": "la videollamada",
+      "lat_pe": "la videollamada",
+      "lat_ve": "la videollamada",
+      "lat_cu": "la videollamada",
+      "lat_do": "la videollamada"
+    },
+    "example_de": "Machen wir heute Abend einen Videoanruf?",
+    "example_es": "¿Hacemos una videollamada esta noche?",
+    "tags": [
+      "kommunikation",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_045",
+    "de": "der Fehler",
+    "es": "el error",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el eˈroɾ",
+      "simplified": "el e-ROR",
+      "tip": "Das doppelte 'rr' kräftig rollen"
+    },
+    "dialects": {
+      "es_castilla": "el error",
+      "es_andalucia": "el error",
+      "es_cataluna": "l'error",
+      "es_canarias": "el error",
+      "lat_mx": "el error",
+      "lat_ar": "el error",
+      "lat_co": "el error",
+      "lat_cl": "el error",
+      "lat_pe": "el error",
+      "lat_ve": "el error",
+      "lat_cu": "el error",
+      "lat_do": "el error"
+    },
+    "example_de": "Es hat eine Fehlermeldung erschienen.",
+    "example_es": "Ha aparecido un mensaje de error.",
+    "tags": [
+      "software",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_046",
+    "de": "einschalten",
+    "es": "encender",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "enθenˈdeɾ",
+      "simplified": "en-sen-DER",
+      "tip": "In Lateinamerika 'en-sen-DER' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "encender",
+      "es_andalucia": "encender",
+      "es_cataluna": "encendre",
+      "es_canarias": "encender",
+      "lat_mx": "encender",
+      "lat_ar": "prender",
+      "lat_co": "prender",
+      "lat_cl": "prender",
+      "lat_pe": "prender",
+      "lat_ve": "prender",
+      "lat_cu": "encender",
+      "lat_do": "prender"
+    },
+    "example_de": "Schalte den Computer ein.",
+    "example_es": "Enciende el ordenador.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_047",
+    "de": "ausschalten",
+    "es": "apagar",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "apaˈɣaɾ",
+      "simplified": "a-pa-GAR",
+      "tip": "Das 'g' sehr weich, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "apagar",
+      "es_andalucia": "apagar",
+      "es_cataluna": "apagar",
+      "es_canarias": "apagar",
+      "lat_mx": "apagar",
+      "lat_ar": "apagar",
+      "lat_co": "apagar",
+      "lat_cl": "apagar",
+      "lat_pe": "apagar",
+      "lat_ve": "apagar",
+      "lat_cu": "apagar",
+      "lat_do": "apagar"
+    },
+    "example_de": "Schalte den Bildschirm aus.",
+    "example_es": "Apaga la pantalla.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_048",
+    "de": "der Kommentar",
+    "es": "el comentario",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el komenˈtaɾjo",
+      "simplified": "el ko-men-TA-rjo",
+      "tip": "Vier Silben, Betonung auf 'ta'"
+    },
+    "dialects": {
+      "es_castilla": "el comentario",
+      "es_andalucia": "el comentario",
+      "es_cataluna": "el comentari",
+      "es_canarias": "el comentario",
+      "lat_mx": "el comentario",
+      "lat_ar": "el comentario",
+      "lat_co": "el comentario",
+      "lat_cl": "el comentario",
+      "lat_pe": "el comentario",
+      "lat_ve": "el comentario",
+      "lat_cu": "el comentario",
+      "lat_do": "el comentario"
+    },
+    "example_de": "Hinterlasse einen Kommentar.",
+    "example_es": "Deja un comentario.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_049",
+    "de": "teilen",
+    "es": "compartir",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "kompaɾˈtiɾ",
+      "simplified": "kom-par-TIR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "compartir",
+      "es_andalucia": "compartir",
+      "es_cataluna": "compartir",
+      "es_canarias": "compartir",
+      "lat_mx": "compartir",
+      "lat_ar": "compartir",
+      "lat_co": "compartir",
+      "lat_cl": "compartir",
+      "lat_pe": "compartir",
+      "lat_ve": "compartir",
+      "lat_cu": "compartir",
+      "lat_do": "compartir"
+    },
+    "example_de": "Teile den Beitrag mit deinen Freunden.",
+    "example_es": "Comparte la publicación con tus amigos.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_050",
+    "de": "das Profil",
+    "es": "el perfil",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el peɾˈfil",
+      "simplified": "el per-FIL",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el perfil",
+      "es_andalucia": "el perfil",
+      "es_cataluna": "el perfil",
+      "es_canarias": "el perfil",
+      "lat_mx": "el perfil",
+      "lat_ar": "el perfil",
+      "lat_co": "el perfil",
+      "lat_cl": "el perfil",
+      "lat_pe": "el perfil",
+      "lat_ve": "el perfil",
+      "lat_cu": "el perfil",
+      "lat_do": "el perfil"
+    },
+    "example_de": "Mein Profil ist privat.",
+    "example_es": "Mi perfil es privado.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_051",
+    "de": "der Beitrag",
+    "es": "la publicación",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la puβlikaˈθjon",
+      "simplified": "la pub-li-ka-SJON",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la publicación",
+      "es_andalucia": "la publicación",
+      "es_cataluna": "la publicació",
+      "es_canarias": "la publicación",
+      "lat_mx": "la publicación",
+      "lat_ar": "la publicación",
+      "lat_co": "la publicación",
+      "lat_cl": "la publicación",
+      "lat_pe": "la publicación",
+      "lat_ve": "la publicación",
+      "lat_cu": "la publicación",
+      "lat_do": "la publicación"
+    },
+    "example_de": "Er hat einen neuen Beitrag veröffentlicht.",
+    "example_es": "Ha publicado una nueva publicación.",
+    "tags": [
+      "internet",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_052",
+    "de": "der Kanal",
+    "es": "el canal",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el kaˈnal",
+      "simplified": "el ka-NAL",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el canal",
+      "es_andalucia": "el canal",
+      "es_cataluna": "el canal",
+      "es_canarias": "el canal",
+      "lat_mx": "el canal",
+      "lat_ar": "el canal",
+      "lat_co": "el canal",
+      "lat_cl": "el canal",
+      "lat_pe": "el canal",
+      "lat_ve": "el canal",
+      "lat_cu": "el canal",
+      "lat_do": "el canal"
+    },
+    "example_de": "Abonniere meinen Kanal!",
+    "example_es": "¡Suscríbete a mi canal!",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_053",
+    "de": "abonnieren",
+    "es": "suscribirse",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "suskɾiˈβiɾse",
+      "simplified": "sus-kri-BIR-se",
+      "tip": "Das 'v' sehr weich, reflexives 'se' anhängen"
+    },
+    "dialects": {
+      "es_castilla": "suscribirse",
+      "es_andalucia": "suscribirse",
+      "es_cataluna": "subscriure's",
+      "es_canarias": "suscribirse",
+      "lat_mx": "suscribirse",
+      "lat_ar": "suscribirse",
+      "lat_co": "suscribirse",
+      "lat_cl": "suscribirse",
+      "lat_pe": "suscribirse",
+      "lat_ve": "suscribirse",
+      "lat_cu": "suscribirse",
+      "lat_do": "suscribirse"
+    },
+    "example_de": "Bitte abonniere unseren Newsletter.",
+    "example_es": "Por favor, suscríbete a nuestro boletín.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_054",
+    "de": "der Roboter",
+    "es": "el robot",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el roˈβot",
+      "simplified": "el ro-BOT",
+      "tip": "Das 'v' sehr weich, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el robot",
+      "es_andalucia": "el robot",
+      "es_cataluna": "el robot",
+      "es_canarias": "el robot",
+      "lat_mx": "el robot",
+      "lat_ar": "el robot",
+      "lat_co": "el robot",
+      "lat_cl": "el robot",
+      "lat_pe": "el robot",
+      "lat_ve": "el robot",
+      "lat_cu": "el robot",
+      "lat_do": "el robot"
+    },
+    "example_de": "Roboter übernehmen viele Aufgaben in der Industrie.",
+    "example_es": "Los robots realizan muchas tareas en la industria.",
+    "tags": [
+      "zukunft",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_055",
+    "de": "das Netzwerk",
+    "es": "la red",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la reð",
+      "simplified": "la RED",
+      "tip": "Das 'd' am Ende sehr weich, fast stumm"
+    },
+    "dialects": {
+      "es_castilla": "la red",
+      "es_andalucia": "la red",
+      "es_cataluna": "la xarxa",
+      "es_canarias": "la red",
+      "lat_mx": "la red",
+      "lat_ar": "la red",
+      "lat_co": "la red",
+      "lat_cl": "la red",
+      "lat_pe": "la red",
+      "lat_ve": "la red",
+      "lat_cu": "la red",
+      "lat_do": "la red"
+    },
+    "example_de": "Das Netzwerk ist ausgefallen.",
+    "example_es": "La red está caída.",
+    "tags": [
+      "internet",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_056",
+    "de": "verschlüsseln",
+    "es": "cifrar",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "θifˈɾaɾ",
+      "simplified": "si-FRAR",
+      "tip": "In Lateinamerika 'si-FRAR' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "cifrar",
+      "es_andalucia": "cifrar",
+      "es_cataluna": "xifrar",
+      "es_canarias": "cifrar",
+      "lat_mx": "cifrar",
+      "lat_ar": "cifrar",
+      "lat_co": "cifrar",
+      "lat_cl": "cifrar",
+      "lat_pe": "cifrar",
+      "lat_ve": "cifrar",
+      "lat_cu": "cifrar",
+      "lat_do": "cifrar"
+    },
+    "example_de": "Die Verbindung ist verschlüsselt.",
+    "example_es": "La conexión está cifrada.",
+    "tags": [
+      "sicherheit",
+      "B2"
+    ]
+  },
+  {
+    "id": "tec_057",
+    "de": "der Datenschutz",
+    "es": "la privacidad",
+    "category": "technologie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la pɾiβaθiˈðað",
+      "simplified": "la pri-ba-si-DAD",
+      "tip": "In Lateinamerika 'pri-ba-si-DAD' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "la privacidad",
+      "es_andalucia": "la privacidad",
+      "es_cataluna": "la privacitat",
+      "es_canarias": "la privacidad",
+      "lat_mx": "la privacidad",
+      "lat_ar": "la privacidad",
+      "lat_co": "la privacidad",
+      "lat_cl": "la privacidad",
+      "lat_pe": "la privacidad",
+      "lat_ve": "la privacidad",
+      "lat_cu": "la privacidad",
+      "lat_do": "la privacidad"
+    },
+    "example_de": "Datenschutz ist sehr wichtig.",
+    "example_es": "La privacidad es muy importante.",
+    "tags": [
+      "sicherheit",
+      "B1"
+    ]
+  },
+  {
+    "id": "tec_058",
+    "de": "das Konto",
+    "es": "la cuenta",
+    "category": "technologie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈkwenta",
+      "simplified": "la KWEN-ta",
+      "tip": "Das 'ue' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "la cuenta",
+      "es_andalucia": "la cuenta",
+      "es_cataluna": "el compte",
+      "es_canarias": "la cuenta",
+      "lat_mx": "la cuenta",
+      "lat_ar": "la cuenta",
+      "lat_co": "la cuenta",
+      "lat_cl": "la cuenta",
+      "lat_pe": "la cuenta",
+      "lat_ve": "la cuenta",
+      "lat_cu": "la cuenta",
+      "lat_do": "la cuenta"
+    },
+    "example_de": "Ich habe kein Konto bei diesem Dienst.",
+    "example_es": "No tengo cuenta en este servicio.",
+    "tags": [
+      "internet",
+      "A1"
+    ]
+  },
+  {
+    "id": "tec_059",
+    "de": "einloggen",
+    "es": "iniciar sesión",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "iniˈθjaɾ seˈsjon",
+      "simplified": "i-ni-SJAR se-SJON",
+      "tip": "In Lateinamerika 'i-ni-SJAR'"
+    },
+    "dialects": {
+      "es_castilla": "iniciar sesión",
+      "es_andalucia": "iniciar sesión",
+      "es_cataluna": "iniciar sessió",
+      "es_canarias": "iniciar sesión",
+      "lat_mx": "iniciar sesión",
+      "lat_ar": "iniciar sesión",
+      "lat_co": "iniciar sesión",
+      "lat_cl": "iniciar sesión",
+      "lat_pe": "iniciar sesión",
+      "lat_ve": "iniciar sesión",
+      "lat_cu": "iniciar sesión",
+      "lat_do": "iniciar sesión"
+    },
+    "example_de": "Kannst du dich einloggen?",
+    "example_es": "¿Puedes iniciar sesión?",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "tec_060",
+    "de": "ausloggen",
+    "es": "cerrar sesión",
+    "category": "technologie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "θeˈraɾ seˈsjon",
+      "simplified": "se-RRAR se-SJON",
+      "tip": "In Lateinamerika 'se-RRAR'"
+    },
+    "dialects": {
+      "es_castilla": "cerrar sesión",
+      "es_andalucia": "cerrar sesión",
+      "es_cataluna": "tancar sessió",
+      "es_canarias": "cerrar sesión",
+      "lat_mx": "cerrar sesión",
+      "lat_ar": "cerrar sesión",
+      "lat_co": "cerrar sesión",
+      "lat_cl": "cerrar sesión",
+      "lat_pe": "cerrar sesión",
+      "lat_ve": "cerrar sesión",
+      "lat_cu": "cerrar sesión",
+      "lat_do": "cerrar sesión"
+    },
+    "example_de": "Vergiss nicht auszuloggen.",
+    "example_es": "No olvides cerrar sesión.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  }
+]

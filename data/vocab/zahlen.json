@@ -1,0 +1,962 @@
+[
+  {
+    "id": "zah_001",
+    "de": "null",
+    "es": "cero",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈθeɾo",
+      "simplified": "SE-ro",
+      "tip": "In Lateinamerika 'SE-ro' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "cero",
+      "es_andalucia": "cero",
+      "es_cataluna": "zero",
+      "es_canarias": "cero",
+      "lat_mx": "cero",
+      "lat_ar": "cero",
+      "lat_co": "cero",
+      "lat_cl": "cero",
+      "lat_pe": "cero",
+      "lat_ve": "cero",
+      "lat_cu": "cero",
+      "lat_do": "cero"
+    },
+    "example_de": "In der Nacht fiel die Temperatur auf null Grad.",
+    "example_es": "Por la noche la temperatura bajó a cero grados.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_002",
+    "de": "eins",
+    "es": "uno",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈuno",
+      "simplified": "U-no",
+      "tip": "Vor männlichen Nomen wird 'uno' zu 'un'"
+    },
+    "dialects": {
+      "es_castilla": "uno",
+      "es_andalucia": "uno",
+      "es_cataluna": "un",
+      "es_canarias": "uno",
+      "lat_mx": "uno",
+      "lat_ar": "uno",
+      "lat_co": "uno",
+      "lat_cl": "uno",
+      "lat_pe": "uno",
+      "lat_ve": "uno",
+      "lat_cu": "uno",
+      "lat_do": "uno"
+    },
+    "example_de": "Ich brauche nur einen.",
+    "example_es": "Solo necesito uno.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_003",
+    "de": "zwei",
+    "es": "dos",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "dos",
+      "simplified": "DOS",
+      "tip": "Sehr kurz und klar gesprochen"
+    },
+    "dialects": {
+      "es_castilla": "dos",
+      "es_andalucia": "dos",
+      "es_cataluna": "dos",
+      "es_canarias": "dos",
+      "lat_mx": "dos",
+      "lat_ar": "dos",
+      "lat_co": "dos",
+      "lat_cl": "dos",
+      "lat_pe": "dos",
+      "lat_ve": "dos",
+      "lat_cu": "dos",
+      "lat_do": "dos"
+    },
+    "example_de": "Ich habe zwei Schwestern.",
+    "example_es": "Tengo dos hermanas.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_004",
+    "de": "drei",
+    "es": "tres",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "tɾes",
+      "simplified": "TRES",
+      "tip": "Das 'r' leicht rollen"
+    },
+    "dialects": {
+      "es_castilla": "tres",
+      "es_andalucia": "tres",
+      "es_cataluna": "tres",
+      "es_canarias": "tres",
+      "lat_mx": "tres",
+      "lat_ar": "tres",
+      "lat_co": "tres",
+      "lat_cl": "tres",
+      "lat_pe": "tres",
+      "lat_ve": "tres",
+      "lat_cu": "tres",
+      "lat_do": "tres"
+    },
+    "example_de": "Das Essen kostet drei Euro.",
+    "example_es": "La comida cuesta tres euros.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_005",
+    "de": "vier",
+    "es": "cuatro",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈkwatɾo",
+      "simplified": "KWA-tro",
+      "tip": "Das 'ua' als Diphthong, gleichmäßig fließend"
+    },
+    "dialects": {
+      "es_castilla": "cuatro",
+      "es_andalucia": "cuatro",
+      "es_cataluna": "quatre",
+      "es_canarias": "cuatro",
+      "lat_mx": "cuatro",
+      "lat_ar": "cuatro",
+      "lat_co": "cuatro",
+      "lat_cl": "cuatro",
+      "lat_pe": "cuatro",
+      "lat_ve": "cuatro",
+      "lat_cu": "cuatro",
+      "lat_do": "cuatro"
+    },
+    "example_de": "Ein Tisch hat vier Beine.",
+    "example_es": "Una mesa tiene cuatro patas.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_006",
+    "de": "fünf",
+    "es": "cinco",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈθiŋko",
+      "simplified": "SIN-ko",
+      "tip": "In Lateinamerika 'SIN-ko' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "cinco",
+      "es_andalucia": "cinco",
+      "es_cataluna": "cinc",
+      "es_canarias": "cinco",
+      "lat_mx": "cinco",
+      "lat_ar": "cinco",
+      "lat_co": "cinco",
+      "lat_cl": "cinco",
+      "lat_pe": "cinco",
+      "lat_ve": "cinco",
+      "lat_cu": "cinco",
+      "lat_do": "cinco"
+    },
+    "example_de": "Ich warte seit fünf Minuten.",
+    "example_es": "Llevo cinco minutos esperando.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_007",
+    "de": "sechs",
+    "es": "seis",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "seis",
+      "simplified": "SEIS",
+      "tip": "Das 'ei' wie im Deutschen, einsilbig"
+    },
+    "dialects": {
+      "es_castilla": "seis",
+      "es_andalucia": "seis",
+      "es_cataluna": "sis",
+      "es_canarias": "seis",
+      "lat_mx": "seis",
+      "lat_ar": "seis",
+      "lat_co": "seis",
+      "lat_cl": "seis",
+      "lat_pe": "seis",
+      "lat_ve": "seis",
+      "lat_cu": "seis",
+      "lat_do": "seis"
+    },
+    "example_de": "Das Geschäft öffnet um sechs Uhr.",
+    "example_es": "La tienda abre a las seis.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_008",
+    "de": "sieben",
+    "es": "siete",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈsjete",
+      "simplified": "SJE-te",
+      "tip": "Das 'ie' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "siete",
+      "es_andalucia": "siete",
+      "es_cataluna": "set",
+      "es_canarias": "siete",
+      "lat_mx": "siete",
+      "lat_ar": "siete",
+      "lat_co": "siete",
+      "lat_cl": "siete",
+      "lat_pe": "siete",
+      "lat_ve": "siete",
+      "lat_cu": "siete",
+      "lat_do": "siete"
+    },
+    "example_de": "Eine Woche hat sieben Tage.",
+    "example_es": "Una semana tiene siete días.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_009",
+    "de": "acht",
+    "es": "ocho",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈotʃo",
+      "simplified": "O-tscho",
+      "tip": "Das 'ch' wie 'tsch'"
+    },
+    "dialects": {
+      "es_castilla": "ocho",
+      "es_andalucia": "ocho",
+      "es_cataluna": "vuit",
+      "es_canarias": "ocho",
+      "lat_mx": "ocho",
+      "lat_ar": "ocho",
+      "lat_co": "ocho",
+      "lat_cl": "ocho",
+      "lat_pe": "ocho",
+      "lat_ve": "ocho",
+      "lat_cu": "ocho",
+      "lat_do": "ocho"
+    },
+    "example_de": "Die Vase kostet acht Euro.",
+    "example_es": "El jarrón cuesta ocho euros.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_010",
+    "de": "neun",
+    "es": "nueve",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈnweβe",
+      "simplified": "NWE-be",
+      "tip": "Das 'ue' als Diphthong, das 'v' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "nueve",
+      "es_andalucia": "nueve",
+      "es_cataluna": "nou",
+      "es_canarias": "nueve",
+      "lat_mx": "nueve",
+      "lat_ar": "nueve",
+      "lat_co": "nueve",
+      "lat_cl": "nueve",
+      "lat_pe": "nueve",
+      "lat_ve": "nueve",
+      "lat_cu": "nueve",
+      "lat_do": "nueve"
+    },
+    "example_de": "Sie schläft neun Stunden am Tag.",
+    "example_es": "Ella duerme nueve horas al día.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_011",
+    "de": "zehn",
+    "es": "diez",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "djeθ",
+      "simplified": "DJES",
+      "tip": "In Lateinamerika 'DJES' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "diez",
+      "es_andalucia": "diez",
+      "es_cataluna": "deu",
+      "es_canarias": "diez",
+      "lat_mx": "diez",
+      "lat_ar": "diez",
+      "lat_co": "diez",
+      "lat_cl": "diez",
+      "lat_pe": "diez",
+      "lat_ve": "diez",
+      "lat_cu": "diez",
+      "lat_do": "diez"
+    },
+    "example_de": "Ich bin in zehn Minuten da.",
+    "example_es": "Llego en diez minutos.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_012",
+    "de": "elf",
+    "es": "once",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈonθe",
+      "simplified": "ON-se",
+      "tip": "In Lateinamerika 'ON-se' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "once",
+      "es_andalucia": "once",
+      "es_cataluna": "onze",
+      "es_canarias": "once",
+      "lat_mx": "once",
+      "lat_ar": "once",
+      "lat_co": "once",
+      "lat_cl": "once",
+      "lat_pe": "once",
+      "lat_ve": "once",
+      "lat_cu": "once",
+      "lat_do": "once"
+    },
+    "example_de": "Das Spiel beginnt um elf Uhr.",
+    "example_es": "El partido empieza a las once.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_013",
+    "de": "zwölf",
+    "es": "doce",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈdoθe",
+      "simplified": "DO-se",
+      "tip": "In Lateinamerika 'DO-se' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "doce",
+      "es_andalucia": "doce",
+      "es_cataluna": "dotze",
+      "es_canarias": "doce",
+      "lat_mx": "doce",
+      "lat_ar": "doce",
+      "lat_co": "doce",
+      "lat_cl": "doce",
+      "lat_pe": "doce",
+      "lat_ve": "doce",
+      "lat_cu": "doce",
+      "lat_do": "doce"
+    },
+    "example_de": "Ein Jahr hat zwölf Monate.",
+    "example_es": "Un año tiene doce meses.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_014",
+    "de": "fünfzehn",
+    "es": "quince",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈkinθe",
+      "simplified": "KIN-se",
+      "tip": "In Lateinamerika 'KIN-se' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "quince",
+      "es_andalucia": "quince",
+      "es_cataluna": "quinze",
+      "es_canarias": "quince",
+      "lat_mx": "quince",
+      "lat_ar": "quince",
+      "lat_co": "quince",
+      "lat_cl": "quince",
+      "lat_pe": "quince",
+      "lat_ve": "quince",
+      "lat_cu": "quince",
+      "lat_do": "quince"
+    },
+    "example_de": "Ich brauche noch fünfzehn Minuten.",
+    "example_es": "Necesito otros quince minutos.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_015",
+    "de": "zwanzig",
+    "es": "veinte",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈbeinte",
+      "simplified": "BEIN-te",
+      "tip": "Das 'v' wie 'b', das 'ei' wie im Deutschen"
+    },
+    "dialects": {
+      "es_castilla": "veinte",
+      "es_andalucia": "veinte",
+      "es_cataluna": "vint",
+      "es_canarias": "veinte",
+      "lat_mx": "veinte",
+      "lat_ar": "veinte",
+      "lat_co": "veinte",
+      "lat_cl": "veinte",
+      "lat_pe": "veinte",
+      "lat_ve": "veinte",
+      "lat_cu": "veinte",
+      "lat_do": "veinte"
+    },
+    "example_de": "Ich bin zwanzig Jahre alt.",
+    "example_es": "Tengo veinte años.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_016",
+    "de": "einundzwanzig",
+    "es": "veintiuno",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "beinˈtjuno",
+      "simplified": "bein-TJU-no",
+      "tip": "Wird als ein Wort geschrieben, Betonung auf 'tju'"
+    },
+    "dialects": {
+      "es_castilla": "veintiuno",
+      "es_andalucia": "veintiuno",
+      "es_cataluna": "vint-i-un",
+      "es_canarias": "veintiuno",
+      "lat_mx": "veintiuno",
+      "lat_ar": "veintiuno",
+      "lat_co": "veintiuno",
+      "lat_cl": "veintiuno",
+      "lat_pe": "veintiuno",
+      "lat_ve": "veintiuno",
+      "lat_cu": "veintiuno",
+      "lat_do": "veintiuno"
+    },
+    "example_de": "Einundzwanzig Punkte für Team A.",
+    "example_es": "Veintiún puntos para el equipo A.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_017",
+    "de": "dreißig",
+    "es": "treinta",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈtɾeinta",
+      "simplified": "TREIN-ta",
+      "tip": "Das 'r' leicht rollen, das 'ei' wie im Deutschen"
+    },
+    "dialects": {
+      "es_castilla": "treinta",
+      "es_andalucia": "treinta",
+      "es_cataluna": "trenta",
+      "es_canarias": "treinta",
+      "lat_mx": "treinta",
+      "lat_ar": "treinta",
+      "lat_co": "treinta",
+      "lat_cl": "treinta",
+      "lat_pe": "treinta",
+      "lat_ve": "treinta",
+      "lat_cu": "treinta",
+      "lat_do": "treinta"
+    },
+    "example_de": "Er ist dreißig Jahre alt.",
+    "example_es": "Él tiene treinta años.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_018",
+    "de": "fünfzig",
+    "es": "cincuenta",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "θiŋˈkwenta",
+      "simplified": "sin-KWEN-ta",
+      "tip": "In Lateinamerika 'sin-KWEN-ta' (kein th)"
+    },
+    "dialects": {
+      "es_castilla": "cincuenta",
+      "es_andalucia": "cincuenta",
+      "es_cataluna": "cinquanta",
+      "es_canarias": "cincuenta",
+      "lat_mx": "cincuenta",
+      "lat_ar": "cincuenta",
+      "lat_co": "cincuenta",
+      "lat_cl": "cincuenta",
+      "lat_pe": "cincuenta",
+      "lat_ve": "cincuenta",
+      "lat_cu": "cincuenta",
+      "lat_do": "cincuenta"
+    },
+    "example_de": "Das Hemd kostet fünfzig Euro.",
+    "example_es": "La camisa cuesta cincuenta euros.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_019",
+    "de": "hundert",
+    "es": "cien",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈθjen",
+      "simplified": "SJEN",
+      "tip": "'Cien' für genau 100, 'ciento' für 101–199"
+    },
+    "dialects": {
+      "es_castilla": "cien",
+      "es_andalucia": "cien",
+      "es_cataluna": "cent",
+      "es_canarias": "cien",
+      "lat_mx": "cien",
+      "lat_ar": "cien",
+      "lat_co": "cien",
+      "lat_cl": "cien",
+      "lat_pe": "cien",
+      "lat_ve": "cien",
+      "lat_cu": "cien",
+      "lat_do": "cien"
+    },
+    "example_de": "Das Buch hat hundert Seiten.",
+    "example_es": "El libro tiene cien páginas.",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_020",
+    "de": "hundertzwanzig",
+    "es": "ciento veinte",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "ˈθjento ˈbeinte",
+      "simplified": "SJEN-to BEIN-te",
+      "tip": "Ab 101 wird 'ciento' verwendet, nicht 'cien'"
+    },
+    "dialects": {
+      "es_castilla": "ciento veinte",
+      "es_andalucia": "ciento veinte",
+      "es_cataluna": "cent vint",
+      "es_canarias": "ciento veinte",
+      "lat_mx": "ciento veinte",
+      "lat_ar": "ciento veinte",
+      "lat_co": "ciento veinte",
+      "lat_cl": "ciento veinte",
+      "lat_pe": "ciento veinte",
+      "lat_ve": "ciento veinte",
+      "lat_cu": "ciento veinte",
+      "lat_do": "ciento veinte"
+    },
+    "example_de": "Hundertzwanzig Leute kamen zur Party.",
+    "example_es": "Ciento veinte personas vinieron a la fiesta.",
+    "tags": [
+      "zahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_021",
+    "de": "tausend",
+    "es": "mil",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "mil",
+      "simplified": "MIL",
+      "tip": "Sehr kurz und einfach, kein Artikel im Spanischen"
+    },
+    "dialects": {
+      "es_castilla": "mil",
+      "es_andalucia": "mil",
+      "es_cataluna": "mil",
+      "es_canarias": "mil",
+      "lat_mx": "mil",
+      "lat_ar": "mil",
+      "lat_co": "mil",
+      "lat_cl": "mil",
+      "lat_pe": "mil",
+      "lat_ve": "mil",
+      "lat_cu": "mil",
+      "lat_do": "mil"
+    },
+    "example_de": "Das Auto kostet zehntausend Euro.",
+    "example_es": "El coche cuesta diez mil euros.",
+    "tags": [
+      "zahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_022",
+    "de": "eine Million",
+    "es": "un millón",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "un miˈʎon",
+      "simplified": "un mi-LJON",
+      "tip": "Das 'll' klingt wie weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "un millón",
+      "es_andalucia": "un millón",
+      "es_cataluna": "un milió",
+      "es_canarias": "un millón",
+      "lat_mx": "un millón",
+      "lat_ar": "un millón",
+      "lat_co": "un millón",
+      "lat_cl": "un millón",
+      "lat_pe": "un millón",
+      "lat_ve": "un millón",
+      "lat_cu": "un millón",
+      "lat_do": "un millón"
+    },
+    "example_de": "Er hat eine Million Euro gewonnen.",
+    "example_es": "Ha ganado un millón de euros.",
+    "tags": [
+      "zahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_023",
+    "de": "der erste",
+    "es": "el primero",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el pɾiˈmeɾo",
+      "simplified": "el pri-ME-ro",
+      "tip": "Vor Nomen wird 'primero' zu 'primer'"
+    },
+    "dialects": {
+      "es_castilla": "el primero",
+      "es_andalucia": "el primero",
+      "es_cataluna": "el primer",
+      "es_canarias": "el primero",
+      "lat_mx": "el primero",
+      "lat_ar": "el primero",
+      "lat_co": "el primero",
+      "lat_cl": "el primero",
+      "lat_pe": "el primero",
+      "lat_ve": "el primero",
+      "lat_cu": "el primero",
+      "lat_do": "el primero"
+    },
+    "example_de": "Er ist der Erste in der Klasse.",
+    "example_es": "Él es el primero de la clase.",
+    "tags": [
+      "ordnungszahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_024",
+    "de": "der zweite",
+    "es": "el segundo",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el seˈɣundo",
+      "simplified": "el se-GUN-do",
+      "tip": "Das 'g' sehr weich, das 'd' am Ende auch"
+    },
+    "dialects": {
+      "es_castilla": "el segundo",
+      "es_andalucia": "el segundo",
+      "es_cataluna": "el segon",
+      "es_canarias": "el segundo",
+      "lat_mx": "el segundo",
+      "lat_ar": "el segundo",
+      "lat_co": "el segundo",
+      "lat_cl": "el segundo",
+      "lat_pe": "el segundo",
+      "lat_ve": "el segundo",
+      "lat_cu": "el segundo",
+      "lat_do": "el segundo"
+    },
+    "example_de": "Sie kam als Zweite ins Ziel.",
+    "example_es": "Ella llegó en segundo lugar.",
+    "tags": [
+      "ordnungszahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_025",
+    "de": "der dritte",
+    "es": "el tercero",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el teɾˈθeɾo",
+      "simplified": "el ter-SE-ro",
+      "tip": "Vor Nomen: 'tercer' (ohne 'o')"
+    },
+    "dialects": {
+      "es_castilla": "el tercero",
+      "es_andalucia": "el tercero",
+      "es_cataluna": "el tercer",
+      "es_canarias": "el tercero",
+      "lat_mx": "el tercero",
+      "lat_ar": "el tercero",
+      "lat_co": "el tercero",
+      "lat_cl": "el tercero",
+      "lat_pe": "el tercero",
+      "lat_ve": "el tercero",
+      "lat_cu": "el tercero",
+      "lat_do": "el tercero"
+    },
+    "example_de": "Er wohnt im dritten Stock.",
+    "example_es": "Vive en el tercer piso.",
+    "tags": [
+      "ordnungszahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_026",
+    "de": "die Hälfte",
+    "es": "la mitad",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la miˈtað",
+      "simplified": "la mi-TAD",
+      "tip": "Das 'd' am Ende sehr weich, fast stumm"
+    },
+    "dialects": {
+      "es_castilla": "la mitad",
+      "es_andalucia": "la mitad",
+      "es_cataluna": "la meitat",
+      "es_canarias": "la mitad",
+      "lat_mx": "la mitad",
+      "lat_ar": "la mitad",
+      "lat_co": "la mitad",
+      "lat_cl": "la mitad",
+      "lat_pe": "la mitad",
+      "lat_ve": "la mitad",
+      "lat_cu": "la mitad",
+      "lat_do": "la mitad"
+    },
+    "example_de": "Ich esse nur die Hälfte.",
+    "example_es": "Me como solo la mitad.",
+    "tags": [
+      "bruchzahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_027",
+    "de": "ein Viertel",
+    "es": "un cuarto",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "un ˈkwaɾto",
+      "simplified": "un KWAR-to",
+      "tip": "Das 'ua' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "un cuarto",
+      "es_andalucia": "un cuarto",
+      "es_cataluna": "un quart",
+      "es_canarias": "un cuarto",
+      "lat_mx": "un cuarto",
+      "lat_ar": "un cuarto",
+      "lat_co": "un cuarto",
+      "lat_cl": "un cuarto",
+      "lat_pe": "un cuarto",
+      "lat_ve": "un cuarto",
+      "lat_cu": "un cuarto",
+      "lat_do": "un cuarto"
+    },
+    "example_de": "Ein Viertel der Bevölkerung lebt in der Stadt.",
+    "example_es": "Un cuarto de la población vive en la ciudad.",
+    "tags": [
+      "bruchzahlen",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_028",
+    "de": "zählen",
+    "es": "contar",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "konˈtaɾ",
+      "simplified": "kon-TAR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "contar",
+      "es_andalucia": "contar",
+      "es_cataluna": "comptar",
+      "es_canarias": "contar",
+      "lat_mx": "contar",
+      "lat_ar": "contar",
+      "lat_co": "contar",
+      "lat_cl": "contar",
+      "lat_pe": "contar",
+      "lat_ve": "contar",
+      "lat_cu": "contar",
+      "lat_do": "contar"
+    },
+    "example_de": "Das Kind kann bis zehn zählen.",
+    "example_es": "El niño sabe contar hasta diez.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "zah_029",
+    "de": "rechnen",
+    "es": "calcular",
+    "category": "zahlen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "kalkulˈaɾ",
+      "simplified": "kal-ku-LAR",
+      "tip": "Vier Silben, Betonung auf letzter"
+    },
+    "dialects": {
+      "es_castilla": "calcular",
+      "es_andalucia": "calcular",
+      "es_cataluna": "calcular",
+      "es_canarias": "calcular",
+      "lat_mx": "calcular",
+      "lat_ar": "calcular",
+      "lat_co": "calcular",
+      "lat_cl": "calcular",
+      "lat_pe": "calcular",
+      "lat_ve": "calcular",
+      "lat_cu": "calcular",
+      "lat_do": "calcular"
+    },
+    "example_de": "Kannst du das im Kopf rechnen?",
+    "example_es": "¿Puedes calcularlo mentalmente?",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "zah_030",
+    "de": "die Zahl",
+    "es": "el número",
+    "category": "zahlen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈnumeɾo",
+      "simplified": "el NU-me-ro",
+      "tip": "Drei Silben, Betonung auf erster Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el número",
+      "es_andalucia": "el número",
+      "es_cataluna": "el número",
+      "es_canarias": "el número",
+      "lat_mx": "el número",
+      "lat_ar": "el número",
+      "lat_co": "el número",
+      "lat_cl": "el número",
+      "lat_pe": "el número",
+      "lat_ve": "el número",
+      "lat_cu": "el número",
+      "lat_do": "el número"
+    },
+    "example_de": "Was ist deine Lieblingsszahl?",
+    "example_es": "¿Cuál es tu número favorito?",
+    "tags": [
+      "zahlen",
+      "A1"
+    ]
+  }
+]

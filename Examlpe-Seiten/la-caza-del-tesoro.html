@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>La Caza del Tesoro</title>
+    <script src="../theme-switcher.js"></script>
+    <link rel="stylesheet" href="../../src/css/base.css">
+    <link rel="stylesheet" href="../../src/tactile-theme.css">
+    <style>
+      :root {
+        --header-h: 72px;
+        --bg: var(--color-bg-base);
+        --panel: color-mix(in srgb, var(--color-bg-surface) 72%, transparent);
+        --text: var(--color-text-primary);
+        --accent: var(--color-accent-primary);
+        --good: var(--color-correct);
+        --warn: var(--color-accent-warning);
+        --danger: var(--color-wrong);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      body {
+        overflow: hidden;
+      }
+
+      .app {
+        position: relative;
+        height: 100dvh;
+        width: 100vw;
+        background: #000;
+      }
+
+      .mission-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--header-h);
+        z-index: 30;
+        padding: max(10px, env(safe-area-inset-top)) 14px 10px;
+        background: linear-gradient(180deg, rgba(7, 10, 20, 0.92), rgba(7, 10, 20, 0.55));
+        backdrop-filter: blur(6px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .mission-title {
+        margin: 0;
+        font-size: 0.92rem;
+        font-weight: 700;
+        opacity: 0.9;
+      }
+
+      .mission-target {
+        margin: 2px 0 0;
+        font-size: 1.15rem;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+
+      .score-pill {
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .header-pills {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #000;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+
+      .reticle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: min(46vw, 220px);
+        aspect-ratio: 1;
+        transform: translate(-50%, -50%);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.08);
+      }
+
+      .reticle::before,
+      .reticle::after {
+        content: "";
+        position: absolute;
+        inset: -8px;
+        border-radius: 24px;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+      }
+
+      .feedback {
+        position: absolute;
+        left: 50%;
+        top: calc(var(--header-h) + 16px);
+        transform: translateX(-50%);
+        max-width: min(90vw, 520px);
+        padding: 10px 14px;
+        border-radius: 14px;
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        text-align: center;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.3;
+        transition: opacity 180ms ease;
+      }
+
+      .feedback.good {
+        color: var(--good);
+        text-shadow: 0 0 22px rgba(103, 232, 165, 0.38);
+      }
+
+      .feedback.warn {
+        color: var(--warn);
+      }
+
+      .feedback.danger {
+        color: var(--danger);
+      }
+
+      .bottom-controls {
+        position: fixed;
+        z-index: 35;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: calc(16px + env(safe-area-inset-bottom));
+        width: min(92vw, 560px);
+        display: grid;
+        gap: 10px;
+      }
+
+      .hud-card {
+        pointer-events: auto;
+        margin: 0;
+        padding: 10px 12px;
+        border-radius: 12px;
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: grid;
+        gap: 6px;
+      }
+
+      .hud-card p {
+        margin: 0;
+        font-size: 0.86rem;
+        line-height: 1.35;
+      }
+
+      .hud-card__label {
+        opacity: 0.75;
+        font-weight: 600;
+      }
+
+      .hud-card__value {
+        font-weight: 700;
+      }
+
+      .action-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+      }
+
+      .action-row--single {
+        grid-template-columns: 1fr;
+      }
+
+      .camera-btn {
+        pointer-events: auto;
+        border: 0;
+        border-radius: 14px;
+        padding: 14px 18px;
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        color: #08111f;
+        background: var(--accent);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      }
+
+      .camera-btn:active {
+        transform: scale(0.995);
+      }
+
+      .camera-btn--ghost {
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.13);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        box-shadow: none;
+        min-width: 122px;
+      }
+
+      .camera-btn--danger {
+        color: #fff;
+        background: rgba(255, 107, 107, 0.82);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
+      }
+
+      .status {
+        pointer-events: auto;
+        margin: 0;
+        padding: 10px 12px;
+        border-radius: 12px;
+        background: var(--panel);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        font-size: 0.88rem;
+        line-height: 1.35;
+      }
+
+      .app.success-hit {
+        animation: hitFlash 320ms ease-out;
+      }
+
+      .end-modal {
+        position: absolute;
+        inset: 0;
+        z-index: 60;
+        pointer-events: auto;
+        display: grid;
+        place-items: center;
+      }
+
+      .end-modal[hidden] {
+        display: none;
+      }
+
+      .end-modal__backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(2, 6, 18, 0.68);
+        backdrop-filter: blur(3px);
+      }
+
+      .end-modal__panel {
+        position: relative;
+        width: min(90vw, 360px);
+        border-radius: 16px;
+        padding: 16px;
+        background: rgba(11, 17, 30, 0.94);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+        display: grid;
+        gap: 12px;
+      }
+
+      .end-modal__title {
+        margin: 0;
+        font-size: 1.05rem;
+        font-weight: 800;
+      }
+
+      .end-modal__text {
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      .end-modal__actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .results-modal {
+        position: absolute;
+        inset: 0;
+        z-index: 65;
+        pointer-events: auto;
+        display: grid;
+        place-items: center;
+      }
+
+      .results-modal[hidden] {
+        display: none;
+      }
+
+      .results-modal__backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(2, 6, 18, 0.72);
+        backdrop-filter: blur(4px);
+      }
+
+      .results-modal__panel {
+        position: relative;
+        width: min(90vw, 380px);
+        border-radius: 18px;
+        padding: 18px;
+        background: rgba(11, 17, 30, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.38);
+        display: grid;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .results-modal__title {
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: 900;
+      }
+
+      .results-modal__stats {
+        margin: 0;
+        font-size: 0.95rem;
+        opacity: 0.9;
+      }
+
+      .results-modal__actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      @keyframes hitFlash {
+        0% {
+          filter: saturate(1.35) brightness(1.06);
+        }
+        100% {
+          filter: saturate(1) brightness(1);
+        }
+      }
+
+      @media (min-width: 768px) {
+        .mission-target {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="mission-header" aria-live="polite">
+        <div>
+          <p class="mission-title">Mission</p>
+          <p class="mission-target" id="missionText">Busca: ...</p>
+        </div>
+        <div class="header-pills">
+          <div class="score-pill" id="progressText">0 / 5</div>
+          <div class="score-pill" id="scoreText">Punkte: 0</div>
+        </div>
+      </header>
+
+      <video id="camera" playsinline muted autoplay></video>
+
+      <div class="overlay">
+        <div class="reticle" aria-hidden="true"></div>
+        <div class="feedback warn" id="feedbackText">Tippe auf „Kamera starten“</div>
+
+        <div class="bottom-controls">
+          <div class="hud-card" aria-live="polite">
+            <p class="hud-card__label">Letzte Erkennung</p>
+            <p class="hud-card__value" id="detectionText">Noch keine Erkennung</p>
+          </div>
+          <div class="action-row">
+            <button class="camera-btn" id="cameraToggleBtn" type="button">Kamera starten</button>
+            <button class="camera-btn camera-btn--ghost" id="skipMissionBtn" type="button">Überspringen</button>
+          </div>
+          <div class="action-row action-row--single">
+            <button class="camera-btn camera-btn--danger" id="endGameBtn" type="button">Spiel beenden</button>
+          </div>
+          <p class="status" id="statusText">
+            Initialisiere TensorFlow.js und MobileNet nach dem Start. Verwende gute Beleuchtung für bessere Erkennung.
+          </p>
+        </div>
+
+        <div class="end-modal" id="endModal" hidden aria-hidden="true">
+          <div class="end-modal__backdrop" id="endModalBackdrop"></div>
+          <div class="end-modal__panel" role="dialog" aria-modal="true" aria-labelledby="endModalTitle" aria-describedby="endModalText">
+            <h3 class="end-modal__title" id="endModalTitle">Spiel wirklich beenden?</h3>
+            <p class="end-modal__text" id="endModalText">Deine aktuellen Punkte werden auf 0 zurückgesetzt.</p>
+            <div class="end-modal__actions">
+              <button class="camera-btn camera-btn--ghost" id="endModalCancelBtn" type="button">Abbrechen</button>
+              <button class="camera-btn camera-btn--danger" id="endModalConfirmBtn" type="button">Beenden</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-modal" id="resultsModal" hidden aria-hidden="true">
+          <div class="results-modal__backdrop"></div>
+          <div class="results-modal__panel" role="dialog" aria-modal="true" aria-labelledby="resultsModalTitle" aria-describedby="resultsModalStats">
+            <h3 class="results-modal__title" id="resultsModalTitle">🎉 Runde geschafft!</h3>
+            <p class="results-modal__stats" id="resultsModalStats">Du hast 5 Begriffe gefunden und 50 Punkte geholt.</p>
+            <div class="results-modal__actions">
+              <button class="camera-btn" id="resultsReplayBtn" type="button">Nochmal spielen</button>
+              <button class="camera-btn camera-btn--ghost" id="resultsCloseBtn" type="button">Schließen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.1/dist/mobilenet.min.js"></script>
+
+    <script>
+      const video = document.getElementById("camera");
+      const appEl = document.querySelector(".app");
+      const missionText = document.getElementById("missionText");
+      const progressText = document.getElementById("progressText");
+      const feedbackText = document.getElementById("feedbackText");
+      const scoreText = document.getElementById("scoreText");
+      const detectionText = document.getElementById("detectionText");
+      const statusText = document.getElementById("statusText");
+      const cameraToggleBtn = document.getElementById("cameraToggleBtn");
+      const skipMissionBtn = document.getElementById("skipMissionBtn");
+      const endGameBtn = document.getElementById("endGameBtn");
+      const endModal = document.getElementById("endModal");
+      const endModalBackdrop = document.getElementById("endModalBackdrop");
+      const endModalCancelBtn = document.getElementById("endModalCancelBtn");
+      const endModalConfirmBtn = document.getElementById("endModalConfirmBtn");
+      const resultsModal = document.getElementById("resultsModal");
+      const resultsModalStats = document.getElementById("resultsModalStats");
+      const resultsReplayBtn = document.getElementById("resultsReplayBtn");
+      const resultsCloseBtn = document.getElementById("resultsCloseBtn");
+
+      const ROUND_TARGET = 5;
+
+      let model = null;
+      let stream = null;
+      let detectTimer = null;
+      let isDetecting = false;
+      let isCameraRunning = false;
+      let score = 0;
+      let foundCount = 0;
+      let audioContext = null;
+
+      // Hier kannst du das Vokabular einfach erweitern:
+      // - keywords: englische Begriffe, die MobileNet typischerweise liefert
+      // - labelEs: spanischer Zielbegriff (A1)
+      const VOCAB_MAP = [
+        { keywords: ["cup", "mug", "coffee mug"], labelEs: "la taza" },
+        { keywords: ["chair"], labelEs: "la silla" },
+        { keywords: ["apple"], labelEs: "la manzana" },
+        { keywords: ["pen", "pencil", "ballpoint"], labelEs: "el bolígrafo" },
+        { keywords: ["bottle", "water bottle"], labelEs: "la botella" },
+        { keywords: ["table", "dining table"], labelEs: "la mesa" },
+        { keywords: ["couch", "sofa"], labelEs: "el sofá" },
+        { keywords: ["bed"], labelEs: "la cama" },
+        { keywords: ["lamp", "table lamp", "lampshade"], labelEs: "la lámpara" },
+        { keywords: ["television", "tv", "monitor"], labelEs: "la televisión" },
+        { keywords: ["door"], labelEs: "la puerta" },
+        { keywords: ["window"], labelEs: "la ventana" },
+        { keywords: ["book", "notebook"], labelEs: "el libro" },
+        { keywords: ["clock", "wall clock"], labelEs: "el reloj" },
+        { keywords: ["keyboard", "computer keyboard"], labelEs: "el teclado" },
+        { keywords: ["laptop", "notebook computer"], labelEs: "el portátil" },
+        { keywords: ["remote control"], labelEs: "el mando" },
+        { keywords: ["refrigerator", "fridge"], labelEs: "la nevera" },
+        { keywords: ["microwave"], labelEs: "el microondas" },
+        { keywords: ["toaster"], labelEs: "la tostadora" },
+      ];
+
+      let currentMission = null;
+
+      function setFeedback(text, tone = "warn") {
+        feedbackText.textContent = text;
+        feedbackText.className = `feedback ${tone}`;
+      }
+
+      function setStatus(text) {
+        statusText.textContent = text;
+      }
+
+      function setDetection(text) {
+        detectionText.textContent = text;
+      }
+
+      function updateScore(pointsDelta = 0) {
+        score += pointsDelta;
+        scoreText.textContent = `Punkte: ${score}`;
+      }
+
+      function updateProgress(foundDelta = 0) {
+        foundCount += foundDelta;
+        progressText.textContent = `${foundCount} / ${ROUND_TARGET}`;
+      }
+
+      function resetScore() {
+        score = 0;
+        scoreText.textContent = "Punkte: 0";
+      }
+
+      function resetProgress() {
+        foundCount = 0;
+        progressText.textContent = `0 / ${ROUND_TARGET}`;
+      }
+
+      function pickRandomMission(avoidCurrent = false) {
+        if (!VOCAB_MAP.length) return;
+        if (!currentMission || !avoidCurrent || VOCAB_MAP.length < 2) {
+          const randomIndex = Math.floor(Math.random() * VOCAB_MAP.length);
+          currentMission = VOCAB_MAP[randomIndex];
+          missionText.textContent = `Busca: ${currentMission.labelEs}`;
+          return;
+        }
+
+        const oldLabel = currentMission.labelEs;
+        let next = currentMission;
+        let guard = 0;
+        while (next.labelEs === oldLabel && guard < 8) {
+          next = VOCAB_MAP[Math.floor(Math.random() * VOCAB_MAP.length)];
+          guard += 1;
+        }
+        currentMission = next;
+        missionText.textContent = `Busca: ${currentMission.labelEs}`;
+      }
+
+      function ensureAudioContext() {
+        if (!audioContext) {
+          const Ctx = window.AudioContext || window.webkitAudioContext;
+          if (Ctx) audioContext = new Ctx();
+        }
+        if (audioContext && audioContext.state === "suspended") {
+          audioContext.resume().catch(() => {});
+        }
+      }
+
+      function playSuccessSound() {
+        ensureAudioContext();
+        if (!audioContext) return;
+
+        const now = audioContext.currentTime;
+        const notes = [523.25, 659.25, 783.99];
+
+        notes.forEach((freq, i) => {
+          const osc = audioContext.createOscillator();
+          const gain = audioContext.createGain();
+          osc.type = "triangle";
+          osc.frequency.value = freq;
+
+          const start = now + i * 0.055;
+          const end = start + 0.16;
+
+          gain.gain.setValueAtTime(0.0001, start);
+          gain.gain.exponentialRampToValueAtTime(0.12, start + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, end);
+
+          osc.connect(gain);
+          gain.connect(audioContext.destination);
+          osc.start(start);
+          osc.stop(end);
+        });
+      }
+
+      function flashSuccessEffect() {
+        appEl.classList.add("success-hit");
+        window.setTimeout(() => appEl.classList.remove("success-hit"), 340);
+      }
+
+      function loadScript(src) {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = src;
+          script.async = true;
+          script.onload = () => resolve();
+          script.onerror = () => reject(new Error(`Script konnte nicht geladen werden: ${src}`));
+          document.head.appendChild(script);
+        });
+      }
+
+      async function ensureTfAndMobilenet() {
+        if (!window.tf) {
+          const tfSources = [
+            "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js",
+            "https://unpkg.com/@tensorflow/tfjs@4.22.0/dist/tf.min.js",
+          ];
+
+          let tfLoaded = false;
+          for (const src of tfSources) {
+            try {
+              await loadScript(src);
+              if (window.tf) {
+                tfLoaded = true;
+                break;
+              }
+            } catch (_) {}
+          }
+          if (!tfLoaded) {
+            throw new Error("TensorFlow.js konnte nicht geladen werden. Prüfe Internet/CDN-Zugriff.");
+          }
+        }
+
+        if (!window.mobilenet) {
+          const mobilenetSources = [
+            "https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.1/dist/mobilenet.min.js",
+            "https://unpkg.com/@tensorflow-models/mobilenet@2.1.1/dist/mobilenet.min.js",
+          ];
+
+          let mobilenetLoaded = false;
+          for (const src of mobilenetSources) {
+            try {
+              await loadScript(src);
+              if (window.mobilenet) {
+                mobilenetLoaded = true;
+                break;
+              }
+            } catch (_) {}
+          }
+          if (!mobilenetLoaded) {
+            throw new Error("MobileNet konnte nicht geladen werden. Prüfe Internet/CDN-Zugriff.");
+          }
+        }
+      }
+
+      async function loadModel() {
+        if (model) return model;
+        setStatus("Lade MobileNet-Modell...");
+        await ensureTfAndMobilenet();
+        model = await window.mobilenet.load({ version: 2, alpha: 1.0 });
+        setStatus("Modell geladen. Kamera läuft.");
+        return model;
+      }
+
+      async function startCamera() {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+          throw new Error("getUserMedia wird auf diesem Gerät/Browser nicht unterstützt.");
+        }
+
+        // Robuste Kamera-Anfrage für Mobile: zuerst explizit Rückkamera (environment),
+        // dann bei Fehler auf generische Video-Anfrage zurückfallen.
+        const preferredConstraints = {
+          audio: false,
+          video: {
+            facingMode: { ideal: "environment" },
+            width: { ideal: 1280 },
+            height: { ideal: 720 },
+          },
+        };
+
+        try {
+          stream = await navigator.mediaDevices.getUserMedia(preferredConstraints);
+        } catch (error) {
+          stream = await navigator.mediaDevices.getUserMedia({ audio: false, video: true });
+        }
+
+        video.srcObject = stream;
+        await video.play();
+        isCameraRunning = true;
+      }
+
+      function stopCamera() {
+        if (detectTimer) {
+          clearInterval(detectTimer);
+          detectTimer = null;
+        }
+        if (stream) {
+          stream.getTracks().forEach((track) => track.stop());
+          stream = null;
+        }
+        video.srcObject = null;
+        isCameraRunning = false;
+      }
+
+      function matchesMission(className, probability) {
+        if (!currentMission) return false;
+        if (probability < 0.6) return false;
+
+        const normalized = className.toLowerCase();
+        return currentMission.keywords.some((keyword) => normalized.includes(keyword));
+      }
+
+      function startDetectionLoop() {
+        if (detectTimer) clearInterval(detectTimer);
+
+        detectTimer = setInterval(async () => {
+          if (!model || !isCameraRunning || isDetecting) return;
+          if (!video.videoWidth || !video.videoHeight) return;
+
+          isDetecting = true;
+          try {
+            const predictions = await model.classify(video);
+            const best = predictions[0];
+
+            if (!best) {
+              setFeedback("Ich sehe noch nichts Sicheres...", "warn");
+              isDetecting = false;
+              return;
+            }
+
+            const confidencePercent = Math.round(best.probability * 100);
+            setDetection(`${best.className} (${confidencePercent}%)`);
+
+            if (matchesMission(best.className, best.probability)) {
+              setFeedback(`¡Muy bien! Gefunden: ${currentMission.labelEs} (+10)`, "good");
+              updateScore(10);
+              updateProgress(1);
+              playSuccessSound();
+              flashSuccessEffect();
+              if (foundCount >= ROUND_TARGET) {
+                completeRound();
+              } else {
+                pickRandomMission(true);
+              }
+            } else {
+              setFeedback(`Erkannt: ${best.className} (${confidencePercent}%)`, "warn");
+            }
+          } catch (error) {
+            setFeedback("Analyse fehlgeschlagen. Versuche es erneut.", "danger");
+            setStatus(`Fehler in der Erkennung: ${error.message}`);
+          } finally {
+            isDetecting = false;
+          }
+        }, 500);
+      }
+
+      async function startGame() {
+        cameraToggleBtn.disabled = true;
+        skipMissionBtn.disabled = true;
+        try {
+          closeResultsModal();
+          ensureAudioContext();
+          setFeedback("Kamera startet...", "warn");
+          setStatus("Bitte Kamera-Berechtigung erlauben...");
+
+          await startCamera();
+          await loadModel();
+
+          if (!currentMission) pickRandomMission();
+          startDetectionLoop();
+
+          cameraToggleBtn.textContent = "Kamera stoppen";
+          setFeedback("Suche den Gegenstand aus der Mission.", "warn");
+          setStatus("Live-Erkennung aktiv (alle 500ms).");
+          setDetection("Live-Erkennung läuft...");
+        } catch (error) {
+          stopCamera();
+          setFeedback("Kamera konnte nicht gestartet werden.", "danger");
+          setStatus(`Fehler: ${error.message}`);
+        } finally {
+          cameraToggleBtn.disabled = false;
+          skipMissionBtn.disabled = false;
+        }
+      }
+
+      function stopGame() {
+        stopCamera();
+        cameraToggleBtn.textContent = "Kamera starten";
+        setFeedback("Kamera gestoppt.", "warn");
+        setStatus("Tippe auf „Kamera starten“, um weiterzuspielen.");
+        setDetection("Erkennung pausiert");
+      }
+
+      function endGameSession() {
+        stopGame();
+        resetScore();
+        resetProgress();
+        pickRandomMission(true);
+        setFeedback("Spiel beendet. Punkte zurückgesetzt.", "warn");
+        setStatus("Neue Runde? Tippe auf „Kamera starten“.");
+      }
+
+      function closeGameView() {
+        try {
+          window.close();
+        } catch (_) {}
+
+        window.setTimeout(() => {
+          if (window.history.length > 1) {
+            window.history.back();
+            return;
+          }
+          window.location.href = "../index.html#/home";
+        }, 140);
+      }
+
+      function openResultsModal() {
+        resultsModalStats.textContent = `Du hast ${ROUND_TARGET} Begriffe gefunden und ${score} Punkte geholt.`;
+        resultsModal.hidden = false;
+        resultsModal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeResultsModal() {
+        resultsModal.hidden = true;
+        resultsModal.setAttribute("aria-hidden", "true");
+      }
+
+      function completeRound() {
+        stopGame();
+        setFeedback("Runde abgeschlossen! Super gemacht.", "good");
+        setStatus("Tippe auf „Nochmal spielen“ für eine neue Runde.");
+        openResultsModal();
+      }
+
+      function openEndModal() {
+        endModal.hidden = false;
+        endModal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeEndModal() {
+        endModal.hidden = true;
+        endModal.setAttribute("aria-hidden", "true");
+      }
+
+      cameraToggleBtn.addEventListener("click", async () => {
+        if (isCameraRunning) {
+          stopGame();
+        } else {
+          await startGame();
+        }
+      });
+
+      skipMissionBtn.addEventListener("click", () => {
+        ensureAudioContext();
+        pickRandomMission(true);
+        setFeedback("Mission übersprungen. Neue Mission aktiv.", "warn");
+      });
+
+      endGameBtn.addEventListener("click", () => {
+        openEndModal();
+      });
+
+      endModalCancelBtn.addEventListener("click", () => {
+        closeEndModal();
+      });
+
+      endModalConfirmBtn.addEventListener("click", () => {
+        closeEndModal();
+        endGameSession();
+        closeGameView();
+      });
+
+      resultsReplayBtn.addEventListener("click", async () => {
+        closeResultsModal();
+        resetScore();
+        resetProgress();
+        pickRandomMission(true);
+        await startGame();
+      });
+
+      resultsCloseBtn.addEventListener("click", () => {
+        closeResultsModal();
+      });
+
+      endModalBackdrop.addEventListener("click", () => {
+        closeEndModal();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !endModal.hidden) {
+          closeEndModal();
+        }
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden && isCameraRunning) {
+          stopGame();
+        }
+      });
+
+      window.addEventListener("beforeunload", () => {
+        stopCamera();
+      });
+
+      resetProgress();
+      pickRandomMission();
+    </script>
+  </body>
+</html>

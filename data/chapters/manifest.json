@@ -1,0 +1,85 @@
+{
+  "regions": [
+    {
+      "id": "a1",
+      "niveau": "A1",
+      "title": "Andalusien",
+      "icon": "🌞",
+      "color": "#E8622A",
+      "description": "Erste Schritte · Alltag & Café",
+      "unlocked": true,
+      "unlockHint": "",
+      "chapters": [
+        { "id": "a1-1", "lektionId": "l1-1", "title": "Im Café",          "icon": "☕",  "unlocked": true  },
+        { "id": "a1-2", "lektionId": "l1-2", "title": "Im Restaurant",    "icon": "🍽️", "unlocked": true  },
+        { "id": "a1-3", "lektionId": "l1-3", "title": "Begrüßungen",      "icon": "👋",  "unlocked": true  },
+        { "id": "a1-4", "lektionId": "l1-4", "title": "Zuhause",          "icon": "🏠",  "unlocked": true  },
+        { "id": "a1-5", "lektionId": "l1-5", "title": "Einkaufen",        "icon": "🛒",  "unlocked": true  },
+        { "id": "a1-6", "lektionId": "l1-6", "title": "Tagesablauf",      "icon": "⏰",  "unlocked": true  },
+        { "id": "a1-7", "lektionId": "l1-7", "title": "Familie",          "icon": "👨‍👩‍👧", "unlocked": true  },
+        { "id": "a1-8", "lektionId": "l1-8", "title": "Orientierung",     "icon": "🗺️", "unlocked": true  }
+      ]
+    },
+    {
+      "id": "a2",
+      "niveau": "A2",
+      "title": "Madrid",
+      "icon": "🏛️",
+      "color": "#F59E0B",
+      "description": "Unterwegs · Stadt & Kultur",
+      "unlocked": false,
+      "unlockHint": "Schließe A1 ab",
+      "chapters": [
+        { "id": "a2-1", "lektionId": "l2-1", "title": "Sehenswürdigk.", "icon": "🏛️", "unlocked": false },
+        { "id": "a2-2", "lektionId": "l2-2", "title": "Transport",       "icon": "🚇", "unlocked": false },
+        { "id": "a2-3", "lektionId": "l2-3", "title": "Im Hotel",        "icon": "🏨", "unlocked": false },
+        { "id": "a2-4", "lektionId": "l2-4", "title": "Beim Arzt",       "icon": "💊", "unlocked": false },
+        { "id": "a2-5", "lektionId": "l2-5", "title": "Freizeit",        "icon": "🎭", "unlocked": false },
+        { "id": "a2-6", "lektionId": "l2-6", "title": "Arbeit & Büro",   "icon": "💼", "unlocked": false },
+        { "id": "a2-7", "lektionId": "l2-7", "title": "Technologie",     "icon": "📱", "unlocked": false },
+        { "id": "a2-8", "lektionId": "l2-8", "title": "Meinungen",       "icon": "🗣️", "unlocked": false }
+      ]
+    },
+    {
+      "id": "b1",
+      "niveau": "B1",
+      "title": "Barcelona",
+      "icon": "🎨",
+      "color": "#3B82F6",
+      "description": "Fließend · Themen & Gesellschaft",
+      "unlocked": false,
+      "unlockHint": "Schließe A2 ab",
+      "chapters": [
+        { "id": "b1-1", "lektionId": "l3-1", "title": "Wohnung",       "icon": "🏗️", "unlocked": false },
+        { "id": "b1-2", "lektionId": "l3-2", "title": "Urlaub",         "icon": "🏖️", "unlocked": false },
+        { "id": "b1-3", "lektionId": "l3-3", "title": "Kochen",         "icon": "👨‍🍳", "unlocked": false },
+        { "id": "b1-4", "lektionId": "l3-4", "title": "Nachrichten",    "icon": "📰", "unlocked": false },
+        { "id": "b1-5", "lektionId": "l3-5", "title": "Sport",          "icon": "🏋️", "unlocked": false },
+        { "id": "b1-6", "lektionId": "l3-6", "title": "Umwelt",         "icon": "🌿", "unlocked": false },
+        { "id": "b1-7", "lektionId": "l3-7", "title": "Beziehungen",    "icon": "💬", "unlocked": false },
+        { "id": "b1-8", "lektionId": "l3-8", "title": "Geschichte",     "icon": "🏰", "unlocked": false }
+      ]
+    },
+    {
+      "id": "b2",
+      "niveau": "B2",
+      "title": "Sevilla",
+      "icon": "💃",
+      "color": "#8B5CF6",
+      "description": "Fortgeschritten · Kultur & Tiefe",
+      "unlocked": false,
+      "unlockHint": "Schließe B1 ab",
+      "chapters": [
+        { "id": "b2-1", "lektionId": "l4-1", "title": "Wirtschaft",     "icon": "💶", "unlocked": false },
+        { "id": "b2-2", "lektionId": "l4-2", "title": "Philosophie",    "icon": "🧠", "unlocked": false },
+        { "id": "b2-3", "lektionId": "l4-3", "title": "Literatur",      "icon": "🎨", "unlocked": false },
+        { "id": "b2-4", "lektionId": "l4-4", "title": "Politik",        "icon": "🏛️", "unlocked": false },
+        { "id": "b2-5", "lektionId": "l4-5", "title": "Wissenschaft",   "icon": "🔬", "unlocked": false },
+        { "id": "b2-6", "lektionId": "l4-6", "title": "Flamenco",       "icon": "🎸", "unlocked": false },
+        { "id": "b2-7", "lektionId": "l4-7", "title": "Gastronomie",    "icon": "🍷", "unlocked": false },
+        { "id": "b2-8", "lektionId": "l4-8", "title": "Redewendungen",  "icon": "😄", "unlocked": false }
+      ]
+    }
+  ]
+}
+

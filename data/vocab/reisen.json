@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "rei_001",
+    "de": "der Zug",
+    "es": "el tren",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈtɾen",
+      "simplified": "el TRENN",
+      "tip": "Das 'r' wird einmal gerollt, kurzes 'e'"
+    },
+    "dialects": {
+      "es_castilla": "el tren",
+      "es_andalucia": "el tren",
+      "es_cataluna": "el tren",
+      "es_canarias": "el tren",
+      "lat_mx": "el tren",
+      "lat_ar": "el tren",
+      "lat_co": "el tren",
+      "lat_cl": "el tren",
+      "lat_pe": "el tren",
+      "lat_ve": "el tren",
+      "lat_cu": "el tren",
+      "lat_do": "el tren"
+    },
+    "example_de": "Ich nehme den Zug nach Madrid.",
+    "example_es": "Tomo el tren a Madrid.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_002",
+    "de": "das Flugzeug",
+    "es": "el avión",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el aˈβjon",
+      "simplified": "el ah-BJON",
+      "tip": "Das 'v' klingt wie ein weiches 'b', Betonung auf 'ón'"
+    },
+    "dialects": {
+      "es_castilla": "el avión",
+      "es_andalucia": "el avión",
+      "es_cataluna": "el avión",
+      "es_canarias": "el avión",
+      "lat_mx": "el avión",
+      "lat_ar": "el avión",
+      "lat_co": "el avión",
+      "lat_cl": "el avión",
+      "lat_pe": "el avión",
+      "lat_ve": "el avión",
+      "lat_cu": "el avión",
+      "lat_do": "el avión"
+    },
+    "example_de": "Das Flugzeug landet um 10 Uhr.",
+    "example_es": "El avión aterriza a las 10.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_003",
+    "de": "der Bus",
+    "es": "el autobús",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el awtoˈβus",
+      "simplified": "el au-to-BUSS",
+      "tip": "Betonung auf der letzten Silbe, das 's' am Ende ausprechen"
+    },
+    "dialects": {
+      "es_castilla": "el autobús",
+      "es_andalucia": "el autobús",
+      "es_cataluna": "el autobús",
+      "es_canarias": "el autobús",
+      "lat_mx": "el camión",
+      "lat_ar": "el colectivo",
+      "lat_co": "la buseta",
+      "lat_cl": "la micro",
+      "lat_pe": "el bus",
+      "lat_ve": "el autobús",
+      "lat_cu": "el ómnibus",
+      "lat_do": "el autobús"
+    },
+    "example_de": "Wir fahren mit dem Bus in die Stadt.",
+    "example_es": "Vamos en autobús al centro.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_004",
+    "de": "das Auto",
+    "es": "el coche",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈkotʃe",
+      "simplified": "el KO-tsche",
+      "tip": "Das 'ch' wie im deutschen 'Coach', weiches 'e' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "el coche",
+      "es_andalucia": "el coche",
+      "es_cataluna": "el cotxe",
+      "es_canarias": "el carro",
+      "lat_mx": "el carro",
+      "lat_ar": "el auto",
+      "lat_co": "el carro",
+      "lat_cl": "el auto",
+      "lat_pe": "el carro",
+      "lat_ve": "el carro",
+      "lat_cu": "el carro",
+      "lat_do": "el carro"
+    },
+    "example_de": "Mein Auto ist blau.",
+    "example_es": "Mi coche es azul.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_005",
+    "de": "der Flughafen",
+    "es": "el aeropuerto",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el aeɾoˈpweɾto",
+      "simplified": "el ae-ro-PWER-to",
+      "tip": "Vier Silben, Betonung auf 'puer', das 'r' leicht rollen"
+    },
+    "dialects": {
+      "es_castilla": "el aeropuerto",
+      "es_andalucia": "el aeropuerto",
+      "es_cataluna": "el aeropuerto",
+      "es_canarias": "el aeropuerto",
+      "lat_mx": "el aeropuerto",
+      "lat_ar": "el aeropuerto",
+      "lat_co": "el aeropuerto",
+      "lat_cl": "el aeropuerto",
+      "lat_pe": "el aeropuerto",
+      "lat_ve": "el aeropuerto",
+      "lat_cu": "el aeropuerto",
+      "lat_do": "el aeropuerto"
+    },
+    "example_de": "Wir müssen früh am Flughafen sein.",
+    "example_es": "Tenemos que estar pronto en el aeropuerto.",
+    "tags": [
+      "transport",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_006",
+    "de": "der Bahnhof",
+    "es": "la estación de tren",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la estaˈθjon de ˈtɾen",
+      "simplified": "la es-ta-ZJON de TRENN",
+      "tip": "In Lateinamerika: 'estaˈsjon' (kein 'th'-Laut)"
+    },
+    "dialects": {
+      "es_castilla": "la estación de tren",
+      "es_andalucia": "la estación de tren",
+      "es_cataluna": "la estació de tren",
+      "es_canarias": "la estación de tren",
+      "lat_mx": "la estación de tren",
+      "lat_ar": "la estación de tren",
+      "lat_co": "la estación de tren",
+      "lat_cl": "la estación de tren",
+      "lat_pe": "la estación de tren",
+      "lat_ve": "la estación de tren",
+      "lat_cu": "la estación de tren",
+      "lat_do": "la estación de tren"
+    },
+    "example_de": "Der Bahnhof ist zehn Minuten entfernt.",
+    "example_es": "La estación de tren está a diez minutos.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_007",
+    "de": "das Hotel",
+    "es": "el hotel",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el oˈtel",
+      "simplified": "el o-TELL",
+      "tip": "Das 'h' wird im Spanischen nicht ausgesprochen"
+    },
+    "dialects": {
+      "es_castilla": "el hotel",
+      "es_andalucia": "el hotel",
+      "es_cataluna": "l'hotel",
+      "es_canarias": "el hotel",
+      "lat_mx": "el hotel",
+      "lat_ar": "el hotel",
+      "lat_co": "el hotel",
+      "lat_cl": "el hotel",
+      "lat_pe": "el hotel",
+      "lat_ve": "el hotel",
+      "lat_cu": "el hotel",
+      "lat_do": "el hotel"
+    },
+    "example_de": "Das Hotel liegt direkt am Strand.",
+    "example_es": "El hotel está justo en la playa.",
+    "tags": [
+      "unterkunft",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_008",
+    "de": "der Reisepass",
+    "es": "el pasaporte",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el pasaˈpoɾte",
+      "simplified": "el pa-sa-POR-te",
+      "tip": "Betonung auf 'por', das 'r' leicht rollen"
+    },
+    "dialects": {
+      "es_castilla": "el pasaporte",
+      "es_andalucia": "el pasaporte",
+      "es_cataluna": "el passaport",
+      "es_canarias": "el pasaporte",
+      "lat_mx": "el pasaporte",
+      "lat_ar": "el pasaporte",
+      "lat_co": "el pasaporte",
+      "lat_cl": "el pasaporte",
+      "lat_pe": "el pasaporte",
+      "lat_ve": "el pasaporte",
+      "lat_cu": "el pasaporte",
+      "lat_do": "el pasaporte"
+    },
+    "example_de": "Vergiss nicht deinen Reisepass!",
+    "example_es": "¡No olvides tu pasaporte!",
+    "tags": [
+      "dokumente",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_009",
+    "de": "die Fahrkarte",
+    "es": "el billete",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el biˈʎete",
+      "simplified": "el bi-JE-te",
+      "tip": "Das 'll' klingt wie ein weiches 'j' oder 'y'"
+    },
+    "dialects": {
+      "es_castilla": "el billete",
+      "es_andalucia": "el billete",
+      "es_cataluna": "el bitllet",
+      "es_canarias": "el billete",
+      "lat_mx": "el boleto",
+      "lat_ar": "el boleto",
+      "lat_co": "el tiquete",
+      "lat_cl": "el pasaje",
+      "lat_pe": "el boleto",
+      "lat_ve": "el boleto",
+      "lat_cu": "el billete",
+      "lat_do": "el billete"
+    },
+    "example_de": "Ein Ticket nach Barcelona, bitte.",
+    "example_es": "Un billete para Barcelona, por favor.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_010",
+    "de": "der Koffer",
+    "es": "la maleta",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la maˈleta",
+      "simplified": "la ma-LE-ta",
+      "tip": "Betonung auf der zweiten Silbe, offenes 'e'"
+    },
+    "dialects": {
+      "es_castilla": "la maleta",
+      "es_andalucia": "la maleta",
+      "es_cataluna": "la maleta",
+      "es_canarias": "la maleta",
+      "lat_mx": "la maleta",
+      "lat_ar": "la valija",
+      "lat_co": "la maleta",
+      "lat_cl": "la maleta",
+      "lat_pe": "la maleta",
+      "lat_ve": "la maleta",
+      "lat_cu": "la maleta",
+      "lat_do": "la maleta"
+    },
+    "example_de": "Mein Koffer ist zu schwer.",
+    "example_es": "Mi maleta es demasiado pesada.",
+    "tags": [
+      "gepäck",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_011",
+    "de": "die Reise",
+    "es": "el viaje",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈbjaxe",
+      "simplified": "el BIJA-che",
+      "tip": "Das 'v' ist ein weiches 'b', 'j' wie ein raues 'ch' (Rachen)"
+    },
+    "dialects": {
+      "es_castilla": "el viaje",
+      "es_andalucia": "el viaje",
+      "es_cataluna": "el viatge",
+      "es_canarias": "el viaje",
+      "lat_mx": "el viaje",
+      "lat_ar": "el viaje",
+      "lat_co": "el viaje",
+      "lat_cl": "el viaje",
+      "lat_pe": "el viaje",
+      "lat_ve": "el viaje",
+      "lat_cu": "el viaje",
+      "lat_do": "el viaje"
+    },
+    "example_de": "Die Reise war wunderschön.",
+    "example_es": "El viaje fue maravilloso.",
+    "tags": [
+      "allgemein",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_012",
+    "de": "die Unterkunft",
+    "es": "el alojamiento",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el aloxaˈmjento",
+      "simplified": "el a-lo-cha-MJEN-to",
+      "tip": "Das 'j' klingt wie ein raues 'ch', fünf Silben"
+    },
+    "dialects": {
+      "es_castilla": "el alojamiento",
+      "es_andalucia": "el alojamiento",
+      "es_cataluna": "l'allotjament",
+      "es_canarias": "el alojamiento",
+      "lat_mx": "el alojamiento",
+      "lat_ar": "el alojamiento",
+      "lat_co": "el alojamiento",
+      "lat_cl": "el alojamiento",
+      "lat_pe": "el alojamiento",
+      "lat_ve": "el alojamiento",
+      "lat_cu": "el alojamiento",
+      "lat_do": "el alojamiento"
+    },
+    "example_de": "Hast du eine Unterkunft gebucht?",
+    "example_es": "¿Has reservado el alojamiento?",
+    "tags": [
+      "unterkunft",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_013",
+    "de": "ankommen",
+    "es": "llegar",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ʎeˈɣaɾ",
+      "simplified": "lje-GAR",
+      "tip": "Das 'll' klingt wie ein weiches 'j', Betonung auf 'gar'"
+    },
+    "dialects": {
+      "es_castilla": "llegar",
+      "es_andalucia": "llegar",
+      "es_cataluna": "arribar",
+      "es_canarias": "llegar",
+      "lat_mx": "llegar",
+      "lat_ar": "llegar",
+      "lat_co": "llegar",
+      "lat_cl": "llegar",
+      "lat_pe": "llegar",
+      "lat_ve": "llegar",
+      "lat_cu": "llegar",
+      "lat_do": "llegar"
+    },
+    "example_de": "Wann kommen wir an?",
+    "example_es": "¿Cuándo llegamos?",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_014",
+    "de": "abfahren",
+    "es": "salir",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "saˈliɾ",
+      "simplified": "sa-LIR",
+      "tip": "Das finale 'r' ist ein Zungenspitzen-R, kaum zu hören"
+    },
+    "dialects": {
+      "es_castilla": "salir",
+      "es_andalucia": "salir",
+      "es_cataluna": "sortir",
+      "es_canarias": "salir",
+      "lat_mx": "salir",
+      "lat_ar": "salir",
+      "lat_co": "salir",
+      "lat_cl": "salir",
+      "lat_pe": "salir",
+      "lat_ve": "salir",
+      "lat_cu": "salir",
+      "lat_do": "salir"
+    },
+    "example_de": "Der Zug fährt um 9 Uhr ab.",
+    "example_es": "El tren sale a las 9.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_015",
+    "de": "die Reservierung",
+    "es": "la reserva",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la reˈseɾβa",
+      "simplified": "la re-SER-ba",
+      "tip": "Das 'v' klingt wie ein weiches 'b', das 'r' leicht rollen"
+    },
+    "dialects": {
+      "es_castilla": "la reserva",
+      "es_andalucia": "la reserva",
+      "es_cataluna": "la reserva",
+      "es_canarias": "la reserva",
+      "lat_mx": "la reservación",
+      "lat_ar": "la reserva",
+      "lat_co": "la reserva",
+      "lat_cl": "la reserva",
+      "lat_pe": "la reserva",
+      "lat_ve": "la reserva",
+      "lat_cu": "la reserva",
+      "lat_do": "la reserva"
+    },
+    "example_de": "Ich habe eine Reservierung für zwei Personen.",
+    "example_es": "Tengo una reserva para dos personas.",
+    "tags": [
+      "buchung",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_016",
+    "de": "der Hafen",
+    "es": "el puerto",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈpweɾto",
+      "simplified": "el PWER-to",
+      "tip": "'ue' ist ein Diphthong, wird schnell als 'wer' gesprochen"
+    },
+    "dialects": {
+      "es_castilla": "el puerto",
+      "es_andalucia": "el puerto",
+      "es_cataluna": "el port",
+      "es_canarias": "el puerto",
+      "lat_mx": "el puerto",
+      "lat_ar": "el puerto",
+      "lat_co": "el puerto",
+      "lat_cl": "el puerto",
+      "lat_pe": "el puerto",
+      "lat_ve": "el puerto",
+      "lat_cu": "el puerto",
+      "lat_do": "el puerto"
+    },
+    "example_de": "Das Schiff liegt im Hafen.",
+    "example_es": "El barco está en el puerto.",
+    "tags": [
+      "transport",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_017",
+    "de": "die U-Bahn",
+    "es": "el metro",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈmetɾo",
+      "simplified": "el ME-tro",
+      "tip": "Das 'r' wird leicht gerollt, Betonung auf erster Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el metro",
+      "es_andalucia": "el metro",
+      "es_cataluna": "el metro",
+      "es_canarias": "el metro",
+      "lat_mx": "el metro",
+      "lat_ar": "el subte",
+      "lat_co": "el metro",
+      "lat_cl": "el metro",
+      "lat_pe": "el metro",
+      "lat_ve": "el metro",
+      "lat_cu": "el metro",
+      "lat_do": "el metro"
+    },
+    "example_de": "Wir nehmen die U-Bahn zum Stadtzentrum.",
+    "example_es": "Tomamos el metro al centro.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_018",
+    "de": "das Taxi",
+    "es": "el taxi",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈtaksi",
+      "simplified": "el TAK-si",
+      "tip": "Gleiche Aussprache wie im Deutschen"
+    },
+    "dialects": {
+      "es_castilla": "el taxi",
+      "es_andalucia": "el taxi",
+      "es_cataluna": "el taxi",
+      "es_canarias": "el taxi",
+      "lat_mx": "el taxi",
+      "lat_ar": "el taxi",
+      "lat_co": "el taxi",
+      "lat_cl": "el taxi",
+      "lat_pe": "el taxi",
+      "lat_ve": "el taxi",
+      "lat_cu": "el taxi",
+      "lat_do": "el taxi"
+    },
+    "example_de": "Ruf bitte ein Taxi!",
+    "example_es": "¡Llama un taxi, por favor!",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_019",
+    "de": "der Strand",
+    "es": "la playa",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈplaʝa",
+      "simplified": "la PLA-ja",
+      "tip": "Das 'y' am Ende klingt wie ein weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "la playa",
+      "es_andalucia": "la playa",
+      "es_cataluna": "la platja",
+      "es_canarias": "la playa",
+      "lat_mx": "la playa",
+      "lat_ar": "la playa",
+      "lat_co": "la playa",
+      "lat_cl": "la playa",
+      "lat_pe": "la playa",
+      "lat_ve": "la playa",
+      "lat_cu": "la playa",
+      "lat_do": "la playa"
+    },
+    "example_de": "Der Strand ist heute sehr voll.",
+    "example_es": "La playa está muy llena hoy.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_020",
+    "de": "die Landkarte",
+    "es": "el mapa",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈmapa",
+      "simplified": "el MA-pa",
+      "tip": "Betonung auf erster Silbe, beide 'a' gleich ausgesprochen"
+    },
+    "dialects": {
+      "es_castilla": "el mapa",
+      "es_andalucia": "el mapa",
+      "es_cataluna": "el mapa",
+      "es_canarias": "el mapa",
+      "lat_mx": "el mapa",
+      "lat_ar": "el mapa",
+      "lat_co": "el mapa",
+      "lat_cl": "el mapa",
+      "lat_pe": "el mapa",
+      "lat_ve": "el mapa",
+      "lat_cu": "el mapa",
+      "lat_do": "el mapa"
+    },
+    "example_de": "Hast du einen Stadtplan dabei?",
+    "example_es": "¿Tienes un mapa de la ciudad?",
+    "tags": [
+      "navigation",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_021",
+    "de": "die Touristeninformation",
+    "es": "la oficina de turismo",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la ofiˈθina de tuˈɾismo",
+      "simplified": "la o-fi-ZI-na de tu-RIS-mo",
+      "tip": "Sechs Silben, in Lateinamerika 'ofiˈsina' (kein 'th'-Laut)"
+    },
+    "dialects": {
+      "es_castilla": "la oficina de turismo",
+      "es_andalucia": "la oficina de turismo",
+      "es_cataluna": "l'oficina de turisme",
+      "es_canarias": "la oficina de turismo",
+      "lat_mx": "la oficina de turismo",
+      "lat_ar": "la oficina de turismo",
+      "lat_co": "la oficina de turismo",
+      "lat_cl": "la oficina de turismo",
+      "lat_pe": "la oficina de turismo",
+      "lat_ve": "la oficina de turismo",
+      "lat_cu": "la oficina de turismo",
+      "lat_do": "la oficina de turismo"
+    },
+    "example_de": "Die Touristeninformation ist dort drüben.",
+    "example_es": "La oficina de turismo está allá.",
+    "tags": [
+      "orte",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_022",
+    "de": "der Zoll",
+    "es": "la aduana",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la aˈðwana",
+      "simplified": "la a-DWA-na",
+      "tip": "Das 'd' klingt sehr weich, fast wie ein englisches 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la aduana",
+      "es_andalucia": "la aduana",
+      "es_cataluna": "la duana",
+      "es_canarias": "la aduana",
+      "lat_mx": "la aduana",
+      "lat_ar": "la aduana",
+      "lat_co": "la aduana",
+      "lat_cl": "la aduana",
+      "lat_pe": "la aduana",
+      "lat_ve": "la aduana",
+      "lat_cu": "la aduana",
+      "lat_do": "la aduana"
+    },
+    "example_de": "Wir mussten lange am Zoll warten.",
+    "example_es": "Tuvimos que esperar mucho en la aduana.",
+    "tags": [
+      "grenze",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_023",
+    "de": "reservieren",
+    "es": "reservar",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "reseɾˈβaɾ",
+      "simplified": "re-ser-BAR",
+      "tip": "Betonung auf letzter Silbe, das 'v' wie ein weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "reservar",
+      "es_andalucia": "reservar",
+      "es_cataluna": "reservar",
+      "es_canarias": "reservar",
+      "lat_mx": "reservar",
+      "lat_ar": "reservar",
+      "lat_co": "reservar",
+      "lat_cl": "reservar",
+      "lat_pe": "reservar",
+      "lat_ve": "reservar",
+      "lat_cu": "reservar",
+      "lat_do": "reservar"
+    },
+    "example_de": "Ich möchte ein Zimmer reservieren.",
+    "example_es": "Quiero reservar una habitación.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_024",
+    "de": "das Gepäck",
+    "es": "el equipaje",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ekiˈpaxe",
+      "simplified": "el e-ki-PA-che",
+      "tip": "Das 'j' klingt wie ein raues 'ch' aus dem Rachen"
+    },
+    "dialects": {
+      "es_castilla": "el equipaje",
+      "es_andalucia": "el equipaje",
+      "es_cataluna": "l'equipatge",
+      "es_canarias": "el equipaje",
+      "lat_mx": "el equipaje",
+      "lat_ar": "el equipaje",
+      "lat_co": "el equipaje",
+      "lat_cl": "el equipaje",
+      "lat_pe": "el equipaje",
+      "lat_ve": "el equipaje",
+      "lat_cu": "el equipaje",
+      "lat_do": "el equipaje"
+    },
+    "example_de": "Mein Gepäck ist verloren gegangen.",
+    "example_es": "Mi equipaje se ha perdido.",
+    "tags": [
+      "gepäck",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_025",
+    "de": "die Reisekrankenversicherung",
+    "es": "el seguro de viaje",
+    "category": "reisen",
+    "difficulty": 4,
+    "pronunciation": {
+      "ipa": "el seˈɣuɾo ðe ˈbjaxe",
+      "simplified": "el se-GU-ro de BIJA-che",
+      "tip": "Vier Wörter, Betonung je auf der markierten Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el seguro de viaje",
+      "es_andalucia": "el seguro de viaje",
+      "es_cataluna": "l'assegurança de viatge",
+      "es_canarias": "el seguro de viaje",
+      "lat_mx": "el seguro de viaje",
+      "lat_ar": "el seguro de viaje",
+      "lat_co": "el seguro de viaje",
+      "lat_cl": "el seguro de viaje",
+      "lat_pe": "el seguro de viaje",
+      "lat_ve": "el seguro de viaje",
+      "lat_cu": "el seguro de viaje",
+      "lat_do": "el seguro de viaje"
+    },
+    "example_de": "Eine Reisekrankenversicherung ist sehr wichtig.",
+    "example_es": "Un seguro de viaje es muy importante.",
+    "tags": [
+      "sicherheit",
+      "B2"
+    ]
+  },
+  {
+    "id": "rei_026",
+    "de": "der Grenzübergang",
+    "es": "el paso fronterizo",
+    "category": "reisen",
+    "difficulty": 4,
+    "pronunciation": {
+      "ipa": "el ˈpaso fɾonteˈɾiθo",
+      "simplified": "el PA-so fron-te-RI-so",
+      "tip": "In Lateinamerika am Ende 'ri-SO' (kein 'th')"
+    },
+    "dialects": {
+      "es_castilla": "el paso fronterizo",
+      "es_andalucia": "el paso fronterizo",
+      "es_cataluna": "el pas fronterer",
+      "es_canarias": "el paso fronterizo",
+      "lat_mx": "el cruce fronterizo",
+      "lat_ar": "el paso de frontera",
+      "lat_co": "el puesto fronterizo",
+      "lat_cl": "el paso fronterizo",
+      "lat_pe": "el paso de frontera",
+      "lat_ve": "el paso fronterizo",
+      "lat_cu": "el paso fronterizo",
+      "lat_do": "el paso fronterizo"
+    },
+    "example_de": "Der Grenzübergang öffnet um 8 Uhr.",
+    "example_es": "El paso fronterizo abre a las 8.",
+    "tags": [
+      "grenze",
+      "B2"
+    ]
+  },
+  {
+    "id": "rei_027",
+    "de": "die Abflughalle",
+    "es": "la sala de salidas",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la ˈsala ðe saˈliðas",
+      "simplified": "la SA-la de sa-LI-das",
+      "tip": "Das 'd' in 'salidas' ist sehr weich gesprochen"
+    },
+    "dialects": {
+      "es_castilla": "la sala de salidas",
+      "es_andalucia": "la sala de salidas",
+      "es_cataluna": "la sala de sortides",
+      "es_canarias": "la sala de salidas",
+      "lat_mx": "la sala de salidas",
+      "lat_ar": "la sala de partidas",
+      "lat_co": "la sala de salidas",
+      "lat_cl": "la sala de embarque",
+      "lat_pe": "la sala de salidas",
+      "lat_ve": "la sala de salidas",
+      "lat_cu": "la sala de salidas",
+      "lat_do": "la sala de salidas"
+    },
+    "example_de": "Wir treffen uns in der Abflughalle.",
+    "example_es": "Nos vemos en la sala de salidas.",
+    "tags": [
+      "flughafen",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_028",
+    "de": "die Verspätung",
+    "es": "el retraso",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "retɾaˈsaðo",
+      "simplified": "re-tra-SA-do",
+      "tip": "Das finale 'd' klingt sehr weich, fast wie ein 'th'"
+    },
+    "dialects": {
+      "es_castilla": "retrasado",
+      "es_andalucia": "retrasado",
+      "es_cataluna": "retardat",
+      "es_canarias": "retrasado",
+      "lat_mx": "retrasado",
+      "lat_ar": "demorado",
+      "lat_co": "demorado",
+      "lat_cl": "atrasado",
+      "lat_pe": "retrasado",
+      "lat_ve": "demorado",
+      "lat_cu": "retrasado",
+      "lat_do": "retrasado"
+    },
+    "example_de": "Der Flug hat zwei Stunden Verspätung.",
+    "example_es": "El vuelo tiene dos horas de retraso.",
+    "tags": [
+      "probleme",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_029",
+    "de": "die Sehenswürdigkeit",
+    "es": "el monumento",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el monuˈmento",
+      "simplified": "el mo-nu-MEN-to",
+      "tip": "Betonung auf der dritten Silbe 'men'"
+    },
+    "dialects": {
+      "es_castilla": "el monumento",
+      "es_andalucia": "el monumento",
+      "es_cataluna": "el monument",
+      "es_canarias": "el monumento",
+      "lat_mx": "el atractivo turístico",
+      "lat_ar": "el lugar turístico",
+      "lat_co": "el sitio turístico",
+      "lat_cl": "el lugar de interés",
+      "lat_pe": "el atractivo turístico",
+      "lat_ve": "el sitio turístico",
+      "lat_cu": "el lugar histórico",
+      "lat_do": "el sitio de interés"
+    },
+    "example_de": "Die Sagrada Família ist eine beeindruckende Sehenswürdigkeit.",
+    "example_es": "La Sagrada Família es un monumento impresionante.",
+    "tags": [
+      "tourismus",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_030",
+    "de": "der Reiseführer",
+    "es": "la guía de viaje",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈɣia ðe ˈbjaxe",
+      "simplified": "la GI-a de BIJA-che",
+      "tip": "Kurzes 'a' am Ende von 'guía', 'j' wie raues 'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la guía de viaje",
+      "es_andalucia": "la guía de viaje",
+      "es_cataluna": "la guia de viatge",
+      "es_canarias": "la guía de viaje",
+      "lat_mx": "la guía de viaje",
+      "lat_ar": "la guía de viaje",
+      "lat_co": "la guía de viaje",
+      "lat_cl": "la guía de viaje",
+      "lat_pe": "la guía de viaje",
+      "lat_ve": "la guía de viaje",
+      "lat_cu": "la guía de viaje",
+      "lat_do": "la guía de viaje"
+    },
+    "example_de": "Der Reiseführer kennt die Stadt sehr gut.",
+    "example_es": "La guía de viaje conoce muy bien la ciudad.",
+    "tags": [
+      "tourismus",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_031",
+    "de": "das Schiff",
+    "es": "el barco",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈbaɾko",
+      "simplified": "el BAR-ko",
+      "tip": "Das 'r' leicht rollen, kurzes 'a'"
+    },
+    "dialects": {
+      "es_castilla": "el barco",
+      "es_andalucia": "el barco",
+      "es_cataluna": "el vaixell",
+      "es_canarias": "el barco",
+      "lat_mx": "el barco",
+      "lat_ar": "el barco",
+      "lat_co": "el barco",
+      "lat_cl": "el barco",
+      "lat_pe": "el barco",
+      "lat_ve": "el barco",
+      "lat_cu": "el barco",
+      "lat_do": "el barco"
+    },
+    "example_de": "Das Schiff fährt um Mitternacht ab.",
+    "example_es": "El barco sale a medianoche.",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_032",
+    "de": "einchecken",
+    "es": "hacer el check-in",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aˈθeɾ el ˈtʃekin",
+      "simplified": "a-THER el TSCHE-kin",
+      "tip": "In Lateinamerika 'a-SER': 'c' vor 'e' klingt wie 's'"
+    },
+    "dialects": {
+      "es_castilla": "hacer el check-in",
+      "es_andalucia": "hacer el check-in",
+      "es_cataluna": "fer el check-in",
+      "es_canarias": "hacer el check-in",
+      "lat_mx": "registrarse",
+      "lat_ar": "hacer el check-in",
+      "lat_co": "hacer el check-in",
+      "lat_cl": "registrarse",
+      "lat_pe": "hacer el check-in",
+      "lat_ve": "registrarse",
+      "lat_cu": "registrarse",
+      "lat_do": "hacer el check-in"
+    },
+    "example_de": "Wir müssen zwei Stunden vorher einchecken.",
+    "example_es": "Tenemos que hacer el check-in dos horas antes.",
+    "tags": [
+      "flughafen",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_033",
+    "de": "das Visum",
+    "es": "el visado",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el biˈsaðo",
+      "simplified": "el bi-SA-do",
+      "tip": "Das 'v' wie 'b', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el visado",
+      "es_andalucia": "el visado",
+      "es_cataluna": "el visat",
+      "es_canarias": "el visado",
+      "lat_mx": "la visa",
+      "lat_ar": "la visa",
+      "lat_co": "la visa",
+      "lat_cl": "la visa",
+      "lat_pe": "la visa",
+      "lat_ve": "la visa",
+      "lat_cu": "el visado",
+      "lat_do": "la visa"
+    },
+    "example_de": "Du brauchst ein Visum für dieses Land.",
+    "example_es": "Necesitas un visado para ese país.",
+    "tags": [
+      "dokumente",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_034",
+    "de": "der Urlaub",
+    "es": "las vacaciones",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "las βakaˈθjones",
+      "simplified": "las ba-ka-SJON-es",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "las vacaciones",
+      "es_andalucia": "las vacaciones",
+      "es_cataluna": "les vacances",
+      "es_canarias": "las vacaciones",
+      "lat_mx": "las vacaciones",
+      "lat_ar": "las vacaciones",
+      "lat_co": "las vacaciones",
+      "lat_cl": "las vacaciones",
+      "lat_pe": "las vacaciones",
+      "lat_ve": "las vacaciones",
+      "lat_cu": "las vacaciones",
+      "lat_do": "las vacaciones"
+    },
+    "example_de": "Nächsten Monat habe ich Urlaub.",
+    "example_es": "El mes que viene tengo vacaciones.",
+    "tags": [
+      "allgemein",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_035",
+    "de": "der Rucksack",
+    "es": "la mochila",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la moˈtʃila",
+      "simplified": "la mo-TSCHI-la",
+      "tip": "Das 'ch' wie 'tsch' aussprechen"
+    },
+    "dialects": {
+      "es_castilla": "la mochila",
+      "es_andalucia": "la mochila",
+      "es_cataluna": "la motxilla",
+      "es_canarias": "la mochila",
+      "lat_mx": "la mochila",
+      "lat_ar": "la mochila",
+      "lat_co": "la mochila",
+      "lat_cl": "la mochila",
+      "lat_pe": "la mochila",
+      "lat_ve": "la mochila",
+      "lat_cu": "la mochila",
+      "lat_do": "la mochila"
+    },
+    "example_de": "Ich reise immer mit einem Rucksack.",
+    "example_es": "Siempre viajo con una mochila.",
+    "tags": [
+      "gepäck",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_036",
+    "de": "die Haltestelle",
+    "es": "la parada",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la paˈɾaða",
+      "simplified": "la pa-RA-da",
+      "tip": "Drei Silben, das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la parada",
+      "es_andalucia": "la parada",
+      "es_cataluna": "la parada",
+      "es_canarias": "la parada",
+      "lat_mx": "la parada",
+      "lat_ar": "la parada",
+      "lat_co": "la parada",
+      "lat_cl": "la parada",
+      "lat_pe": "la parada",
+      "lat_ve": "la parada",
+      "lat_cu": "la parada",
+      "lat_do": "la parada"
+    },
+    "example_de": "Wie viele Haltestellen sind es noch?",
+    "example_es": "¿Cuántas paradas faltan todavía?",
+    "tags": [
+      "transport",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_037",
+    "de": "umsteigen",
+    "es": "hacer transbordo",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aˈθeɾ tɾansˈboɾðo",
+      "simplified": "a-THER trans-BOR-do",
+      "tip": "In Lateinamerika 'a-SER'"
+    },
+    "dialects": {
+      "es_castilla": "hacer transbordo",
+      "es_andalucia": "hacer transbordo",
+      "es_cataluna": "fer transbord",
+      "es_canarias": "hacer transbordo",
+      "lat_mx": "hacer transbordo",
+      "lat_ar": "hacer transbordo",
+      "lat_co": "hacer transbordo",
+      "lat_cl": "cambiar de línea",
+      "lat_pe": "hacer transbordo",
+      "lat_ve": "hacer transbordo",
+      "lat_cu": "hacer transbordo",
+      "lat_do": "hacer transbordo"
+    },
+    "example_de": "Wir müssen in Frankfurt umsteigen.",
+    "example_es": "Tenemos que hacer transbordo en Frankfurt.",
+    "tags": [
+      "transport",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_038",
+    "de": "die Abfahrt",
+    "es": "la salida",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la saˈliða",
+      "simplified": "la sa-LI-da",
+      "tip": "Das 'd' sehr weich, Betonung auf 'li'"
+    },
+    "dialects": {
+      "es_castilla": "la salida",
+      "es_andalucia": "la salida",
+      "es_cataluna": "la sortida",
+      "es_canarias": "la salida",
+      "lat_mx": "la salida",
+      "lat_ar": "la salida",
+      "lat_co": "la salida",
+      "lat_cl": "la salida",
+      "lat_pe": "la salida",
+      "lat_ve": "la salida",
+      "lat_cu": "la salida",
+      "lat_do": "la salida"
+    },
+    "example_de": "Die Abfahrt ist um 14 Uhr.",
+    "example_es": "La salida es a las 14h.",
+    "tags": [
+      "fahrtzeiten",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_039",
+    "de": "die Ankunft",
+    "es": "la llegada",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ʎeˈɣaða",
+      "simplified": "la lje-GA-da",
+      "tip": "Das 'll' wie weiches 'j', 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la llegada",
+      "es_andalucia": "la llegada",
+      "es_cataluna": "l'arribada",
+      "es_canarias": "la llegada",
+      "lat_mx": "la llegada",
+      "lat_ar": "la llegada",
+      "lat_co": "la llegada",
+      "lat_cl": "la llegada",
+      "lat_pe": "la llegada",
+      "lat_ve": "la llegada",
+      "lat_cu": "la llegada",
+      "lat_do": "la llegada"
+    },
+    "example_de": "Die Ankunft ist für morgen früh geplant.",
+    "example_es": "La llegada está prevista para mañana por la mañana.",
+    "tags": [
+      "fahrtzeiten",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_040",
+    "de": "mieten",
+    "es": "alquilar",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "alkiˈlaɾ",
+      "simplified": "al-ki-LAR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "alquilar",
+      "es_andalucia": "alquilar",
+      "es_cataluna": "llogar",
+      "es_canarias": "alquilar",
+      "lat_mx": "rentar",
+      "lat_ar": "alquilar",
+      "lat_co": "arrendar",
+      "lat_cl": "arrendar",
+      "lat_pe": "alquilar",
+      "lat_ve": "alquilar",
+      "lat_cu": "alquilar",
+      "lat_do": "alquilar"
+    },
+    "example_de": "Wir möchten ein Auto mieten.",
+    "example_es": "Queremos alquilar un coche.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_041",
+    "de": "das Reisebüro",
+    "es": "la agencia de viajes",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la aˈxenθja ðe ˈbjaxes",
+      "simplified": "la a-CHEN-sja de BIJA-ches",
+      "tip": "In Lateinamerika 'aˈsensja'"
+    },
+    "dialects": {
+      "es_castilla": "la agencia de viajes",
+      "es_andalucia": "la agencia de viajes",
+      "es_cataluna": "l'agència de viatges",
+      "es_canarias": "la agencia de viajes",
+      "lat_mx": "la agencia de viajes",
+      "lat_ar": "la agencia de viajes",
+      "lat_co": "la agencia de viajes",
+      "lat_cl": "la agencia de viajes",
+      "lat_pe": "la agencia de viajes",
+      "lat_ve": "la agencia de viajes",
+      "lat_cu": "la agencia de viajes",
+      "lat_do": "la agencia de viajes"
+    },
+    "example_de": "Ich habe die Reise im Reisebüro gebucht.",
+    "example_es": "He reservado el viaje en la agencia de viajes.",
+    "tags": [
+      "buchung",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_042",
+    "de": "der Reiseplan",
+    "es": "el itinerario",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el itineˈɾaɾjo",
+      "simplified": "el i-ti-ne-RA-rjo",
+      "tip": "Fünf Silben, Betonung auf 'ra'"
+    },
+    "dialects": {
+      "es_castilla": "el itinerario",
+      "es_andalucia": "el itinerario",
+      "es_cataluna": "l'itinerari",
+      "es_canarias": "el itinerario",
+      "lat_mx": "el itinerario",
+      "lat_ar": "el itinerario",
+      "lat_co": "el itinerario",
+      "lat_cl": "el itinerario",
+      "lat_pe": "el itinerario",
+      "lat_ve": "el itinerario",
+      "lat_cu": "el itinerario",
+      "lat_do": "el itinerario"
+    },
+    "example_de": "Hast du schon einen Reiseplan gemacht?",
+    "example_es": "¿Ya has hecho el itinerario?",
+    "tags": [
+      "planung",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_043",
+    "de": "die Fähre",
+    "es": "el ferry",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈferi",
+      "simplified": "el FE-ri",
+      "tip": "Englisches Lehnwort, einfach 'FE-ri'"
+    },
+    "dialects": {
+      "es_castilla": "el ferry",
+      "es_andalucia": "el ferry",
+      "es_cataluna": "el ferri",
+      "es_canarias": "el ferry",
+      "lat_mx": "el ferry",
+      "lat_ar": "el ferry",
+      "lat_co": "el ferry",
+      "lat_cl": "el ferry",
+      "lat_pe": "el ferry",
+      "lat_ve": "el ferry",
+      "lat_cu": "el ferry",
+      "lat_do": "el ferry"
+    },
+    "example_de": "Wir nehmen die Fähre nach Mallorca.",
+    "example_es": "Tomamos el ferry a Mallorca.",
+    "tags": [
+      "transport",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_044",
+    "de": "der Aussichtspunkt",
+    "es": "el mirador",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el miɾaˈðoɾ",
+      "simplified": "el mi-ra-DOR",
+      "tip": "Betonung auf letzter Silbe, das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el mirador",
+      "es_andalucia": "el mirador",
+      "es_cataluna": "el mirador",
+      "es_canarias": "el mirador",
+      "lat_mx": "el mirador",
+      "lat_ar": "el mirador",
+      "lat_co": "el mirador",
+      "lat_cl": "el mirador",
+      "lat_pe": "el mirador",
+      "lat_ve": "el mirador",
+      "lat_cu": "el mirador",
+      "lat_do": "el mirador"
+    },
+    "example_de": "Von diesem Aussichtspunkt sieht man die ganze Stadt.",
+    "example_es": "Desde este mirador se ve toda la ciudad.",
+    "tags": [
+      "tourismus",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_045",
+    "de": "das Museum",
+    "es": "el museo",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el muˈseo",
+      "simplified": "el mu-SE-o",
+      "tip": "Drei Silben, das 'e' und 'o' getrennt sprechen"
+    },
+    "dialects": {
+      "es_castilla": "el museo",
+      "es_andalucia": "el museo",
+      "es_cataluna": "el museu",
+      "es_canarias": "el museo",
+      "lat_mx": "el museo",
+      "lat_ar": "el museo",
+      "lat_co": "el museo",
+      "lat_cl": "el museo",
+      "lat_pe": "el museo",
+      "lat_ve": "el museo",
+      "lat_cu": "el museo",
+      "lat_do": "el museo"
+    },
+    "example_de": "Das Museum öffnet um 10 Uhr.",
+    "example_es": "El museo abre a las 10.",
+    "tags": [
+      "tourismus",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_046",
+    "de": "der Eingang",
+    "es": "la entrada",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la enˈtɾaða",
+      "simplified": "la en-TRA-da",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la entrada",
+      "es_andalucia": "la entrada",
+      "es_cataluna": "l'entrada",
+      "es_canarias": "la entrada",
+      "lat_mx": "la entrada",
+      "lat_ar": "la entrada",
+      "lat_co": "la entrada",
+      "lat_cl": "la entrada",
+      "lat_pe": "la entrada",
+      "lat_ve": "la entrada",
+      "lat_cu": "la entrada",
+      "lat_do": "la entrada"
+    },
+    "example_de": "Der Eingang ist auf der anderen Seite.",
+    "example_es": "La entrada está al otro lado.",
+    "tags": [
+      "navigation",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_047",
+    "de": "der Ausgang",
+    "es": "la salida",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la saˈliða",
+      "simplified": "la sa-LI-da",
+      "tip": "Das 'd' sehr weich, gleich wie 'die Abfahrt'"
+    },
+    "dialects": {
+      "es_castilla": "la salida",
+      "es_andalucia": "la salida",
+      "es_cataluna": "la sortida",
+      "es_canarias": "la salida",
+      "lat_mx": "la salida",
+      "lat_ar": "la salida",
+      "lat_co": "la salida",
+      "lat_cl": "la salida",
+      "lat_pe": "la salida",
+      "lat_ve": "la salida",
+      "lat_cu": "la salida",
+      "lat_do": "la salida"
+    },
+    "example_de": "Wo ist der Notausgang?",
+    "example_es": "¿Dónde está la salida de emergencia?",
+    "tags": [
+      "navigation",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_048",
+    "de": "sich verirren",
+    "es": "perderse",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "peɾˈðeɾse",
+      "simplified": "per-DER-se",
+      "tip": "Das 'd' sehr weich, reflexives 'se' anhängen"
+    },
+    "dialects": {
+      "es_castilla": "perderse",
+      "es_andalucia": "perderse",
+      "es_cataluna": "perdre's",
+      "es_canarias": "perderse",
+      "lat_mx": "perderse",
+      "lat_ar": "perderse",
+      "lat_co": "perderse",
+      "lat_cl": "perderse",
+      "lat_pe": "perderse",
+      "lat_ve": "perderse",
+      "lat_cu": "perderse",
+      "lat_do": "perderse"
+    },
+    "example_de": "Ich habe mich in der Stadt verirrt.",
+    "example_es": "Me he perdido en la ciudad.",
+    "tags": [
+      "navigation",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_049",
+    "de": "die Grenze",
+    "es": "la frontera",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la fɾonˈteɾa",
+      "simplified": "la fron-TE-ra",
+      "tip": "Das 'fr' deutlich aussprechen, das 'r' leicht rollen"
+    },
+    "dialects": {
+      "es_castilla": "la frontera",
+      "es_andalucia": "la frontera",
+      "es_cataluna": "la frontera",
+      "es_canarias": "la frontera",
+      "lat_mx": "la frontera",
+      "lat_ar": "la frontera",
+      "lat_co": "la frontera",
+      "lat_cl": "la frontera",
+      "lat_pe": "la frontera",
+      "lat_ve": "la frontera",
+      "lat_cu": "la frontera",
+      "lat_do": "la frontera"
+    },
+    "example_de": "Wir überqueren die Grenze um Mitternacht.",
+    "example_es": "Cruzamos la frontera a medianoche.",
+    "tags": [
+      "grenze",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_050",
+    "de": "die Sonnencreme",
+    "es": "la crema solar",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈkɾema soˈlaɾ",
+      "simplified": "la KRE-ma so-LAR",
+      "tip": "Betonung auf erster Silbe bei 'crema', letzte bei 'solar'"
+    },
+    "dialects": {
+      "es_castilla": "la crema solar",
+      "es_andalucia": "la crema solar",
+      "es_cataluna": "la crema solar",
+      "es_canarias": "la crema solar",
+      "lat_mx": "el bloqueador solar",
+      "lat_ar": "la crema solar",
+      "lat_co": "el protector solar",
+      "lat_cl": "el bloqueador",
+      "lat_pe": "el bloqueador solar",
+      "lat_ve": "la crema solar",
+      "lat_cu": "la crema solar",
+      "lat_do": "la crema solar"
+    },
+    "example_de": "Vergiss nicht die Sonnencreme!",
+    "example_es": "¡No olvides la crema solar!",
+    "tags": [
+      "gepäck",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_051",
+    "de": "die Währung",
+    "es": "la moneda",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la moˈneða",
+      "simplified": "la mo-NE-da",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la moneda",
+      "es_andalucia": "la moneda",
+      "es_cataluna": "la moneda",
+      "es_canarias": "la moneda",
+      "lat_mx": "la moneda",
+      "lat_ar": "la moneda",
+      "lat_co": "la moneda",
+      "lat_cl": "la moneda",
+      "lat_pe": "la moneda",
+      "lat_ve": "la moneda",
+      "lat_cu": "la moneda",
+      "lat_do": "la moneda"
+    },
+    "example_de": "Welche Währung benutzt man hier?",
+    "example_es": "¿Qué moneda se usa aquí?",
+    "tags": [
+      "finanzen",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_052",
+    "de": "Geld wechseln",
+    "es": "cambiar dinero",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "kamˈbjaɾ diˈneɾo",
+      "simplified": "kam-BJAR di-NE-ro",
+      "tip": "Zwei Wörter, Betonung jeweils auf 'bjar' und 'ne'"
+    },
+    "dialects": {
+      "es_castilla": "cambiar dinero",
+      "es_andalucia": "cambiar dinero",
+      "es_cataluna": "canviar diners",
+      "es_canarias": "cambiar dinero",
+      "lat_mx": "cambiar dinero",
+      "lat_ar": "cambiar dinero",
+      "lat_co": "cambiar dinero",
+      "lat_cl": "cambiar dinero",
+      "lat_pe": "cambiar dinero",
+      "lat_ve": "cambiar dinero",
+      "lat_cu": "cambiar dinero",
+      "lat_do": "cambiar dinero"
+    },
+    "example_de": "Wo kann ich Geld wechseln?",
+    "example_es": "¿Dónde puedo cambiar dinero?",
+    "tags": [
+      "finanzen",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_053",
+    "de": "der Reiseführer (Person)",
+    "es": "el guía turístico",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈɣia tuˈɾistiko",
+      "simplified": "el GI-a tu-RIS-ti-ko",
+      "tip": "Das 'g' sehr weich im Anlaut"
+    },
+    "dialects": {
+      "es_castilla": "el guía turístico",
+      "es_andalucia": "el guía turístico",
+      "es_cataluna": "el guia turístic",
+      "es_canarias": "el guía turístico",
+      "lat_mx": "el guía turístico",
+      "lat_ar": "el guía turístico",
+      "lat_co": "el guía turístico",
+      "lat_cl": "el guía turístico",
+      "lat_pe": "el guía turístico",
+      "lat_ve": "el guía turístico",
+      "lat_cu": "el guía turístico",
+      "lat_do": "el guía turístico"
+    },
+    "example_de": "Der Reiseführer erklärt die Geschichte des Gebäudes.",
+    "example_es": "El guía turístico explica la historia del edificio.",
+    "tags": [
+      "tourismus",
+      "B1"
+    ]
+  },
+  {
+    "id": "rei_054",
+    "de": "das Hostel",
+    "es": "el albergue",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el alˈbeɾɣe",
+      "simplified": "el al-BER-gue",
+      "tip": "Das 'g' sehr weich, das 'e' am Ende fast stumm"
+    },
+    "dialects": {
+      "es_castilla": "el albergue",
+      "es_andalucia": "el albergue",
+      "es_cataluna": "l'alberg",
+      "es_canarias": "el albergue",
+      "lat_mx": "el hostal",
+      "lat_ar": "el albergue",
+      "lat_co": "el hostal",
+      "lat_cl": "el hostal",
+      "lat_pe": "el albergue",
+      "lat_ve": "el hostal",
+      "lat_cu": "el albergue",
+      "lat_do": "el hostal"
+    },
+    "example_de": "Sie übernachten in einem günstigen Hostel.",
+    "example_es": "Se quedan en un albergue barato.",
+    "tags": [
+      "unterkunft",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_055",
+    "de": "der Campingplatz",
+    "es": "el camping",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈkampin",
+      "simplified": "el KAM-pin",
+      "tip": "Englisches Lehnwort, kein 'g' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "el camping",
+      "es_andalucia": "el camping",
+      "es_cataluna": "el càmping",
+      "es_canarias": "el camping",
+      "lat_mx": "el camping",
+      "lat_ar": "el camping",
+      "lat_co": "el camping",
+      "lat_cl": "el camping",
+      "lat_pe": "el camping",
+      "lat_ve": "el camping",
+      "lat_cu": "el camping",
+      "lat_do": "el camping"
+    },
+    "example_de": "Wir schlafen auf dem Campingplatz.",
+    "example_es": "Dormimos en el camping.",
+    "tags": [
+      "unterkunft",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_056",
+    "de": "die Autobahn",
+    "es": "la autopista",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la awtoˈpista",
+      "simplified": "la au-to-PIS-ta",
+      "tip": "Vier Silben, Betonung auf 'pis'"
+    },
+    "dialects": {
+      "es_castilla": "la autopista",
+      "es_andalucia": "la autopista",
+      "es_cataluna": "l'autopista",
+      "es_canarias": "la autopista",
+      "lat_mx": "la autopista",
+      "lat_ar": "la autopista",
+      "lat_co": "la autopista",
+      "lat_cl": "la autopista",
+      "lat_pe": "la autopista",
+      "lat_ve": "la autopista",
+      "lat_cu": "la autopista",
+      "lat_do": "la autopista"
+    },
+    "example_de": "Auf der Autobahn darfst du schneller fahren.",
+    "example_es": "En la autopista puedes ir más rápido.",
+    "tags": [
+      "transport",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_057",
+    "de": "tanken",
+    "es": "repostar",
+    "category": "reisen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "reposˈtaɾ",
+      "simplified": "re-pos-TAR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "repostar",
+      "es_andalucia": "echar gasolina",
+      "es_cataluna": "posar gasolina",
+      "es_canarias": "echar gasolina",
+      "lat_mx": "cargar gasolina",
+      "lat_ar": "cargar nafta",
+      "lat_co": "echar gasolina",
+      "lat_cl": "cargar bencina",
+      "lat_pe": "echar gasolina",
+      "lat_ve": "echar gasolina",
+      "lat_cu": "echar gasolina",
+      "lat_do": "echar gasolina"
+    },
+    "example_de": "Wir müssen bald tanken.",
+    "example_es": "Tenemos que repostar pronto.",
+    "tags": [
+      "transport",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_058",
+    "de": "der Weg",
+    "es": "el camino",
+    "category": "reisen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el kaˈmino",
+      "simplified": "el ka-MI-no",
+      "tip": "Drei Silben, Betonung auf 'mi'"
+    },
+    "dialects": {
+      "es_castilla": "el camino",
+      "es_andalucia": "el camino",
+      "es_cataluna": "el camí",
+      "es_canarias": "el camino",
+      "lat_mx": "el camino",
+      "lat_ar": "el camino",
+      "lat_co": "el camino",
+      "lat_cl": "el camino",
+      "lat_pe": "el camino",
+      "lat_ve": "el camino",
+      "lat_cu": "el camino",
+      "lat_do": "el camino"
+    },
+    "example_de": "Kannst du mir den Weg zeigen?",
+    "example_es": "¿Puedes indicarme el camino?",
+    "tags": [
+      "navigation",
+      "A1"
+    ]
+  },
+  {
+    "id": "rei_059",
+    "de": "die Wegbeschreibung",
+    "es": "las instrucciones",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "las instɾukˈθjones",
+      "simplified": "las ins-truk-SJON-es",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "las instrucciones",
+      "es_andalucia": "las instrucciones",
+      "es_cataluna": "les instruccions",
+      "es_canarias": "las instrucciones",
+      "lat_mx": "las indicaciones",
+      "lat_ar": "las indicaciones",
+      "lat_co": "las indicaciones",
+      "lat_cl": "las indicaciones",
+      "lat_pe": "las indicaciones",
+      "lat_ve": "las indicaciones",
+      "lat_cu": "las indicaciones",
+      "lat_do": "las indicaciones"
+    },
+    "example_de": "Kannst du mir eine Wegbeschreibung geben?",
+    "example_es": "¿Puedes darme las instrucciones para llegar?",
+    "tags": [
+      "navigation",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_060",
+    "de": "das Doppelzimmer",
+    "es": "la habitación doble",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la aβitaˈθjon ˈðoβle",
+      "simplified": "la a-bi-ta-SJON DO-ble",
+      "tip": "In Lateinamerika 'aβitaˈsjon'"
+    },
+    "dialects": {
+      "es_castilla": "la habitación doble",
+      "es_andalucia": "la habitación doble",
+      "es_cataluna": "l'habitació doble",
+      "es_canarias": "la habitación doble",
+      "lat_mx": "la habitación doble",
+      "lat_ar": "la habitación doble",
+      "lat_co": "la habitación doble",
+      "lat_cl": "la habitación doble",
+      "lat_pe": "la habitación doble",
+      "lat_ve": "la habitación doble",
+      "lat_cu": "la habitación doble",
+      "lat_do": "la habitación doble"
+    },
+    "example_de": "Ich hätte gerne ein Doppelzimmer.",
+    "example_es": "Me gustaría una habitación doble.",
+    "tags": [
+      "unterkunft",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_061",
+    "de": "das Einzelzimmer",
+    "es": "la habitación individual",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la aβitaˈθjon indiˈβidwal",
+      "simplified": "la a-bi-ta-SJON in-di-BID-wal",
+      "tip": "Viele Silben, in Lateinamerika 'aβitaˈsjon'"
+    },
+    "dialects": {
+      "es_castilla": "la habitación individual",
+      "es_andalucia": "la habitación individual",
+      "es_cataluna": "l'habitació individual",
+      "es_canarias": "la habitación individual",
+      "lat_mx": "la habitación sencilla",
+      "lat_ar": "la habitación simple",
+      "lat_co": "la habitación sencilla",
+      "lat_cl": "la habitación simple",
+      "lat_pe": "la habitación simple",
+      "lat_ve": "la habitación sencilla",
+      "lat_cu": "la habitación individual",
+      "lat_do": "la habitación sencilla"
+    },
+    "example_de": "Ich brauche ein Einzelzimmer für eine Nacht.",
+    "example_es": "Necesito una habitación individual para una noche.",
+    "tags": [
+      "unterkunft",
+      "A2"
+    ]
+  },
+  {
+    "id": "rei_062",
+    "de": "auschecken",
+    "es": "hacer el check-out",
+    "category": "reisen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aˈθeɾ el ˈtʃekawt",
+      "simplified": "a-THER el TSCHECK-aut",
+      "tip": "In Lateinamerika 'a-SER'"
+    },
+    "dialects": {
+      "es_castilla": "hacer el check-out",
+      "es_andalucia": "hacer el check-out",
+      "es_cataluna": "fer el check-out",
+      "es_canarias": "hacer el check-out",
+      "lat_mx": "hacer el check-out",
+      "lat_ar": "hacer el check-out",
+      "lat_co": "hacer el check-out",
+      "lat_cl": "hacer el check-out",
+      "lat_pe": "dejar la habitación",
+      "lat_ve": "hacer el check-out",
+      "lat_cu": "hacer el check-out",
+      "lat_do": "hacer el check-out"
+    },
+    "example_de": "Wann müssen wir auschecken?",
+    "example_es": "¿A qué hora tenemos que hacer el check-out?",
+    "tags": [
+      "unterkunft",
+      "A2"
+    ]
+  }
+]

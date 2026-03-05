@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>El Intruso — Der Wort-Detektiv</title>
+<script src="../theme-switcher.js"></script>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../../src/css/base.css">
+<link rel="stylesheet" href="../../src/tactile-theme.css">
+<style>
+  :root {
+    --gold: var(--color-accent-warning);
+    --gold-dark: color-mix(in srgb, var(--color-accent-warning) 65%, var(--color-bg-base));
+    --red: var(--color-wrong);
+    --red-glow: color-mix(in srgb, var(--color-wrong) 40%, transparent);
+    --green: var(--color-correct);
+    --green-glow: color-mix(in srgb, var(--color-correct) 40%, transparent);
+    --bg-1: var(--color-bg-base);
+    --bg-2: var(--color-bg-surface);
+    --bg-3: var(--color-bg-elevated);
+    --glass: color-mix(in srgb, var(--color-bg-surface) 78%, transparent);
+    --glass-border: color-mix(in srgb, var(--color-border-default) 72%, transparent);
+    --glass-hover: color-mix(in srgb, var(--color-bg-elevated) 88%, transparent);
+    --text: var(--color-text-primary);
+    --text-dim: color-mix(in srgb, var(--color-text-primary) 45%, transparent);
+    --card-shadow:
+      0 8px 32px rgba(0,0,0,0.45),
+      0 2px 8px rgba(0,0,0,0.3),
+      inset 0 1px 0 rgba(255,255,255,0.18),
+      inset 0 -1px 0 rgba(0,0,0,0.2);
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Space Mono', monospace;
+    background: var(--bg-1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: max(1.5rem, var(--safe-top)) 1.5rem max(1.5rem, var(--safe-bottom));
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Layered background */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(245,200,66,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 90%, rgba(62,255,160,0.05) 0%, transparent 60%),
+      radial-gradient(ellipse 100% 100% at 50% 50%, var(--bg-2) 0%, var(--bg-1) 100%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Noise grain */
+  body::after {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.35;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .game-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .eyebrow {
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+    opacity: 0.9;
+  }
+
+  .title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 12vw, 5rem);
+    color: var(--text);
+    letter-spacing: 0.05em;
+    line-height: 0.9;
+    text-shadow: 0 0 60px rgba(245,200,66,0.2);
+  }
+
+  .title-sub {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--text-dim);
+    margin-top: 0.3rem;
+    font-weight: 300;
+  }
+
+  /* ── HUD ── */
+  .hud {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .hud-item {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-dim);
+  }
+  .hud-item strong {
+    display: block;
+    font-size: 1rem;
+    color: var(--text);
+    margin-top: 1px;
+    letter-spacing: 0;
+  }
+
+  /* ── CATEGORY CARD ── */
+  #category-card {
+    width: 100%;
+    padding: 1.1rem 1.6rem;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #category-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 20%; right: 20%; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(245,200,66,0.5), transparent);
+  }
+
+  #difficulty-badge {
+    display: inline-block;
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(245,200,66,0.12);
+    border: 1px solid rgba(245,200,66,0.3);
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  #category-name {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  #instruction {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 0.3rem;
+    font-style: italic;
+    font-family: 'Crimson Pro', serif;
+  }
+
+  /* ── CARDS GRID ── */
+  #cards-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* ── FROSTED GLASS WORD CARD ── */
+  .word-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 32px;
+    padding: 1.8rem 1.2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition:
+      transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+      box-shadow 0.18s ease,
+      background 0.18s ease;
+    box-shadow:
+      0 8px 32px rgba(0,0,0,0.4),
+      0 2px 8px rgba(0,0,0,0.25),
+      inset 0 1px 0 rgba(255,255,255,0.2),
+      inset 0 -1px 0 rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    text-align: center;
+    min-height: 130px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+
+  .word-card.visible {
+    animation: cardReveal 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes cardReveal {
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  /* Shimmer layer */
+  .word-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08) 0%,
+      transparent 50%,
+      rgba(255,255,255,0.03) 100%
+    );
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  /* Top highlight line */
+  .word-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 15%; right: 15%; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+    border-radius: 999px;
+  }
+
+  .word-card:hover {
+    background: rgba(255, 255, 255, 0.13);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+      0 16px 40px rgba(0,0,0,0.5),
+      0 4px 12px rgba(0,0,0,0.3),
+      inset 0 1px 0 rgba(255,255,255,0.25),
+      inset 0 -1px 0 rgba(0,0,0,0.1);
+  }
+
+  .word-card:active {
+    transform: translateY(2px) scale(0.98) !important;
+    box-shadow:
+      0 4px 16px rgba(0,0,0,0.4),
+      0 1px 4px rgba(0,0,0,0.3),
+      inset 0 1px 0 rgba(255,255,255,0.15),
+      inset 0 2px 8px rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.05);
+  }
+
+  .card-number {
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-family: 'Space Mono', monospace;
+  }
+
+  .card-word {
+    font-family: 'Crimson Pro', serif;
+    font-size: clamp(1.3rem, 4vw, 1.7rem);
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.1;
+  }
+
+  .card-word-sm {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+  }
+
+  /* ── CARD STATES ── */
+  .word-card.correct {
+    animation: popOut 0.5s cubic-bezier(0.55, 0, 1, 0.45) forwards !important;
+    border-color: rgba(62,255,160,0.5);
+    box-shadow: 0 0 40px var(--green-glow), var(--card-shadow);
+  }
+
+  @keyframes popOut {
+    0%   { transform: scale(1); opacity: 1; }
+    40%  { transform: scale(1.15); opacity: 1; box-shadow: 0 0 60px var(--green-glow); }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+
+  .word-card.wrong {
+    animation: shake 0.45s ease forwards;
+    border-color: rgba(255,62,95,0.4);
+    background: rgba(255,62,95,0.1);
+  }
+
+  @keyframes shake {
+    0%   { transform: translateX(0) scale(1); }
+    15%  { transform: translateX(-7px) scale(0.99); }
+    30%  { transform: translateX(7px) scale(0.99); }
+    45%  { transform: translateX(-5px); }
+    60%  { transform: translateX(5px); }
+    75%  { transform: translateX(-2px); }
+    100% { transform: translateX(0) scale(1); }
+  }
+
+  .word-card.correct .card-word { color: var(--green); }
+  .word-card.wrong .card-word   { color: var(--red); }
+
+  .word-card.disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /* ── FEEDBACK ── */
+  #feedback {
+    min-height: 1.4rem;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    text-align: center;
+    font-style: italic;
+    font-family: 'Crimson Pro', serif;
+    transition: all 0.3s ease;
+    letter-spacing: 0.03em;
+  }
+  #feedback.success { color: var(--green); }
+  #feedback.error   { color: var(--red); }
+
+  /* ── PROGRESS ── */
+  .progress-bar-wrap {
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--green));
+    border-radius: 999px;
+    transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 0 8px rgba(245,200,66,0.5);
+  }
+
+  /* ── COMPLETION ── */
+  #completion-screen {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(15, 25, 35, 0.92);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  #completion-screen.visible { display: flex; }
+
+  .completion-icon {
+    font-size: 4.5rem;
+    animation: popIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    filter: drop-shadow(0 0 30px rgba(245,200,66,0.5));
+  }
+  @keyframes popIn {
+    from { transform: scale(0) rotate(-15deg); opacity: 0; }
+    to   { transform: scale(1) rotate(0deg);  opacity: 1; }
+  }
+
+  .completion-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: var(--text);
+    letter-spacing: 0.05em;
+  }
+
+  .completion-stats {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+
+  .completion-btn {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    padding: 0.9rem 3rem;
+    background: var(--gold);
+    color: #0f1923;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 var(--gold-dark), 0 0 30px rgba(245,200,66,0.3);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    margin-top: 0.5rem;
+  }
+  .completion-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 var(--gold-dark);
+  }
+</style>
+</head>
+<body>
+
+<div class="game-wrapper" id="main-game">
+
+  
+  <div class="header">
+    <div class="eyebrow">Spanisch Training</div>
+    <div class="title">El Intruso</div>
+    <div class="title-sub">Der Wort-Detektiv — finde den Eindringling</div>
+  </div>
+
+  
+  <div class="hud">
+    <div class="hud-item">Level <strong id="level-num">1</strong></div>
+    <div class="hud-item" style="text-align:center">Richtig <strong id="correct-count">0</strong></div>
+    <div class="hud-item" style="text-align:right">Punkte <strong id="score-num">0</strong></div>
+  </div>
+
+  
+  <div class="progress-bar-wrap">
+    <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+  </div>
+
+  
+  <div id="category-card">
+    <div id="difficulty-badge">Schwierigkeit</div>
+    <div id="category-name">Kategorie wird geladen…</div>
+    <div id="instruction">Welches Wort passt nicht zur Gruppe?</div>
+  </div>
+
+  
+  <div id="cards-grid">
+    <div class="word-card" id="card-0"><span class="card-number">01</span><span class="card-word"></span></div>
+    <div class="word-card" id="card-1"><span class="card-number">02</span><span class="card-word"></span></div>
+    <div class="word-card" id="card-2"><span class="card-number">03</span><span class="card-word"></span></div>
+    <div class="word-card" id="card-3"><span class="card-number">04</span><span class="card-word"></span></div>
+  </div>
+
+  
+  <div id="feedback">— wähle den Eindringling —</div>
+
+</div>
+
+
+<div id="completion-screen">
+  <div class="completion-icon">🕵️</div>
+  <div class="completion-title">Fall gelöst!</div>
+  <div class="completion-stats" id="completion-stats"></div>
+  <button class="completion-btn" onclick="restartGame()">Neues Spiel</button>
+</div>
+
+<script>
+// ─────────────────────────────────────────────
+// FALLBACK DATA
+// ─────────────────────────────────────────────
+const FALLBACK = {
+  intruso_game: [
+    {
+      id: 1,
+      category: "Tiere",
+      difficulty: "Leicht",
+      options: [
+        { word: "el perro",   is_correct: false },
+        { word: "el gato",    is_correct: false },
+        { word: "el pájaro",  is_correct: false },
+        { word: "la silla",   is_correct: true  }
+      ]
+    },
+    {
+      id: 2,
+      category: "Farben",
+      difficulty: "Leicht",
+      options: [
+        { word: "rojo",    is_correct: false },
+        { word: "azul",    is_correct: false },
+        { word: "correr",  is_correct: true  },
+        { word: "verde",   is_correct: false }
+      ]
+    },
+    {
+      id: 3,
+      category: "Essen",
+      difficulty: "Mittel",
+      options: [
+        { word: "la manzana", is_correct: false },
+        { word: "el pan",     is_correct: false },
+        { word: "el coche",   is_correct: true  },
+        { word: "el queso",   is_correct: false }
+      ]
+    },
+    {
+      id: 4,
+      category: "Körperteile",
+      difficulty: "Mittel",
+      options: [
+        { word: "la mano",    is_correct: false },
+        { word: "el ojo",     is_correct: false },
+        { word: "la nariz",   is_correct: false },
+        { word: "el jardín",  is_correct: true  }
+      ]
+    },
+    {
+      id: 5,
+      category: "Verben",
+      difficulty: "Schwer",
+      options: [
+        { word: "hablar",   is_correct: false },
+        { word: "comer",    is_correct: false },
+        { word: "vivir",    is_correct: false },
+        { word: "amarillo", is_correct: true  }
+      ]
+    },
+    {
+      id: 6,
+      category: "Kleidung",
+      difficulty: "Mittel",
+      options: [
+        { word: "la camisa",  is_correct: false },
+        { word: "los zapatos",is_correct: false },
+        { word: "el libro",   is_correct: true  },
+        { word: "el pantalón",is_correct: false }
+      ]
+    },
+    {
+      id: 7,
+      category: "Wochentage",
+      difficulty: "Leicht",
+      options: [
+        { word: "lunes",    is_correct: false },
+        { word: "martes",   is_correct: false },
+        { word: "enero",    is_correct: true  },
+        { word: "miércoles",is_correct: false }
+      ]
+    },
+    {
+      id: 8,
+      category: "Transport",
+      difficulty: "Schwer",
+      options: [
+        { word: "el avión",  is_correct: false },
+        { word: "el tren",   is_correct: false },
+        { word: "el barco",  is_correct: false },
+        { word: "la cocina", is_correct: true  }
+      ]
+    }
+  ]
+};
+
+// ─────────────────────────────────────────────
+// AUDIO
+// ─────────────────────────────────────────────
+let audioCtx = null;
+
+function ctx() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+
+function tone(freq, dur, type = 'sine', vol = 0.25, delay = 0) {
+  const c = ctx();
+  const o = c.createOscillator();
+  const g = c.createGain();
+  o.connect(g); g.connect(c.destination);
+  o.type = type;
+  o.frequency.value = freq;
+  const t = c.currentTime + delay;
+  g.gain.setValueAtTime(0, t);
+  g.gain.linearRampToValueAtTime(vol, t + 0.01);
+  g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+  o.start(t); o.stop(t + dur + 0.05);
+}
+
+function playPop() {
+  tone(880, 0.08, 'sine', 0.2);
+  tone(1100, 0.12, 'sine', 0.18, 0.06);
+  tone(1320, 0.2,  'sine', 0.15, 0.12);
+}
+
+function playWrong() {
+  tone(280, 0.1,  'sawtooth', 0.15);
+  tone(220, 0.15, 'sawtooth', 0.12, 0.08);
+}
+
+// ─────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────
+let gameData   = [];
+let level      = 0;
+let score      = 0;
+let correct    = 0;
+let locked     = false;
+
+// ─────────────────────────────────────────────
+// LOAD
+// ─────────────────────────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch('./spanisch_levels.json');
+    if (!r.ok) throw new Error();
+    const j = await r.json();
+    gameData = j.intruso_game || [];
+  } catch {
+    gameData = FALLBACK.intruso_game;
+  }
+  initGame();
+}
+
+function initGame() {
+  level = 0; score = 0; correct = 0;
+  updateHUD();
+  loadLevel(0);
+}
+
+function updateHUD() {
+  document.getElementById('level-num').textContent    = level + 1;
+  document.getElementById('score-num').textContent    = score;
+  document.getElementById('correct-count').textContent = correct;
+  const pct = gameData.length ? (level / gameData.length) * 100 : 0;
+  document.getElementById('progress-fill').style.width = pct + '%';
+}
+
+function loadLevel(idx) {
+  if (idx >= gameData.length) { showCompletion(); return; }
+
+  locked = false;
+  const lvl = gameData[idx];
+
+  // Difficulty badge color
+  const badge = document.getElementById('difficulty-badge');
+  badge.textContent = lvl.difficulty || 'Normal';
+  badge.style.background = { 'Leicht': 'rgba(62,255,160,0.12)', 'Mittel': 'rgba(245,200,66,0.12)', 'Schwer': 'rgba(255,62,95,0.12)' }[lvl.difficulty] || 'rgba(255,255,255,0.08)';
+  badge.style.borderColor = { 'Leicht': 'rgba(62,255,160,0.4)', 'Mittel': 'rgba(245,200,66,0.4)', 'Schwer': 'rgba(255,62,95,0.4)' }[lvl.difficulty] || 'rgba(255,255,255,0.2)';
+  badge.style.color = { 'Leicht': 'var(--green)', 'Mittel': 'var(--gold)', 'Schwer': 'var(--red)' }[lvl.difficulty] || 'var(--text-dim)';
+
+  document.getElementById('category-name').textContent = lvl.category || 'Kategorie';
+  setFeedback('— wähle den Eindringling —', '');
+
+  // Shuffle options
+  const opts = [...lvl.options].sort(() => Math.random() - 0.5);
+
+  const cards = document.querySelectorAll('.word-card');
+  cards.forEach((card, i) => {
+    card.className = 'word-card';
+    card.style.animationDelay = '';
+    const w = card.querySelector('.card-word');
+    w.textContent = opts[i]?.word || '';
+    w.className = 'card-word' + (opts[i]?.word?.length > 10 ? ' card-word-sm' : '');
+    card.dataset.correct = opts[i]?.is_correct ? '1' : '0';
+
+    // Staggered reveal
+    setTimeout(() => card.classList.add('visible'), 80 + i * 90);
+  });
+
+  updateHUD();
+}
+
+// ─────────────────────────────────────────────
+// CARD CLICK
+// ─────────────────────────────────────────────
+document.querySelectorAll('.word-card').forEach(card => {
+  card.addEventListener('click', () => {
+    if (locked || !card.classList.contains('visible')) return;
+
+    const isCorrect = card.dataset.correct === '1';
+
+    if (isCorrect) {
+      locked = true;
+      navigator.vibrate && navigator.vibrate(50);
+      playPop();
+      card.classList.add('correct', 'disabled');
+      document.querySelectorAll('.word-card').forEach(c => c.classList.add('disabled'));
+      score += 15;
+      correct++;
+      setFeedback('¡Correcto! Der Eindringling ist enttarnt. 🔍', 'success');
+
+      setTimeout(() => {
+        level++;
+        loadLevel(level);
+      }, 900);
+
+    } else {
+      navigator.vibrate && navigator.vibrate(20);
+      playWrong();
+      card.classList.add('wrong');
+      setFeedback('Nicht dieser… such weiter. 🤔', 'error');
+      setTimeout(() => {
+        card.classList.remove('wrong');
+        setFeedback('— wähle den Eindringling —', '');
+      }, 700);
+    }
+  });
+});
+
+function setFeedback(msg, type) {
+  const el = document.getElementById('feedback');
+  el.textContent = msg;
+  el.className = type;
+}
+
+// ─────────────────────────────────────────────
+// COMPLETION
+// ─────────────────────────────────────────────
+function showCompletion() {
+  document.getElementById('completion-stats').textContent =
+    `${correct} von ${gameData.length} richtig • ${score} Punkte`;
+  document.getElementById('completion-screen').classList.add('visible');
+  navigator.vibrate && navigator.vibrate([40,30,40,30,80]);
+  playPop();
+  setTimeout(playPop, 300);
+}
+
+function restartGame() {
+  document.getElementById('completion-screen').classList.remove('visible');
+  initGame();
+}
+
+// ─────────────────────────────────────────────
+// BOOT
+// ─────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>

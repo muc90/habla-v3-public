@@ -1,0 +1,177 @@
+[
+  {
+    "id": "a2_01",
+    "de": "Ich spreche kein Chinesisch.",
+    "words": ["Yo", "no", "hablo", "chino"],
+    "distractors": ["habla", "japonés", "Él"],
+    "hint": "Subjekt + no + hablar + Sprache"
+  },
+  {
+    "id": "a2_02",
+    "de": "Wir sind nicht zu Hause.",
+    "words": ["Nosotros", "no", "estamos", "en", "casa"],
+    "distractors": ["somos", "la", "Ellos"],
+    "hint": "Subjekt + no + estar + en + casa"
+  },
+  {
+    "id": "a2_03",
+    "de": "Das Auto ist schneller als das Fahrrad.",
+    "words": ["El", "coche", "es", "más", "rápido", "que", "la", "bicicleta"],
+    "distractors": ["está", "menos", "un"],
+    "hint": "Komparativ: más + Adjektiv + que"
+  },
+  {
+    "id": "a2_04",
+    "de": "Wie viel kostet das?",
+    "words": ["¿Cuánto", "cuesta", "esto?"],
+    "distractors": ["cues tan", "¿Cómo", "ese"],
+    "hint": "Fragewort + costar + Demonstrativpronomen"
+  },
+  {
+    "id": "a2_05",
+    "de": "Sie arbeitet immer sehr hart.",
+    "words": ["Ella", "siempre", "trabaja", "muy", "duro"],
+    "distractors": ["nunca", "trabajan", "Él"],
+    "hint": "Subjekt + Häufigkeitsadverb + trabajar + muy + Adverb"
+  },
+  {
+    "id": "a2_06",
+    "de": "Die roten Äpfel sind sehr lecker.",
+    "words": ["Las", "manzanas", "rojas", "son", "muy", "ricas"],
+    "distractors": ["Los", "rojos", "están"],
+    "hint": "Artikel (f.pl.) + Nomen + Adjektiv-Kongruenz + ser"
+  },
+  {
+    "id": "a2_07",
+    "de": "Ich habe Hunger.",
+    "words": ["Yo", "tengo", "hambre"],
+    "distractors": ["estoy", "sed", "Él"],
+    "hint": "tener + hambre (idiomatisch)"
+  },
+  {
+    "id": "a2_08",
+    "de": "Kannst du mir helfen?",
+    "words": ["¿Puedes", "ayudarme?"],
+    "distractors": ["¿Puede", "ayudarte?", "¿Pueden"],
+    "hint": "Modal + Infinitiv+Pronomen (tú-Form)"
+  },
+  {
+    "id": "a2_09",
+    "de": "Wir sind nicht aus Spanien.",
+    "words": ["Nosotros", "no", "somos", "de", "España"],
+    "distractors": ["estamos", "en", "Ellos"],
+    "hint": "Herkunft: ser + de + Land, mit Verneinung"
+  },
+  {
+    "id": "a2_10",
+    "de": "Er ist größer als ich.",
+    "words": ["Él", "es", "más", "alto", "que", "yo"],
+    "distractors": ["está", "menos", "Ella"],
+    "hint": "más + Adjektiv + que + Subjekt"
+  },
+  {
+    "id": "a2_11",
+    "de": "Die Kinder spielen auf dem Spielplatz.",
+    "words": ["Los", "niños", "juegan", "en", "el", "parque"],
+    "distractors": ["Las", "juega", "al"],
+    "hint": "Artikel (m.pl.) + Nomen + jugar + en + el + Nomen"
+  },
+  {
+    "id": "a2_12",
+    "de": "Ich verstehe das nicht.",
+    "words": ["Yo", "no", "entiendo", "esto"],
+    "distractors": ["entiende", "ese", "Él"],
+    "hint": "Subjekt + no + entender + Pronomen"
+  },
+  {
+    "id": "a2_13",
+    "de": "Sie sieht sehr gut aus.",
+    "words": ["Ella", "se", "ve", "muy", "bien"],
+    "distractors": ["Él", "lo", "muy"],
+    "hint": "Subjekt + se + verse + muy + Adverb"
+  },
+  {
+    "id": "a2_14",
+    "de": "Es gibt viele Restaurants in der Stadt.",
+    "words": ["Hay", "muchos", "restaurantes", "en", "la", "ciudad"],
+    "distractors": ["Son", "muchas", "el"],
+    "hint": "hay + Menge + Nomen + en + Ort"
+  },
+  {
+    "id": "a2_15",
+    "de": "Ich muss morgen früh aufstehen.",
+    "words": ["Tengo", "que", "levantarme", "mañana", "temprano"],
+    "distractors": ["Tiene", "de", "pronto"],
+    "hint": "tener que + Infinitiv (reflexiv) + Zeitangabe"
+  },
+  {
+    "id": "a2_16",
+    "de": "Das ist das teuerste Geschäft in der Stadt.",
+    "words": ["Esta", "es", "la", "tienda", "más", "cara", "de", "la", "ciudad"],
+    "distractors": ["está", "El", "menos"],
+    "hint": "Superlativ: la + Nomen + más + Adjektiv + de"
+  },
+  {
+    "id": "a2_17",
+    "de": "Ich schlafe normalerweise um 11 Uhr.",
+    "words": ["Normalmente", "me", "duermo", "a", "las", "once"],
+    "distractors": ["duermo", "a", "los"],
+    "hint": "Häufigkeitsadverb + reflexiv + Uhrzeit"
+  },
+  {
+    "id": "a2_18",
+    "de": "Er ist weder Arzt noch Anwalt.",
+    "words": ["Él", "no", "es", "ni", "médico", "ni", "abogado"],
+    "distractors": ["son", "o", "Ella"],
+    "hint": "ni … ni … (weder … noch …)"
+  },
+  {
+    "id": "a2_19",
+    "de": "Ich bevorzuge Tee statt Kaffee.",
+    "words": ["Prefiero", "el", "té", "en", "vez", "de", "café"],
+    "distractors": ["Prefiere", "la", "por"],
+    "hint": "preferir + Nomen + en vez de + Alternative"
+  },
+  {
+    "id": "a2_20",
+    "de": "Die Straße ist neben dem Supermarkt.",
+    "words": ["La", "calle", "está", "al", "lado", "del", "supermercado"],
+    "distractors": ["es", "el", "a"],
+    "hint": "estar + al lado del + Nomen (Lageangabe)"
+  },
+  {
+    "id": "a2_21",
+    "de": "Ihr mögt keine Mathematik.",
+    "words": ["A", "vosotros", "no", "os", "gusta", "las", "matemáticas"],
+    "distractors": ["le", "gusta", "el"],
+    "hint": "gustar-Konstruktion mit indirektem Objekt + Verneinung"
+  },
+  {
+    "id": "a2_22",
+    "de": "Wie weit ist es zum Bahnhof?",
+    "words": ["¿A", "cuánto", "está", "la", "estación?"],
+    "distractors": ["¿Cuánto", "es", "el"],
+    "hint": "Fragewort + estar + Entfernungsangabe"
+  },
+  {
+    "id": "a2_23",
+    "de": "Sie hat zwei Schwestern und einen Bruder.",
+    "words": ["Ella", "tiene", "dos", "hermanas", "y", "un", "hermano"],
+    "distractors": ["tres", "una", "Él"],
+    "hint": "tener + Zahl + Nomen + y + Zahl + Nomen"
+  },
+  {
+    "id": "a2_24",
+    "de": "Das Konzert beginnt um acht Uhr.",
+    "words": ["El", "concierto", "empieza", "a", "las", "ocho"],
+    "distractors": ["está", "los", "La"],
+    "hint": "Subjekt + empezar + a las + Uhrzeit"
+  },
+  {
+    "id": "a2_25",
+    "de": "Ich mache mir Sorgen um dich.",
+    "words": ["Estoy", "preocupado", "por", "ti"],
+    "distractors": ["Estás", "preocupada", "para"],
+    "hint": "estar + Partizip/Adjektiv + por + Pronomen"
+  }
+]

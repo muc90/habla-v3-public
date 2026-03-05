@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>La Conversación — KI Chat</title>
+<script src="../theme-switcher.js"></script>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../../src/css/base.css">
+<link rel="stylesheet" href="../../src/tactile-theme.css">
+<style>
+  :root {
+    --bg:          var(--color-bg-base);
+    --bg2:         var(--color-bg-surface);
+    --bg3:         var(--color-bg-elevated);
+    --accent:      var(--color-accent-primary);
+    --accent-dk:   color-mix(in srgb, var(--color-accent-primary) 70%, var(--color-bg-base));
+    --accent-lt:   color-mix(in srgb, var(--color-accent-primary) 70%, white);
+    --teal:        var(--color-correct);
+    --teal-dk:     color-mix(in srgb, var(--color-correct) 72%, var(--color-bg-base));
+    --yellow:      var(--color-accent-warning);
+    --red:         var(--color-wrong);
+    --npc-bubble:  var(--color-bg-elevated);
+    --npc-border:  color-mix(in srgb, var(--color-accent-primary) 32%, transparent);
+    --player-bg:   color-mix(in srgb, var(--color-correct) 18%, var(--color-bg-surface));
+    --player-bdr:  color-mix(in srgb, var(--color-correct) 40%, transparent);
+    --text:        var(--color-text-primary);
+    --text-dim:    color-mix(in srgb, var(--color-text-primary) 42%, transparent);
+    --chip-bg:     color-mix(in srgb, var(--color-accent-primary) 14%, transparent);
+    --chip-bdr:    color-mix(in srgb, var(--color-accent-primary) 38%, transparent);
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 70% 50% at 5% 0%, rgba(124,106,247,0.1) 0%, transparent 55%),
+      radial-gradient(ellipse 50% 50% at 95% 100%, rgba(69,229,181,0.06) 0%, transparent 55%);
+  }
+
+  .wrap {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 480px;
+    display: flex; flex-direction: column;
+    height: 100dvh; max-height: 100dvh;
+    padding-top: var(--safe-top);
+    padding-bottom: var(--safe-bottom);
+    box-sizing: border-box;
+  }
+
+  /* ── TOP BAR ── */
+  .top-bar {
+    flex-shrink: 0;
+    background: rgba(19,17,31,0.95);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    padding: 0.75rem 1rem 0.6rem;
+    display: flex; flex-direction: column; gap: 0.55rem;
+  }
+
+  .top-row { display: flex; align-items: center; justify-content: space-between; }
+
+  .npc-info { display: flex; align-items: center; gap: 0.65rem; }
+  .npc-avatar-sm {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--bg3); border: 2px solid rgba(124,106,247,0.4);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; flex-shrink: 0;
+    box-shadow: 0 0 12px rgba(124,106,247,0.2);
+  }
+  .npc-name-wrap {}
+  .npc-name-txt {
+    font-size: 0.85rem; font-weight: 800; color: var(--text); display: block;
+  }
+  .npc-status {
+    font-size: 0.6rem; color: var(--teal); display: flex; align-items: center; gap: 0.3rem;
+    font-family: 'Space Mono', monospace; letter-spacing: 0.05em;
+  }
+  .status-dot {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--teal);
+    animation: statusPulse 2s ease-in-out infinite;
+  }
+  @keyframes statusPulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .top-right { display: flex; align-items: center; gap: 0.7rem; }
+  .scene-badge {
+    font-size: 0.6rem; font-family: 'Space Mono', monospace;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.2rem 0.6rem; border-radius: 999px;
+    background: rgba(124,106,247,0.1); border: 1px solid rgba(124,106,247,0.25);
+    color: var(--accent-lt); cursor: pointer;
+  }
+  .pts-badge {
+    font-family: 'Space Mono', monospace; font-size: 0.7rem;
+    color: var(--yellow); font-weight: 700;
+  }
+
+  /* Scene selector */
+  #scene-selector {
+    display: flex; gap: 0.4rem; flex-wrap: wrap;
+  }
+  .scene-pill {
+    padding: 0.28rem 0.7rem; border-radius: 999px;
+    font-size: 0.58rem; font-weight: 700; cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.04); color: var(--text-dim);
+    transition: all 0.2s; display: flex; align-items: center; gap: 0.3rem;
+  }
+  .scene-pill.active {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+    box-shadow: 0 0 12px rgba(124,106,247,0.4);
+  }
+
+  /* ── CHAT ── */
+  #chat-area {
+    flex: 1; overflow-y: auto; padding: 1rem 1rem 0.5rem;
+    display: flex; flex-direction: column; gap: 0.9rem;
+    scroll-behavior: smooth;
+  }
+
+  /* NPC bubble */
+  .npc-row { display: flex; align-items: flex-end; gap: 0.6rem; animation: msgIn 0.35s cubic-bezier(0.34,1.56,0.64,1); }
+  @keyframes msgIn { from{opacity:0;transform:translateY(10px) scale(0.97)} to{opacity:1;transform:none} }
+
+  .bubble-avatar {
+    width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+    background: var(--bg3); border: 1.5px solid rgba(124,106,247,0.35);
+    display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+  }
+
+  .npc-bubble {
+    max-width: 78%; padding: 0.75rem 1rem;
+    background: var(--npc-bubble); border: 1px solid var(--npc-border);
+    border-radius: 18px 18px 18px 4px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05);
+  }
+  .bubble-sender {
+    font-size: 0.55rem; font-weight: 800; color: var(--accent-lt);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.3rem;
+    font-family: 'Space Mono', monospace;
+  }
+  .bubble-text { font-size: 0.97rem; font-weight: 700; color: var(--text); line-height: 1.45; }
+  .bubble-de   { font-size: 0.72rem; color: var(--text-dim); margin-top: 0.3rem; font-style: italic; }
+  .bubble-correction {
+    font-size: 0.72rem; margin-top: 0.4rem; padding: 0.35rem 0.6rem;
+    background: rgba(255,210,63,0.08); border: 1px solid rgba(255,210,63,0.2);
+    border-radius: 8px; color: var(--yellow); line-height: 1.4;
+  }
+
+  /* Player bubble */
+  .player-row { display: flex; flex-direction: row-reverse; align-items: flex-end; gap: 0.6rem; animation: msgIn 0.3s ease; }
+  .player-bubble {
+    max-width: 78%; padding: 0.75rem 1rem;
+    background: var(--player-bg); border: 1px solid var(--player-bdr);
+    border-radius: 18px 18px 4px 18px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.2);
+  }
+  .player-bubble .bubble-text { color: var(--teal); }
+  .player-avatar-sm {
+    width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0;
+    background: var(--bg3); border: 1.5px solid rgba(69,229,181,0.35);
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+  }
+
+  /* Typing dots */
+  .typing-row { display: flex; align-items: flex-end; gap: 0.6rem; animation: msgIn 0.3s ease; }
+  .typing-bubble {
+    padding: 0.7rem 1rem; background: var(--npc-bubble); border: 1px solid var(--npc-border);
+    border-radius: 18px 18px 18px 4px;
+    display: flex; gap: 0.3rem; align-items: center;
+  }
+  .t-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent-lt); opacity: 0.5;
+    animation: tBounce 1s ease-in-out infinite;
+  }
+  .t-dot:nth-child(2){animation-delay:0.15s}
+  .t-dot:nth-child(3){animation-delay:0.3s}
+  @keyframes tBounce { 0%,60%,100%{transform:translateY(0);opacity:0.4} 30%{transform:translateY(-5px);opacity:1} }
+
+  /* ── WORD LIMIT BAR ── */
+  #limit-bar {
+    flex-shrink: 0; padding: 0.4rem 1rem 0;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  #limit-label {
+    font-size: 0.6rem; font-family: 'Space Mono', monospace;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim);
+  }
+  #limit-chips { display: flex; gap: 0.3rem; }
+  .limit-pip {
+    width: 18px; height: 6px; border-radius: 999px;
+    background: rgba(255,255,255,0.1); transition: all 0.2s ease;
+  }
+  .limit-pip.used { background: var(--accent); box-shadow: 0 0 6px rgba(124,106,247,0.5); }
+  .limit-pip.used.last { background: var(--yellow); box-shadow: 0 0 6px rgba(255,210,63,0.6); }
+
+  /* ── INPUT ZONE ── */
+  #input-zone {
+    flex-shrink: 0;
+    background: rgba(19,17,31,0.97);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding: 0.75rem 1rem 1rem;
+    display: flex; flex-direction: column; gap: 0.6rem;
+  }
+
+  /* Hint strip */
+  #hint-strip {
+    padding: 0.45rem 0.8rem;
+    background: rgba(255,210,63,0.07); border: 1px solid rgba(255,210,63,0.2);
+    border-radius: 10px; text-align: center;
+    font-size: 0.78rem; font-weight: 700; color: var(--yellow);
+    display: none;
+  }
+  #hint-strip.visible { display: block; }
+
+  /* Builder */
+  #answer-builder {
+    min-height: 48px; padding: 0.5rem 0.85rem;
+    background: rgba(255,255,255,0.04);
+    border: 2px solid rgba(255,255,255,0.09);
+    border-radius: 14px;
+    display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center;
+    cursor: text; position: relative;
+    transition: border-color 0.2s;
+  }
+  #answer-builder.has-words { border-color: rgba(124,106,247,0.4); }
+  #answer-builder.shake { animation: builderShake 0.4s ease; }
+  @keyframes builderShake { 0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)} 40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)} }
+
+  .b-placeholder {
+    font-size: 0.78rem; color: var(--text-dim); font-style: italic;
+    position: absolute; pointer-events: none;
+  }
+  .b-word {
+    padding: 0.25rem 0.6rem; border-radius: 8px;
+    background: rgba(124,106,247,0.22); border: 1px solid rgba(124,106,247,0.45);
+    font-size: 0.88rem; font-weight: 700; color: var(--text); cursor: pointer;
+    transition: all 0.12s; -webkit-tap-highlight-color: transparent;
+  }
+  .b-word:active { background: rgba(255,84,112,0.25); border-color: var(--red); transform: scale(0.9); }
+
+  #clear-btn {
+    position: absolute; right: 0.6rem; top: 50%; transform: translateY(-50%);
+    background: none; border: none; color: var(--text-dim); font-size: 0.9rem;
+    cursor: pointer; padding: 0.2rem; opacity: 0; transition: opacity 0.2s;
+  }
+  #answer-builder.has-words #clear-btn { opacity: 1; }
+
+  /* Word pool */
+  #word-pool {
+    display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: center;
+  }
+
+  .w-chip {
+    padding: 0.45rem 0.8rem; border-radius: 12px;
+    background: var(--chip-bg); border: 1.5px solid var(--chip-bdr);
+    font-size: 0.88rem; font-weight: 700; color: var(--text);
+    cursor: pointer; user-select: none;
+    transition: transform 0.12s cubic-bezier(0.34,1.56,0.64,1), opacity 0.15s, box-shadow 0.12s;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.35);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .w-chip:active { transform: scale(0.9) translateY(2px); box-shadow: 0 1px 0 rgba(0,0,0,0.35); }
+  .w-chip.used   { opacity: 0.25; pointer-events: none; box-shadow: none; }
+
+  /* Send */
+  #send-btn {
+    width: 100%; padding: 0.8rem;
+    background: var(--accent); color: #fff;
+    font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.95rem;
+    border: none; border-radius: 13px; cursor: pointer;
+    box-shadow: 0 4px 0 var(--accent-dk), 0 5px 18px rgba(124,106,247,0.3);
+    transition: transform 0.1s, box-shadow 0.1s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #send-btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--accent-dk); }
+  #send-btn:disabled { opacity: 0.35; pointer-events: none; }
+
+  /* ── SCENE COMPLETE ── */
+  #scene-complete {
+    display: none; position: fixed; inset: 0; z-index: 200;
+    background: rgba(19,17,31,0.97); backdrop-filter: blur(24px);
+    flex-direction: column; align-items: center; justify-content: center;
+    gap: 1.1rem; text-align: center; padding: 2rem;
+  }
+  #scene-complete.visible { display: flex; }
+  .sc-big   { font-size: 4.5rem; animation: popIn 0.7s cubic-bezier(0.34,1.56,0.64,1); }
+  @keyframes popIn { from{transform:scale(0) rotate(-20deg);opacity:0} to{transform:scale(1);opacity:1} }
+  .sc-title { font-size: 1.8rem; font-weight: 900; color: var(--text); }
+  .sc-pts   { font-family: 'Space Mono', monospace; font-size: 1.3rem; color: var(--yellow); }
+  .sc-sub   { font-size: 0.85rem; color: var(--text-dim); font-style: italic; max-width: 300px; }
+  .sc-btns  { display: flex; gap: 0.7rem; flex-wrap: wrap; justify-content: center; margin-top: 0.3rem; }
+  .sc-btn {
+    padding: 0.75rem 1.6rem; border-radius: 999px;
+    font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 0.9rem;
+    border: none; cursor: pointer;
+  }
+  .sc-btn.primary   { background: var(--teal);  color: #0d2a1f; box-shadow: 0 4px 0 var(--teal-dk); }
+  .sc-btn.secondary { background: rgba(255,255,255,0.07); color: var(--text); border: 1px solid rgba(255,255,255,0.12); }
+  .sc-btn:active { transform: translateY(3px); box-shadow: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  
+  <div class="top-bar">
+    <div class="top-row">
+      <div class="npc-info">
+        <div class="npc-avatar-sm" id="npc-avatar">👨‍🍳</div>
+        <div class="npc-name-wrap">
+          <span class="npc-name-txt" id="npc-name">Carlos</span>
+          <span class="npc-status"><span class="status-dot"></span>online</span>
+        </div>
+      </div>
+      <div class="top-right">
+        <div class="scene-badge" id="scene-badge">☕ A1</div>
+        <div class="pts-badge">⭐ <span id="hud-pts">0</span></div>
+      </div>
+    </div>
+    <div id="scene-selector"></div>
+  </div>
+
+  
+  <div id="chat-area"></div>
+
+  
+  <div id="limit-bar">
+    <div id="limit-label">Wörter: <span id="limit-used">0</span> / <span id="limit-max">6</span></div>
+    <div id="limit-chips"></div>
+  </div>
+
+  
+  <div id="input-zone">
+    <div id="hint-strip">💡 <span id="hint-text"></span></div>
+
+    <div id="answer-builder">
+      <span class="b-placeholder" id="b-placeholder">Tippe Wörter an um zu antworten…</span>
+      <button id="clear-btn" onclick="clearBuilder()">✕</button>
+    </div>
+
+    <div id="word-pool"></div>
+    <button id="send-btn" disabled onclick="sendMessage()">Senden ↵</button>
+  </div>
+</div>
+
+
+<div id="scene-complete">
+  <div class="sc-big" id="sc-emoji">🎉</div>
+  <div class="sc-title" id="sc-title">Szene geschafft!</div>
+  <div class="sc-sub"  id="sc-sub"></div>
+  <div class="sc-pts"  id="sc-pts">+0 Punkte</div>
+  <div class="sc-btns">
+    <button class="sc-btn primary"   id="sc-next-btn"   onclick="nextScene()">Weiter →</button>
+    <button class="sc-btn secondary" onclick="replayScene()">Nochmal 🔁</button>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// SCENES CONFIG
+// ═══════════════════════════════════════
+const SCENES = [
+  {
+    id: 'cafe', name: 'El Café', emoji: '☕', level: 'A1',
+    npcName: 'Carlos', npcAvatar: '👨‍🍳', playerAvatar: '🧑',
+    wordLimit: 6,
+    systemPrompt: `Du bist Carlos, ein freundlicher spanischer Cafébesitzer in Madrid. 
+Du sprichst NUR Spanisch mit dem Lernenden (A1-Niveau).
+WICHTIG: Antworte immer in diesem JSON-Format:
+{
+  "es": "Deine Antwort auf Spanisch (kurz, A1-Level, max 2 Sätze)",
+  "de": "Deutsche Übersetzung deiner Antwort",
+  "correction": "Falls der Spieler einen Grammatikfehler gemacht hat, korrigiere ihn kurz auf Deutsch. Sonst null.",
+  "mood": "happy|neutral|confused|sassy",
+  "done": false
+}
+Setze done:true wenn die Szene natürlich endet (Bestellung abgeschlossen, bezahlt, verabschiedet).
+VERHALTEN:
+- Wenn der Spieler kein Hallo sagt: sei leicht reserviert, antworte aber ("Ejem... ¿qué quieres?")
+- Bei Grammatikfehlern: verstehe trotzdem, korrigiere sanft im correction-Feld
+- Bei perfekter Antwort: lobe auf Spanisch ("¡Muy bien!", "¡Perfecto!")
+- Bleib immer im Café-Kontext: Bestellung, Bezahlung, Plaudern
+- A1-Niveau: einfache Sätze, Grundvokabular`,
+    startPool: ["¡Hola!", "buenos", "días,", "buenas.", "¿Qué", "tal?", "hola"],
+    startHint: "Begrüße Carlos!",
+    startLimit: 4
+  },
+  {
+    id: 'mercado', name: 'El Mercado', emoji: '🛒', level: 'A1',
+    npcName: 'Rosa', npcAvatar: '🧑‍🌾', playerAvatar: '🧑',
+    wordLimit: 6,
+    systemPrompt: `Du bist Rosa, eine freundliche Marktverkäuferin in Valencia.
+Du sprichst NUR Spanisch (A1-Niveau). Antworte in JSON:
+{
+  "es": "Deine Antwort auf Spanisch (A1, max 2 Sätze)",
+  "de": "Deutsche Übersetzung",
+  "correction": "Grammatikkorrektur auf Deutsch oder null",
+  "mood": "happy|neutral|confused|sassy",
+  "done": false
+}
+done:true wenn Einkauf abgeschlossen und verabschiedet.
+VERHALTEN: Kein Hallo = leicht überrascht. Fehler = versteht trotzdem. Perfekt = "¡Muy bien!" Bleib beim Markt-Thema: Gemüse, Obst, Preise, Mengen.`,
+    startPool: ["¡Hola!", "buenos", "días!", "buenas", "tardes.", "¿Cómo", "está?", "¿Qué", "tal?"],
+    startHint: "Begrüße Rosa auf dem Markt!",
+    startLimit: 4
+  },
+  {
+    id: 'estacion', name: 'La Estación', emoji: '🚂', level: 'A2',
+    npcName: 'Miguel', npcAvatar: '👮', playerAvatar: '🧑',
+    wordLimit: 9,
+    systemPrompt: `Du bist Miguel, ein Bahnhofsangestellter in Barcelona (formell aber freundlich).
+Spanisch A2-Niveau. JSON-Format:
+{
+  "es": "Antwort Spanisch (A2, max 2 Sätze)",
+  "de": "Deutsche Übersetzung",
+  "correction": "Korrektur auf Deutsch oder null",
+  "mood": "happy|neutral|confused|sassy",
+  "done": false
+}
+done:true nach Ticketkauf und Verabschiedung.
+A2-Themen: Tickets, Zeiten, Preise, Rabatte, Bahnsteige. Bei fehlendem Hallo: professionell aber kühl.`,
+    startPool: ["¡Hola!", "buenas", "tardes.", "días.", "¿Me", "puede", "ayudar?", "necesito", "información"],
+    startHint: "Begrüße Miguel am Schalter!",
+    startLimit: 5
+  },
+  {
+    id: 'restaurante', name: 'El Restaurante', emoji: '🍽️', level: 'A2',
+    npcName: 'Ana', npcAvatar: '👩‍🍳', playerAvatar: '🧑',
+    wordLimit: 9,
+    systemPrompt: `Du bist Ana, eine charmante Kellnerin in einem Restaurant in Sevilla.
+Spanisch A2. JSON-Format:
+{
+  "es": "Antwort Spanisch (A2, max 2 Sätze)",
+  "de": "Deutsche Übersetzung",
+  "correction": "Korrektur Deutsch oder null",
+  "mood": "happy|neutral|confused|sassy",
+  "done": false
+}
+done:true nach Essen, Bezahlung, Verabschiedung.
+Themen: Reservierung, Speisekarte, Bestellung, Getränke, Rechnung. Kein Hallo = leicht pikiert.`,
+    startPool: ["¡Buenas", "noches!", "hola,", "buenas", "tardes.", "¿Qué", "tal?", "¡Hola!"],
+    startHint: "Begrüße Ana im Restaurant!",
+    startLimit: 4
+  }
+];
+
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+let sceneIdx     = 0;
+let history      = [];   // [{role, content}]
+let selectedWords= [];
+let locked       = false;
+let score        = 0;
+let currentPool  = [];
+let currentLimit = 6;
+let turnCount    = 0;
+
+// ═══════════════════════════════════════
+// AUDIO
+// ═══════════════════════════════════════
+let actx = null;
+function ac() { if (!actx) actx = new (window.AudioContext || window.webkitAudioContext)(); return actx; }
+function tone(f,d,t='sine',v=0.15,dl=0){
+  try {
+    const c=ac(),o=c.createOscillator(),g=c.createGain();
+    o.connect(g); g.connect(c.destination);
+    o.type=t; o.frequency.value=f;
+    const s=c.currentTime+dl;
+    g.gain.setValueAtTime(0,s); g.gain.linearRampToValueAtTime(v,s+0.01);
+    g.gain.exponentialRampToValueAtTime(0.001,s+d);
+    o.start(s); o.stop(s+d+0.05);
+  } catch(e){}
+}
+function playSend()    { tone(600,0.06,'sine',0.12); }
+function playReceive() { tone(440,0.08,'sine',0.1); }
+function playTap()     { tone(900,0.04,'sine',0.08); }
+function playError()   { tone(220,0.1,'sawtooth',0.12); }
+function playSuccess() { tone(523,0.08,'sine',0.15); setTimeout(()=>tone(659,0.08,'sine',0.13),80); setTimeout(()=>tone(784,0.18,'sine',0.11),160); }
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+function init() {
+  buildScenePills();
+  loadScene(0);
+}
+
+function buildScenePills() {
+  const c = document.getElementById('scene-selector');
+  c.innerHTML = '';
+  SCENES.forEach((s, i) => {
+    const p = document.createElement('div');
+    p.className = 'scene-pill' + (i === 0 ? ' active' : '');
+    p.innerHTML = `${s.emoji} ${s.name}`;
+    p.addEventListener('click', () => switchScene(i));
+    c.appendChild(p);
+  });
+}
+
+function switchScene(idx) {
+  if (idx === sceneIdx && history.length > 0) return;
+  sceneIdx = idx;
+  document.querySelectorAll('.scene-pill').forEach((p,i) => p.classList.toggle('active', i===idx));
+  loadScene(idx);
+}
+
+function loadScene(idx) {
+  sceneIdx   = idx;
+  history    = [];
+  turnCount  = 0;
+  locked     = false;
+  selectedWords = [];
+
+  const scene = SCENES[idx];
+  document.getElementById('npc-avatar').textContent  = scene.npcAvatar;
+  document.getElementById('npc-name').textContent    = scene.npcName;
+  document.getElementById('scene-badge').textContent = `${scene.emoji} ${scene.level}`;
+  document.getElementById('chat-area').innerHTML     = '';
+
+  clearBuilder();
+  hideHint();
+
+  // Set initial pool
+  currentPool  = scene.startPool;
+  currentLimit = scene.startLimit;
+  buildWordPool(currentPool, currentLimit);
+
+  // Show hint
+  showHint(scene.startHint);
+
+  // NPC opening line after typing delay
+  showTyping(() => {
+    const openings = {
+      cafe:        { es: "¡Hola! Bienvenido al Café Madrid. ¿Qué va a tomar?", de: "Hallo! Willkommen im Café Madrid. Was möchten Sie nehmen?" },
+      mercado:     { es: "¡Buenos días! ¿Qué necesitas hoy?", de: "Guten Morgen! Was brauchst du heute?" },
+      estacion:    { es: "¡Buenos días! ¿En qué le puedo ayudar?", de: "Guten Morgen! Wie kann ich Ihnen helfen?" },
+      restaurante: { es: "¡Buenas noches! Bienvenidos. ¿Tienen reserva?", de: "Guten Abend! Willkommen. Haben Sie eine Reservierung?" }
+    };
+    const o = openings[scene.id];
+    addNPCBubble(scene, o.es, o.de, null, 'neutral');
+    history.push({ role: 'assistant', content: o.es });
+  });
+}
+
+// ═══════════════════════════════════════
+// SEND MESSAGE
+// ═══════════════════════════════════════
+async function sendMessage() {
+  if (locked || selectedWords.length === 0) return;
+  locked = true;
+  document.getElementById('send-btn').disabled = true;
+
+  const scene   = SCENES[sceneIdx];
+  const text    = selectedWords.map(i => i.word).join(' ');
+
+  playSend();
+  if (navigator.vibrate) navigator.vibrate(20);
+
+  addPlayerBubble(scene, text);
+  history.push({ role: 'user', content: text });
+  turnCount++;
+
+  clearBuilder();
+  hideHint();
+
+  // Show typing
+  showTyping(async () => {
+    try {
+      const reply = await callClaude(scene);
+      processReply(scene, reply);
+    } catch(e) {
+      addNPCBubble(scene, "Perdona, no te entiendo bien. ¿Puedes repetir?", "Entschuldigung, ich verstehe dich nicht gut. Kannst du wiederholen?", null, 'confused');
+      locked = false;
+      document.getElementById('send-btn').disabled = false;
+    }
+  });
+}
+
+// ═══════════════════════════════════════
+// CLAUDE API
+// ═══════════════════════════════════════
+async function callClaude(scene) {
+  const messages = history.map(h => ({ role: h.role, content: h.content }));
+
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      model: "claude-sonnet-4-20250514",
+      max_tokens: 400,
+      system: scene.systemPrompt + '\n\nAntworte NUR mit gültigem JSON. Kein Text davor oder danach.',
+      messages
+    })
+  });
+
+  if (!res.ok) throw new Error('API error');
+  const data = await res.json();
+  const raw  = data.content.map(b => b.text || '').join('');
+
+  // Parse JSON safely
+  const clean = raw.replace(/```json|```/g, '').trim();
+  return JSON.parse(clean);
+}
+
+// ═══════════════════════════════════════
+// PROCESS REPLY
+// ═══════════════════════════════════════
+function processReply(scene, reply) {
+  const { es, de, correction, mood, done } = reply;
+
+  playReceive();
+  addNPCBubble(scene, es, de, correction, mood);
+  history.push({ role: 'assistant', content: es });
+
+  score += 10;
+  if (!correction) score += 5; // bonus for correct grammar
+  document.getElementById('hud-pts').textContent = score;
+
+  if (done) {
+    setTimeout(() => showSceneComplete(scene), 1200);
+    return;
+  }
+
+  // Generate next word pool based on conversation
+  const nextPool  = generatePool(scene, es, turnCount);
+  const nextLimit = scene.wordLimit;
+  currentPool  = nextPool;
+  currentLimit = nextLimit;
+
+  setTimeout(() => {
+    buildWordPool(nextPool, nextLimit);
+    locked = false;
+    document.getElementById('send-btn').disabled = true;
+  }, 400);
+}
+
+// ═══════════════════════════════════════
+// SMART POOL GENERATOR
+// Generates contextual word chips + distractors
+// ═══════════════════════════════════════
+function generatePool(scene, npcText, turn) {
+  const pools = {
+    cafe: [
+      ["Quiero", "un", "café,", "por", "favor.", "una", "agua", "hola"],
+      ["Con", "leche,", "por", "favor.", "solo", "sin", "azúcar", "grande", "pequeño"],
+      ["No,", "gracias.", "Solo", "el", "café.", "sí", "también", "quiero", "tapa"],
+      ["¿Cuánto", "es?", "Aquí", "tienes.", "gracias", "la", "cuenta", "por", "favor."],
+      ["Toma,", "quédate", "con", "el", "cambio.", "gracias", "hasta", "luego", "adiós", "¡Hasta"],
+      ["¡Hasta", "luego!", "gracias", "muy", "buenas.", "adiós", "buen", "día", "mañana"]
+    ],
+    mercado: [
+      ["Quiero", "un", "kilo", "de", "tomates.", "dos", "naranjas", "fresas", "litro"],
+      ["Maduros,", "por", "favor.", "frescos", "verdes", "grandes", "pequeños", "rojos"],
+      ["Sí,", "¿tienes", "fresas", "hoy?", "no", "limones", "pimientos", "también", "manzanas"],
+      ["Dame", "dos", "cajas,", "¿cuánto", "es?", "tres", "una", "kilos", "medio"],
+      ["Aquí", "tienes.", "¡Gracias", "y", "hasta", "luego!", "adiós", "mañana", "buen"]
+    ],
+    estacion: [
+      ["Quiero", "ir", "a", "Barcelona,", "por", "favor.", "Madrid", "Valencia", "un", "billete"],
+      ["Ida", "y", "vuelta,", "por", "favor.", "solo", "sola", "regreso", "sencillo"],
+      ["Para", "mañana", "por", "la", "mañana.", "hoy", "tarde", "noche", "próxima", "semana"],
+      ["¿Hay", "algún", "descuento", "para", "jóvenes?", "estudiantes", "más", "barato", "oferta"],
+      ["Perfecto.", "Aquí", "está", "mi", "tarjeta.", "efectivo", "pago", "dinero", "carnet"],
+      ["Muchas", "gracias.", "¡Hasta", "luego!", "buen", "viaje", "adiós", "muy"]
+    ],
+    restaurante: [
+      ["Sí,", "tengo", "una", "reserva", "a", "nombre", "de", "García.", "no", "dos"],
+      ["Fuera,", "si", "es", "posible.", "dentro", "mejor", "terraza", "hace", "buen", "tiempo."],
+      ["Yo", "quiero", "la", "paella", "y", "ella", "el", "gazpacho.", "tortilla", "también"],
+      ["Una", "jarra", "de", "agua", "y", "dos", "cervezas,", "por", "favor.", "vino", "zumo"],
+      ["Sí,", "la", "cuenta,", "por", "favor.", "¿Está", "incluido", "el", "servicio?", "propina"],
+      ["¡Todo", "muy", "rico!", "gracias.", "hasta", "luego.", "adiós", "buen", "provecho"]
+    ]
+  };
+
+  const scenePools = pools[scene.id] || pools.cafe;
+  const idx = Math.min(turn, scenePools.length - 1);
+  return scenePools[idx];
+}
+
+// ═══════════════════════════════════════
+// WORD POOL UI
+// ═══════════════════════════════════════
+function buildWordPool(words, limit) {
+  const pool = document.getElementById('word-pool');
+  pool.innerHTML = '';
+  selectedWords  = [];
+  updateBuilder();
+  buildLimitPips(limit);
+
+  words.forEach(w => {
+    const chip = document.createElement('div');
+    chip.className = 'w-chip';
+    chip.textContent = w;
+    chip.addEventListener('click', () => tapChip(chip, w));
+    pool.appendChild(chip);
+  });
+}
+
+function tapChip(chip, word) {
+  if (locked || chip.classList.contains('used')) return;
+  if (selectedWords.length >= currentLimit) {
+    // At limit — shake builder
+    playError();
+    if (navigator.vibrate) navigator.vibrate(30);
+    document.getElementById('answer-builder').classList.add('shake');
+    setTimeout(() => document.getElementById('answer-builder').classList.remove('shake'), 400);
+    return;
+  }
+  playTap();
+  if (navigator.vibrate) navigator.vibrate(12);
+  chip.classList.add('used');
+  selectedWords.push({ word, chip });
+  updateBuilder();
+  updateLimitPips();
+  document.getElementById('send-btn').disabled = false;
+}
+
+function clearBuilder() {
+  selectedWords.forEach(i => i.chip && i.chip.classList.remove('used'));
+  selectedWords = [];
+  updateBuilder();
+  updateLimitPips();
+  document.getElementById('send-btn').disabled = true;
+}
+
+function removeWordAt(idx) {
+  if (locked) return;
+  playTap();
+  const item = selectedWords[idx];
+  if (item.chip) item.chip.classList.remove('used');
+  selectedWords.splice(idx, 1);
+  updateBuilder();
+  updateLimitPips();
+  document.getElementById('send-btn').disabled = selectedWords.length === 0;
+}
+
+function updateBuilder() {
+  const builder = document.getElementById('answer-builder');
+  const ph      = document.getElementById('b-placeholder');
+  builder.querySelectorAll('.b-word').forEach(e => e.remove());
+
+  if (selectedWords.length === 0) {
+    builder.classList.remove('has-words');
+    ph.style.display = '';
+    return;
+  }
+  ph.style.display = 'none';
+  builder.classList.add('has-words');
+
+  selectedWords.forEach((item, idx) => {
+    const span = document.createElement('span');
+    span.className   = 'b-word';
+    span.textContent = item.word;
+    span.addEventListener('click', () => removeWordAt(idx));
+    builder.insertBefore(span, document.getElementById('clear-btn'));
+  });
+}
+
+// ═══════════════════════════════════════
+// LIMIT PIPS
+// ═══════════════════════════════════════
+function buildLimitPips(limit) {
+  const c = document.getElementById('limit-chips');
+  c.innerHTML = '';
+  document.getElementById('limit-max').textContent = limit;
+  document.getElementById('limit-used').textContent = 0;
+  for (let i = 0; i < limit; i++) {
+    const p = document.createElement('div');
+    p.className = 'limit-pip'; p.id = `pip-${i}`;
+    c.appendChild(p);
+  }
+}
+
+function updateLimitPips() {
+  const used = selectedWords.length;
+  document.getElementById('limit-used').textContent = used;
+  for (let i = 0; i < currentLimit; i++) {
+    const p = document.getElementById(`pip-${i}`);
+    if (!p) continue;
+    p.className = 'limit-pip' + (i < used ? (i === currentLimit - 1 && used === currentLimit ? ' used last' : ' used') : '');
+  }
+}
+
+// ═══════════════════════════════════════
+// CHAT UI
+// ═══════════════════════════════════════
+function addNPCBubble(scene, es, de, correction, mood) {
+  const ca  = document.getElementById('chat-area');
+  const row = document.createElement('div');
+  row.className = 'npc-row';
+
+  const showDE = ['A1','A2'].includes(scene.level);
+  const corrHtml = correction
+    ? `<div class="bubble-correction">💡 ${correction}</div>` : '';
+  const deHtml = showDE && de
+    ? `<div class="bubble-de">${de}</div>` : '';
+
+  row.innerHTML = `
+    <div class="bubble-avatar">${scene.npcAvatar}</div>
+    <div class="npc-bubble">
+      <div class="bubble-sender">${scene.npcName}</div>
+      <div class="bubble-text">${es}</div>
+      ${deHtml}${corrHtml}
+    </div>`;
+  ca.appendChild(row);
+  scrollChat();
+
+  if (correction) playError();
+  else playReceive();
+}
+
+function addPlayerBubble(scene, text) {
+  const ca  = document.getElementById('chat-area');
+  const row = document.createElement('div');
+  row.className = 'player-row';
+  row.innerHTML = `
+    <div class="player-avatar-sm">${scene.playerAvatar}</div>
+    <div class="player-bubble">
+      <div class="bubble-text">${text}</div>
+    </div>`;
+  ca.appendChild(row);
+  scrollChat();
+}
+
+let typingEl = null;
+function showTyping(cb) {
+  const ca = document.getElementById('chat-area');
+  const scene = SCENES[sceneIdx];
+  typingEl = document.createElement('div');
+  typingEl.className = 'typing-row';
+  typingEl.innerHTML = `
+    <div class="bubble-avatar">${scene.npcAvatar}</div>
+    <div class="typing-bubble">
+      <div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>
+    </div>`;
+  ca.appendChild(typingEl);
+  scrollChat();
+  const delay = 800 + Math.random() * 600;
+  setTimeout(() => { typingEl?.remove(); cb(); }, delay);
+}
+
+function scrollChat() {
+  const ca = document.getElementById('chat-area');
+  setTimeout(() => ca.scrollTop = ca.scrollHeight, 60);
+}
+
+// ═══════════════════════════════════════
+// HINT
+// ═══════════════════════════════════════
+function showHint(text) {
+  document.getElementById('hint-text').textContent = text;
+  document.getElementById('hint-strip').classList.add('visible');
+}
+function hideHint() {
+  document.getElementById('hint-strip').classList.remove('visible');
+}
+
+// ═══════════════════════════════════════
+// SCENE COMPLETE
+// ═══════════════════════════════════════
+function showSceneComplete(scene) {
+  playSuccess();
+  if (navigator.vibrate) navigator.vibrate([40,20,40,20,80]);
+
+  const next = SCENES[sceneIdx + 1];
+  document.getElementById('sc-emoji').textContent = scene.npcAvatar;
+  document.getElementById('sc-title').textContent = `¡${scene.name} geschafft!`;
+  document.getElementById('sc-sub').textContent   = `${turnCount} Nachrichten • Spanisch gesprochen wie ein Profi 🇪🇸`;
+  document.getElementById('sc-pts').textContent   = `+${score} Punkte`;
+
+  const nextBtn = document.getElementById('sc-next-btn');
+  if (next) { nextBtn.textContent = `${next.emoji} ${next.name} →`; nextBtn.style.display = ''; }
+  else       { nextBtn.textContent = '🏆 Alle Szenen!'; nextBtn.onclick = () => document.getElementById('scene-complete').classList.remove('visible'); }
+
+  document.getElementById('scene-complete').classList.add('visible');
+}
+
+function nextScene() {
+  document.getElementById('scene-complete').classList.remove('visible');
+  const next = sceneIdx + 1;
+  if (next < SCENES.length) {
+    sceneIdx = next;
+    document.querySelectorAll('.scene-pill').forEach((p,i) => p.classList.toggle('active', i===next));
+    loadScene(next);
+  }
+}
+
+function replayScene() {
+  document.getElementById('scene-complete').classList.remove('visible');
+  score = 0;
+  document.getElementById('hud-pts').textContent = 0;
+  loadScene(sceneIdx);
+}
+
+// ═══════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════
+init();
+</script>
+</body>
+</html>

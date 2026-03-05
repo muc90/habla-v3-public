@@ -1,0 +1,596 @@
+{
+  "generatedAt": "2026-03-03T09:14:15.886Z",
+  "dialect": "es_andalucia",
+  "entries": [
+    {
+      "id": "l1w_l1_1_el_te",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "el té",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_1_la_mesa",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "la mesa",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1c_l1_1_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¡Buenas tardes! ¿Qué quieres?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_1_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Solo o con leche?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_1_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Te traigo también la carta?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1c_l1_1_4",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "El café está listo. ¡Aquí tienes!",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S5_DIALOG.carlos",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1c_l1_1_5",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Algo más?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-1",
+        "kind": "S5_DIALOG.carlos",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1w_l1_2_el_menu",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "el menú",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_2_el_pollo",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "el pollo",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1c_l1_2_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¡Buenas noches! Bienvenidos. ¿Tienen reserva?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_2_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "Aquí tienen. ¿Quieren ver el menú?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_2_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Qué van a tomar?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1c_l1_2_4",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Y para beber?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S5_DIALOG.carlos",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1c_l1_2_5",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Quieren algo de postre?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-2",
+        "kind": "S5_DIALOG.carlos",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1w_l1_3_hola",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "hola",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_adios",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "adiós",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_buenos_dias",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "buenos días",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_buenas_tardes",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "buenas tardes",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_buenas_noches",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "buenas noches",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_nos_vemos",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "nos vemos",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_mucho_gusto",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "mucho gusto",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_como_estas",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "¿cómo estás?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_me_llamo",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "me llamo",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_3_de_donde_eres",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "¿de dónde eres?",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1c_l1_3_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¡Hola! Buenos días. Soy Carlos.",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_3_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¡Encantado, Ana! ¿Cómo estás?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_3_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "También estoy muy bien, gracias. ¿De dónde eres?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1c_l1_3_4",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¡Qué bien! Y yo soy de España. ¿Hablas español?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S5_DIALOG.carlos",
+        "index": 4
+      }
+    },
+    {
+      "id": "l1c_l1_3_5",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¡Perfecto! Pues, nos vemos, Ana.",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-3",
+        "kind": "S5_DIALOG.carlos",
+        "index": 5
+      }
+    },
+    {
+      "id": "l1w_l1_4_vivir",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "vivir",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_4_la_cama",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "la cama",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1c_l1_4_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Dónde vives?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_4_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Qué haces en casa?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_4_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "Hace calor aquí.",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-4",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1w_l1_5_comprar",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "comprar",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_5_el_precio",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "el precio",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_5_la_caja",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "la caja",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_5_la_tarjeta",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "la tarjeta",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1c_l1_5_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Qué quiere?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_5_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "Son tres euros.",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_5_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Algo más?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-5",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1c_l1_6_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿A qué hora te levantas?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-6",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_6_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Qué haces por la mañana?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-6",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_6_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Y por la noche?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-6",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1c_l1_7_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Tienes hermanos?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-7",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_7_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Cómo se llama tu madre?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-7",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_7_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Y tu padre?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-7",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    },
+    {
+      "id": "l1w_l1_8_donde",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "dónde",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_8_izquierda",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "izquierda",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1w_l1_8_derecha",
+      "type": "word",
+      "dialect": "es_andalucia",
+      "text": "derecha",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "WORDS.es"
+      }
+    },
+    {
+      "id": "l1c_l1_8_1",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Dónde está la estación?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "S5_DIALOG.carlos",
+        "index": 1
+      }
+    },
+    {
+      "id": "l1c_l1_8_2",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿Está lejos el museo?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "S5_DIALOG.carlos",
+        "index": 2
+      }
+    },
+    {
+      "id": "l1c_l1_8_3",
+      "type": "carlos",
+      "dialect": "es_andalucia",
+      "text": "¿A la izquierda o a la derecha?",
+      "voice": "carlos",
+      "source": {
+        "chapter": "l1-8",
+        "kind": "S5_DIALOG.carlos",
+        "index": 3
+      }
+    }
+  ]
+}

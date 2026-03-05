@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+
+  
+  <script src="./theme-switcher.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Habla – Lerne Spanisch mit smarten Karteikarten, adaptivem Quiz und 12 Dialekten.">
+  <meta name="theme-color" content="#F5A623">
+  <title>Habla 🌍 – Spanisch lernen</title>
+
+  <link rel="stylesheet" href="./fonts.css">
+
+  
+
+  
+  <script type="module" crossorigin src="./assets/index-Y6wtq7Xi.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DWDKyyLU.css">
+</head>
+<body>
+
+  <div class="app-shell">
+
+    
+    <nav class="top-nav" aria-label="Hauptnavigation">
+      <a href="#/home" class="top-nav__logo" aria-label="Zur Startseite">
+        Habla 🌍
+      </a>
+      <ul class="top-nav__links" role="list">
+        <li><a class="top-nav__link" href="#/home"         data-route="/home">Home</a></li>
+        <li><a class="top-nav__link" href="#/ueben"        data-route="/ueben">Üben</a></li>
+        <li><a class="top-nav__link" href="#/reise"        data-route="/reise">Reise</a></li>
+        <li><a class="top-nav__link" href="#/friends"      data-route="/friends">Freunde<span class="nav-badge" id="nav-friends-badge" hidden></span></a></li>
+        <li><a class="top-nav__link" href="#/multiplayer"  data-route="/multiplayer">Mehrspieler<span class="nav-badge" id="nav-mp-badge" hidden></span></a></li>
+        <li><a class="top-nav__link" href="#/leaderboard"  data-route="/leaderboard">Rangliste</a></li>
+        <li><a class="top-nav__link" href="#/achievements" data-route="/achievements">Erfolge</a></li>
+        <li><a class="top-nav__link" href="#/stats"        data-route="/stats">Statistiken</a></li>
+        <li id="admin-nav-link" hidden><a class="top-nav__link top-nav__link--admin" href="#/admin" data-route="/admin">⚙️ Admin</a></li>
+      </ul>
+      <div class="top-nav__user user-info">
+        <span class="user-info__xp" id="nav-xp" aria-label="XP">⭐ 0 XP</span>
+        <div class="nav-avatar-wrap" id="nav-avatar-wrap">
+          <button class="user-info__avatar" id="nav-avatar" aria-label="Profilöffnen" aria-expanded="false" aria-haspopup="true">👤</button>
+          <div class="nav-dropdown" id="nav-dropdown" hidden>
+            <a class="nav-dropdown__item" href="#/profile" data-route="/profile">
+              <span class="nav-dropdown__icon">👤</span> Profil
+            </a>
+            <hr class="nav-dropdown__divider">
+            <button class="nav-dropdown__item nav-dropdown__item--logout" id="nav-dropdown-logout">
+              <span class="nav-dropdown__icon">🚪</span> Abmelden
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+    <main id="app" class="app-content" aria-live="polite"></main>
+
+    
+    <nav class="bottom-nav" aria-label="Mobile Navigation">
+      <a class="bottom-nav__tab" href="#/home"         data-route="/home"        aria-label="Home">
+        <span class="bottom-nav__icon">🏠</span>
+        <span class="bottom-nav__label">Home</span>
+      </a>
+      <a class="bottom-nav__tab" href="#/ueben"        data-route="/ueben"       aria-label="Üben">
+        <span class="bottom-nav__icon">💪</span>
+        <span class="bottom-nav__label">Üben</span>
+      </a>
+      <a class="bottom-nav__tab" href="#/reise" data-route="/reise" aria-label="Reise">
+        <span class="bottom-nav__icon">🗺️</span>
+        <span class="bottom-nav__label">Reise</span>
+      </a>
+      <a class="bottom-nav__tab" href="#/multiplayer" data-route="/multiplayer" aria-label="Mehrspieler">
+        <span class="bottom-nav__icon">⚔️<span class="nav-badge nav-badge--bottom" id="nav-mp-badge-bottom" hidden></span></span>
+        <span class="bottom-nav__label">Mehrspieler</span>
+      </a>
+      <button class="bottom-nav__tab" id="bottom-more-btn" aria-label="Mehr" aria-expanded="false" aria-controls="bottom-drawer">
+        <span class="bottom-nav__icon">☰<span class="nav-badge nav-badge--bottom" id="nav-more-badge" hidden></span></span>
+        <span class="bottom-nav__label">Mehr</span>
+      </button>
+    </nav>
+
+    
+    <div class="bottom-drawer-backdrop" id="bottom-drawer-backdrop"></div>
+    <div class="bottom-drawer" id="bottom-drawer" role="dialog" aria-label="Mehr">
+      <div class="bottom-drawer__handle" aria-hidden="true"></div>
+      <a class="bottom-drawer__item" href="#/leaderboard" data-route="/leaderboard">
+        <span class="bottom-drawer__item-icon">🏆</span>
+        Rangliste
+      </a>
+      <a class="bottom-drawer__item" href="#/friends" data-route="/friends">
+        <span class="bottom-drawer__item-icon">👥</span>
+        Freunde
+        <span class="nav-badge" id="nav-friends-badge-bottom" hidden></span>
+      </a>
+      <a class="bottom-drawer__item" href="#/achievements" data-route="/achievements">
+        <span class="bottom-drawer__item-icon">🎖️</span>
+        Errungenschaften
+      </a>
+      <a class="bottom-drawer__item" href="#/stats" data-route="/stats">
+        <span class="bottom-drawer__item-icon">📊</span>
+        Statistiken
+      </a>
+      <a class="bottom-drawer__item" href="#/profile" data-route="/profile">
+        <span class="bottom-drawer__item-icon">👤</span>
+        Profil
+      </a>
+      <a class="bottom-drawer__item" href="#/settings" data-route="/settings">
+        <span class="bottom-drawer__item-icon">⚙️</span>
+        Einstellungen
+      </a>
+      <a class="bottom-drawer__item" href="#/admin" data-route="/admin" id="admin-drawer-link" hidden>
+        <span class="bottom-drawer__item-icon">🛡️</span>
+        Admin
+      </a>
+    </div>
+
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  
+
+</body>
+</html>

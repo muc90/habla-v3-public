@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Conjugación Viva — Verb-Rad</title>
+<script src="../theme-switcher.js"></script>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../../src/css/base.css">
+<link rel="stylesheet" href="../../src/tactile-theme.css">
+<style>
+  :root {
+    --orange:     var(--color-accent-primary);
+    --orange-dk:  var(--color-border-strong);
+    --yellow:     var(--color-accent-warning);
+    --teal:       var(--color-accent-secondary);
+    --teal-dk:    color-mix(in srgb, var(--color-accent-secondary) 72%, var(--color-bg-base));
+    --pink:       var(--color-accent-danger);
+    --bg:         var(--color-bg-base);
+    --bg2:        var(--color-bg-surface);
+    --bg3:        var(--color-bg-elevated);
+    --text:       var(--color-text-primary);
+    --text-dim:   color-mix(in srgb, var(--color-text-primary) 42%, transparent);
+    --card-glass: color-mix(in srgb, var(--color-bg-surface) 84%, transparent);
+    --card-border:color-mix(in srgb, var(--color-border-default) 76%, transparent);
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Space Mono', monospace;
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: max(1.5rem, var(--safe-top)) 1rem max(3rem, var(--safe-bottom));
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Background texture */
+  body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 70% 50% at 15% 20%, color-mix(in srgb, var(--orange) 8%, transparent) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 60% at 85% 80%, color-mix(in srgb, var(--teal) 7%, transparent) 0%, transparent 60%),
+      radial-gradient(ellipse 80% 80% at 50% 50%, color-mix(in srgb, var(--bg) 75%, var(--bg2)) 0%, var(--bg) 100%);
+  }
+
+  .wrap {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 500px;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 1.6rem;
+  }
+
+  /* ── HEADER ── */
+  .header { text-align: center; }
+  .eyebrow {
+    font-size: 0.58rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--orange); margin-bottom: 0.3rem;
+  }
+  .title {
+    font-family: 'Unbounded', sans-serif;
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    font-weight: 900; color: var(--text); line-height: 1;
+    text-shadow: 0 0 40px color-mix(in srgb, var(--orange) 25%, transparent);
+  }
+  .title-sub {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 0.9rem; color: var(--text-dim); margin-top: 0.4rem;
+  }
+
+  /* ── HUD ── */
+  .hud {
+    width: 100%; display: flex; justify-content: space-between;
+    align-items: center; padding: 0.65rem 1.2rem;
+    background: var(--card-glass); border: 1px solid var(--card-border);
+    border-radius: 999px; backdrop-filter: blur(12px);
+  }
+  .hud-item { font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); }
+  .hud-item strong { display: block; font-size: 0.95rem; color: var(--text); margin-top: 1px; letter-spacing: 0; }
+
+  /* Level pills */
+  .level-pills {
+    display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: center;
+  }
+  .level-pill {
+    padding: 0.3rem 0.8rem; border-radius: 999px; font-size: 0.6rem;
+    letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+    border: 1px solid var(--card-border); background: var(--card-glass);
+    color: var(--text-dim); transition: all 0.2s ease; font-family: 'Space Mono', monospace;
+  }
+  .level-pill.active {
+    background: var(--orange); border-color: var(--orange);
+    color: color-mix(in srgb, var(--text) 84%, var(--bg)); font-weight: 700;
+    box-shadow: 0 0 16px color-mix(in srgb, var(--orange) 40%, transparent);
+  }
+
+  /* ── VERB CARD ── */
+  #verb-card {
+    width: 100%; padding: 1.6rem 2rem;
+    background: var(--card-glass); border: 1px solid var(--card-border);
+    border-radius: 28px; backdrop-filter: blur(16px);
+    text-align: center; position: relative; overflow: hidden;
+  }
+  #verb-card::before {
+    content: ''; position: absolute; top: 0; left: 20%; right: 20%; height: 1px;
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--orange) 50%, transparent), transparent);
+  }
+  #tense-label {
+    font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--orange); margin-bottom: 0.5rem;
+  }
+  #verb-infinitive {
+    font-family: 'Unbounded', sans-serif; font-size: clamp(2rem, 8vw, 3.2rem);
+    font-weight: 900; color: var(--text); line-height: 1;
+    text-shadow: 0 2px 20px color-mix(in srgb, var(--orange) 30%, transparent);
+  }
+  #verb-translation {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 1rem; color: var(--text-dim); margin-top: 0.4rem;
+  }
+  #verb-type-badge {
+    display: inline-block; margin-top: 0.7rem;
+    padding: 0.2rem 0.7rem; border-radius: 999px;
+    font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase;
+    border: 1px solid color-mix(in srgb, var(--text) 15%, transparent); color: var(--text-dim);
+  }
+
+  /* ── WHEEL ── */
+  .wheel-section { width: 100%; position: relative; }
+
+  .wheel-label {
+    font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--text-dim); text-align: center; margin-bottom: 0.8rem;
+  }
+
+  /* SVG Wheel */
+  #wheel-svg-wrap {
+    width: 100%; display: flex; justify-content: center;
+    position: relative; margin-bottom: 1rem;
+  }
+
+  #wheel-svg {
+    width: min(280px, 75vw); height: min(280px, 75vw);
+    cursor: pointer; transition: filter 0.2s ease;
+    filter: drop-shadow(0 8px 30px color-mix(in srgb, var(--orange) 20%, transparent));
+  }
+  #wheel-svg:active { filter: drop-shadow(0 4px 15px color-mix(in srgb, var(--orange) 30%, transparent)); }
+
+  .wheel-segment { cursor: pointer; transition: opacity 0.15s; }
+  .wheel-segment:hover { opacity: 0.85; }
+  .wheel-segment.active-seg { filter: brightness(1.3); }
+
+  /* spin button */
+  #spin-btn {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(70px, 18vw); height: min(70px, 18vw);
+    border-radius: 50%; background: var(--orange);
+    border: 3px solid color-mix(in srgb, var(--text) 84%, var(--bg));
+    box-shadow: 0 0 0 3px var(--orange), 0 8px 24px color-mix(in srgb, var(--orange) 50%, transparent);
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-family: 'Unbounded', sans-serif; font-size: clamp(0.45rem, 1.5vw, 0.6rem);
+    font-weight: 900; color: color-mix(in srgb, var(--text) 84%, var(--bg)); letter-spacing: 0.05em; text-transform: uppercase;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    z-index: 10; text-align: center; line-height: 1.2;
+  }
+  #spin-btn:active {
+    transform: translate(-50%, -50%) scale(0.93);
+    box-shadow: 0 0 0 3px var(--orange), 0 4px 12px color-mix(in srgb, var(--orange) 40%, transparent);
+  }
+  #spin-btn.spinning { pointer-events: none; }
+
+  /* ── ACTIVE PRONOUN DISPLAY ── */
+  #pronoun-display { display: none; }
+  #pronoun-display.hidden { display: none; }
+  #pronoun-big {
+    font-family: 'Unbounded', sans-serif; font-size: clamp(1.4rem, 5vw, 2rem);
+    font-weight: 900; color: var(--orange); text-transform: lowercase;
+  }
+  #pronoun-german { font-size: 0.7rem; color: var(--text-dim); margin-top: 0.2rem; }
+
+  /* ── TASK BANNER ── */
+  #task-banner {
+    width: 100%; padding: 0.9rem 1.4rem;
+    background: color-mix(in srgb, var(--text) 4%, transparent);
+    border: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+    border-radius: 18px; text-align: center;
+    backdrop-filter: blur(12px);
+  }
+  #task-banner.hidden { display: none; }
+  #task-line {
+    font-family: 'Unbounded', sans-serif;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-weight: 900; color: var(--text); line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+  #task-line .pronoun-highlight {
+    padding: 0.05em 0.3em; border-radius: 8px;
+  }
+  #task-line .verb-highlight { color: var(--orange); }
+  #task-sub { font-family: 'Lora', serif; font-style: italic; font-size: 0.8rem; color: var(--text-dim); margin-top: 0.25rem; }
+
+  /* ── INPUT AREA ── */
+  #input-area { width: 100%; display: flex; flex-direction: column; gap: 0.8rem; }
+
+  #conjugation-input {
+    width: 100%; padding: 1rem 1.4rem;
+    background: var(--bg3); border: 2px solid var(--card-border);
+    border-radius: 16px; color: var(--text);
+    font-family: 'Unbounded', sans-serif; font-size: clamp(1.1rem, 4vw, 1.5rem);
+    font-weight: 700; text-align: center; outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    caret-color: var(--orange);
+  }
+  #conjugation-input::placeholder { color: var(--text-dim); font-weight: 400; font-size: 0.85rem; }
+  #conjugation-input:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--orange) 15%, transparent);
+  }
+  #conjugation-input.correct {
+    border-color: var(--teal); box-shadow: 0 0 0 3px color-mix(in srgb, var(--teal) 20%, transparent);
+    color: var(--teal);
+  }
+  #conjugation-input.wrong {
+    border-color: var(--pink); box-shadow: 0 0 0 3px color-mix(in srgb, var(--pink) 20%, transparent);
+    animation: inputShake 0.4s ease;
+  }
+  @keyframes inputShake {
+    0%,100% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+  }
+
+  #check-btn {
+    width: 100%; padding: 1rem;
+    background: var(--orange); color: color-mix(in srgb, var(--text) 84%, var(--bg));
+    font-family: 'Unbounded', sans-serif; font-weight: 900;
+    font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase;
+    border: none; border-radius: 16px; cursor: pointer;
+    box-shadow: 0 5px 0 var(--orange-dk), 0 8px 20px color-mix(in srgb, var(--orange) 30%, transparent);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  #check-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 var(--orange-dk), 0 3px 10px color-mix(in srgb, var(--orange) 20%, transparent);
+  }
+  #check-btn:disabled { opacity: 0.4; pointer-events: none; }
+
+  /* ── MULTIPLE CHOICE BUTTONS ── */
+  #mc-area { width: 100%; display: flex; flex-direction: column; gap: 0.75rem; }
+  #mc-area.hidden { display: none; }
+  #input-area.hidden { display: none; }
+
+  .mc-btn {
+    width: 100%; padding: 1.1rem 1.4rem;
+    background: var(--card-glass); border: 2px solid var(--card-border);
+    border-radius: 20px; color: var(--text);
+    font-family: 'Unbounded', sans-serif; font-size: clamp(1rem, 4vw, 1.25rem);
+    font-weight: 700; text-align: center; cursor: pointer;
+    position: relative; overflow: hidden;
+    transition: transform 0.12s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.12s ease, background 0.12s ease;
+    box-shadow: 0 5px 0 color-mix(in srgb, var(--bg) 60%, transparent), 0 6px 18px color-mix(in srgb, var(--bg) 35%, transparent);
+    -webkit-tap-highlight-color: transparent; letter-spacing: 0.02em;
+  }
+  .mc-btn::before {
+    content: ''; position: absolute; inset: 0; border-radius: inherit;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--text) 6%, transparent) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .mc-btn:hover { background: color-mix(in srgb, var(--text) 10%, transparent); border-color: color-mix(in srgb, var(--text) 22%, transparent); transform: translateY(-2px); box-shadow: 0 7px 0 color-mix(in srgb, var(--bg) 60%, transparent), 0 12px 24px color-mix(in srgb, var(--bg) 35%, transparent); }
+  .mc-btn:active { transform: translateY(4px) scale(0.98) !important; box-shadow: 0 1px 0 color-mix(in srgb, var(--bg) 60%, transparent) !important; }
+  .mc-btn.correct {
+    background: color-mix(in srgb, var(--teal) 15%, transparent) !important; border-color: var(--teal) !important;
+    color: var(--teal) !important;
+    box-shadow: 0 5px 0 color-mix(in srgb, var(--teal-dk) 60%, transparent), 0 0 30px color-mix(in srgb, var(--teal) 25%, transparent) !important;
+    animation: mcBounce 0.45s cubic-bezier(0.34,1.56,0.64,1) forwards;
+  }
+  .mc-btn.wrong {
+    background: color-mix(in srgb, var(--pink) 12%, transparent) !important; border-color: var(--pink) !important;
+    color: var(--pink) !important; animation: mcShake 0.4s ease forwards;
+  }
+  .mc-btn.reveal {
+    background: color-mix(in srgb, var(--teal) 6%, transparent) !important; border-color: color-mix(in srgb, var(--teal) 30%, transparent) !important;
+    color: var(--teal) !important; opacity: 0.7;
+  }
+  .mc-btn:disabled { cursor: default; pointer-events: none; }
+  @keyframes mcBounce {
+    0%{transform:scale(1) translateY(0)} 35%{transform:scale(1.05) translateY(-4px)} 65%{transform:scale(0.98) translateY(2px)} 100%{transform:scale(1) translateY(0)}
+  }
+  @keyframes mcShake {
+    0%,100%{transform:translateX(0)} 20%{transform:translateX(-7px)} 40%{transform:translateX(7px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)}
+  }
+  #mode-badge {
+    display: inline-block; margin-top: 0.5rem; padding: 0.2rem 0.8rem;
+    border-radius: 999px; font-size: 0.52rem; letter-spacing: 0.15em;
+    text-transform: uppercase; font-family: 'Space Mono', monospace;
+  }
+  #mode-badge.mc   { background: color-mix(in srgb, var(--yellow) 12%, transparent); border: 1px solid color-mix(in srgb, var(--yellow) 35%, transparent); color: var(--yellow); }
+  #mode-badge.type { background: color-mix(in srgb, var(--orange) 12%, transparent); border: 1px solid color-mix(in srgb, var(--orange) 35%, transparent); color: var(--orange); }
+
+  /* ── FEEDBACK ── */
+  #feedback-area {
+    width: 100%; padding: 1rem 1.4rem;
+    border-radius: 16px; text-align: center;
+    transition: all 0.3s ease; min-height: 3.5rem;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.3rem;
+  }
+  #feedback-area.hidden { opacity: 0; }
+  #feedback-area.success {
+    background: color-mix(in srgb, var(--teal) 8%, transparent); border: 1px solid color-mix(in srgb, var(--teal) 30%, transparent);
+  }
+  #feedback-area.error {
+    background: color-mix(in srgb, var(--pink) 8%, transparent); border: 1px solid color-mix(in srgb, var(--pink) 25%, transparent);
+  }
+  #feedback-msg {
+    font-family: 'Lora', serif; font-style: italic;
+    font-size: 1rem; color: var(--text);
+  }
+  #feedback-msg.success-txt { color: var(--teal); }
+  #feedback-msg.error-txt   { color: var(--pink); }
+  #feedback-answer { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.1rem; }
+
+  /* ── PROGRESS ── */
+  .progress-row {
+    width: 100%; display: flex; gap: 0.4rem; justify-content: center; flex-wrap: wrap;
+  }
+  .prog-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--card-border); transition: all 0.3s ease;
+  }
+  .prog-dot.done    { background: var(--teal); box-shadow: 0 0 6px color-mix(in srgb, var(--teal) 60%, transparent); }
+  .prog-dot.current { background: var(--orange); box-shadow: 0 0 8px color-mix(in srgb, var(--orange) 70%, transparent); animation: dotPop 1s ease-in-out infinite; }
+  @keyframes dotPop { 0%,100%{transform:scale(1)} 50%{transform:scale(1.5)} }
+
+  /* ── STREAK ── */
+  #streak-bar {
+    display: flex; align-items: center; gap: 0.5rem;
+    font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.08em;
+  }
+  .streak-flame { font-size: 1rem; }
+  #streak-count { font-family: 'Unbounded', sans-serif; font-size: 0.9rem; color: var(--yellow); font-weight: 900; }
+
+  /* ── COMPLETION ── */
+  #completion {
+    display: none; position: fixed; inset: 0; z-index: 100;
+    background: color-mix(in srgb, var(--bg) 95%, transparent); backdrop-filter: blur(20px);
+    flex-direction: column; align-items: center; justify-content: center;
+    gap: 1.5rem; text-align: center; padding: 2rem;
+  }
+  #completion.visible { display: flex; }
+  .comp-emoji { font-size: 4rem; animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1); }
+  @keyframes popIn { from{transform:scale(0) rotate(-20deg);opacity:0} to{transform:scale(1) rotate(0);opacity:1} }
+  .comp-title { font-family: 'Unbounded', sans-serif; font-size: 2rem; font-weight: 900; color: var(--text); }
+  .comp-stats { font-family: 'Lora', serif; font-style: italic; font-size: 1rem; color: var(--text-dim); }
+  .comp-btn {
+    padding: 0.9rem 2.5rem; background: var(--orange); color: color-mix(in srgb, var(--text) 84%, var(--bg));
+    font-family: 'Unbounded', sans-serif; font-weight: 900; font-size: 0.9rem;
+    letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: 999px;
+    cursor: pointer; box-shadow: 0 5px 0 var(--orange-dk), 0 0 30px color-mix(in srgb, var(--orange) 30%, transparent);
+  }
+  .comp-btn:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--orange-dk); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  
+  <div class="header">
+    <div class="eyebrow">Grammatik Training</div>
+    <div class="title">Conjugación Viva</div>
+    <div class="title-sub">Dreh das Rad — konjugiere das Verb</div>
+  </div>
+
+  
+  <div class="level-pills" id="level-pills">
+    <div class="level-pill active" data-level="A1">A1</div>
+    <div class="level-pill" data-level="A2">A2</div>
+    <div class="level-pill" data-level="B1">B1</div>
+    <div class="level-pill" data-level="B2">B2+</div>
+  </div>
+
+  
+  <div class="hud">
+    <div class="hud-item">Richtig <strong id="hud-correct">0</strong></div>
+    <div id="streak-bar"><span class="streak-flame">🔥</span><span id="streak-count">0</span><span style="font-size:0.55rem">Streak</span></div>
+    <div class="hud-item" style="text-align:right">Punkte <strong id="hud-score">0</strong></div>
+  </div>
+
+  
+  <div id="verb-card">
+    <div id="tense-label">Presente de Indicativo</div>
+    <div id="verb-infinitive">—</div>
+    <div id="verb-translation">wird geladen…</div>
+    <div id="verb-type-badge">regular -ar</div>
+    <div id="mode-badge" class="mc">Multiple Choice</div>
+  </div>
+
+  
+  <div class="wheel-section">
+    <div class="wheel-label">Dreh das Rad — welches Pronomen bekommst du?</div>
+    <div id="wheel-svg-wrap">
+      <svg id="wheel-svg" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="seg-glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        
+        <g id="wheel-segments"></g>
+        
+        <circle cx="140" cy="140" r="38" fill="var(--bg)" stroke="var(--card-border)" stroke-width="2"/>
+      </svg>
+      <button id="spin-btn">GIRAR</button>
+    </div>
+
+    
+    <div id="pronoun-display" class="hidden">
+      <div id="pronoun-big">—</div>
+      <div id="pronoun-german">—</div>
+    </div>
+
+  
+  <div id="task-banner" class="hidden">
+    <div id="task-line">—</div>
+    <div id="task-sub">—</div>
+  </div>
+  </div>
+
+  
+  <div id="mc-area" class="hidden">
+    <button class="mc-btn" id="mc-0"></button>
+    <button class="mc-btn" id="mc-1"></button>
+    <button class="mc-btn" id="mc-2"></button>
+  </div>
+
+  
+  <div id="input-area">
+    <input type="text" id="conjugation-input" placeholder="konjugiere das Verb…" autocomplete="off" autocorrect="off" spellcheck="false" disabled/>
+    <button id="check-btn" disabled>Überprüfen</button>
+  </div>
+
+  
+  <div id="feedback-area" class="hidden"></div>
+
+  
+  <div class="progress-row" id="prog-row"></div>
+
+</div>
+
+
+<div id="completion">
+  <div class="comp-emoji">🏆</div>
+  <div class="comp-title">¡Perfecto!</div>
+  <div class="comp-stats" id="comp-stats"></div>
+  <button class="comp-btn" onclick="restart()">Nochmal spielen</button>
+</div>
+
+<script>
+// ═══════════════════════════════════════════
+// CONFIG
+// ═══════════════════════════════════════════
+const MC_LEVELS = ['A1', 'A2']; // these use multiple choice
+
+// ═══════════════════════════════════════════
+// GAME DATA — A1 → B2
+// ═══════════════════════════════════════════
+const LEVELS = {
+  A1: {
+    tense: "Presente de Indicativo", tenseDE: "Präsens",
+    verbs: [
+      { inf:"hablar", de:"sprechen", type:"regular -ar",
+        conj:{yo:"hablo",tú:"hablas",él:"habla",nosotros:"hablamos",vosotros:"habláis",ellos:"hablan"} },
+      { inf:"comer",  de:"essen",    type:"regular -er",
+        conj:{yo:"como",tú:"comes",él:"come",nosotros:"comemos",vosotros:"coméis",ellos:"comen"} },
+      { inf:"vivir",  de:"leben",    type:"regular -ir",
+        conj:{yo:"vivo",tú:"vives",él:"vive",nosotros:"vivimos",vosotros:"vivís",ellos:"viven"} },
+      { inf:"tener",  de:"haben",    type:"irregular",
+        conj:{yo:"tengo",tú:"tienes",él:"tiene",nosotros:"tenemos",vosotros:"tenéis",ellos:"tienen"} },
+      { inf:"ser",    de:"sein",     type:"irregular",
+        conj:{yo:"soy",tú:"eres",él:"es",nosotros:"somos",vosotros:"sois",ellos:"son"} },
+      { inf:"estar",  de:"sein/stehen",type:"irregular",
+        conj:{yo:"estoy",tú:"estás",él:"está",nosotros:"estamos",vosotros:"estáis",ellos:"están"} },
+      { inf:"ir",     de:"gehen",    type:"irregular",
+        conj:{yo:"voy",tú:"vas",él:"va",nosotros:"vamos",vosotros:"vais",ellos:"van"} },
+      { inf:"querer", de:"wollen/mögen",type:"irregular stem",
+        conj:{yo:"quiero",tú:"quieres",él:"quiere",nosotros:"queremos",vosotros:"queréis",ellos:"quieren"} },
+    ]
+  },
+  A2: {
+    tense: "Pretérito Indefinido", tenseDE: "Perfecto (einfache Vergangenheit)",
+    verbs: [
+      { inf:"hablar", de:"sprechen", type:"regular -ar",
+        conj:{yo:"hablé",tú:"hablaste",él:"habló",nosotros:"hablamos",vosotros:"hablasteis",ellos:"hablaron"} },
+      { inf:"comer",  de:"essen",    type:"regular -er",
+        conj:{yo:"comí",tú:"comiste",él:"comió",nosotros:"comimos",vosotros:"comisteis",ellos:"comieron"} },
+      { inf:"ir",     de:"gehen",    type:"irregular",
+        conj:{yo:"fui",tú:"fuiste",él:"fue",nosotros:"fuimos",vosotros:"fuisteis",ellos:"fueron"} },
+      { inf:"ser",    de:"sein",     type:"irregular",
+        conj:{yo:"fui",tú:"fuiste",él:"fue",nosotros:"fuimos",vosotros:"fuisteis",ellos:"fueron"} },
+      { inf:"hacer",  de:"machen",   type:"irregular",
+        conj:{yo:"hice",tú:"hiciste",él:"hizo",nosotros:"hicimos",vosotros:"hicisteis",ellos:"hicieron"} },
+      { inf:"tener",  de:"haben",    type:"irregular",
+        conj:{yo:"tuve",tú:"tuviste",él:"tuvo",nosotros:"tuvimos",vosotros:"tuvisteis",ellos:"tuvieron"} },
+      { inf:"poder",  de:"können",   type:"irregular",
+        conj:{yo:"pude",tú:"pudiste",él:"pudo",nosotros:"pudimos",vosotros:"pudisteis",ellos:"pudieron"} },
+      { inf:"decir",  de:"sagen",    type:"irregular",
+        conj:{yo:"dije",tú:"dijiste",él:"dijo",nosotros:"dijimos",vosotros:"dijisteis",ellos:"dijeron"} },
+    ]
+  },
+  B1: {
+    tense: "Pretérito Imperfecto", tenseDE: "Imperfekt (Vergangenheit, Gewohnheiten)",
+    verbs: [
+      { inf:"hablar", de:"sprechen", type:"regular -ar",
+        conj:{yo:"hablaba",tú:"hablabas",él:"hablaba",nosotros:"hablábamos",vosotros:"hablabais",ellos:"hablaban"} },
+      { inf:"comer",  de:"essen",    type:"regular -er",
+        conj:{yo:"comía",tú:"comías",él:"comía",nosotros:"comíamos",vosotros:"comíais",ellos:"comían"} },
+      { inf:"ser",    de:"sein",     type:"irregular",
+        conj:{yo:"era",tú:"eras",él:"era",nosotros:"éramos",vosotros:"erais",ellos:"eran"} },
+      { inf:"ir",     de:"gehen",    type:"irregular",
+        conj:{yo:"iba",tú:"ibas",él:"iba",nosotros:"íbamos",vosotros:"ibais",ellos:"iban"} },
+      { inf:"ver",    de:"sehen",    type:"irregular",
+        conj:{yo:"veía",tú:"veías",él:"veía",nosotros:"veíamos",vosotros:"veíais",ellos:"veían"} },
+      { inf:"tener",  de:"haben",    type:"regular -er2",
+        conj:{yo:"tenía",tú:"tenías",él:"tenía",nosotros:"teníamos",vosotros:"teníais",ellos:"tenían"} },
+      { inf:"poder",  de:"können",   type:"regular -er2",
+        conj:{yo:"podía",tú:"podías",él:"podía",nosotros:"podíamos",vosotros:"podíais",ellos:"podían"} },
+      { inf:"querer", de:"wollen",   type:"regular -er2",
+        conj:{yo:"quería",tú:"querías",él:"quería",nosotros:"queríamos",vosotros:"queríais",ellos:"querían"} },
+    ]
+  },
+  B2: {
+    tense: "Subjuntivo Presente", tenseDE: "Konjunktiv (Wünsche, Zweifel, Emotionen)",
+    verbs: [
+      { inf:"hablar", de:"sprechen", type:"regular -ar",
+        conj:{yo:"hable",tú:"hables",él:"hable",nosotros:"hablemos",vosotros:"habléis",ellos:"hablen"} },
+      { inf:"comer",  de:"essen",    type:"regular -er",
+        conj:{yo:"coma",tú:"comas",él:"coma",nosotros:"comamos",vosotros:"comáis",ellos:"coman"} },
+      { inf:"ser",    de:"sein",     type:"irregular",
+        conj:{yo:"sea",tú:"seas",él:"sea",nosotros:"seamos",vosotros:"seáis",ellos:"sean"} },
+      { inf:"estar",  de:"sein/stehen",type:"irregular",
+        conj:{yo:"esté",tú:"estés",él:"esté",nosotros:"estemos",vosotros:"estéis",ellos:"estén"} },
+      { inf:"ir",     de:"gehen",    type:"irregular",
+        conj:{yo:"vaya",tú:"vayas",él:"vaya",nosotros:"vayamos",vosotros:"vayáis",ellos:"vayan"} },
+      { inf:"tener",  de:"haben",    type:"irregular",
+        conj:{yo:"tenga",tú:"tengas",él:"tenga",nosotros:"tengamos",vosotros:"tengáis",ellos:"tengan"} },
+      { inf:"poder",  de:"können",   type:"irregular stem",
+        conj:{yo:"pueda",tú:"puedas",él:"pueda",nosotros:"podamos",vosotros:"podáis",ellos:"puedan"} },
+      { inf:"hacer",  de:"machen",   type:"irregular",
+        conj:{yo:"haga",tú:"hagas",él:"haga",nosotros:"hagamos",vosotros:"hagáis",ellos:"hagan"} },
+    ]
+  }
+};
+
+const PRONOUNS = [
+  { key:"yo",       de:"ich",       color:"#FF6B35" },
+  { key:"tú",       de:"du",        color:"#FFD23F" },
+  { key:"él",       de:"er/sie/es", color:"#00E5CC" },
+  { key:"nosotros", de:"wir",       color:"#FF3CAC" },
+  { key:"vosotros", de:"ihr",       color:"#7B61FF" },
+  { key:"ellos",    de:"sie (pl)",  color:"#00B4D8" },
+];
+
+// ═══════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════
+let currentLevel    = "A1";
+let verbQueue       = [];
+let verbIdx         = 0;
+let currentVerb     = null;
+let selectedPronoun = null;
+let score           = 0;
+let correctCount    = 0;
+let streak          = 0;
+let totalRounds     = 0;
+let spinning        = false;
+let isMCMode        = true;
+
+// ═══════════════════════════════════════════
+// WHEEL DRAWING
+// ═══════════════════════════════════════════
+function drawWheel(activePronoun = null) {
+  const svg = document.getElementById('wheel-segments');
+  svg.innerHTML = '';
+  const cx = 140, cy = 140, r = 130, innerR = 42;
+  const angleStep = (2 * Math.PI) / PRONOUNS.length;
+  PRONOUNS.forEach((p, i) => {
+    const startAngle = i * angleStep - Math.PI / 2;
+    const endAngle   = startAngle + angleStep;
+    const isActive   = activePronoun === p.key;
+    const x1 = cx + r * Math.cos(startAngle), y1 = cy + r * Math.sin(startAngle);
+    const x2 = cx + r * Math.cos(endAngle),   y2 = cy + r * Math.sin(endAngle);
+    const xi1 = cx + innerR * Math.cos(startAngle), yi1 = cy + innerR * Math.sin(startAngle);
+    const xi2 = cx + innerR * Math.cos(endAngle),   yi2 = cy + innerR * Math.sin(endAngle);
+    const d = `M ${xi1} ${yi1} L ${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2} L ${xi2} ${yi2} A ${innerR} ${innerR} 0 0 0 ${xi1} ${yi1} Z`;
+    const g = document.createElementNS("http://www.w3.org/2000/svg","g");
+    g.setAttribute('class','wheel-segment' + (isActive ? ' active-seg' : ''));
+    g.style.cursor = 'pointer';
+    const path = document.createElementNS("http://www.w3.org/2000/svg","path");
+    path.setAttribute('d', d);
+    path.setAttribute('fill', p.color + (isActive ? 'cc' : '26'));
+    path.setAttribute('stroke', p.color + (isActive ? 'ff' : '55'));
+    path.setAttribute('stroke-width', isActive ? '2.5' : '1');
+    if (isActive) path.setAttribute('filter','url(#seg-glow)');
+    const midAngle = startAngle + angleStep / 2;
+    const labelR = (r + innerR) / 2;
+    const lx = cx + labelR * Math.cos(midAngle), ly = cy + labelR * Math.sin(midAngle);
+    const text = document.createElementNS("http://www.w3.org/2000/svg","text");
+    text.setAttribute('x', lx); text.setAttribute('y', ly + 4);
+    text.setAttribute('text-anchor','middle');
+    text.setAttribute('font-family','Unbounded, sans-serif');
+    text.setAttribute('font-size', p.key.length > 5 ? '8.5' : '10.5');
+    text.setAttribute('font-weight','700');
+    text.setAttribute('fill', isActive ? p.color : 'rgba(245,240,232,0.7)');
+    text.textContent = p.key;
+    text.style.pointerEvents = 'none';
+    g.appendChild(path); g.appendChild(text);
+    g.addEventListener('click', () => selectPronoun(p));
+    svg.appendChild(g);
+  });
+}
+
+// ═══════════════════════════════════════════
+// SPIN
+// ═══════════════════════════════════════════
+let wheelAngle = 0;
+function spinWheel() {
+  if (spinning || !currentVerb) return;
+  spinning = true;
+  document.getElementById('spin-btn').classList.add('spinning');
+  document.getElementById('spin-btn').textContent = '…';
+  clearInputState();
+  const spins  = (3 + Math.floor(Math.random() * 4)) * 360;
+  const extra  = Math.floor(Math.random() * 360);
+  const target = wheelAngle + spins + extra;
+  const dur    = 1800, start = performance.now(), from = wheelAngle;
+  const finalAngle = target % 360;
+  const segSize    = 360 / PRONOUNS.length;
+  const normalised = (360 - finalAngle % 360) % 360;
+  const idx        = Math.floor(normalised / segSize) % PRONOUNS.length;
+  const svgEl      = document.getElementById('wheel-svg');
+  function animate(now) {
+    const elapsed = now - start;
+    const t = Math.min(elapsed / dur, 1);
+    const ease = 1 - Math.pow(1 - t, 4);
+    const current = from + (target - from) * ease;
+    svgEl.style.transform = `rotate(${current % 360}deg)`;
+    if (t < 1) { requestAnimationFrame(animate); }
+    else {
+      wheelAngle = target % 360;
+      svgEl.style.transform = `rotate(${wheelAngle}deg)`;
+      spinning = false;
+      document.getElementById('spin-btn').classList.remove('spinning');
+      document.getElementById('spin-btn').textContent = 'GIRAR';
+      selectPronoun(PRONOUNS[idx]);
+      if (navigator.vibrate) navigator.vibrate(40);
+    }
+  }
+  requestAnimationFrame(animate);
+}
+
+// ═══════════════════════════════════════════
+// SELECT PRONOUN — branches MC vs Type
+// ═══════════════════════════════════════════
+function selectPronoun(p) {
+  selectedPronoun = p;
+  drawWheel(p.key);
+
+  const disp = document.getElementById('pronoun-display');
+  disp.classList.remove('hidden');
+  disp.style.borderColor = p.color + '55';
+  disp.style.background  = p.color + '12';
+  document.getElementById('pronoun-big').textContent    = p.key;
+  document.getElementById('pronoun-big').style.color    = p.color;
+  document.getElementById('pronoun-german').textContent = `(${p.de})`;
+
+  // Update task banner
+  const banner = document.getElementById('task-banner');
+  banner.classList.remove('hidden');
+  banner.style.borderColor = p.color + '40';
+  const taskLine = document.getElementById('task-line');
+  taskLine.innerHTML = `<span class="pronoun-highlight" style="background:${p.color}22;color:${p.color}">${p.key}</span> + <span class="verb-highlight">${currentVerb?.inf || ''}</span> = ?`;
+  const sub = document.getElementById('task-sub');
+  if (['A1','A2'].includes(currentLevel)) {
+    sub.textContent = `(${p.de} — ${currentVerb?.de || ''})`;
+    sub.style.display = 'block';
+  } else {
+    sub.style.display = 'none';
+  }
+
+  hideFeedback();
+
+  if (isMCMode) {
+    showMCButtons(p);
+  } else {
+    showTypeInput(p);
+  }
+}
+
+// ═══════════════════════════════════════════
+// MULTIPLE CHOICE MODE
+// ═══════════════════════════════════════════
+function showMCButtons(p) {
+  document.getElementById('mc-area').classList.remove('hidden');
+  document.getElementById('input-area').classList.add('hidden');
+
+  const correct    = currentVerb.conj[p.key];
+  const distractors = buildDistractors(correct, p.key);
+  const options    = [correct, ...distractors].sort(() => Math.random() - 0.5);
+
+  const btns = document.querySelectorAll('.mc-btn');
+  btns.forEach((btn, i) => {
+    btn.textContent  = options[i];
+    btn.className    = 'mc-btn';
+    btn.disabled     = false;
+    btn.dataset.val  = options[i];
+    btn.dataset.correct = options[i] === correct ? '1' : '0';
+    // staggered entrance
+    btn.style.opacity   = '0';
+    btn.style.transform = 'translateY(14px)';
+    setTimeout(() => {
+      btn.style.transition = 'opacity 0.3s ease, transform 0.3s cubic-bezier(0.34,1.56,0.64,1)';
+      btn.style.opacity    = '1';
+      btn.style.transform  = 'translateY(0)';
+    }, 60 + i * 70);
+  });
+}
+
+function buildDistractors(correct, pronounKey) {
+  // Collect all conjugations from ALL verbs in current level (same pronoun)
+  const pool = [];
+  LEVELS[currentLevel].verbs.forEach(v => {
+    const c = v.conj[pronounKey];
+    if (c && c !== correct) pool.push(c);
+  });
+  // Also add conjugations of same verb for other pronouns
+  if (currentVerb) {
+    Object.values(currentVerb.conj).forEach(c => {
+      if (c !== correct && !pool.includes(c)) pool.push(c);
+    });
+  }
+  // Shuffle and pick 2
+  const shuffled = pool.sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, 2);
+}
+
+function handleMCClick(btn) {
+  const btns = document.querySelectorAll('.mc-btn');
+  btns.forEach(b => b.disabled = true);
+
+  totalRounds++;
+
+  if (btn.dataset.correct === '1') {
+    btn.classList.add('correct');
+    streak++; correctCount++;
+    const bonus = streak >= 3 ? 20 : 10;
+    score += bonus;
+    updateHUD();
+    if (navigator.vibrate) navigator.vibrate([30,20,50]);
+    playTone(523,0.1,'sine',0.2);
+    setTimeout(()=>playTone(659,0.1,'sine',0.18), 80);
+    setTimeout(()=>playTone(784,0.2,'sine',0.15), 160);
+    const streakMsg = streak >= 5 ? ` 🔥 ${streak}er Streak! +${bonus}` :
+                      streak >= 3 ? ` 🔥 Streak! +${bonus}` : ` +${bonus}`;
+    showFeedback('success', `¡Correcto! ${selectedPronoun.key} → ${btn.dataset.val}${streakMsg}`, '');
+
+    setTimeout(() => {
+      if (totalRounds % 3 === 0) { verbIdx++; loadVerb(); }
+      else { spinWheel(); }
+    }, 1200);
+
+  } else {
+    btn.classList.add('wrong');
+    streak = 0; updateHUD();
+    if (navigator.vibrate) navigator.vibrate(60);
+    playTone(250,0.1,'sawtooth',0.15);
+    setTimeout(()=>playTone(200,0.15,'sawtooth',0.12), 90);
+    // Reveal correct button
+    btns.forEach(b => { if (b.dataset.correct === '1') b.classList.add('reveal'); });
+    showFeedback('error', `Fast… das wäre: ${currentVerb.conj[selectedPronoun.key]} 💡`, '');
+    setTimeout(() => {
+      btns.forEach(b => { b.classList.remove('wrong','reveal'); b.disabled = false; });
+      hideFeedback();
+    }, 1600);
+  }
+}
+
+// ═══════════════════════════════════════════
+// TYPE MODE (B1 / B2)
+// ═══════════════════════════════════════════
+function showTypeInput(p) {
+  document.getElementById('mc-area').classList.add('hidden');
+  document.getElementById('input-area').classList.remove('hidden');
+  const input = document.getElementById('conjugation-input');
+  input.disabled    = false; input.value = ''; input.className = '';
+  input.placeholder = `${p.key} ${currentVerb?.inf || ''}…`;
+  input.focus();
+  document.getElementById('check-btn').disabled = false;
+}
+
+function checkAnswer() {
+  if (!selectedPronoun || !currentVerb) return;
+  const input    = document.getElementById('conjugation-input');
+  const given    = input.value.trim().toLowerCase();
+  const expected = currentVerb.conj[selectedPronoun.key].toLowerCase();
+  totalRounds++;
+  if (given === expected) {
+    input.className = 'correct';
+    streak++; correctCount++;
+    const bonus = streak >= 3 ? 20 : 10; score += bonus;
+    updateHUD();
+    if (navigator.vibrate) navigator.vibrate([30,20,50]);
+    playTone(523,0.1,'sine',0.2); setTimeout(()=>playTone(659,0.1,'sine',0.18),80); setTimeout(()=>playTone(784,0.2,'sine',0.15),160);
+    const streakMsg = streak >= 5 ? ` 🔥 ${streak}er Streak! +${bonus}` : streak >= 3 ? ` 🔥 Streak! +${bonus}` : ` +${bonus}`;
+    showFeedback('success', `¡Correcto! ${selectedPronoun.key} → ${expected}${streakMsg}`, '');
+    document.getElementById('check-btn').disabled = true; input.disabled = true;
+    setTimeout(() => {
+      if (totalRounds % 3 === 0) { verbIdx++; loadVerb(); }
+      else { spinWheel(); }
+    }, 1200);
+  } else {
+    input.className = 'wrong'; streak = 0; updateHUD();
+    if (navigator.vibrate) navigator.vibrate(60);
+    playTone(250,0.1,'sawtooth',0.15); setTimeout(()=>playTone(200,0.15,'sawtooth',0.12),90);
+    showFeedback('error', `Fast… versuche es nochmal 💪`, `Tipp: ${selectedPronoun.key} → ?`);
+    setTimeout(() => { input.className=''; input.value=''; hideFeedback(); }, 1400);
+  }
+}
+
+function clearInputState() {
+  const input = document.getElementById('conjugation-input');
+  input.className = ''; input.value = '';
+  hideFeedback();
+}
+
+// ═══════════════════════════════════════════
+// LOAD LEVEL & VERB
+// ═══════════════════════════════════════════
+function loadLevel(levelKey) {
+  currentLevel = levelKey;
+  isMCMode     = MC_LEVELS.includes(levelKey);
+  const data   = LEVELS[levelKey];
+  verbQueue    = [...data.verbs].sort(() => Math.random() - 0.5);
+  verbIdx = 0; score = 0; correctCount = 0; streak = 0; totalRounds = 0;
+  updateHUD(); buildProgress();
+  document.querySelectorAll('.level-pill').forEach(p => p.classList.toggle('active', p.dataset.level === levelKey));
+  document.getElementById('tense-label').textContent = `${data.tense} — ${data.tenseDE}`;
+  // Mode badge
+  const badge = document.getElementById('mode-badge');
+  if (isMCMode) { badge.textContent = '👆 Multiple Choice'; badge.className = 'mc'; }
+  else          { badge.textContent = '⌨️ Tippen';          badge.className = 'type'; }
+  loadVerb();
+}
+
+function loadVerb() {
+  if (verbIdx >= verbQueue.length) { showCompletion(); return; }
+  currentVerb = verbQueue[verbIdx]; selectedPronoun = null;
+  document.getElementById('verb-infinitive').textContent  = currentVerb.inf;
+  document.getElementById('verb-translation').textContent = currentVerb.de;
+  document.getElementById('verb-type-badge').textContent  = currentVerb.type;
+  // Reset both input modes
+  document.getElementById('mc-area').classList.add('hidden');
+  const input = document.getElementById('conjugation-input');
+  if (isMCMode) {
+    document.getElementById('input-area').classList.add('hidden');
+  } else {
+    document.getElementById('input-area').classList.remove('hidden');
+    input.disabled = true; input.value = ''; input.className = '';
+    input.placeholder = 'konjugiere das Verb…';
+    document.getElementById('check-btn').disabled = true;
+  }
+  drawWheel(null);
+  document.getElementById('pronoun-display').classList.add('hidden');
+  document.getElementById('task-banner').classList.add('hidden');
+  hideFeedback(); updateProgress();
+}
+
+// ═══════════════════════════════════════════
+// FEEDBACK, PROGRESS, HUD
+// ═══════════════════════════════════════════
+function showFeedback(type, msg, sub) {
+  const area = document.getElementById('feedback-area');
+  area.className = type;
+  area.innerHTML = `<div id="feedback-msg" class="${type==='success'?'success-txt':'error-txt'}">${msg}</div>${sub?`<div id="feedback-answer">${sub}</div>`:''}`;
+}
+function hideFeedback() {
+  const area = document.getElementById('feedback-area');
+  area.className = 'hidden'; area.innerHTML = '';
+}
+function buildProgress() {
+  const row = document.getElementById('prog-row'); row.innerHTML = '';
+  verbQueue.forEach((_,i) => {
+    const d = document.createElement('div');
+    d.className = 'prog-dot' + (i===0?' current':''); d.id=`pd-${i}`; row.appendChild(d);
+  });
+}
+function updateProgress() {
+  verbQueue.forEach((_,i) => {
+    const d = document.getElementById(`pd-${i}`); if(!d) return;
+    d.className = 'prog-dot' + (i<verbIdx?' done':i===verbIdx?' current':'');
+  });
+}
+function updateHUD() {
+  document.getElementById('hud-correct').textContent  = correctCount;
+  document.getElementById('hud-score').textContent    = score;
+  document.getElementById('streak-count').textContent = streak;
+}
+
+// ═══════════════════════════════════════════
+// COMPLETION
+// ═══════════════════════════════════════════
+function showCompletion() {
+  document.getElementById('comp-stats').textContent =
+    `${correctCount} richtige Antworten • ${score} Punkte • Level ${currentLevel}`;
+  document.getElementById('completion').classList.add('visible');
+  if (navigator.vibrate) navigator.vibrate([50,30,50,30,100]);
+}
+function restart() {
+  document.getElementById('completion').classList.remove('visible');
+  loadLevel(currentLevel);
+}
+
+// ═══════════════════════════════════════════
+// AUDIO
+// ═══════════════════════════════════════════
+let actx = null;
+function getActx() { if(!actx) actx=new(window.AudioContext||window.webkitAudioContext)(); return actx; }
+function playTone(freq,dur,type='sine',vol=0.2) {
+  const c=getActx(),o=c.createOscillator(),g=c.createGain();
+  o.connect(g); g.connect(c.destination);
+  o.type=type; o.frequency.value=freq;
+  g.gain.setValueAtTime(vol,c.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+dur);
+  o.start(); o.stop(c.currentTime+dur+0.05);
+}
+
+// ═══════════════════════════════════════════
+// EVENTS
+// ═══════════════════════════════════════════
+document.getElementById('spin-btn').addEventListener('click', spinWheel);
+document.getElementById('check-btn').addEventListener('click', checkAnswer);
+document.getElementById('conjugation-input').addEventListener('keydown', e => { if(e.key==='Enter') checkAnswer(); });
+document.querySelectorAll('.mc-btn').forEach(btn => btn.addEventListener('click', () => handleMCClick(btn)));
+document.querySelectorAll('.level-pill').forEach(pill => pill.addEventListener('click', () => loadLevel(pill.dataset.level)));
+
+// ═══════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════
+drawWheel();
+loadLevel('A1');
+</script>
+</body>
+</html>

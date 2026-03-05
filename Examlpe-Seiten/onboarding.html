@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Spanisch Lernen — Start</title>
+<script src="../theme-switcher.js"></script>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../../src/css/base.css">
+<link rel="stylesheet" href="../../src/tactile-theme.css">
+<style>
+  :root {
+    --bg:var(--color-bg-base);--bg2:var(--color-bg-surface);--bg3:var(--color-bg-elevated);
+    --gruen:var(--color-correct);--gruen-dk:color-mix(in srgb, var(--color-correct) 72%, var(--color-bg-base));
+    --lila:var(--color-accent-primary);--lila-dk:color-mix(in srgb, var(--color-accent-primary) 72%, var(--color-bg-base));
+    --gold:var(--color-accent-warning);--gold-dk:color-mix(in srgb, var(--color-accent-warning) 70%, var(--color-bg-base));
+    --text:var(--color-text-primary);--dim:color-mix(in srgb, var(--color-text-primary) 45%, transparent);
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:'Nunito',sans-serif;background:var(--bg);min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;padding:max(.75rem,var(--safe-top)) 1rem max(3rem,var(--safe-bottom));
+    overflow-x:hidden;position:relative}
+  body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(69,229,181,.07) 0%,transparent 55%),
+    radial-gradient(ellipse 60% 60% at 80% 80%,rgba(124,106,247,.08) 0%,transparent 55%)}
+  .wrap{position:relative;z-index:1;width:100%;max-width:460px;
+    display:flex;flex-direction:column;align-items:center;gap:1.8rem;padding-top:2.5rem}
+
+  /* HERO */
+  .flag{font-size:3.2rem;display:block;text-align:center;
+    animation:wave 3s ease-in-out infinite;margin-bottom:.3rem}
+  @keyframes wave{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+  .hero-title{font-family:'Unbounded',sans-serif;font-size:clamp(1.7rem,8vw,2.6rem);
+    font-weight:900;color:var(--text);line-height:1;letter-spacing:-.02em;text-align:center}
+  .hero-title span{color:var(--gruen)}
+  .hero-sub{font-family:'Lora',serif;font-style:italic;font-size:.95rem;
+    color:var(--dim);text-align:center;margin-top:.4rem}
+
+  /* STEPS */
+  .steps{display:flex;gap:.4rem;align-items:center}
+  .step-item{display:flex;flex-direction:column;align-items:center;gap:.25rem}
+  .sc{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.05);
+    border:2px solid rgba(255,255,255,.1);display:flex;align-items:center;
+    justify-content:center;font-size:.65rem;font-weight:800;color:var(--dim);transition:all .3s}
+  .sc.active{background:var(--gruen);border-color:var(--gruen);color:#0d2a1f}
+  .sc.done{background:var(--bg3);border-color:var(--gruen);color:var(--gruen)}
+  .sl{font-size:.5rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase}
+  .sline{width:36px;height:2px;background:rgba(255,255,255,.07);border-radius:999px;margin-bottom:.9rem}
+
+  /* SCREENS */
+  .screen{display:none;width:100%;flex-direction:column;gap:1.1rem}
+  .screen.active{display:flex;animation:sIn .4s cubic-bezier(.34,1.56,.64,1)}
+  @keyframes sIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+  .stitle{font-family:'Unbounded',sans-serif;font-size:1.05rem;font-weight:900;
+    color:var(--text);text-align:center;line-height:1.3}
+  .ssub{font-size:.82rem;color:var(--dim);text-align:center;font-style:italic}
+
+  /* NIVEAU CARDS */
+  .niveau-cards{display:flex;flex-direction:column;gap:.85rem}
+  .nc{padding:1.1rem 1.3rem;background:rgba(255,255,255,.04);
+    border:2px solid rgba(255,255,255,.08);border-radius:20px;cursor:pointer;
+    display:flex;align-items:center;gap:.9rem;transition:all .2s cubic-bezier(.34,1.56,.64,1);
+    position:relative;overflow:hidden;-webkit-tap-highlight-color:transparent}
+  .nc:active{transform:scale(.97)}
+  .nc.selected{transform:scale(1.02)}
+  .nc.a:hover,.nc.a.selected{border-color:var(--gruen);background:rgba(69,229,181,.08);
+    box-shadow:0 0 28px rgba(69,229,181,.15),0 5px 0 rgba(34,179,138,.4)}
+  .nc.g:hover,.nc.g.selected{border-color:var(--lila);background:rgba(124,106,247,.08);
+    box-shadow:0 0 28px rgba(124,106,247,.15),0 5px 0 rgba(90,73,214,.4)}
+  .nc.f:hover,.nc.f.selected{border-color:var(--gold);background:rgba(255,210,63,.06);
+    box-shadow:0 0 28px rgba(255,210,63,.12),0 5px 0 rgba(201,161,0,.4)}
+  .ne{font-size:2rem;flex-shrink:0}
+  .ni{flex:1}
+  .nn{font-size:.95rem;font-weight:900;margin-bottom:.12rem}
+  .nc.a .nn{color:var(--gruen)} .nc.g .nn{color:#a99bf9} .nc.f .nn{color:var(--gold)}
+  .nd{font-size:.75rem;color:var(--dim);line-height:1.35}
+  .ntags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.4rem}
+  .ntag{font-size:.52rem;font-family:'Space Mono',monospace;letter-spacing:.08em;
+    text-transform:uppercase;padding:.12rem .45rem;border-radius:999px;
+    border:1px solid rgba(255,255,255,.1);color:var(--dim)}
+  .chk{width:22px;height:22px;border-radius:50%;border:2px solid rgba(255,255,255,.15);
+    display:flex;align-items:center;justify-content:center;
+    font-size:.75rem;color:transparent;flex-shrink:0;transition:all .25s}
+  .nc.a .chk{color:var(--gruen)} .nc.g .chk{color:var(--lila)} .nc.f .chk{color:var(--gold)}
+  .nc.selected .chk{background:currentColor;border-color:currentColor;color:#fff!important}
+
+  /* SZENE GRID */
+  .szene-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+  .szc{padding:1rem .85rem;background:rgba(255,255,255,.04);
+    border:2px solid rgba(255,255,255,.08);border-radius:18px;cursor:pointer;
+    text-align:center;display:flex;flex-direction:column;align-items:center;gap:.4rem;
+    transition:all .2s cubic-bezier(.34,1.56,.64,1);-webkit-tap-highlight-color:transparent}
+  .szc:active{transform:scale(.95)}
+  .szc.selected{border-color:var(--gruen);background:rgba(69,229,181,.07);
+    box-shadow:0 0 18px rgba(69,229,181,.12),0 4px 0 rgba(34,179,138,.35);transform:scale(1.03)}
+  .sze{font-size:1.9rem}
+  .szn{font-size:.82rem;font-weight:800;color:var(--text)}
+  .szl{font-size:.52rem;font-family:'Space Mono',monospace;letter-spacing:.1em;
+    padding:.12rem .42rem;border-radius:999px;border:1px solid rgba(255,255,255,.1);color:var(--dim)}
+  .szc.selected .szl{border-color:var(--gruen);color:var(--gruen)}
+
+  /* CONFIRM */
+  .conf-card{padding:1.3rem;background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.09);border-radius:22px;
+    text-align:center;display:flex;flex-direction:column;gap:.85rem}
+  .conf-row{display:flex;justify-content:space-between;align-items:center;
+    padding:.55rem .75rem;background:rgba(255,255,255,.03);border-radius:10px}
+  .clbl{font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--dim);font-family:'Space Mono',monospace}
+  .cval{font-size:.9rem;font-weight:800;color:var(--text)}
+  .pfad-preview{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap;
+    justify-content:center;padding:.7rem;background:rgba(255,255,255,.03);border-radius:12px}
+  .ps{font-size:.65rem;font-weight:700;padding:.22rem .55rem;border-radius:999px;
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--dim)}
+  .ps.first{background:rgba(69,229,181,.12);border-color:var(--gruen);color:var(--gruen)}
+  .parr{color:var(--dim);font-size:.65rem}
+
+  /* BUTTONS */
+  .btn{width:100%;padding:.95rem;font-family:'Nunito',sans-serif;font-weight:900;
+    font-size:.95rem;border:none;border-radius:14px;cursor:pointer;
+    background:var(--gruen);color:#0d2a1f;
+    box-shadow:0 4px 0 var(--gruen-dk),0 7px 18px rgba(69,229,181,.22);
+    transition:transform .1s,box-shadow .1s;-webkit-tap-highlight-color:transparent;letter-spacing:.02em}
+  .btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--gruen-dk)}
+  .btn:disabled{opacity:.35;pointer-events:none}
+  .btn-back{background:none;border:none;color:var(--dim);font-family:'Nunito',sans-serif;
+    font-size:.82rem;cursor:pointer;padding:.25rem;text-align:center;width:100%;margin-top:-.3rem}
+  .btn-back:hover{color:var(--text)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div>
+    <span class="flag">🇪🇸</span>
+    <div class="hero-title">Aprende<br><span>Español</span></div>
+    <div class="hero-sub">Dein persönlicher Lernpfad beginnt hier</div>
+  </div>
+
+  <div class="steps">
+    <div class="step-item"><div class="sc active" id="s1">1</div><div class="sl">Niveau</div></div>
+    <div class="sline"></div>
+    <div class="step-item"><div class="sc" id="s2">2</div><div class="sl">Szene</div></div>
+    <div class="sline"></div>
+    <div class="step-item"><div class="sc" id="s3">3</div><div class="sl">Los!</div></div>
+  </div>
+
+  
+  <div class="screen active" id="scr1">
+    <div class="stitle">Wie gut sprichst du<br>schon Spanisch?</div>
+    <div class="niveau-cards">
+
+      <div class="nc a" onclick="waehleN('anfaenger',this)">
+        <div class="ne">🌱</div>
+        <div class="ni">
+          <div class="nn">Absoluter Anfänger</div>
+          <div class="nd">Ich kenne kaum Spanisch — vielleicht "hola".</div>
+          <div class="ntags"><span class="ntag">Lückentext</span><span class="ntag">Viel Deutsch</span><span class="ntag">A1</span></div>
+        </div>
+        <div class="chk">✓</div>
+      </div>
+
+      <div class="nc g" onclick="waehleN('grundkenntnisse',this)">
+        <div class="ne">🌿</div>
+        <div class="ni">
+          <div class="nn">Grundkenntnisse</div>
+          <div class="nd">Ich kenne ein paar Wörter und einfache Sätze.</div>
+          <div class="ntags"><span class="ntag">Wort-Chips</span><span class="ntag">Weniger Hilfe</span><span class="ntag">A1–A2</span></div>
+        </div>
+        <div class="chk">✓</div>
+      </div>
+
+      <div class="nc f" onclick="waehleN('fortgeschritten',this)">
+        <div class="ne">🌳</div>
+        <div class="ni">
+          <div class="nn">Fortgeschritten</div>
+          <div class="nd">Ich kann mich unterhalten — will Grammatik vertiefen.</div>
+          <div class="ntags"><span class="ntag">Freie KI</span><span class="ntag">Kein Deutsch</span><span class="ntag">A2–B2</span></div>
+        </div>
+        <div class="chk">✓</div>
+      </div>
+
+    </div>
+    <button class="btn" id="bn1" disabled onclick="go2()">Weiter →</button>
+  </div>
+
+  
+  <div class="screen" id="scr2">
+    <div class="stitle">Wo möchtest du<br>zuerst üben?</div>
+    <div class="ssub">Wähle die Situation die dir am nächsten ist</div>
+    <div class="szene-grid">
+      <div class="szc" onclick="waehleS('cafe',this)"><div class="sze">☕</div><div class="szn">El Café</div><div class="szl">A1 · Einfach</div></div>
+      <div class="szc" onclick="waehleS('mercado',this)"><div class="sze">🛒</div><div class="szn">El Mercado</div><div class="szl">A1 · Einfach</div></div>
+      <div class="szc" onclick="waehleS('estacion',this)"><div class="sze">🚂</div><div class="szn">La Estación</div><div class="szl">A2 · Mittel</div></div>
+      <div class="szc" onclick="waehleS('restaurante',this)"><div class="sze">🍽️</div><div class="szn">El Restaurante</div><div class="szl">A2 · Mittel</div></div>
+    </div>
+    <button class="btn" id="bn2" disabled onclick="go3()">Weiter →</button>
+    <button class="btn-back" onclick="go1()">← Zurück</button>
+  </div>
+
+  
+  <div class="screen" id="scr3">
+    <div class="stitle">Alles bereit! 🎉</div>
+    <div class="ssub">So sieht dein Lernpfad aus</div>
+    <div class="conf-card">
+      <div class="conf-row"><span class="clbl">Dein Niveau</span><span class="cval" id="cniv">—</span></div>
+      <div class="conf-row"><span class="clbl">Erste Szene</span><span class="cval" id="csze">—</span></div>
+      <div style="font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);text-align:left;padding:0 .2rem;font-family:'Space Mono',monospace">Dein Lernpfad</div>
+      <div class="pfad-preview" id="pfad"></div>
+    </div>
+    <button class="btn" onclick="starten()">¡Vamos! Jetzt starten 🚀</button>
+    <button class="btn-back" onclick="go2()">← Zurück</button>
+  </div>
+
+</div>
+
+<script src="lernpfad.js"></script>
+<script>
+let niveau = null, szene = null;
+
+const NL = { anfaenger:'🌱 Absoluter Anfänger', grundkenntnisse:'🌿 Grundkenntnisse', fortgeschritten:'🌳 Fortgeschritten' };
+const SL = { cafe:'☕ El Café', mercado:'🛒 El Mercado', estacion:'🚂 La Estación', restaurante:'🍽️ El Restaurante' };
+
+const PFADE = {
+  anfaenger:       ['la_conversacion','conjugacion_viva','gramatica_relampago','el_intruso','radio_silencio'],
+  grundkenntnisse: ['conjugacion_viva','la_conversacion','gramatica_relampago','el_intruso','radio_silencio'],
+  fortgeschritten: ['gramatica_relampago','conjugacion_viva','la_conversacion','el_intruso','radio_silencio'],
+};
+const PFAD_LABELS = {
+  la_conversacion:'💬 Gespräch', conjugacion_viva:'🔄 Konjugation',
+  gramatica_relampago:'⚡ Grammatik', el_intruso:'🔍 Intruso', radio_silencio:'🎙️ Hören'
+};
+const URLS = {
+  la_conversacion:'la_conversacion_ki.html', conjugacion_viva:'conjugacion_viva.html',
+  gramatica_relampago:'gramatica_relampago.html', el_intruso:'el_intruso.html', radio_silencio:'radio_silencio.html'
+};
+
+function setStep(n) {
+  [1,2,3].forEach(i => {
+    const el = document.getElementById('s'+i);
+    el.className = 'sc' + (i<n?' done':i===n?' active':'');
+    el.textContent = i<n ? '✓' : i;
+  });
+}
+function show(id) {
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function waehleN(n, card) {
+  niveau = n;
+  document.querySelectorAll('.nc').forEach(c=>c.classList.remove('selected'));
+  card.classList.add('selected');
+  document.getElementById('bn1').disabled = false;
+  if (navigator.vibrate) navigator.vibrate(18);
+}
+
+function waehleS(s, card) {
+  szene = s;
+  document.querySelectorAll('.szc').forEach(c=>c.classList.remove('selected'));
+  card.classList.add('selected');
+  document.getElementById('bn2').disabled = false;
+  if (navigator.vibrate) navigator.vibrate(18);
+}
+
+function go1() { show('scr1'); setStep(1); }
+function go2() { if (!niveau) return; show('scr2'); setStep(2); }
+function go3() {
+  if (!szene) return;
+  show('scr3'); setStep(3);
+  document.getElementById('cniv').textContent = NL[niveau];
+  document.getElementById('csze').textContent = SL[szene];
+  const pfad = document.getElementById('pfad');
+  pfad.innerHTML = '';
+  PFADE[niveau].forEach((key, i) => {
+    const s = document.createElement('span');
+    s.className = 'ps' + (i===0?' first':'');
+    s.textContent = PFAD_LABELS[key];
+    pfad.appendChild(s);
+    if (i < PFADE[niveau].length-1) {
+      const a = document.createElement('span');
+      a.className='parr'; a.textContent='→';
+      pfad.appendChild(a);
+    }
+  });
+}
+
+function starten() {
+  Lernpfad.onboardingAbschliessen(niveau, szene);
+  const erstesSpiel = PFADE[niveau][0];
+  window.location.href = `${URLS[erstesSpiel]}?szene=${szene}&niveau=${niveau}`;
+}
+</script>
+</body>
+</html>

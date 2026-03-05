@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "fre_001",
+    "de": "die Freizeit",
+    "es": "el tiempo libre",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈtjempo ˈliβɾe",
+      "simplified": "el TJEM-po LI-bre",
+      "tip": "Das 'ie' als Diphthong, das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el tiempo libre",
+      "es_andalucia": "el tiempo libre",
+      "es_cataluna": "el temps lliure",
+      "es_canarias": "el tiempo libre",
+      "lat_mx": "el tiempo libre",
+      "lat_ar": "el tiempo libre",
+      "lat_co": "el tiempo libre",
+      "lat_cl": "el tiempo libre",
+      "lat_pe": "el tiempo libre",
+      "lat_ve": "el tiempo libre",
+      "lat_cu": "el tiempo libre",
+      "lat_do": "el tiempo libre"
+    },
+    "example_de": "Was machst du in deiner Freizeit?",
+    "example_es": "¿Qué haces en tu tiempo libre?",
+    "tags": [
+      "freizeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_002",
+    "de": "das Kino",
+    "es": "el cine",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈθine",
+      "simplified": "el SI-ne",
+      "tip": "In Lateinamerika 'SI-ne', in Spanien 'TH I-ne'"
+    },
+    "dialects": {
+      "es_castilla": "el cine",
+      "es_andalucia": "el cine",
+      "es_cataluna": "el cinema",
+      "es_canarias": "el cine",
+      "lat_mx": "el cine",
+      "lat_ar": "el cine",
+      "lat_co": "el cine",
+      "lat_cl": "el cine",
+      "lat_pe": "el cine",
+      "lat_ve": "el cine",
+      "lat_cu": "el cine",
+      "lat_do": "el cine"
+    },
+    "example_de": "Gehen wir heute ins Kino?",
+    "example_es": "¿Vamos al cine hoy?",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_003",
+    "de": "der Sport",
+    "es": "el deporte",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el deˈpoɾte",
+      "simplified": "el de-POR-te",
+      "tip": "Drei Silben, Betonung auf 'por'"
+    },
+    "dialects": {
+      "es_castilla": "el deporte",
+      "es_andalucia": "el deporte",
+      "es_cataluna": "l'esport",
+      "es_canarias": "el deporte",
+      "lat_mx": "el deporte",
+      "lat_ar": "el deporte",
+      "lat_co": "el deporte",
+      "lat_cl": "el deporte",
+      "lat_pe": "el deporte",
+      "lat_ve": "el deporte",
+      "lat_cu": "el deporte",
+      "lat_do": "el deporte"
+    },
+    "example_de": "Er treibt viel Sport.",
+    "example_es": "Él hace mucho deporte.",
+    "tags": [
+      "sport",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_004",
+    "de": "der Fußball",
+    "es": "el fútbol",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈfutβol",
+      "simplified": "el FUT-bol",
+      "tip": "Das 'v' wie weiches 'b', kein '-ball' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "el fútbol",
+      "es_andalucia": "el fútbol",
+      "es_cataluna": "el futbol",
+      "es_canarias": "el fútbol",
+      "lat_mx": "el fútbol",
+      "lat_ar": "el fútbol",
+      "lat_co": "el fútbol",
+      "lat_cl": "el fútbol",
+      "lat_pe": "el fútbol",
+      "lat_ve": "el fútbol",
+      "lat_cu": "el fútbol",
+      "lat_do": "el fútbol"
+    },
+    "example_de": "Fußball ist mein Lieblingssport.",
+    "example_es": "El fútbol es mi deporte favorito.",
+    "tags": [
+      "sport",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_005",
+    "de": "die Musik",
+    "es": "la música",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈmusika",
+      "simplified": "la MU-si-ka",
+      "tip": "Betonung auf der ersten Silbe"
+    },
+    "dialects": {
+      "es_castilla": "la música",
+      "es_andalucia": "la música",
+      "es_cataluna": "la música",
+      "es_canarias": "la música",
+      "lat_mx": "la música",
+      "lat_ar": "la música",
+      "lat_co": "la música",
+      "lat_cl": "la música",
+      "lat_pe": "la música",
+      "lat_ve": "la música",
+      "lat_cu": "la música",
+      "lat_do": "la música"
+    },
+    "example_de": "Ich höre gerne Musik.",
+    "example_es": "Me gusta escuchar música.",
+    "tags": [
+      "unterhaltung",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_006",
+    "de": "das Konzert",
+    "es": "el concierto",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el konˈθjeɾto",
+      "simplified": "la kon-SJER-to",
+      "tip": "Das 'ie' als Diphthong, in Lateinamerika 'kon-SJER-to'"
+    },
+    "dialects": {
+      "es_castilla": "el concierto",
+      "es_andalucia": "el concierto",
+      "es_cataluna": "el concert",
+      "es_canarias": "el concierto",
+      "lat_mx": "el concierto",
+      "lat_ar": "el concierto",
+      "lat_co": "el concierto",
+      "lat_cl": "el concierto",
+      "lat_pe": "el concierto",
+      "lat_ve": "el concierto",
+      "lat_cu": "el concierto",
+      "lat_do": "el concierto"
+    },
+    "example_de": "Ich war gestern auf einem Konzert.",
+    "example_es": "Ayer estuve en un concierto.",
+    "tags": [
+      "unterhaltung",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_007",
+    "de": "das Buch",
+    "es": "el libro",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈliβɾo",
+      "simplified": "el LI-bro",
+      "tip": "Das 'v' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el libro",
+      "es_andalucia": "el libro",
+      "es_cataluna": "el llibre",
+      "es_canarias": "el libro",
+      "lat_mx": "el libro",
+      "lat_ar": "el libro",
+      "lat_co": "el libro",
+      "lat_cl": "el libro",
+      "lat_pe": "el libro",
+      "lat_ve": "el libro",
+      "lat_cu": "el libro",
+      "lat_do": "el libro"
+    },
+    "example_de": "Hast du ein gutes Buch gelesen?",
+    "example_es": "¿Has leído un buen libro?",
+    "tags": [
+      "hobbys",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_008",
+    "de": "reisen",
+    "es": "viajar",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "bjaˈxaɾ",
+      "simplified": "bja-CHAR",
+      "tip": "Das 'v' wie 'b', das 'j' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "viajar",
+      "es_andalucia": "viajar",
+      "es_cataluna": "viatjar",
+      "es_canarias": "viajar",
+      "lat_mx": "viajar",
+      "lat_ar": "viajar",
+      "lat_co": "viajar",
+      "lat_cl": "viajar",
+      "lat_pe": "viajar",
+      "lat_ve": "viajar",
+      "lat_cu": "viajar",
+      "lat_do": "viajar"
+    },
+    "example_de": "Im Sommer reise ich nach Mexiko.",
+    "example_es": "En verano viajo a México.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_009",
+    "de": "schwimmen",
+    "es": "nadar",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "naˈðaɾ",
+      "simplified": "na-DAR",
+      "tip": "Das 'd' sehr weich, Betonung auf 'dar'"
+    },
+    "dialects": {
+      "es_castilla": "nadar",
+      "es_andalucia": "nadar",
+      "es_cataluna": "nedar",
+      "es_canarias": "nadar",
+      "lat_mx": "nadar",
+      "lat_ar": "nadar",
+      "lat_co": "nadar",
+      "lat_cl": "nadar",
+      "lat_pe": "nadar",
+      "lat_ve": "nadar",
+      "lat_cu": "nadar",
+      "lat_do": "nadar"
+    },
+    "example_de": "Ich schwimme jeden Morgen.",
+    "example_es": "Nado todas las mañanas.",
+    "tags": [
+      "sport",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_010",
+    "de": "das Hobby",
+    "es": "la afición",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la afiˈθjon",
+      "simplified": "la a-fi-SJON",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la afición",
+      "es_andalucia": "la afición",
+      "es_cataluna": "l'afició",
+      "es_canarias": "el hobby",
+      "lat_mx": "el hobby",
+      "lat_ar": "el hobby",
+      "lat_co": "el hobby",
+      "lat_cl": "el pasatiempo",
+      "lat_pe": "el hobby",
+      "lat_ve": "el hobby",
+      "lat_cu": "el hobby",
+      "lat_do": "el pasatiempo"
+    },
+    "example_de": "Mein Hobby ist Fotografieren.",
+    "example_es": "Mi afición es la fotografía.",
+    "tags": [
+      "hobbys",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_011",
+    "de": "malen",
+    "es": "pintar",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "pinˈtaɾ",
+      "simplified": "pin-TAR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "pintar",
+      "es_andalucia": "pintar",
+      "es_cataluna": "pintar",
+      "es_canarias": "pintar",
+      "lat_mx": "pintar",
+      "lat_ar": "pintar",
+      "lat_co": "pintar",
+      "lat_cl": "pintar",
+      "lat_pe": "pintar",
+      "lat_ve": "pintar",
+      "lat_cu": "pintar",
+      "lat_do": "pintar"
+    },
+    "example_de": "Sie malt sehr gerne.",
+    "example_es": "A ella le encanta pintar.",
+    "tags": [
+      "hobbys",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_012",
+    "de": "kochen",
+    "es": "cocinar",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "koθiˈnaɾ",
+      "simplified": "ko-si-NAR",
+      "tip": "In Lateinamerika 'ko-si-NAR'"
+    },
+    "dialects": {
+      "es_castilla": "cocinar",
+      "es_andalucia": "cocinar",
+      "es_cataluna": "cuinar",
+      "es_canarias": "cocinar",
+      "lat_mx": "cocinar",
+      "lat_ar": "cocinar",
+      "lat_co": "cocinar",
+      "lat_cl": "cocinar",
+      "lat_pe": "cocinar",
+      "lat_ve": "cocinar",
+      "lat_cu": "cocinar",
+      "lat_do": "cocinar"
+    },
+    "example_de": "In der Freizeit koche ich gerne.",
+    "example_es": "En mi tiempo libre me gusta cocinar.",
+    "tags": [
+      "hobbys",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_013",
+    "de": "wandern",
+    "es": "hacer senderismo",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aˈθeɾ sendeˈɾismo",
+      "simplified": "a-SER sen-de-RIS-mo",
+      "tip": "In Lateinamerika 'a-SER'"
+    },
+    "dialects": {
+      "es_castilla": "hacer senderismo",
+      "es_andalucia": "senderismo",
+      "es_cataluna": "fer senderisme",
+      "es_canarias": "hacer senderismo",
+      "lat_mx": "hacer senderismo",
+      "lat_ar": "hacer trekking",
+      "lat_co": "hacer senderismo",
+      "lat_cl": "hacer trekking",
+      "lat_pe": "hacer senderismo",
+      "lat_ve": "hacer senderismo",
+      "lat_cu": "ir de excursión",
+      "lat_do": "hacer senderismo"
+    },
+    "example_de": "Am Wochenende gehen wir wandern.",
+    "example_es": "El fin de semana hacemos senderismo.",
+    "tags": [
+      "sport",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_014",
+    "de": "der Park",
+    "es": "el parque",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈpaɾke",
+      "simplified": "el PAR-ke",
+      "tip": "Das 'qu' klingt wie 'k'"
+    },
+    "dialects": {
+      "es_castilla": "el parque",
+      "es_andalucia": "el parque",
+      "es_cataluna": "el parc",
+      "es_canarias": "el parque",
+      "lat_mx": "el parque",
+      "lat_ar": "el parque",
+      "lat_co": "el parque",
+      "lat_cl": "el parque",
+      "lat_pe": "el parque",
+      "lat_ve": "el parque",
+      "lat_cu": "el parque",
+      "lat_do": "el parque"
+    },
+    "example_de": "Der Park ist wunderschön.",
+    "example_es": "El parque es precioso.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_015",
+    "de": "Urlaub machen",
+    "es": "ir de vacaciones",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "iɾ de βakaˈθjones",
+      "simplified": "ir de ba-ka-SJON-es",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "ir de vacaciones",
+      "es_andalucia": "irse de vacaciones",
+      "es_cataluna": "anar de vacances",
+      "es_canarias": "ir de vacaciones",
+      "lat_mx": "ir de vacaciones",
+      "lat_ar": "irse de vacaciones",
+      "lat_co": "salir de vacaciones",
+      "lat_cl": "ir de vacaciones",
+      "lat_pe": "ir de vacaciones",
+      "lat_ve": "ir de vacaciones",
+      "lat_cu": "salir de vacaciones",
+      "lat_do": "ir de vacaciones"
+    },
+    "example_de": "Diesen Sommer machen wir Urlaub.",
+    "example_es": "Este verano nos vamos de vacaciones.",
+    "tags": [
+      "freizeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_016",
+    "de": "das Museum",
+    "es": "el museo",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el muˈseo",
+      "simplified": "el mu-SE-o",
+      "tip": "Drei Silben, Betonung auf 'se'"
+    },
+    "dialects": {
+      "es_castilla": "el museo",
+      "es_andalucia": "el museo",
+      "es_cataluna": "el museu",
+      "es_canarias": "el museo",
+      "lat_mx": "el museo",
+      "lat_ar": "el museo",
+      "lat_co": "el museo",
+      "lat_cl": "el museo",
+      "lat_pe": "el museo",
+      "lat_ve": "el museo",
+      "lat_cu": "el museo",
+      "lat_do": "el museo"
+    },
+    "example_de": "Wir gehen heute ins Museum.",
+    "example_es": "Hoy vamos al museo.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_017",
+    "de": "fotografieren",
+    "es": "sacar fotos",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "saˈkaɾ ˈfotos",
+      "simplified": "sa-KAR FO-tos",
+      "tip": "Betonung auf 'kar'"
+    },
+    "dialects": {
+      "es_castilla": "hacer fotos",
+      "es_andalucia": "hacer fotos",
+      "es_cataluna": "fer fotos",
+      "es_canarias": "sacar fotos",
+      "lat_mx": "tomar fotos",
+      "lat_ar": "sacar fotos",
+      "lat_co": "tomar fotos",
+      "lat_cl": "sacar fotos",
+      "lat_pe": "tomar fotos",
+      "lat_ve": "tomar fotos",
+      "lat_cu": "tomar fotos",
+      "lat_do": "tomar fotos"
+    },
+    "example_de": "Ich fotografiere gerne Landschaften.",
+    "example_es": "Me gusta sacar fotos de paisajes.",
+    "tags": [
+      "hobbys",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_018",
+    "de": "laufen",
+    "es": "correr",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "koˈreɾ",
+      "simplified": "ko-RER",
+      "tip": "Zwei Silben, Betonung auf 'rer', doppeltes 'r' gerollt"
+    },
+    "dialects": {
+      "es_castilla": "correr",
+      "es_andalucia": "correr",
+      "es_cataluna": "córrer",
+      "es_canarias": "correr",
+      "lat_mx": "correr",
+      "lat_ar": "correr",
+      "lat_co": "correr",
+      "lat_cl": "correr",
+      "lat_pe": "correr",
+      "lat_ve": "correr",
+      "lat_cu": "correr",
+      "lat_do": "correr"
+    },
+    "example_de": "Ich laufe jeden Morgen 5 km.",
+    "example_es": "Corro 5 km cada mañana.",
+    "tags": [
+      "sport",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_019",
+    "de": "das Theater",
+    "es": "el teatro",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el teˈatɾo",
+      "simplified": "el te-A-tro",
+      "tip": "Drei Silben, das 'tr' klar"
+    },
+    "dialects": {
+      "es_castilla": "el teatro",
+      "es_andalucia": "el teatro",
+      "es_cataluna": "el teatre",
+      "es_canarias": "el teatro",
+      "lat_mx": "el teatro",
+      "lat_ar": "el teatro",
+      "lat_co": "el teatro",
+      "lat_cl": "el teatro",
+      "lat_pe": "el teatro",
+      "lat_ve": "el teatro",
+      "lat_cu": "el teatro",
+      "lat_do": "el teatro"
+    },
+    "example_de": "Wir gehen am Freitag ins Theater.",
+    "example_es": "El viernes vamos al teatro.",
+    "tags": [
+      "orte",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_020",
+    "de": "die Party",
+    "es": "la fiesta",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈfjesta",
+      "simplified": "la FJES-ta",
+      "tip": "Das 'ie' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "la fiesta",
+      "es_andalucia": "la fiesta",
+      "es_cataluna": "la festa",
+      "es_canarias": "la fiesta",
+      "lat_mx": "la fiesta",
+      "lat_ar": "la fiesta",
+      "lat_co": "la fiesta",
+      "lat_cl": "la fiesta",
+      "lat_pe": "la fiesta",
+      "lat_ve": "la fiesta",
+      "lat_cu": "la fiesta",
+      "lat_do": "la fiesta"
+    },
+    "example_de": "Samstag gibt es eine Party.",
+    "example_es": "El sábado hay una fiesta.",
+    "tags": [
+      "soziales",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_021",
+    "de": "Fahrrad fahren",
+    "es": "montar en bicicleta",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "monˈtaɾ en biθiˈkleta",
+      "simplified": "mon-TAR en bi-si-KLE-ta",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "montar en bicicleta",
+      "es_andalucia": "ir en bici",
+      "es_cataluna": "anar en bicicleta",
+      "es_canarias": "montar en bicicleta",
+      "lat_mx": "andar en bicicleta",
+      "lat_ar": "andar en bicicleta",
+      "lat_co": "montar en bicicleta",
+      "lat_cl": "andar en bicicleta",
+      "lat_pe": "montar en bicicleta",
+      "lat_ve": "montar bicicleta",
+      "lat_cu": "montar en bicicleta",
+      "lat_do": "montar en bicicleta"
+    },
+    "example_de": "Sonntags fahre ich oft Rad.",
+    "example_es": "Los domingos suelo montar en bicicleta.",
+    "tags": [
+      "sport",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_022",
+    "de": "der Film",
+    "es": "la película",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la peˈlikula",
+      "simplified": "la pe-LÍ-ku-la",
+      "tip": "Vier Silben, Betonung auf 'lí'"
+    },
+    "dialects": {
+      "es_castilla": "la película",
+      "es_andalucia": "la película",
+      "es_cataluna": "la pel·lícula",
+      "es_canarias": "la película",
+      "lat_mx": "la película",
+      "lat_ar": "la película",
+      "lat_co": "la película",
+      "lat_cl": "la película",
+      "lat_pe": "la película",
+      "lat_ve": "la película",
+      "lat_cu": "la película",
+      "lat_do": "la película"
+    },
+    "example_de": "Dieser Film ist fantastisch!",
+    "example_es": "¡Esta película es fantástica!",
+    "tags": [
+      "unterhaltung",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_023",
+    "de": "das Videospiel",
+    "es": "el videojuego",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el βiðeoˈxweɣo",
+      "simplified": "el bi-de-o-CHWE-go",
+      "tip": "Das 'j' wie Rachen-'ch', das 'ue' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "el videojuego",
+      "es_andalucia": "el videojuego",
+      "es_cataluna": "el videojoc",
+      "es_canarias": "el videojuego",
+      "lat_mx": "el videojuego",
+      "lat_ar": "el videojuego",
+      "lat_co": "el videojuego",
+      "lat_cl": "el videojuego",
+      "lat_pe": "el videojuego",
+      "lat_ve": "el videojuego",
+      "lat_cu": "el videojuego",
+      "lat_do": "el videojuego"
+    },
+    "example_de": "Mein Bruder spielt viele Videospiele.",
+    "example_es": "Mi hermano juega mucho a los videojuegos.",
+    "tags": [
+      "unterhaltung",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_024",
+    "de": "spazieren gehen",
+    "es": "salir a caminar",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "saˈliɾ a kamiˈnaɾ",
+      "simplified": "sa-LIR a ka-mi-NAR",
+      "tip": "Zwei Verben, beide auf letzter Silbe betont"
+    },
+    "dialects": {
+      "es_castilla": "pasear",
+      "es_andalucia": "pasear",
+      "es_cataluna": "passejar",
+      "es_canarias": "salir a caminar",
+      "lat_mx": "salir a caminar",
+      "lat_ar": "dar una vuelta",
+      "lat_co": "salir a caminar",
+      "lat_cl": "dar una vuelta",
+      "lat_pe": "dar un paseo",
+      "lat_ve": "salir a caminar",
+      "lat_cu": "salir a dar un paseo",
+      "lat_do": "caminar"
+    },
+    "example_de": "Wir gehen nach dem Abendessen spazieren.",
+    "example_es": "Salimos a caminar después de cenar.",
+    "tags": [
+      "aktivitäten",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_025",
+    "de": "angeln",
+    "es": "pescar",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "pesˈkaɾ",
+      "simplified": "pes-KAR",
+      "tip": "Betonung auf 'kar'"
+    },
+    "dialects": {
+      "es_castilla": "pescar",
+      "es_andalucia": "ir a pescar",
+      "es_cataluna": "pescar",
+      "es_canarias": "ir a pescar",
+      "lat_mx": "ir a pescar",
+      "lat_ar": "ir a pescar",
+      "lat_co": "pescar",
+      "lat_cl": "ir a pescar",
+      "lat_pe": "ir de pesca",
+      "lat_ve": "pescar",
+      "lat_cu": "pescar",
+      "lat_do": "ir a pescar"
+    },
+    "example_de": "Mein Vater geht am Wochenende angeln.",
+    "example_es": "Mi padre va a pescar los fines de semana.",
+    "tags": [
+      "hobbys",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_026",
+    "de": "tanzen",
+    "es": "bailar",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "βaiˈlaɾ",
+      "simplified": "bai-LAR",
+      "tip": "Das 'v' wie 'b', Betonung auf 'lar'"
+    },
+    "dialects": {
+      "es_castilla": "bailar",
+      "es_andalucia": "bailar",
+      "es_cataluna": "ballar",
+      "es_canarias": "bailar",
+      "lat_mx": "bailar",
+      "lat_ar": "bailar",
+      "lat_co": "bailar",
+      "lat_cl": "bailar",
+      "lat_pe": "bailar",
+      "lat_ve": "bailar",
+      "lat_cu": "bailar",
+      "lat_do": "bailar"
+    },
+    "example_de": "Tanzen macht mir viel Spaß.",
+    "example_es": "Me encanta bailar.",
+    "tags": [
+      "hobbys",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_027",
+    "de": "das Wochenende",
+    "es": "el fin de semana",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el fin de seˈmana",
+      "simplified": "el fin de se-MA-na",
+      "tip": "Drei Wörter, Betonung auf 'ma'"
+    },
+    "dialects": {
+      "es_castilla": "el fin de semana",
+      "es_andalucia": "el fin de semana",
+      "es_cataluna": "el cap de setmana",
+      "es_canarias": "el fin de semana",
+      "lat_mx": "el fin de semana",
+      "lat_ar": "el fin de semana",
+      "lat_co": "el fin de semana",
+      "lat_cl": "el fin de semana",
+      "lat_pe": "el fin de semana",
+      "lat_ve": "el fin de semana",
+      "lat_cu": "el fin de semana",
+      "lat_do": "el fin de semana"
+    },
+    "example_de": "Was machst du am Wochenende?",
+    "example_es": "¿Qué haces el fin de semana?",
+    "tags": [
+      "zeit",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_028",
+    "de": "der Strand",
+    "es": "la playa",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈplaʝa",
+      "simplified": "la PLA-ja",
+      "tip": "Das 'll' wird wie ein weiches 'j' ausgesprochen"
+    },
+    "dialects": {
+      "es_castilla": "la playa",
+      "es_andalucia": "la playa",
+      "es_cataluna": "la platja",
+      "es_canarias": "la playa",
+      "lat_mx": "la playa",
+      "lat_ar": "la playa",
+      "lat_co": "la playa",
+      "lat_cl": "la playa",
+      "lat_pe": "la playa",
+      "lat_ve": "la playa",
+      "lat_cu": "la playa",
+      "lat_do": "la playa"
+    },
+    "example_de": "Im Sommer gehe ich gerne an den Strand.",
+    "example_es": "En verano me gusta ir a la playa.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_029",
+    "de": "Yoga machen",
+    "es": "hacer yoga",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aˈθeɾ ˈʝoɣa",
+      "simplified": "a-SER JO-ga",
+      "tip": "Das 'y' klingt wie weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "hacer yoga",
+      "es_andalucia": "hacer yoga",
+      "es_cataluna": "fer ioga",
+      "es_canarias": "hacer yoga",
+      "lat_mx": "hacer yoga",
+      "lat_ar": "hacer yoga",
+      "lat_co": "hacer yoga",
+      "lat_cl": "hacer yoga",
+      "lat_pe": "hacer yoga",
+      "lat_ve": "hacer yoga",
+      "lat_cu": "hacer yoga",
+      "lat_do": "practicar yoga"
+    },
+    "example_de": "Ich mache jeden Morgen Yoga.",
+    "example_es": "Hago yoga cada mañana.",
+    "tags": [
+      "sport",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_030",
+    "de": "basteln",
+    "es": "hacer manualidades",
+    "category": "freizeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "aˈθeɾ manualiˈðaðes",
+      "simplified": "a-SER ma-nua-li-DA-des",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "hacer manualidades",
+      "es_andalucia": "hacer manualidades",
+      "es_cataluna": "fer manualitats",
+      "es_canarias": "hacer manualidades",
+      "lat_mx": "hacer manualidades",
+      "lat_ar": "hacer manualidades",
+      "lat_co": "hacer manualidades",
+      "lat_cl": "hacer manualidades",
+      "lat_pe": "hacer manualidades",
+      "lat_ve": "hacer manualidades",
+      "lat_cu": "hacer manualidades",
+      "lat_do": "hacer manualidades"
+    },
+    "example_de": "Basteln ist ein schönes Hobby.",
+    "example_es": "Hacer manualidades es un hobby bonito.",
+    "tags": [
+      "hobbys",
+      "B1"
+    ]
+  },
+  {
+    "id": "fre_031",
+    "de": "singen",
+    "es": "cantar",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "kanˈtaɾ",
+      "simplified": "kan-TAR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "cantar",
+      "es_andalucia": "cantar",
+      "es_cataluna": "cantar",
+      "es_canarias": "cantar",
+      "lat_mx": "cantar",
+      "lat_ar": "cantar",
+      "lat_co": "cantar",
+      "lat_cl": "cantar",
+      "lat_pe": "cantar",
+      "lat_ve": "cantar",
+      "lat_cu": "cantar",
+      "lat_do": "cantar"
+    },
+    "example_de": "Sie singt sehr schön.",
+    "example_es": "Ella canta muy bien.",
+    "tags": [
+      "hobbys",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_032",
+    "de": "ein Instrument spielen",
+    "es": "tocar un instrumento",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "toˈkaɾ un instɾuˈmento",
+      "simplified": "to-KAR un ins-tru-MEN-to",
+      "tip": "Betonung auf 'kar' und 'men'"
+    },
+    "dialects": {
+      "es_castilla": "tocar un instrumento",
+      "es_andalucia": "tocar un instrumento",
+      "es_cataluna": "tocar un instrument",
+      "es_canarias": "tocar un instrumento",
+      "lat_mx": "tocar un instrumento",
+      "lat_ar": "tocar un instrumento",
+      "lat_co": "tocar un instrumento",
+      "lat_cl": "tocar un instrumento",
+      "lat_pe": "tocar un instrumento",
+      "lat_ve": "tocar un instrumento",
+      "lat_cu": "tocar un instrumento",
+      "lat_do": "tocar un instrumento"
+    },
+    "example_de": "Ich spiele Gitarre.",
+    "example_es": "Toco la guitarra.",
+    "tags": [
+      "hobbys",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_033",
+    "de": "die Gitarre",
+    "es": "la guitarra",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ɡiˈtara",
+      "simplified": "la gi-TA-rra",
+      "tip": "Das doppelte 'r' gerollt"
+    },
+    "dialects": {
+      "es_castilla": "la guitarra",
+      "es_andalucia": "la guitarra",
+      "es_cataluna": "la guitarra",
+      "es_canarias": "la guitarra",
+      "lat_mx": "la guitarra",
+      "lat_ar": "la guitarra",
+      "lat_co": "la guitarra",
+      "lat_cl": "la guitarra",
+      "lat_pe": "la guitarra",
+      "lat_ve": "la guitarra",
+      "lat_cu": "la guitarra",
+      "lat_do": "la guitarra"
+    },
+    "example_de": "Er kann sehr gut Gitarre spielen.",
+    "example_es": "Él toca la guitarra muy bien.",
+    "tags": [
+      "musik",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_034",
+    "de": "klettern",
+    "es": "escalar",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "eskaˈlaɾ",
+      "simplified": "es-ka-LAR",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "escalar",
+      "es_andalucia": "escalar",
+      "es_cataluna": "escalar",
+      "es_canarias": "escalar",
+      "lat_mx": "escalar",
+      "lat_ar": "escalar",
+      "lat_co": "escalar",
+      "lat_cl": "escalar",
+      "lat_pe": "escalar",
+      "lat_ve": "escalar",
+      "lat_cu": "escalar",
+      "lat_do": "escalar"
+    },
+    "example_de": "Klettern macht mir großen Spaß.",
+    "example_es": "Escalar me divierte mucho.",
+    "tags": [
+      "sport",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_035",
+    "de": "surfen",
+    "es": "surfear",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "suɾfeˈaɾ",
+      "simplified": "sur-fe-AR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "surfear",
+      "es_andalucia": "surfear",
+      "es_cataluna": "fer surf",
+      "es_canarias": "surfear",
+      "lat_mx": "surfear",
+      "lat_ar": "surfear",
+      "lat_co": "surfear",
+      "lat_cl": "surfear",
+      "lat_pe": "surfear",
+      "lat_ve": "surfear",
+      "lat_cu": "surfear",
+      "lat_do": "surfear"
+    },
+    "example_de": "Im Urlaub lerne ich surfen.",
+    "example_es": "En las vacaciones aprendo a surfear.",
+    "tags": [
+      "sport",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_036",
+    "de": "das Schwimmbad",
+    "es": "la piscina",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la pisˈθina",
+      "simplified": "la pis-SI-na",
+      "tip": "In Lateinamerika 'pis-SI-na', in Spanien 'pis-THI-na'"
+    },
+    "dialects": {
+      "es_castilla": "la piscina",
+      "es_andalucia": "la piscina",
+      "es_cataluna": "la piscina",
+      "es_canarias": "la piscina",
+      "lat_mx": "la alberca",
+      "lat_ar": "la pileta",
+      "lat_co": "la piscina",
+      "lat_cl": "la piscina",
+      "lat_pe": "la piscina",
+      "lat_ve": "la piscina",
+      "lat_cu": "la piscina",
+      "lat_do": "la piscina"
+    },
+    "example_de": "Im Sommer gehe ich ins Schwimmbad.",
+    "example_es": "En verano voy a la piscina.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_037",
+    "de": "der Spaziergang",
+    "es": "el paseo",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el paˈseo",
+      "simplified": "el pa-SE-o",
+      "tip": "Drei Silben, Betonung auf 'se'"
+    },
+    "dialects": {
+      "es_castilla": "el paseo",
+      "es_andalucia": "el paseo",
+      "es_cataluna": "el passeig",
+      "es_canarias": "el paseo",
+      "lat_mx": "el paseo",
+      "lat_ar": "el paseo",
+      "lat_co": "el paseo",
+      "lat_cl": "el paseo",
+      "lat_pe": "el paseo",
+      "lat_ve": "el paseo",
+      "lat_cu": "el paseo",
+      "lat_do": "el paseo"
+    },
+    "example_de": "Lass uns einen Spaziergang machen.",
+    "example_es": "Vamos a dar un paseo.",
+    "tags": [
+      "aktivitäten",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_038",
+    "de": "die Ausstellung",
+    "es": "la exposición",
+    "category": "freizeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la eksposiˈθjon",
+      "simplified": "la eks-po-si-SJON",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "la exposición",
+      "es_andalucia": "la exposición",
+      "es_cataluna": "l'exposició",
+      "es_canarias": "la exposición",
+      "lat_mx": "la exposición",
+      "lat_ar": "la exposición",
+      "lat_co": "la exposición",
+      "lat_cl": "la exposición",
+      "lat_pe": "la exposición",
+      "lat_ve": "la exposición",
+      "lat_cu": "la exposición",
+      "lat_do": "la exposición"
+    },
+    "example_de": "Wir besuchen eine Kunstausstellung.",
+    "example_es": "Visitamos una exposición de arte.",
+    "tags": [
+      "kultur",
+      "B1"
+    ]
+  },
+  {
+    "id": "fre_039",
+    "de": "stricken",
+    "es": "tejer",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "teˈxeɾ",
+      "simplified": "te-CHER",
+      "tip": "Das 'j' wie Rachen-'ch', Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "tejer",
+      "es_andalucia": "tejer",
+      "es_cataluna": "teixir",
+      "es_canarias": "tejer",
+      "lat_mx": "tejer",
+      "lat_ar": "tejer",
+      "lat_co": "tejer",
+      "lat_cl": "tejer",
+      "lat_pe": "tejer",
+      "lat_ve": "tejer",
+      "lat_cu": "tejer",
+      "lat_do": "tejer"
+    },
+    "example_de": "Meine Oma strickt gerne.",
+    "example_es": "A mi abuela le gusta tejer.",
+    "tags": [
+      "hobbys",
+      "B1"
+    ]
+  },
+  {
+    "id": "fre_040",
+    "de": "Skateboard fahren",
+    "es": "montar en patineta",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "monˈtaɾ en patiˈneta",
+      "simplified": "mon-TAR en pa-ti-NE-ta",
+      "tip": "Vier Wörter, Betonung auf 'tar' und 'ne'"
+    },
+    "dialects": {
+      "es_castilla": "hacer skate",
+      "es_andalucia": "hacer skate",
+      "es_cataluna": "fer skate",
+      "es_canarias": "patinar",
+      "lat_mx": "andar en patineta",
+      "lat_ar": "andar en skate",
+      "lat_co": "montar en patineta",
+      "lat_cl": "andar en skate",
+      "lat_pe": "andar en patineta",
+      "lat_ve": "montar tabla",
+      "lat_cu": "patinar en tabla",
+      "lat_do": "montar tabla"
+    },
+    "example_de": "Er fährt jeden Nachmittag Skateboard.",
+    "example_es": "Él monta en patineta todas las tardes.",
+    "tags": [
+      "sport",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_041",
+    "de": "der Verein",
+    "es": "el club",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el kluβ",
+      "simplified": "el KLUB",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el club",
+      "es_andalucia": "el club",
+      "es_cataluna": "el club",
+      "es_canarias": "el club",
+      "lat_mx": "el club",
+      "lat_ar": "el club",
+      "lat_co": "el club",
+      "lat_cl": "el club",
+      "lat_pe": "el club",
+      "lat_ve": "el club",
+      "lat_cu": "el club",
+      "lat_do": "el club"
+    },
+    "example_de": "Ich bin Mitglied in einem Sportverein.",
+    "example_es": "Soy miembro de un club deportivo.",
+    "tags": [
+      "soziales",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_042",
+    "de": "entspannen",
+    "es": "relajarse",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "relaxˈaɾse",
+      "simplified": "re-la-CHAR-se",
+      "tip": "Das 'j' wie Rachen-'ch', reflexives Verb"
+    },
+    "dialects": {
+      "es_castilla": "relajarse",
+      "es_andalucia": "relajarse",
+      "es_cataluna": "relaxar-se",
+      "es_canarias": "relajarse",
+      "lat_mx": "relajarse",
+      "lat_ar": "relajarse",
+      "lat_co": "relajarse",
+      "lat_cl": "relajarse",
+      "lat_pe": "relajarse",
+      "lat_ve": "relajarse",
+      "lat_cu": "relajarse",
+      "lat_do": "relajarse"
+    },
+    "example_de": "Am Wochenende entspanne ich mich.",
+    "example_es": "El fin de semana me relajo.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_043",
+    "de": "schlafen",
+    "es": "dormir",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "doɾˈmiɾ",
+      "simplified": "dor-MIR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "dormir",
+      "es_andalucia": "dormir",
+      "es_cataluna": "dormir",
+      "es_canarias": "dormir",
+      "lat_mx": "dormir",
+      "lat_ar": "dormir",
+      "lat_co": "dormir",
+      "lat_cl": "dormir",
+      "lat_pe": "dormir",
+      "lat_ve": "dormir",
+      "lat_cu": "dormir",
+      "lat_do": "dormir"
+    },
+    "example_de": "An freien Tagen schlafe ich lange.",
+    "example_es": "Los días libres duermo mucho.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_044",
+    "de": "der Zoo",
+    "es": "el zoológico",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el θooˈloxiko",
+      "simplified": "el so-o-LO-chi-ko",
+      "tip": "In Lateinamerika 'so-o-LO-chi-ko'"
+    },
+    "dialects": {
+      "es_castilla": "el zoológico",
+      "es_andalucia": "el zoo",
+      "es_cataluna": "el zoo",
+      "es_canarias": "el zoo",
+      "lat_mx": "el zoológico",
+      "lat_ar": "el zoológico",
+      "lat_co": "el zoológico",
+      "lat_cl": "el zoológico",
+      "lat_pe": "el zoológico",
+      "lat_ve": "el zoológico",
+      "lat_cu": "el zoológico",
+      "lat_do": "el zoológico"
+    },
+    "example_de": "Wir fahren am Sonntag in den Zoo.",
+    "example_es": "El domingo vamos al zoológico.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_045",
+    "de": "das Picknick",
+    "es": "el picnic",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈpiknik",
+      "simplified": "el PIK-nik",
+      "tip": "Englisches Lehnwort, gleichmäßige Betonung"
+    },
+    "dialects": {
+      "es_castilla": "el picnic",
+      "es_andalucia": "el picnic",
+      "es_cataluna": "el pícnic",
+      "es_canarias": "el picnic",
+      "lat_mx": "el picnic",
+      "lat_ar": "el picnic",
+      "lat_co": "el picnic",
+      "lat_cl": "el picnic",
+      "lat_pe": "el picnic",
+      "lat_ve": "el picnic",
+      "lat_cu": "el picnic",
+      "lat_do": "el picnic"
+    },
+    "example_de": "Wir machen ein Picknick im Park.",
+    "example_es": "Hacemos un picnic en el parque.",
+    "tags": [
+      "aktivitäten",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_046",
+    "de": "zelten",
+    "es": "acampar",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "asamˈpaɾ",
+      "simplified": "a-kam-PAR",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "acampar",
+      "es_andalucia": "acampar",
+      "es_cataluna": "acampar",
+      "es_canarias": "acampar",
+      "lat_mx": "acampar",
+      "lat_ar": "acampar",
+      "lat_co": "acampar",
+      "lat_cl": "acampar",
+      "lat_pe": "acampar",
+      "lat_ve": "acampar",
+      "lat_cu": "acampar",
+      "lat_do": "acampar"
+    },
+    "example_de": "Wir zelten dieses Wochenende.",
+    "example_es": "Este fin de semana acampamos.",
+    "tags": [
+      "aktivitäten",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_047",
+    "de": "der Campingplatz",
+    "es": "el camping",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈkampiŋ",
+      "simplified": "el KAM-ping",
+      "tip": "Englisches Lehnwort"
+    },
+    "dialects": {
+      "es_castilla": "el camping",
+      "es_andalucia": "el camping",
+      "es_cataluna": "el càmping",
+      "es_canarias": "el camping",
+      "lat_mx": "el camping",
+      "lat_ar": "el camping",
+      "lat_co": "el camping",
+      "lat_cl": "el camping",
+      "lat_pe": "el camping",
+      "lat_ve": "el camping",
+      "lat_cu": "el campamento",
+      "lat_do": "el campamento"
+    },
+    "example_de": "Der Campingplatz liegt am See.",
+    "example_es": "El camping está junto al lago.",
+    "tags": [
+      "orte",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_048",
+    "de": "das Puzzle",
+    "es": "el rompecabezas",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el rompekaˈβeθas",
+      "simplified": "el rom-pe-ka-BE-sas",
+      "tip": "Fünf Silben, das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el rompecabezas",
+      "es_andalucia": "el rompecabezas",
+      "es_cataluna": "el trencaclosques",
+      "es_canarias": "el puzzle",
+      "lat_mx": "el rompecabezas",
+      "lat_ar": "el rompecabezas",
+      "lat_co": "el rompecabezas",
+      "lat_cl": "el puzzle",
+      "lat_pe": "el rompecabezas",
+      "lat_ve": "el rompecabezas",
+      "lat_cu": "el rompecabezas",
+      "lat_do": "el rompecabezas"
+    },
+    "example_de": "Ich liebe es, Puzzles zu lösen.",
+    "example_es": "Me encanta hacer rompecabezas.",
+    "tags": [
+      "hobbys",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_049",
+    "de": "das Brettspiel",
+    "es": "el juego de mesa",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈxweɣo ðe ˈmesa",
+      "simplified": "el CHWE-go de ME-sa",
+      "tip": "Das 'j' wie Rachen-'ch', das 'ue' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "el juego de mesa",
+      "es_andalucia": "el juego de mesa",
+      "es_cataluna": "el joc de taula",
+      "es_canarias": "el juego de mesa",
+      "lat_mx": "el juego de mesa",
+      "lat_ar": "el juego de mesa",
+      "lat_co": "el juego de mesa",
+      "lat_cl": "el juego de mesa",
+      "lat_pe": "el juego de mesa",
+      "lat_ve": "el juego de mesa",
+      "lat_cu": "el juego de mesa",
+      "lat_do": "el juego de mesa"
+    },
+    "example_de": "Spielen wir heute Abend ein Brettspiel?",
+    "example_es": "¿Jugamos un juego de mesa esta noche?",
+    "tags": [
+      "hobbys",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_050",
+    "de": "schachspielen",
+    "es": "jugar al ajedrez",
+    "category": "freizeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "xuˈɣaɾ al axeˈðɾeθ",
+      "simplified": "chu-GAR al a-che-DRES",
+      "tip": "Das 'j' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "jugar al ajedrez",
+      "es_andalucia": "jugar al ajedrez",
+      "es_cataluna": "jugar als escacs",
+      "es_canarias": "jugar al ajedrez",
+      "lat_mx": "jugar ajedrez",
+      "lat_ar": "jugar al ajedrez",
+      "lat_co": "jugar ajedrez",
+      "lat_cl": "jugar ajedrez",
+      "lat_pe": "jugar ajedrez",
+      "lat_ve": "jugar al ajedrez",
+      "lat_cu": "jugar ajedrez",
+      "lat_do": "jugar ajedrez"
+    },
+    "example_de": "Mein Opa spielt sehr gut Schach.",
+    "example_es": "Mi abuelo juega muy bien al ajedrez.",
+    "tags": [
+      "hobbys",
+      "B1"
+    ]
+  },
+  {
+    "id": "fre_051",
+    "de": "der Garten",
+    "es": "el jardín",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el xaɾˈðin",
+      "simplified": "el char-DIN",
+      "tip": "Das 'j' wie Rachen-'ch', Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el jardín",
+      "es_andalucia": "el jardín",
+      "es_cataluna": "el jardí",
+      "es_canarias": "el jardín",
+      "lat_mx": "el jardín",
+      "lat_ar": "el jardín",
+      "lat_co": "el jardín",
+      "lat_cl": "el jardín",
+      "lat_pe": "el jardín",
+      "lat_ve": "el jardín",
+      "lat_cu": "el jardín",
+      "lat_do": "el jardín"
+    },
+    "example_de": "Ich arbeite gerne im Garten.",
+    "example_es": "Me gusta trabajar en el jardín.",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_052",
+    "de": "Gartenarbeit machen",
+    "es": "trabajar en el jardín",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "tɾaβaxˈaɾ en el xaɾˈðin",
+      "simplified": "tra-ba-CHAR en el char-DIN",
+      "tip": "Das 'j' wie Rachen-'ch' in beiden Positionen"
+    },
+    "dialects": {
+      "es_castilla": "trabajar en el jardín",
+      "es_andalucia": "hacer jardinería",
+      "es_cataluna": "fer jardineria",
+      "es_canarias": "hacer jardinería",
+      "lat_mx": "trabajar en el jardín",
+      "lat_ar": "hacer jardinería",
+      "lat_co": "hacer jardinería",
+      "lat_cl": "hacer jardinería",
+      "lat_pe": "hacer jardinería",
+      "lat_ve": "trabajar el jardín",
+      "lat_cu": "hacer jardinería",
+      "lat_do": "hacer jardinería"
+    },
+    "example_de": "Sie macht gerne Gartenarbeit.",
+    "example_es": "A ella le gusta trabajar en el jardín.",
+    "tags": [
+      "hobbys",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_053",
+    "de": "Ski fahren",
+    "es": "esquiar",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "eskiˈaɾ",
+      "simplified": "es-ki-AR",
+      "tip": "Drei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "esquiar",
+      "es_andalucia": "esquiar",
+      "es_cataluna": "esquiar",
+      "es_canarias": "esquiar",
+      "lat_mx": "esquiar",
+      "lat_ar": "esquiar",
+      "lat_co": "esquiar",
+      "lat_cl": "esquiar",
+      "lat_pe": "esquiar",
+      "lat_ve": "esquiar",
+      "lat_cu": "esquiar",
+      "lat_do": "esquiar"
+    },
+    "example_de": "Im Winter fahren wir Ski in den Alpen.",
+    "example_es": "En invierno esquiamos en los Alpes.",
+    "tags": [
+      "sport",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_054",
+    "de": "der Vergnügungspark",
+    "es": "el parque de atracciones",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈpaɾke ðe atɾakˈθjones",
+      "simplified": "el PAR-ke de a-trak-SJON-es",
+      "tip": "In Lateinamerika ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "el parque de atracciones",
+      "es_andalucia": "el parque de atracciones",
+      "es_cataluna": "el parc d'atraccions",
+      "es_canarias": "el parque de atracciones",
+      "lat_mx": "el parque de diversiones",
+      "lat_ar": "el parque de diversiones",
+      "lat_co": "el parque de diversiones",
+      "lat_cl": "el parque de diversiones",
+      "lat_pe": "el parque de diversiones",
+      "lat_ve": "el parque de diversiones",
+      "lat_cu": "el parque de diversiones",
+      "lat_do": "el parque de diversiones"
+    },
+    "example_de": "Die Kinder lieben den Vergnügungspark.",
+    "example_es": "A los niños les encanta el parque de atracciones.",
+    "tags": [
+      "orte",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_055",
+    "de": "die Bibliothek",
+    "es": "la biblioteca",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la βiβljoˈteka",
+      "simplified": "la bib-lio-TE-ka",
+      "tip": "Vier Silben, beide 'v' wie 'b'"
+    },
+    "dialects": {
+      "es_castilla": "la biblioteca",
+      "es_andalucia": "la biblioteca",
+      "es_cataluna": "la biblioteca",
+      "es_canarias": "la biblioteca",
+      "lat_mx": "la biblioteca",
+      "lat_ar": "la biblioteca",
+      "lat_co": "la biblioteca",
+      "lat_cl": "la biblioteca",
+      "lat_pe": "la biblioteca",
+      "lat_ve": "la biblioteca",
+      "lat_cu": "la biblioteca",
+      "lat_do": "la biblioteca"
+    },
+    "example_de": "Ich gehe oft in die Bibliothek.",
+    "example_es": "Voy a la biblioteca con frecuencia.",
+    "tags": [
+      "orte",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_056",
+    "de": "der Sportplatz",
+    "es": "el campo deportivo",
+    "category": "freizeit",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈkampo ðepoɾˈtiβo",
+      "simplified": "el KAM-po de-por-TI-bo",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el campo deportivo",
+      "es_andalucia": "el campo deportivo",
+      "es_cataluna": "el camp esportiu",
+      "es_canarias": "el campo deportivo",
+      "lat_mx": "la cancha deportiva",
+      "lat_ar": "el campo deportivo",
+      "lat_co": "la cancha deportiva",
+      "lat_cl": "la cancha deportiva",
+      "lat_pe": "el campo deportivo",
+      "lat_ve": "el campo deportivo",
+      "lat_cu": "el campo deportivo",
+      "lat_do": "el campo deportivo"
+    },
+    "example_de": "Wir spielen auf dem Sportplatz.",
+    "example_es": "Jugamos en el campo deportivo.",
+    "tags": [
+      "orte",
+      "A2"
+    ]
+  },
+  {
+    "id": "fre_057",
+    "de": "gewinnen",
+    "es": "ganar",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ɡaˈnaɾ",
+      "simplified": "ga-NAR",
+      "tip": "Zwei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "ganar",
+      "es_andalucia": "ganar",
+      "es_cataluna": "guanyar",
+      "es_canarias": "ganar",
+      "lat_mx": "ganar",
+      "lat_ar": "ganar",
+      "lat_co": "ganar",
+      "lat_cl": "ganar",
+      "lat_pe": "ganar",
+      "lat_ve": "ganar",
+      "lat_cu": "ganar",
+      "lat_do": "ganar"
+    },
+    "example_de": "Wir haben das Spiel gewonnen!",
+    "example_es": "¡Hemos ganado el partido!",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_058",
+    "de": "verlieren",
+    "es": "perder",
+    "category": "freizeit",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "peɾˈðeɾ",
+      "simplified": "per-DER",
+      "tip": "Das 'd' sehr weich, Betonung auf 'der'"
+    },
+    "dialects": {
+      "es_castilla": "perder",
+      "es_andalucia": "perder",
+      "es_cataluna": "perdre",
+      "es_canarias": "perder",
+      "lat_mx": "perder",
+      "lat_ar": "perder",
+      "lat_co": "perder",
+      "lat_cl": "perder",
+      "lat_pe": "perder",
+      "lat_ve": "perder",
+      "lat_cu": "perder",
+      "lat_do": "perder"
+    },
+    "example_de": "Manchmal verliert man.",
+    "example_es": "A veces se pierde.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "fre_059",
+    "de": "der Mannschaftssport",
+    "es": "el deporte en equipo",
+    "category": "freizeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el deˈpoɾte en eˈkipo",
+      "simplified": "el de-POR-te en e-KI-po",
+      "tip": "Drei Wörter, Betonung auf 'por' und 'ki'"
+    },
+    "dialects": {
+      "es_castilla": "el deporte en equipo",
+      "es_andalucia": "el deporte en equipo",
+      "es_cataluna": "l'esport en equip",
+      "es_canarias": "el deporte en equipo",
+      "lat_mx": "el deporte de equipo",
+      "lat_ar": "el deporte en equipo",
+      "lat_co": "el deporte en equipo",
+      "lat_cl": "el deporte de equipo",
+      "lat_pe": "el deporte en equipo",
+      "lat_ve": "el deporte en equipo",
+      "lat_cu": "el deporte en equipo",
+      "lat_do": "el deporte en equipo"
+    },
+    "example_de": "Ich bevorzuge Mannschaftssport.",
+    "example_es": "Prefiero el deporte en equipo.",
+    "tags": [
+      "sport",
+      "B1"
+    ]
+  },
+  {
+    "id": "fre_060",
+    "de": "der Wettkampf",
+    "es": "la competición",
+    "category": "freizeit",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la kompetiˈθjon",
+      "simplified": "la kom-pe-ti-SJON",
+      "tip": "In Lateinamerika 'la competencia'"
+    },
+    "dialects": {
+      "es_castilla": "la competición",
+      "es_andalucia": "la competición",
+      "es_cataluna": "la competició",
+      "es_canarias": "la competición",
+      "lat_mx": "la competencia",
+      "lat_ar": "la competencia",
+      "lat_co": "la competencia",
+      "lat_cl": "la competencia",
+      "lat_pe": "la competencia",
+      "lat_ve": "la competencia",
+      "lat_cu": "la competencia",
+      "lat_do": "la competencia"
+    },
+    "example_de": "Der Wettkampf beginnt morgen.",
+    "example_es": "La competición empieza mañana.",
+    "tags": [
+      "sport",
+      "B1"
+    ]
+  }
+]

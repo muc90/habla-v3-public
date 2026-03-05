@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "ess_001",
+    "de": "das Brot",
+    "es": "el pan",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el pan",
+      "simplified": "el PAN",
+      "tip": "Klares, offenes 'a', kurzes 'n' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "el pan",
+      "es_andalucia": "el pan",
+      "es_cataluna": "el pa",
+      "es_canarias": "el pan",
+      "lat_mx": "el pan",
+      "lat_ar": "el pan",
+      "lat_co": "el pan",
+      "lat_cl": "el pan",
+      "lat_pe": "el pan",
+      "lat_ve": "el pan",
+      "lat_cu": "el pan",
+      "lat_do": "el pan"
+    },
+    "example_de": "Gibst du mir bitte das Brot?",
+    "example_es": "¿Me pasas el pan, por favor?",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_002",
+    "de": "das Wasser",
+    "es": "el agua",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈaɣwa",
+      "simplified": "el AG-wa",
+      "tip": "Das 'g' ist sehr weich, fast wie ein 'w'. 'agua' ist feminin, aber 'el' (Ausnahme)"
+    },
+    "dialects": {
+      "es_castilla": "el agua",
+      "es_andalucia": "el agua",
+      "es_cataluna": "l'aigua",
+      "es_canarias": "el agua",
+      "lat_mx": "el agua",
+      "lat_ar": "el agua",
+      "lat_co": "el agua",
+      "lat_cl": "el agua",
+      "lat_pe": "el agua",
+      "lat_ve": "el agua",
+      "lat_cu": "el agua",
+      "lat_do": "el agua"
+    },
+    "example_de": "Ich möchte ein Glas Wasser, bitte.",
+    "example_es": "Quiero un vaso de agua, por favor.",
+    "tags": [
+      "getränke",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_003",
+    "de": "der Kaffee",
+    "es": "el café",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el kaˈfe",
+      "simplified": "el ka-FE",
+      "tip": "Betonung auf der letzten Silbe, offenes 'e' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "el café",
+      "es_andalucia": "el café",
+      "es_cataluna": "el cafè",
+      "es_canarias": "el café",
+      "lat_mx": "el café",
+      "lat_ar": "el café",
+      "lat_co": "el tinto (schwarz)",
+      "lat_cl": "el café",
+      "lat_pe": "el café",
+      "lat_ve": "el café",
+      "lat_cu": "el café",
+      "lat_do": "el café"
+    },
+    "example_de": "Morgens trinke ich immer Kaffee.",
+    "example_es": "Por las mañanas siempre tomo café.",
+    "tags": [
+      "getränke",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_004",
+    "de": "das Fleisch",
+    "es": "la carne",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈkaɾne",
+      "simplified": "la KAR-ne",
+      "tip": "Das 'r' leicht rollen, offenes 'a', weiches 'e' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "la carne",
+      "es_andalucia": "la carne",
+      "es_cataluna": "la carn",
+      "es_canarias": "la carne",
+      "lat_mx": "la carne",
+      "lat_ar": "la carne",
+      "lat_co": "la carne",
+      "lat_cl": "la carne",
+      "lat_pe": "la carne",
+      "lat_ve": "la carne",
+      "lat_cu": "la carne",
+      "lat_do": "la carne"
+    },
+    "example_de": "Ich esse kein Fleisch mehr.",
+    "example_es": "Ya no como carne.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_005",
+    "de": "der Fisch",
+    "es": "el pescado",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el pesˈkaðo",
+      "simplified": "el pes-KA-do",
+      "tip": "Das 'd' am Ende sehr weich, fast wie ein englisches 'th'"
+    },
+    "dialects": {
+      "es_castilla": "el pescado",
+      "es_andalucia": "el pescado",
+      "es_cataluna": "el peix",
+      "es_canarias": "el pescado",
+      "lat_mx": "el pescado",
+      "lat_ar": "el pescado",
+      "lat_co": "el pescado",
+      "lat_cl": "el pescado",
+      "lat_pe": "el pescado",
+      "lat_ve": "el pescado",
+      "lat_cu": "el pescado",
+      "lat_do": "el pescado"
+    },
+    "example_de": "Fisch esse ich sehr gerne.",
+    "example_es": "Me gusta mucho el pescado.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_006",
+    "de": "das Gemüse",
+    "es": "la verdura",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la βeɾˈðuɾa",
+      "simplified": "la ber-DU-ra",
+      "tip": "Das 'v' klingt wie ein weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "la verdura",
+      "es_andalucia": "la verdura",
+      "es_cataluna": "la verdura",
+      "es_canarias": "la verdura",
+      "lat_mx": "la verdura",
+      "lat_ar": "la verdura",
+      "lat_co": "la verdura",
+      "lat_cl": "la verdura",
+      "lat_pe": "la verdura",
+      "lat_ve": "la verdura",
+      "lat_cu": "la verdura",
+      "lat_do": "la verdura"
+    },
+    "example_de": "Ich esse jeden Tag Gemüse.",
+    "example_es": "Como verdura todos los días.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_007",
+    "de": "das Obst",
+    "es": "la fruta",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈfɾuta",
+      "simplified": "la FRU-ta",
+      "tip": "Das 'fr' ohne vokalischen Einschub sprechen"
+    },
+    "dialects": {
+      "es_castilla": "la fruta",
+      "es_andalucia": "la fruta",
+      "es_cataluna": "la fruita",
+      "es_canarias": "la fruta",
+      "lat_mx": "la fruta",
+      "lat_ar": "la fruta",
+      "lat_co": "la fruta",
+      "lat_cl": "la fruta",
+      "lat_pe": "la fruta",
+      "lat_ve": "la fruta",
+      "lat_cu": "la fruta",
+      "lat_do": "la fruta"
+    },
+    "example_de": "Zum Frühstück esse ich immer Obst.",
+    "example_es": "Para el desayuno siempre como fruta.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_008",
+    "de": "das Restaurant",
+    "es": "el restaurante",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el restaurˈante",
+      "simplified": "el res-tau-RAN-te",
+      "tip": "Vier Silben, Betonung auf 'ran'"
+    },
+    "dialects": {
+      "es_castilla": "el restaurante",
+      "es_andalucia": "el restaurante",
+      "es_cataluna": "el restaurant",
+      "es_canarias": "el restaurante",
+      "lat_mx": "el restaurante",
+      "lat_ar": "el restaurante",
+      "lat_co": "el restaurante",
+      "lat_cl": "el restaurante",
+      "lat_pe": "el restaurante",
+      "lat_ve": "el restaurante",
+      "lat_cu": "el restaurante",
+      "lat_do": "el restaurante"
+    },
+    "example_de": "Gehen wir heute Abend ins Restaurant?",
+    "example_es": "¿Vamos al restaurante esta noche?",
+    "tags": [
+      "orte",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_009",
+    "de": "die Speisekarte",
+    "es": "la carta",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈkaɾta",
+      "simplified": "la KAR-ta",
+      "tip": "Das 'r' leicht rollen, offenes 'a'"
+    },
+    "dialects": {
+      "es_castilla": "la carta",
+      "es_andalucia": "la carta",
+      "es_cataluna": "la carta",
+      "es_canarias": "la carta",
+      "lat_mx": "el menú",
+      "lat_ar": "la carta",
+      "lat_co": "la carta",
+      "lat_cl": "la carta",
+      "lat_pe": "la carta",
+      "lat_ve": "el menú",
+      "lat_cu": "la carta",
+      "lat_do": "el menú"
+    },
+    "example_de": "Darf ich bitte die Speisekarte sehen?",
+    "example_es": "¿Me puede traer la carta, por favor?",
+    "tags": [
+      "restaurant",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_010",
+    "de": "die Rechnung",
+    "es": "la cuenta",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈkwenta",
+      "simplified": "la KWEN-ta",
+      "tip": "'ue' ist ein Diphthong, wird als 'we' gesprochen"
+    },
+    "dialects": {
+      "es_castilla": "la cuenta",
+      "es_andalucia": "la cuenta",
+      "es_cataluna": "el compte",
+      "es_canarias": "la cuenta",
+      "lat_mx": "la cuenta",
+      "lat_ar": "la cuenta",
+      "lat_co": "la cuenta",
+      "lat_cl": "la cuenta",
+      "lat_pe": "la cuenta",
+      "lat_ve": "la cuenta",
+      "lat_cu": "la cuenta",
+      "lat_do": "la cuenta"
+    },
+    "example_de": "Die Rechnung bitte!",
+    "example_es": "¡La cuenta, por favor!",
+    "tags": [
+      "restaurant",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_011",
+    "de": "das Frühstück",
+    "es": "el desayuno",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el desaˈʝuno",
+      "simplified": "el de-sa-JU-no",
+      "tip": "Das 'y' klingt wie ein weiches 'j', Betonung auf 'yu'"
+    },
+    "dialects": {
+      "es_castilla": "el desayuno",
+      "es_andalucia": "el desayuno",
+      "es_cataluna": "l'esmorzar",
+      "es_canarias": "el desayuno",
+      "lat_mx": "el desayuno",
+      "lat_ar": "el desayuno",
+      "lat_co": "el desayuno",
+      "lat_cl": "el desayuno",
+      "lat_pe": "el desayuno",
+      "lat_ve": "el desayuno",
+      "lat_cu": "el desayuno",
+      "lat_do": "el desayuno"
+    },
+    "example_de": "Ich frühstücke um sieben Uhr.",
+    "example_es": "Desayuno a las siete.",
+    "tags": [
+      "mahlzeiten",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_012",
+    "de": "das Mittagessen",
+    "es": "el almuerzo",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el alˈmweɾθo",
+      "simplified": "el al-MWER-so",
+      "tip": "In Lateinamerika: 'al-MWER-so' ohne 'th'"
+    },
+    "dialects": {
+      "es_castilla": "el almuerzo",
+      "es_andalucia": "el almuerzo",
+      "es_cataluna": "el dinar",
+      "es_canarias": "el almuerzo",
+      "lat_mx": "la comida",
+      "lat_ar": "el almuerzo",
+      "lat_co": "el almuerzo",
+      "lat_cl": "el almuerzo",
+      "lat_pe": "el almuerzo",
+      "lat_ve": "el almuerzo",
+      "lat_cu": "el almuerzo",
+      "lat_do": "el almuerzo"
+    },
+    "example_de": "Das Mittagessen ist um 13 Uhr.",
+    "example_es": "El almuerzo es a la una.",
+    "tags": [
+      "mahlzeiten",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_013",
+    "de": "das Abendessen",
+    "es": "la cena",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈθena",
+      "simplified": "la ZE-na (Spanien)",
+      "tip": "In Spanien 'th'-Laut beim 'c', in Lateinamerika ein 's'"
+    },
+    "dialects": {
+      "es_castilla": "la cena",
+      "es_andalucia": "la cena",
+      "es_cataluna": "el sopar",
+      "es_canarias": "la cena",
+      "lat_mx": "la cena",
+      "lat_ar": "la cena",
+      "lat_co": "la cena",
+      "lat_cl": "la cena",
+      "lat_pe": "la cena",
+      "lat_ve": "la cena",
+      "lat_cu": "la comida (abends)",
+      "lat_do": "la cena"
+    },
+    "example_de": "Das Abendessen ist fertig.",
+    "example_es": "La cena está lista.",
+    "tags": [
+      "mahlzeiten",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_014",
+    "de": "gut schmecken",
+    "es": "saber bien",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "saˈβeɾ ˈbjen",
+      "simplified": "sa-BER BJEN",
+      "tip": "Das 'v' klingt wie ein weiches 'b', das 'ie' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "saber bien",
+      "es_andalucia": "saber bien",
+      "es_cataluna": "saber bé",
+      "es_canarias": "saber bien",
+      "lat_mx": "saber rico",
+      "lat_ar": "estar rico",
+      "lat_co": "estar rico",
+      "lat_cl": "estar rico",
+      "lat_pe": "estar rico",
+      "lat_ve": "saber bien",
+      "lat_cu": "estar sabroso",
+      "lat_do": "estar delicioso"
+    },
+    "example_de": "Das schmeckt wirklich sehr gut!",
+    "example_es": "¡Esto sabe muy bien!",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_015",
+    "de": "der Kellner",
+    "es": "el camarero",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el kamaˈɾeɾo",
+      "simplified": "el ka-ma-RE-ro",
+      "tip": "Das erste 'r' leicht rollen, Betonung auf 're'"
+    },
+    "dialects": {
+      "es_castilla": "el camarero",
+      "es_andalucia": "el camarero",
+      "es_cataluna": "el cambrer",
+      "es_canarias": "el camarero",
+      "lat_mx": "el mesero",
+      "lat_ar": "el mozo",
+      "lat_co": "el mesero",
+      "lat_cl": "el garzón",
+      "lat_pe": "el mozo",
+      "lat_ve": "el mesonero",
+      "lat_cu": "el camarero",
+      "lat_do": "el mesero"
+    },
+    "example_de": "Der Kellner kommt gleich.",
+    "example_es": "El camarero viene enseguida.",
+    "tags": [
+      "restaurant",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_016",
+    "de": "vegetarisch",
+    "es": "vegetariano",
+    "category": "essen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "βexetaˈɾjano",
+      "simplified": "be-che-ta-RIA-no",
+      "tip": "Das 'g' klingt wie ein 'ch' vom Gaumen, das 'v' wie 'b'"
+    },
+    "dialects": {
+      "es_castilla": "vegetariano",
+      "es_andalucia": "vegetariano",
+      "es_cataluna": "vegetarià",
+      "es_canarias": "vegetariano",
+      "lat_mx": "vegetariano",
+      "lat_ar": "vegetariano",
+      "lat_co": "vegetariano",
+      "lat_cl": "vegetariano",
+      "lat_pe": "vegetariano",
+      "lat_ve": "vegetariano",
+      "lat_cu": "vegetariano",
+      "lat_do": "vegetariano"
+    },
+    "example_de": "Ich bin vegetarisch. Gibt es eine Option ohne Fleisch?",
+    "example_es": "Soy vegetariano. ¿Hay alguna opción sin carne?",
+    "tags": [
+      "ernährung",
+      "B1"
+    ]
+  },
+  {
+    "id": "ess_017",
+    "de": "die Allergie",
+    "es": "la alergia",
+    "category": "essen",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la aleɾˈxia",
+      "simplified": "la a-ler-CHIA",
+      "tip": "Das 'g' klingt wie ein Rachen-'ch', Betonung auf 'gi'"
+    },
+    "dialects": {
+      "es_castilla": "la alergia",
+      "es_andalucia": "la alergia",
+      "es_cataluna": "l'al·lèrgia",
+      "es_canarias": "la alergia",
+      "lat_mx": "la alergia",
+      "lat_ar": "la alergia",
+      "lat_co": "la alergia",
+      "lat_cl": "la alergia",
+      "lat_pe": "la alergia",
+      "lat_ve": "la alergia",
+      "lat_cu": "la alergia",
+      "lat_do": "la alergia"
+    },
+    "example_de": "Ich bin allergisch gegen Nüsse.",
+    "example_es": "Soy alérgico a los frutos secos.",
+    "tags": [
+      "ernährung",
+      "B1"
+    ]
+  },
+  {
+    "id": "ess_018",
+    "de": "der Wein",
+    "es": "el vino",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈbino",
+      "simplified": "el BI-no",
+      "tip": "Das 'v' wird wie ein 'b' ausgesprochen"
+    },
+    "dialects": {
+      "es_castilla": "el vino",
+      "es_andalucia": "el vino",
+      "es_cataluna": "el vi",
+      "es_canarias": "el vino",
+      "lat_mx": "el vino",
+      "lat_ar": "el vino",
+      "lat_co": "el vino",
+      "lat_cl": "el vino",
+      "lat_pe": "el vino",
+      "lat_ve": "el vino",
+      "lat_cu": "el vino",
+      "lat_do": "el vino"
+    },
+    "example_de": "Ich habe einen guten Rotwein bestellt.",
+    "example_es": "He pedido un buen vino tinto.",
+    "tags": [
+      "getränke",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_019",
+    "de": "das Bier",
+    "es": "la cerveza",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la θeɾˈβeθa",
+      "simplified": "la ser-BE-sa",
+      "tip": "In Spanien 'th'-Laute, in Lateinamerika beide 'c' wie 's'"
+    },
+    "dialects": {
+      "es_castilla": "la cerveza",
+      "es_andalucia": "la cerveza",
+      "es_cataluna": "la cervesa",
+      "es_canarias": "la cerveza",
+      "lat_mx": "la cerveza",
+      "lat_ar": "la cerveza",
+      "lat_co": "la cerveza",
+      "lat_cl": "la cerveza",
+      "lat_pe": "la cerveza",
+      "lat_ve": "la cerveza",
+      "lat_cu": "la cerveza",
+      "lat_do": "la cerveza"
+    },
+    "example_de": "Ein Bier bitte!",
+    "example_es": "¡Una cerveza, por favor!",
+    "tags": [
+      "getränke",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_020",
+    "de": "das Salz",
+    "es": "la sal",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la sal",
+      "simplified": "la SAL",
+      "tip": "Kurz und klar, das 'l' am Ende deutlich sprechen"
+    },
+    "dialects": {
+      "es_castilla": "la sal",
+      "es_andalucia": "la sal",
+      "es_cataluna": "la sal",
+      "es_canarias": "la sal",
+      "lat_mx": "la sal",
+      "lat_ar": "la sal",
+      "lat_co": "la sal",
+      "lat_cl": "la sal",
+      "lat_pe": "la sal",
+      "lat_ve": "la sal",
+      "lat_cu": "la sal",
+      "lat_do": "la sal"
+    },
+    "example_de": "Kannst du mir das Salz geben?",
+    "example_es": "¿Me puedes pasar la sal?",
+    "tags": [
+      "würzmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_021",
+    "de": "der Zucker",
+    "es": "el azúcar",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el aˈθukaɾ",
+      "simplified": "el a-ZU-kar",
+      "tip": "In Lateinamerika 'a-SU-kar', Betonung auf 'zú'"
+    },
+    "dialects": {
+      "es_castilla": "el azúcar",
+      "es_andalucia": "el azúcar",
+      "es_cataluna": "el sucre",
+      "es_canarias": "el azúcar",
+      "lat_mx": "el azúcar",
+      "lat_ar": "el azúcar",
+      "lat_co": "el azúcar",
+      "lat_cl": "el azúcar",
+      "lat_pe": "el azúcar",
+      "lat_ve": "el azúcar",
+      "lat_cu": "el azúcar",
+      "lat_do": "el azúcar"
+    },
+    "example_de": "Nimmst du Zucker in den Kaffee?",
+    "example_es": "¿Tomas azúcar en el café?",
+    "tags": [
+      "würzmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_022",
+    "de": "das Ei",
+    "es": "el huevo",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈweβo",
+      "simplified": "el WE-bo",
+      "tip": "Das 'h' ist stumm, 'ue' wie 'we', das 'v' wie ein weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el huevo",
+      "es_andalucia": "el huevo",
+      "es_cataluna": "l'ou",
+      "es_canarias": "el huevo",
+      "lat_mx": "el huevo",
+      "lat_ar": "el huevo",
+      "lat_co": "el huevo",
+      "lat_cl": "el huevo",
+      "lat_pe": "el huevo",
+      "lat_ve": "el huevo",
+      "lat_cu": "el huevo",
+      "lat_do": "el huevo"
+    },
+    "example_de": "Zum Frühstück esse ich zwei Eier.",
+    "example_es": "Para el desayuno como dos huevos.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_023",
+    "de": "der Käse",
+    "es": "el queso",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈkeso",
+      "simplified": "el KE-so",
+      "tip": "Das 'qu' klingt nur wie 'k', das 'e' ist offen"
+    },
+    "dialects": {
+      "es_castilla": "el queso",
+      "es_andalucia": "el queso",
+      "es_cataluna": "el formatge",
+      "es_canarias": "el queso",
+      "lat_mx": "el queso",
+      "lat_ar": "el queso",
+      "lat_co": "el queso",
+      "lat_cl": "el queso",
+      "lat_pe": "el queso",
+      "lat_ve": "el queso",
+      "lat_cu": "el queso",
+      "lat_do": "el queso"
+    },
+    "example_de": "Dieser Käse ist sehr lecker.",
+    "example_es": "Este queso está muy rico.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_024",
+    "de": "hungrig sein",
+    "es": "tener hambre",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "teˈneɾ ˈambɾe",
+      "simplified": "te-NER AM-bre",
+      "tip": "Das 'h' in 'hambre' ist stumm, Betonung auf 'am'"
+    },
+    "dialects": {
+      "es_castilla": "tener hambre",
+      "es_andalucia": "tener hambre",
+      "es_cataluna": "tenir gana",
+      "es_canarias": "tener hambre",
+      "lat_mx": "tener hambre",
+      "lat_ar": "tener hambre",
+      "lat_co": "tener hambre",
+      "lat_cl": "tener hambre",
+      "lat_pe": "tener hambre",
+      "lat_ve": "tener hambre",
+      "lat_cu": "tener hambre",
+      "lat_do": "tener hambre"
+    },
+    "example_de": "Ich bin sehr hungrig.",
+    "example_es": "Tengo mucha hambre.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_025",
+    "de": "bestellen",
+    "es": "pedir",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "peˈðiɾ",
+      "simplified": "pe-DIR",
+      "tip": "Das 'd' sehr weich, Betonung auf 'dir'"
+    },
+    "dialects": {
+      "es_castilla": "pedir",
+      "es_andalucia": "pedir",
+      "es_cataluna": "demanar",
+      "es_canarias": "pedir",
+      "lat_mx": "pedir",
+      "lat_ar": "pedir",
+      "lat_co": "pedir",
+      "lat_cl": "pedir",
+      "lat_pe": "pedir",
+      "lat_ve": "pedir",
+      "lat_cu": "pedir",
+      "lat_do": "pedir"
+    },
+    "example_de": "Was möchtest du bestellen?",
+    "example_es": "¿Qué quieres pedir?",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_026",
+    "de": "das Rezept",
+    "es": "la receta",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la reˈθeta",
+      "simplified": "la re-ZE-ta",
+      "tip": "In Lateinamerika 're-SE-ta', das 'c' vor 'e' wie 's'"
+    },
+    "dialects": {
+      "es_castilla": "la receta",
+      "es_andalucia": "la receta",
+      "es_cataluna": "la recepta",
+      "es_canarias": "la receta",
+      "lat_mx": "la receta",
+      "lat_ar": "la receta",
+      "lat_co": "la receta",
+      "lat_cl": "la receta",
+      "lat_pe": "la receta",
+      "lat_ve": "la receta",
+      "lat_cu": "la receta",
+      "lat_do": "la receta"
+    },
+    "example_de": "Hast du das Rezept für diese Suppe?",
+    "example_es": "¿Tienes la receta de esta sopa?",
+    "tags": [
+      "kochen",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_027",
+    "de": "kochen",
+    "es": "cocinar",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "koθiˈnaɾ",
+      "simplified": "ko-zi-NAR",
+      "tip": "In Lateinamerika 'ko-si-NAR', Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "cocinar",
+      "es_andalucia": "cocinar",
+      "es_cataluna": "cuinar",
+      "es_canarias": "cocinar",
+      "lat_mx": "cocinar",
+      "lat_ar": "cocinar",
+      "lat_co": "cocinar",
+      "lat_cl": "cocinar",
+      "lat_pe": "cocinar",
+      "lat_ve": "cocinar",
+      "lat_cu": "cocinar",
+      "lat_do": "cocinar"
+    },
+    "example_de": "Ich koche heute Abend für alle.",
+    "example_es": "Esta noche cocino para todos.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_028",
+    "de": "scharf",
+    "es": "picante",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "piˈkante",
+      "simplified": "pi-KAN-te",
+      "tip": "Betonung auf 'kan', weiches 'e' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "picante",
+      "es_andalucia": "picante",
+      "es_cataluna": "picant",
+      "es_canarias": "picante",
+      "lat_mx": "picante",
+      "lat_ar": "picante",
+      "lat_co": "picante",
+      "lat_cl": "picante",
+      "lat_pe": "picante",
+      "lat_ve": "picante",
+      "lat_cu": "picante",
+      "lat_do": "picante"
+    },
+    "example_de": "Ist dieses Gericht scharf?",
+    "example_es": "¿Este plato está picante?",
+    "tags": [
+      "adjektive",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_029",
+    "de": "das Gericht",
+    "es": "el plato",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈplato",
+      "simplified": "el PLA-to",
+      "tip": "Das 'pl' ohne vokalischen Einschub, kurzes 'a'"
+    },
+    "dialects": {
+      "es_castilla": "el plato",
+      "es_andalucia": "el plato",
+      "es_cataluna": "el plat",
+      "es_canarias": "el plato",
+      "lat_mx": "el plato",
+      "lat_ar": "el plato",
+      "lat_co": "el plato",
+      "lat_cl": "el plato",
+      "lat_pe": "el plato",
+      "lat_ve": "el plato",
+      "lat_cu": "el plato",
+      "lat_do": "el plato"
+    },
+    "example_de": "Das Gericht des Tages ist Fisch.",
+    "example_es": "El plato del día es pescado.",
+    "tags": [
+      "restaurant",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_030",
+    "de": "süß",
+    "es": "dulce",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈdulθe",
+      "simplified": "DUL-se",
+      "tip": "In Lateinamerika 'DUL-se', in Spanien das 'c' wie 'th'"
+    },
+    "dialects": {
+      "es_castilla": "dulce",
+      "es_andalucia": "dulce",
+      "es_cataluna": "dolç",
+      "es_canarias": "dulce",
+      "lat_mx": "dulce",
+      "lat_ar": "dulce",
+      "lat_co": "dulce",
+      "lat_cl": "dulce",
+      "lat_pe": "dulce",
+      "lat_ve": "dulce",
+      "lat_cu": "dulce",
+      "lat_do": "dulce"
+    },
+    "example_de": "Diese Suppe ist mir zu süß.",
+    "example_es": "Esta sopa está demasiado dulce para mí.",
+    "tags": [
+      "adjektive",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_031",
+    "de": "die Nachspeise",
+    "es": "el postre",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈpostɾe",
+      "simplified": "el POS-tre",
+      "tip": "Das 'tr' klar ausgesprochen, weiches 'e' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "el postre",
+      "es_andalucia": "el postre",
+      "es_cataluna": "el postres",
+      "es_canarias": "el postre",
+      "lat_mx": "el postre",
+      "lat_ar": "el postre",
+      "lat_co": "el postre",
+      "lat_cl": "el postre",
+      "lat_pe": "el postre",
+      "lat_ve": "el postre",
+      "lat_cu": "el postre",
+      "lat_do": "el postre"
+    },
+    "example_de": "Als Nachspeise nehme ich Schokoladenkuchen.",
+    "example_es": "De postre tomo pastel de chocolate.",
+    "tags": [
+      "restaurant",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_032",
+    "de": "satt sein",
+    "es": "estar lleno",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "esˈtaɾ ˈʎeno",
+      "simplified": "es-TAR JE-no",
+      "tip": "Das 'll' klingt wie ein weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "estar lleno",
+      "es_andalucia": "estar lleno",
+      "es_cataluna": "estar ple",
+      "es_canarias": "estar lleno",
+      "lat_mx": "estar lleno",
+      "lat_ar": "estar lleno",
+      "lat_co": "estar lleno",
+      "lat_cl": "quedar lleno",
+      "lat_pe": "estar lleno",
+      "lat_ve": "estar lleno",
+      "lat_cu": "estar satisfecho",
+      "lat_do": "estar lleno"
+    },
+    "example_de": "Ich bin satt, danke!",
+    "example_es": "Estoy lleno, ¡gracias!",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_033",
+    "de": "die Suppe",
+    "es": "la sopa",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈsopa",
+      "simplified": "la SO-pa",
+      "tip": "Kurzes, klares 'o', weiches 'p'"
+    },
+    "dialects": {
+      "es_castilla": "la sopa",
+      "es_andalucia": "la sopa",
+      "es_cataluna": "la sopa",
+      "es_canarias": "la sopa",
+      "lat_mx": "la sopa",
+      "lat_ar": "la sopa",
+      "lat_co": "la sopa",
+      "lat_cl": "la sopa",
+      "lat_pe": "la sopa",
+      "lat_ve": "la sopa",
+      "lat_cu": "la sopa",
+      "lat_do": "la sopa"
+    },
+    "example_de": "Im Winter esse ich gerne Suppe.",
+    "example_es": "En invierno me gusta comer sopa.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_034",
+    "de": "der Salat",
+    "es": "la ensalada",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ensaˈlaða",
+      "simplified": "la en-sa-LA-da",
+      "tip": "Vier Silben, das 'd' sehr weich am Ende"
+    },
+    "dialects": {
+      "es_castilla": "la ensalada",
+      "es_andalucia": "la ensalada",
+      "es_cataluna": "l'amanida",
+      "es_canarias": "la ensalada",
+      "lat_mx": "la ensalada",
+      "lat_ar": "la ensalada",
+      "lat_co": "la ensalada",
+      "lat_cl": "la ensalada",
+      "lat_pe": "la ensalada",
+      "lat_ve": "la ensalada",
+      "lat_cu": "la ensalada",
+      "lat_do": "la ensalada"
+    },
+    "example_de": "Ich hätte gerne einen gemischten Salat.",
+    "example_es": "Quisiera una ensalada mixta.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_035",
+    "de": "die Nudeln",
+    "es": "la pasta",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈpasta",
+      "simplified": "la PAS-ta",
+      "tip": "Zwei Silben, klares 'a' vorne"
+    },
+    "dialects": {
+      "es_castilla": "la pasta",
+      "es_andalucia": "la pasta",
+      "es_cataluna": "la pasta",
+      "es_canarias": "la pasta",
+      "lat_mx": "la pasta",
+      "lat_ar": "los fideos",
+      "lat_co": "la pasta",
+      "lat_cl": "la pasta",
+      "lat_pe": "los fideos",
+      "lat_ve": "la pasta",
+      "lat_cu": "los fideos",
+      "lat_do": "los fideos"
+    },
+    "example_de": "Heute gibt es Nudeln mit Tomatensoße.",
+    "example_es": "Hoy hay pasta con salsa de tomate.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_036",
+    "de": "der Reis",
+    "es": "el arroz",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el aˈroθ",
+      "simplified": "el a-ROZ",
+      "tip": "In Lateinamerika 'a-ROS', in Spanien 'a-ROTH'"
+    },
+    "dialects": {
+      "es_castilla": "el arroz",
+      "es_andalucia": "el arroz",
+      "es_cataluna": "l'arròs",
+      "es_canarias": "el arroz",
+      "lat_mx": "el arroz",
+      "lat_ar": "el arroz",
+      "lat_co": "el arroz",
+      "lat_cl": "el arroz",
+      "lat_pe": "el arroz",
+      "lat_ve": "el arroz",
+      "lat_cu": "el arroz",
+      "lat_do": "el arroz"
+    },
+    "example_de": "Reis esse ich fast jeden Tag.",
+    "example_es": "Como arroz casi todos los días.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_037",
+    "de": "die Kartoffel",
+    "es": "la patata",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la paˈtata",
+      "simplified": "la pa-TA-ta",
+      "tip": "Drei Silben, Betonung auf mittlerer Silbe"
+    },
+    "dialects": {
+      "es_castilla": "la patata",
+      "es_andalucia": "la patata",
+      "es_cataluna": "la patata",
+      "es_canarias": "la papa",
+      "lat_mx": "la papa",
+      "lat_ar": "la papa",
+      "lat_co": "la papa",
+      "lat_cl": "la papa",
+      "lat_pe": "la papa",
+      "lat_ve": "la papa",
+      "lat_cu": "la papa",
+      "lat_do": "la papa"
+    },
+    "example_de": "Ich möchte Kartoffeln als Beilage.",
+    "example_es": "Quiero patatas de guarnición.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_038",
+    "de": "die Tomate",
+    "es": "el tomate",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el toˈmate",
+      "simplified": "el to-MA-te",
+      "tip": "Drei Silben, Betonung auf 'ma'"
+    },
+    "dialects": {
+      "es_castilla": "el tomate",
+      "es_andalucia": "el tomate",
+      "es_cataluna": "el tomàquet",
+      "es_canarias": "el tomate",
+      "lat_mx": "el tomate",
+      "lat_ar": "el tomate",
+      "lat_co": "el tomate",
+      "lat_cl": "el tomate",
+      "lat_pe": "el tomate",
+      "lat_ve": "el tomate",
+      "lat_cu": "el tomate",
+      "lat_do": "el tomate"
+    },
+    "example_de": "Die Tomaten aus dem Garten schmecken am besten.",
+    "example_es": "Los tomates del jardín saben mejor.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_039",
+    "de": "die Zwiebel",
+    "es": "la cebolla",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la θeˈβoʎa",
+      "simplified": "la se-BO-ja",
+      "tip": "In Lateinamerika 'se-BO-ya', das 'll' wie 'j'"
+    },
+    "dialects": {
+      "es_castilla": "la cebolla",
+      "es_andalucia": "la cebolla",
+      "es_cataluna": "la ceba",
+      "es_canarias": "la cebolla",
+      "lat_mx": "la cebolla",
+      "lat_ar": "la cebolla",
+      "lat_co": "la cebolla",
+      "lat_cl": "la cebolla",
+      "lat_pe": "la cebolla",
+      "lat_ve": "la cebolla",
+      "lat_cu": "la cebolla",
+      "lat_do": "la cebolla"
+    },
+    "example_de": "Diese Suppe braucht eine Zwiebel.",
+    "example_es": "Esta sopa necesita una cebolla.",
+    "tags": [
+      "lebensmittel",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_040",
+    "de": "der Apfel",
+    "es": "la manzana",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la manˈθana",
+      "simplified": "la man-SA-na",
+      "tip": "In Lateinamerika 'man-SA-na', in Spanien 'man-THA-na'"
+    },
+    "dialects": {
+      "es_castilla": "la manzana",
+      "es_andalucia": "la manzana",
+      "es_cataluna": "la poma",
+      "es_canarias": "la manzana",
+      "lat_mx": "la manzana",
+      "lat_ar": "la manzana",
+      "lat_co": "la manzana",
+      "lat_cl": "la manzana",
+      "lat_pe": "la manzana",
+      "lat_ve": "la manzana",
+      "lat_cu": "la manzana",
+      "lat_do": "la manzana"
+    },
+    "example_de": "Ein Apfel am Tag hält den Arzt fern.",
+    "example_es": "Una manzana al día mantiene al médico alejado.",
+    "tags": [
+      "obst",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_041",
+    "de": "die Banane",
+    "es": "el plátano",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈplatano",
+      "simplified": "el PLA-ta-no",
+      "tip": "Drei Silben, Betonung auf erster Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el plátano",
+      "es_andalucia": "el plátano",
+      "es_cataluna": "el plàtan",
+      "es_canarias": "el plátano",
+      "lat_mx": "el plátano",
+      "lat_ar": "la banana",
+      "lat_co": "el banano",
+      "lat_cl": "el plátano",
+      "lat_pe": "el plátano",
+      "lat_ve": "el cambur",
+      "lat_cu": "el plátano",
+      "lat_do": "el plátano"
+    },
+    "example_de": "Ich esse morgens immer eine Banane.",
+    "example_es": "Por las mañanas siempre me como un plátano.",
+    "tags": [
+      "obst",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_042",
+    "de": "die Orange",
+    "es": "la naranja",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la naˈɾanxa",
+      "simplified": "la na-RAN-cha",
+      "tip": "Das 'j' wie Rachen-'ch', Betonung auf 'ran'"
+    },
+    "dialects": {
+      "es_castilla": "la naranja",
+      "es_andalucia": "la naranja",
+      "es_cataluna": "la taronja",
+      "es_canarias": "la naranja",
+      "lat_mx": "la naranja",
+      "lat_ar": "la naranja",
+      "lat_co": "la naranja",
+      "lat_cl": "la naranja",
+      "lat_pe": "la naranja",
+      "lat_ve": "la naranja",
+      "lat_cu": "la naranja",
+      "lat_do": "la naranja"
+    },
+    "example_de": "Möchtest du ein Glas Orangensaft?",
+    "example_es": "¿Quieres un vaso de zumo de naranja?",
+    "tags": [
+      "obst",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_043",
+    "de": "die Milch",
+    "es": "la leche",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈletʃe",
+      "simplified": "la LE-tsche",
+      "tip": "Das 'ch' wie deutsches 'tsch', weiches 'e' am Ende"
+    },
+    "dialects": {
+      "es_castilla": "la leche",
+      "es_andalucia": "la leche",
+      "es_cataluna": "la llet",
+      "es_canarias": "la leche",
+      "lat_mx": "la leche",
+      "lat_ar": "la leche",
+      "lat_co": "la leche",
+      "lat_cl": "la leche",
+      "lat_pe": "la leche",
+      "lat_ve": "la leche",
+      "lat_cu": "la leche",
+      "lat_do": "la leche"
+    },
+    "example_de": "Ich nehme Kaffee mit Milch.",
+    "example_es": "Tomo el café con leche.",
+    "tags": [
+      "getränke",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_044",
+    "de": "die Butter",
+    "es": "la mantequilla",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la mantekiˈʎa",
+      "simplified": "la man-te-KI-ja",
+      "tip": "Das 'll' klingt wie ein weiches 'j', Betonung auf 'ki'"
+    },
+    "dialects": {
+      "es_castilla": "la mantequilla",
+      "es_andalucia": "la mantequilla",
+      "es_cataluna": "la mantega",
+      "es_canarias": "la mantequilla",
+      "lat_mx": "la mantequilla",
+      "lat_ar": "la manteca",
+      "lat_co": "la mantequilla",
+      "lat_cl": "la mantequilla",
+      "lat_pe": "la mantequilla",
+      "lat_ve": "la mantequilla",
+      "lat_cu": "la mantequilla",
+      "lat_do": "la mantequilla"
+    },
+    "example_de": "Ich schmiere Butter auf das Brot.",
+    "example_es": "Unto mantequilla en el pan.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_045",
+    "de": "der Joghurt",
+    "es": "el yogur",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ʝoˈɣuɾ",
+      "simplified": "el yo-GUR",
+      "tip": "Betonung auf letzter Silbe, das 'g' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el yogur",
+      "es_andalucia": "el yogur",
+      "es_cataluna": "el iogurt",
+      "es_canarias": "el yogur",
+      "lat_mx": "el yogurt",
+      "lat_ar": "el yogur",
+      "lat_co": "el yogur",
+      "lat_cl": "el yogur",
+      "lat_pe": "el yogur",
+      "lat_ve": "el yogurt",
+      "lat_cu": "el yogur",
+      "lat_do": "el yogur"
+    },
+    "example_de": "Zum Frühstück esse ich Joghurt mit Früchten.",
+    "example_es": "Para el desayuno como yogur con frutas.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_046",
+    "de": "das Öl",
+    "es": "el aceite",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el aˈθeite",
+      "simplified": "el a-SEI-te",
+      "tip": "In Lateinamerika 'a-SEI-te', in Spanien 'a-THEI-te'"
+    },
+    "dialects": {
+      "es_castilla": "el aceite",
+      "es_andalucia": "el aceite",
+      "es_cataluna": "l'oli",
+      "es_canarias": "el aceite",
+      "lat_mx": "el aceite",
+      "lat_ar": "el aceite",
+      "lat_co": "el aceite",
+      "lat_cl": "el aceite",
+      "lat_pe": "el aceite",
+      "lat_ve": "el aceite",
+      "lat_cu": "el aceite",
+      "lat_do": "el aceite"
+    },
+    "example_de": "Für dieses Rezept braucht man Olivenöl.",
+    "example_es": "Para esta receta se necesita aceite de oliva.",
+    "tags": [
+      "würzmittel",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_047",
+    "de": "das Mehl",
+    "es": "la harina",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la aˈɾina",
+      "simplified": "la a-RI-na",
+      "tip": "Das 'h' ist stumm, Betonung auf 'ri'"
+    },
+    "dialects": {
+      "es_castilla": "la harina",
+      "es_andalucia": "la harina",
+      "es_cataluna": "la farina",
+      "es_canarias": "la harina",
+      "lat_mx": "la harina",
+      "lat_ar": "la harina",
+      "lat_co": "la harina",
+      "lat_cl": "la harina",
+      "lat_pe": "la harina",
+      "lat_ve": "la harina",
+      "lat_cu": "la harina",
+      "lat_do": "la harina"
+    },
+    "example_de": "Für den Kuchen brauchen wir Mehl und Eier.",
+    "example_es": "Para el pastel necesitamos harina y huevos.",
+    "tags": [
+      "kochen",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_048",
+    "de": "die Schokolade",
+    "es": "el chocolate",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el tʃokoˈlate",
+      "simplified": "el tscho-ko-LA-te",
+      "tip": "Das 'ch' wie deutsches 'tsch', Betonung auf 'la'"
+    },
+    "dialects": {
+      "es_castilla": "el chocolate",
+      "es_andalucia": "el chocolate",
+      "es_cataluna": "la xocolata",
+      "es_canarias": "el chocolate",
+      "lat_mx": "el chocolate",
+      "lat_ar": "el chocolate",
+      "lat_co": "el chocolate",
+      "lat_cl": "el chocolate",
+      "lat_pe": "el chocolate",
+      "lat_ve": "el chocolate",
+      "lat_cu": "el chocolate",
+      "lat_do": "el chocolate"
+    },
+    "example_de": "Magst du dunkle oder helle Schokolade?",
+    "example_es": "¿Te gusta el chocolate negro o el con leche?",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_049",
+    "de": "der Kuchen",
+    "es": "el pastel",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el pasˈtel",
+      "simplified": "el pas-TEL",
+      "tip": "Zwei Silben, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el pastel",
+      "es_andalucia": "el pastel",
+      "es_cataluna": "el pastís",
+      "es_canarias": "el pastel",
+      "lat_mx": "el pastel",
+      "lat_ar": "la torta",
+      "lat_co": "el ponqué",
+      "lat_cl": "el queque",
+      "lat_pe": "el queque",
+      "lat_ve": "el pastel",
+      "lat_cu": "el cake",
+      "lat_do": "el bizcocho"
+    },
+    "example_de": "Zum Geburtstag gibt es Kuchen.",
+    "example_es": "Para el cumpleaños hay pastel.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_050",
+    "de": "das Eis",
+    "es": "el helado",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el eˈlaðo",
+      "simplified": "el e-LA-do",
+      "tip": "Drei Silben, das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el helado",
+      "es_andalucia": "el helado",
+      "es_cataluna": "el gelat",
+      "es_canarias": "el helado",
+      "lat_mx": "el helado",
+      "lat_ar": "el helado",
+      "lat_co": "el helado",
+      "lat_cl": "el helado",
+      "lat_pe": "el helado",
+      "lat_ve": "el helado",
+      "lat_cu": "el helado",
+      "lat_do": "el helado"
+    },
+    "example_de": "Im Sommer esse ich jeden Tag Eis.",
+    "example_es": "En verano como helado todos los días.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_051",
+    "de": "das Sandwich",
+    "es": "el bocadillo",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el bokaˈðiʎo",
+      "simplified": "el bo-ka-DI-jo",
+      "tip": "Das 'll' wie 'j', das 'd' sehr weich, Betonung auf 'di'"
+    },
+    "dialects": {
+      "es_castilla": "el bocadillo",
+      "es_andalucia": "el bocadillo",
+      "es_cataluna": "l'entrepà",
+      "es_canarias": "el bocadillo",
+      "lat_mx": "el sándwich",
+      "lat_ar": "el sándwich",
+      "lat_co": "el sándwich",
+      "lat_cl": "el sándwich",
+      "lat_pe": "el sándwich",
+      "lat_ve": "el sándwich",
+      "lat_cu": "el sándwich",
+      "lat_do": "el sándwich"
+    },
+    "example_de": "Zum Mittag esse ich ein Sandwich.",
+    "example_es": "Para el almuerzo como un bocadillo.",
+    "tags": [
+      "lebensmittel",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_052",
+    "de": "der Löffel",
+    "es": "la cuchara",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la kuˈtʃaɾa",
+      "simplified": "la ku-TSCHA-ra",
+      "tip": "Das 'ch' wie deutsches 'tsch', Betonung auf 'cha'"
+    },
+    "dialects": {
+      "es_castilla": "la cuchara",
+      "es_andalucia": "la cuchara",
+      "es_cataluna": "la cullera",
+      "es_canarias": "la cuchara",
+      "lat_mx": "la cuchara",
+      "lat_ar": "la cuchara",
+      "lat_co": "la cuchara",
+      "lat_cl": "la cuchara",
+      "lat_pe": "la cuchara",
+      "lat_ve": "la cuchara",
+      "lat_cu": "la cuchara",
+      "lat_do": "la cuchara"
+    },
+    "example_de": "Ich brauche einen Löffel für die Suppe.",
+    "example_es": "Necesito una cuchara para la sopa.",
+    "tags": [
+      "gegenstände",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_053",
+    "de": "die Gabel",
+    "es": "el tenedor",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el teneˈðoɾ",
+      "simplified": "el te-ne-DOR",
+      "tip": "Drei Silben, das 'd' sehr weich, Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "el tenedor",
+      "es_andalucia": "el tenedor",
+      "es_cataluna": "la forquilla",
+      "es_canarias": "el tenedor",
+      "lat_mx": "el tenedor",
+      "lat_ar": "el tenedor",
+      "lat_co": "el tenedor",
+      "lat_cl": "el tenedor",
+      "lat_pe": "el tenedor",
+      "lat_ve": "el tenedor",
+      "lat_cu": "el tenedor",
+      "lat_do": "el tenedor"
+    },
+    "example_de": "Kannst du mir bitte eine Gabel bringen?",
+    "example_es": "¿Puedes traerme un tenedor, por favor?",
+    "tags": [
+      "gegenstände",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_054",
+    "de": "das Messer",
+    "es": "el cuchillo",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el kuˈtʃiʎo",
+      "simplified": "el ku-TSCHI-jo",
+      "tip": "Das 'ch' wie 'tsch', das 'll' wie 'j'"
+    },
+    "dialects": {
+      "es_castilla": "el cuchillo",
+      "es_andalucia": "el cuchillo",
+      "es_cataluna": "el ganivet",
+      "es_canarias": "el cuchillo",
+      "lat_mx": "el cuchillo",
+      "lat_ar": "el cuchillo",
+      "lat_co": "el cuchillo",
+      "lat_cl": "el cuchillo",
+      "lat_pe": "el cuchillo",
+      "lat_ve": "el cuchillo",
+      "lat_cu": "el cuchillo",
+      "lat_do": "el cuchillo"
+    },
+    "example_de": "Dieses Messer ist nicht scharf genug.",
+    "example_es": "Este cuchillo no está lo suficientemente afilado.",
+    "tags": [
+      "gegenstände",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_055",
+    "de": "die Tasse",
+    "es": "la taza",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈtaθa",
+      "simplified": "la TA-sa",
+      "tip": "In Lateinamerika 'TA-sa', in Spanien 'TA-tha'"
+    },
+    "dialects": {
+      "es_castilla": "la taza",
+      "es_andalucia": "la taza",
+      "es_cataluna": "la tassa",
+      "es_canarias": "la taza",
+      "lat_mx": "la taza",
+      "lat_ar": "la taza",
+      "lat_co": "la taza",
+      "lat_cl": "la taza",
+      "lat_pe": "la taza",
+      "lat_ve": "la taza",
+      "lat_cu": "la taza",
+      "lat_do": "la taza"
+    },
+    "example_de": "Möchtest du eine Tasse Tee?",
+    "example_es": "¿Quieres una taza de té?",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_056",
+    "de": "das Glas",
+    "es": "el vaso",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈbaso",
+      "simplified": "el BA-so",
+      "tip": "Das 'v' wie 'b', kurzes 'a'"
+    },
+    "dialects": {
+      "es_castilla": "el vaso",
+      "es_andalucia": "el vaso",
+      "es_cataluna": "el got",
+      "es_canarias": "el vaso",
+      "lat_mx": "el vaso",
+      "lat_ar": "el vaso",
+      "lat_co": "el vaso",
+      "lat_cl": "el vaso",
+      "lat_pe": "el vaso",
+      "lat_ve": "el vaso",
+      "lat_cu": "el vaso",
+      "lat_do": "el vaso"
+    },
+    "example_de": "Gibst du mir bitte ein Glas Wasser?",
+    "example_es": "¿Me das un vaso de agua, por favor?",
+    "tags": [
+      "gegenstände",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_057",
+    "de": "frisch",
+    "es": "fresco",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "ˈfɾesko",
+      "simplified": "FRES-ko",
+      "tip": "Zwei Silben, klares 'e'"
+    },
+    "dialects": {
+      "es_castilla": "fresco",
+      "es_andalucia": "fresco",
+      "es_cataluna": "fresc",
+      "es_canarias": "fresco",
+      "lat_mx": "fresco",
+      "lat_ar": "fresco",
+      "lat_co": "fresco",
+      "lat_cl": "fresco",
+      "lat_pe": "fresco",
+      "lat_ve": "fresco",
+      "lat_cu": "fresco",
+      "lat_do": "fresco"
+    },
+    "example_de": "Das Gemüse auf dem Markt ist immer frisch.",
+    "example_es": "La verdura del mercado siempre está fresca.",
+    "tags": [
+      "adjektive",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_058",
+    "de": "lecker",
+    "es": "delicioso",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "deliˈθjoso",
+      "simplified": "de-li-SJO-so",
+      "tip": "In Lateinamerika 'de-li-SJO-so', in Spanien 'de-li-THJO-so'"
+    },
+    "dialects": {
+      "es_castilla": "delicioso",
+      "es_andalucia": "delicioso",
+      "es_cataluna": "deliciós",
+      "es_canarias": "delicioso",
+      "lat_mx": "delicioso",
+      "lat_ar": "delicioso",
+      "lat_co": "delicioso",
+      "lat_cl": "delicioso",
+      "lat_pe": "delicioso",
+      "lat_ve": "delicioso",
+      "lat_cu": "rico",
+      "lat_do": "rico"
+    },
+    "example_de": "Dieses Essen ist wirklich lecker!",
+    "example_es": "¡Esta comida está realmente deliciosa!",
+    "tags": [
+      "adjektive",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_059",
+    "de": "sauer",
+    "es": "ácido",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "ˈaθiðo",
+      "simplified": "A-si-do",
+      "tip": "In Lateinamerika 'A-si-do', in Spanien 'A-thi-do'"
+    },
+    "dialects": {
+      "es_castilla": "ácido",
+      "es_andalucia": "ácido",
+      "es_cataluna": "àcid",
+      "es_canarias": "ácido",
+      "lat_mx": "ácido",
+      "lat_ar": "ácido",
+      "lat_co": "ácido",
+      "lat_cl": "ácido",
+      "lat_pe": "ácido",
+      "lat_ve": "ácido",
+      "lat_cu": "agrio",
+      "lat_do": "agrio"
+    },
+    "example_de": "Diese Zitrone ist sehr sauer.",
+    "example_es": "Este limón está muy ácido.",
+    "tags": [
+      "adjektive",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_060",
+    "de": "bitter",
+    "es": "amargo",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "aˈmaɾɣo",
+      "simplified": "a-MAR-go",
+      "tip": "Das 'g' sehr weich am Ende, Betonung auf 'mar'"
+    },
+    "dialects": {
+      "es_castilla": "amargo",
+      "es_andalucia": "amargo",
+      "es_cataluna": "amarg",
+      "es_canarias": "amargo",
+      "lat_mx": "amargo",
+      "lat_ar": "amargo",
+      "lat_co": "amargo",
+      "lat_cl": "amargo",
+      "lat_pe": "amargo",
+      "lat_ve": "amargo",
+      "lat_cu": "amargo",
+      "lat_do": "amargo"
+    },
+    "example_de": "Dunkle Schokolade schmeckt bitter.",
+    "example_es": "El chocolate negro sabe amargo.",
+    "tags": [
+      "adjektive",
+      "A2"
+    ]
+  },
+  {
+    "id": "ess_061",
+    "de": "probieren",
+    "es": "probar",
+    "category": "essen",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "pɾoˈβaɾ",
+      "simplified": "pro-BAR",
+      "tip": "Das 'v' wie weiches 'b', Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "probar",
+      "es_andalucia": "probar",
+      "es_cataluna": "tastar",
+      "es_canarias": "probar",
+      "lat_mx": "probar",
+      "lat_ar": "probar",
+      "lat_co": "probar",
+      "lat_cl": "probar",
+      "lat_pe": "probar",
+      "lat_ve": "probar",
+      "lat_cu": "probar",
+      "lat_do": "probar"
+    },
+    "example_de": "Darf ich das mal probieren?",
+    "example_es": "¿Puedo probarlo?",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "ess_062",
+    "de": "das Trinkgeld",
+    "es": "la propina",
+    "category": "essen",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la pɾoˈpina",
+      "simplified": "la pro-PI-na",
+      "tip": "Drei Silben, Betonung auf 'pi'"
+    },
+    "dialects": {
+      "es_castilla": "la propina",
+      "es_andalucia": "la propina",
+      "es_cataluna": "la propina",
+      "es_canarias": "la propina",
+      "lat_mx": "la propina",
+      "lat_ar": "la propina",
+      "lat_co": "la propina",
+      "lat_cl": "la propina",
+      "lat_pe": "la propina",
+      "lat_ve": "la propina",
+      "lat_cu": "la propina",
+      "lat_do": "la propina"
+    },
+    "example_de": "Wir haben dem Kellner ein Trinkgeld gegeben.",
+    "example_es": "Le hemos dado una propina al camarero.",
+    "tags": [
+      "restaurant",
+      "A2"
+    ]
+  }
+]

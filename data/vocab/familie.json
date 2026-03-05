@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "fam_001",
+    "de": "die Familie",
+    "es": "la familia",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la faˈmilja",
+      "simplified": "la fa-MI-lja",
+      "tip": "Das 'lia' am Ende klingt wie 'lja'"
+    },
+    "dialects": {
+      "es_castilla": "la familia",
+      "es_andalucia": "la familia",
+      "es_cataluna": "la família",
+      "es_canarias": "la familia",
+      "lat_mx": "la familia",
+      "lat_ar": "la familia",
+      "lat_co": "la familia",
+      "lat_cl": "la familia",
+      "lat_pe": "la familia",
+      "lat_ve": "la familia",
+      "lat_cu": "la familia",
+      "lat_do": "la familia"
+    },
+    "example_de": "Meine Familie ist sehr groß.",
+    "example_es": "Mi familia es muy grande.",
+    "tags": [
+      "familie",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_002",
+    "de": "die Mutter",
+    "es": "la madre",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈmaðɾe",
+      "simplified": "la MA-dre",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la madre",
+      "es_andalucia": "la madre",
+      "es_cataluna": "la mare",
+      "es_canarias": "la madre",
+      "lat_mx": "la mamá",
+      "lat_ar": "la mamá",
+      "lat_co": "la mamá",
+      "lat_cl": "la mamá",
+      "lat_pe": "la mamá",
+      "lat_ve": "la mamá",
+      "lat_cu": "la mamá",
+      "lat_do": "la mamá"
+    },
+    "example_de": "Meine Mutter kocht sehr gut.",
+    "example_es": "Mi madre cocina muy bien.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_003",
+    "de": "der Vater",
+    "es": "el padre",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈpaðɾe",
+      "simplified": "el PA-dre",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el padre",
+      "es_andalucia": "el padre",
+      "es_cataluna": "el pare",
+      "es_canarias": "el padre",
+      "lat_mx": "el papá",
+      "lat_ar": "el papá",
+      "lat_co": "el papá",
+      "lat_cl": "el papá",
+      "lat_pe": "el papá",
+      "lat_ve": "el papá",
+      "lat_cu": "el papá",
+      "lat_do": "el papá"
+    },
+    "example_de": "Mein Vater ist Ingenieur.",
+    "example_es": "Mi padre es ingeniero.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_004",
+    "de": "der Bruder",
+    "es": "el hermano",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el eɾˈmano",
+      "simplified": "el er-MA-no",
+      "tip": "Das 'h' ist stumm"
+    },
+    "dialects": {
+      "es_castilla": "el hermano",
+      "es_andalucia": "el hermano",
+      "es_cataluna": "el germà",
+      "es_canarias": "el hermano",
+      "lat_mx": "el hermano",
+      "lat_ar": "el hermano",
+      "lat_co": "el hermano",
+      "lat_cl": "el hermano",
+      "lat_pe": "el hermano",
+      "lat_ve": "el hermano",
+      "lat_cu": "el hermano",
+      "lat_do": "el hermano"
+    },
+    "example_de": "Ich habe zwei Brüder.",
+    "example_es": "Tengo dos hermanos.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_005",
+    "de": "die Schwester",
+    "es": "la hermana",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la eɾˈmana",
+      "simplified": "la er-MA-na",
+      "tip": "Das 'h' ist stumm"
+    },
+    "dialects": {
+      "es_castilla": "la hermana",
+      "es_andalucia": "la hermana",
+      "es_cataluna": "la germana",
+      "es_canarias": "la hermana",
+      "lat_mx": "la hermana",
+      "lat_ar": "la hermana",
+      "lat_co": "la hermana",
+      "lat_cl": "la hermana",
+      "lat_pe": "la hermana",
+      "lat_ve": "la hermana",
+      "lat_cu": "la hermana",
+      "lat_do": "la hermana"
+    },
+    "example_de": "Meine Schwester wohnt in Madrid.",
+    "example_es": "Mi hermana vive en Madrid.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_006",
+    "de": "die Großmutter",
+    "es": "la abuela",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la aˈβwela",
+      "simplified": "la a-BWE-la",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "la abuela",
+      "es_andalucia": "la abuela",
+      "es_cataluna": "l'àvia",
+      "es_canarias": "la abuela",
+      "lat_mx": "la abuela",
+      "lat_ar": "la abuela",
+      "lat_co": "la abuela",
+      "lat_cl": "la abuela",
+      "lat_pe": "la abuela",
+      "lat_ve": "la abuela",
+      "lat_cu": "la abuela",
+      "lat_do": "la abuela"
+    },
+    "example_de": "Meine Oma kocht die besten Empanadas.",
+    "example_es": "Mi abuela hace las mejores empanadas.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_007",
+    "de": "der Großvater",
+    "es": "el abuelo",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el aˈβwelo",
+      "simplified": "el a-BWE-lo",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el abuelo",
+      "es_andalucia": "el abuelo",
+      "es_cataluna": "l'avi",
+      "es_canarias": "el abuelo",
+      "lat_mx": "el abuelo",
+      "lat_ar": "el abuelo",
+      "lat_co": "el abuelo",
+      "lat_cl": "el abuelo",
+      "lat_pe": "el abuelo",
+      "lat_ve": "el abuelo",
+      "lat_cu": "el abuelo",
+      "lat_do": "el abuelo"
+    },
+    "example_de": "Mein Opa erzählt tolle Geschichten.",
+    "example_es": "Mi abuelo cuenta historias geniales.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_008",
+    "de": "der Sohn",
+    "es": "el hijo",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈixo",
+      "simplified": "el I-cho",
+      "tip": "Das 'h' ist stumm, das 'j' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "el hijo",
+      "es_andalucia": "el hijo",
+      "es_cataluna": "el fill",
+      "es_canarias": "el hijo",
+      "lat_mx": "el hijo",
+      "lat_ar": "el hijo",
+      "lat_co": "el hijo",
+      "lat_cl": "el hijo",
+      "lat_pe": "el hijo",
+      "lat_ve": "el hijo",
+      "lat_cu": "el hijo",
+      "lat_do": "el hijo"
+    },
+    "example_de": "Ihr Sohn ist drei Jahre alt.",
+    "example_es": "Su hijo tiene tres años.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_009",
+    "de": "die Tochter",
+    "es": "la hija",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈixa",
+      "simplified": "la I-cha",
+      "tip": "Das 'h' ist stumm, das 'j' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la hija",
+      "es_andalucia": "la hija",
+      "es_cataluna": "la filla",
+      "es_canarias": "la hija",
+      "lat_mx": "la hija",
+      "lat_ar": "la hija",
+      "lat_co": "la hija",
+      "lat_cl": "la hija",
+      "lat_pe": "la hija",
+      "lat_ve": "la hija",
+      "lat_cu": "la hija",
+      "lat_do": "la hija"
+    },
+    "example_de": "Ihre Tochter studiert Medizin.",
+    "example_es": "Su hija estudia medicina.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_010",
+    "de": "der Onkel",
+    "es": "el tío",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈtio",
+      "simplified": "el TI-o",
+      "tip": "Das 'io' als Diphthong, kurzes Wort"
+    },
+    "dialects": {
+      "es_castilla": "el tío",
+      "es_andalucia": "el tío",
+      "es_cataluna": "l'oncle",
+      "es_canarias": "el tío",
+      "lat_mx": "el tío",
+      "lat_ar": "el tío",
+      "lat_co": "el tío",
+      "lat_cl": "el tío",
+      "lat_pe": "el tío",
+      "lat_ve": "el tío",
+      "lat_cu": "el tío",
+      "lat_do": "el tío"
+    },
+    "example_de": "Mein Onkel lebt in Kolumbien.",
+    "example_es": "Mi tío vive en Colombia.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_011",
+    "de": "die Tante",
+    "es": "la tía",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la ˈtia",
+      "simplified": "la TI-a",
+      "tip": "Beide Vokale deutlich trennen"
+    },
+    "dialects": {
+      "es_castilla": "la tía",
+      "es_andalucia": "la tía",
+      "es_cataluna": "la tia",
+      "es_canarias": "la tía",
+      "lat_mx": "la tía",
+      "lat_ar": "la tía",
+      "lat_co": "la tía",
+      "lat_cl": "la tía",
+      "lat_pe": "la tía",
+      "lat_ve": "la tía",
+      "lat_cu": "la tía",
+      "lat_do": "la tía"
+    },
+    "example_de": "Meine Tante macht sehr gute Tamales.",
+    "example_es": "Mi tía hace unos tamales muy ricos.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_012",
+    "de": "der Cousin",
+    "es": "el primo",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈpɾimo",
+      "simplified": "el PRI-mo",
+      "tip": "Das 'pr' ohne vokalischen Einschub"
+    },
+    "dialects": {
+      "es_castilla": "el primo",
+      "es_andalucia": "el primo",
+      "es_cataluna": "el cosí",
+      "es_canarias": "el primo",
+      "lat_mx": "el primo",
+      "lat_ar": "el primo",
+      "lat_co": "el primo",
+      "lat_cl": "el primo",
+      "lat_pe": "el primo",
+      "lat_ve": "el primo",
+      "lat_cu": "el primo",
+      "lat_do": "el primo"
+    },
+    "example_de": "Mein Cousin wohnt in Buenos Aires.",
+    "example_es": "Mi primo vive en Buenos Aires.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_013",
+    "de": "das Kind",
+    "es": "el niño",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈniɲo",
+      "simplified": "el NI-nyo",
+      "tip": "Das 'ñ' wie 'ny'"
+    },
+    "dialects": {
+      "es_castilla": "el niño",
+      "es_andalucia": "el niño",
+      "es_cataluna": "el nen",
+      "es_canarias": "el niño",
+      "lat_mx": "el niño",
+      "lat_ar": "el niño",
+      "lat_co": "el niño",
+      "lat_cl": "el niño",
+      "lat_pe": "el niño",
+      "lat_ve": "el niño",
+      "lat_cu": "el niño",
+      "lat_do": "el niño"
+    },
+    "example_de": "Das Kind spielt im Garten.",
+    "example_es": "El niño juega en el jardín.",
+    "tags": [
+      "personen",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_014",
+    "de": "der Ehemann",
+    "es": "el marido",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el maˈɾiðo",
+      "simplified": "la ma-RI-do",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el marido",
+      "es_andalucia": "el marido",
+      "es_cataluna": "el marit",
+      "es_canarias": "el marido",
+      "lat_mx": "el esposo",
+      "lat_ar": "el marido",
+      "lat_co": "el esposo",
+      "lat_cl": "el marido",
+      "lat_pe": "el esposo",
+      "lat_ve": "el esposo",
+      "lat_cu": "el esposo",
+      "lat_do": "el esposo"
+    },
+    "example_de": "Mein Mann arbeitet bei einer Bank.",
+    "example_es": "Mi marido trabaja en un banco.",
+    "tags": [
+      "beziehungen",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_015",
+    "de": "die Ehefrau",
+    "es": "la mujer",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la muˈxeɾ",
+      "simplified": "la mu-CHER",
+      "tip": "Das 'j' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "la mujer",
+      "es_andalucia": "la mujer",
+      "es_cataluna": "la dona",
+      "es_canarias": "la mujer",
+      "lat_mx": "la esposa",
+      "lat_ar": "la esposa",
+      "lat_co": "la esposa",
+      "lat_cl": "la esposa",
+      "lat_pe": "la esposa",
+      "lat_ve": "la esposa",
+      "lat_cu": "la esposa",
+      "lat_do": "la esposa"
+    },
+    "example_de": "Seine Frau ist Lehrerin.",
+    "example_es": "Su mujer es profesora.",
+    "tags": [
+      "beziehungen",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_016",
+    "de": "der Freund",
+    "es": "el novio",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el ˈnoβjo",
+      "simplified": "el NO-bjo",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el novio",
+      "es_andalucia": "el novio",
+      "es_cataluna": "el xicot",
+      "es_canarias": "el novio",
+      "lat_mx": "el novio",
+      "lat_ar": "el novio",
+      "lat_co": "el novio",
+      "lat_cl": "el pololo",
+      "lat_pe": "el enamorado",
+      "lat_ve": "el novio",
+      "lat_cu": "el novio",
+      "lat_do": "el novio"
+    },
+    "example_de": "Das ist mein Freund Carlos.",
+    "example_es": "Este es mi novio Carlos.",
+    "tags": [
+      "beziehungen",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_017",
+    "de": "heiraten",
+    "es": "casarse",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "kaˈsaɾse",
+      "simplified": "ka-SAR-se",
+      "tip": "Reflexives Verb mit '-se'"
+    },
+    "dialects": {
+      "es_castilla": "casarse",
+      "es_andalucia": "casarse",
+      "es_cataluna": "casar-se",
+      "es_canarias": "casarse",
+      "lat_mx": "casarse",
+      "lat_ar": "casarse",
+      "lat_co": "casarse",
+      "lat_cl": "casarse",
+      "lat_pe": "casarse",
+      "lat_ve": "casarse",
+      "lat_cu": "casarse",
+      "lat_do": "casarse"
+    },
+    "example_de": "Sie heiraten im Frühling.",
+    "example_es": "Se casan en primavera.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_018",
+    "de": "die Hochzeit",
+    "es": "la boda",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈboða",
+      "simplified": "la BO-da",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la boda",
+      "es_andalucia": "la boda",
+      "es_cataluna": "el casament",
+      "es_canarias": "la boda",
+      "lat_mx": "la boda",
+      "lat_ar": "el casamiento",
+      "lat_co": "el matrimonio",
+      "lat_cl": "el matrimonio",
+      "lat_pe": "el matrimonio",
+      "lat_ve": "la boda",
+      "lat_cu": "la boda",
+      "lat_do": "la boda"
+    },
+    "example_de": "Die Hochzeit war wunderbar.",
+    "example_es": "La boda fue maravillosa.",
+    "tags": [
+      "feste",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_019",
+    "de": "der Geburtstag",
+    "es": "el cumpleaños",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el kumpleˈaɲos",
+      "simplified": "el kum-ple-A-nyos",
+      "tip": "Das 'ñ' wie 'ny', Betonung auf 'a'"
+    },
+    "dialects": {
+      "es_castilla": "el cumpleaños",
+      "es_andalucia": "el cumpleaños",
+      "es_cataluna": "l'aniversari",
+      "es_canarias": "el cumpleaños",
+      "lat_mx": "el cumpleaños",
+      "lat_ar": "el cumpleaños",
+      "lat_co": "el cumpleaños",
+      "lat_cl": "el cumpleaños",
+      "lat_pe": "el cumpleaños",
+      "lat_ve": "el cumpleaños",
+      "lat_cu": "el cumpleaños",
+      "lat_do": "el cumpleaños"
+    },
+    "example_de": "Herzlichen Glückwunsch zum Geburtstag!",
+    "example_es": "¡Feliz cumpleaños!",
+    "tags": [
+      "feste",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_020",
+    "de": "aufwachsen",
+    "es": "crecer",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "kɾeˈθeɾ",
+      "simplified": "kre-ZER",
+      "tip": "In Lateinamerika 'kre-SER'"
+    },
+    "dialects": {
+      "es_castilla": "crecer",
+      "es_andalucia": "crecer",
+      "es_cataluna": "créixer",
+      "es_canarias": "crecer",
+      "lat_mx": "crecer",
+      "lat_ar": "crecer",
+      "lat_co": "crecer",
+      "lat_cl": "crecer",
+      "lat_pe": "crecer",
+      "lat_ve": "crecer",
+      "lat_cu": "crecer",
+      "lat_do": "crecer"
+    },
+    "example_de": "Ich bin in München aufgewachsen.",
+    "example_es": "Crecí en Múnich.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_021",
+    "de": "der Schwiegervater",
+    "es": "el suegro",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈsweɣɾo",
+      "simplified": "el SWEGR-o",
+      "tip": "Das 'ue' als Diphthong, das 'g' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el suegro",
+      "es_andalucia": "el suegro",
+      "es_cataluna": "el sogre",
+      "es_canarias": "el suegro",
+      "lat_mx": "el suegro",
+      "lat_ar": "el suegro",
+      "lat_co": "el suegro",
+      "lat_cl": "el suegro",
+      "lat_pe": "el suegro",
+      "lat_ve": "el suegro",
+      "lat_cu": "el suegro",
+      "lat_do": "el suegro"
+    },
+    "example_de": "Mein Schwiegervater ist Rentner.",
+    "example_es": "Mi suegro está jubilado.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_022",
+    "de": "die Schwiegermutter",
+    "es": "la suegra",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ˈswexɾa",
+      "simplified": "la SWEGR-a",
+      "tip": "Das 'ue' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "la suegra",
+      "es_andalucia": "la suegra",
+      "es_cataluna": "la sogra",
+      "es_canarias": "la suegra",
+      "lat_mx": "la suegra",
+      "lat_ar": "la suegra",
+      "lat_co": "la suegra",
+      "lat_cl": "la suegra",
+      "lat_pe": "la suegra",
+      "lat_ve": "la suegra",
+      "lat_cu": "la suegra",
+      "lat_do": "la suegra"
+    },
+    "example_de": "Meine Schwiegermutter wohnt in der Nähe.",
+    "example_es": "Mi suegra vive cerca.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_023",
+    "de": "der Neffe",
+    "es": "el sobrino",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el soˈbɾino",
+      "simplified": "el so-BRI-no",
+      "tip": "Das 'b' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el sobrino",
+      "es_andalucia": "el sobrino",
+      "es_cataluna": "el nebot",
+      "es_canarias": "el sobrino",
+      "lat_mx": "el sobrino",
+      "lat_ar": "el sobrino",
+      "lat_co": "el sobrino",
+      "lat_cl": "el sobrino",
+      "lat_pe": "el sobrino",
+      "lat_ve": "el sobrino",
+      "lat_cu": "el sobrino",
+      "lat_do": "el sobrino"
+    },
+    "example_de": "Mein Neffe ist sehr witzig.",
+    "example_es": "Mi sobrino es muy gracioso.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_024",
+    "de": "die Eltern",
+    "es": "los padres",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "los ˈpaðɾes",
+      "simplified": "los PA-dres",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "los padres",
+      "es_andalucia": "los padres",
+      "es_cataluna": "els pares",
+      "es_canarias": "los padres",
+      "lat_mx": "los papás",
+      "lat_ar": "los padres",
+      "lat_co": "los padres",
+      "lat_cl": "los padres",
+      "lat_pe": "los padres",
+      "lat_ve": "los padres",
+      "lat_cu": "los padres",
+      "lat_do": "los padres"
+    },
+    "example_de": "Meine Eltern wohnen in Hamburg.",
+    "example_es": "Mis padres viven en Hamburgo.",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_025",
+    "de": "die Geschwister",
+    "es": "los hermanos",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "los eɾˈmanos",
+      "simplified": "los er-MA-nos",
+      "tip": "Das 'h' ist stumm"
+    },
+    "dialects": {
+      "es_castilla": "los hermanos",
+      "es_andalucia": "los hermanos",
+      "es_cataluna": "els germans",
+      "es_canarias": "los hermanos",
+      "lat_mx": "los hermanos",
+      "lat_ar": "los hermanos",
+      "lat_co": "los hermanos",
+      "lat_cl": "los hermanos",
+      "lat_pe": "los hermanos",
+      "lat_ve": "los hermanos",
+      "lat_cu": "los hermanos",
+      "lat_do": "los hermanos"
+    },
+    "example_de": "Hast du Geschwister?",
+    "example_es": "¿Tienes hermanos?",
+    "tags": [
+      "verwandtschaft",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_026",
+    "de": "der Enkel",
+    "es": "el nieto",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ˈnjeto",
+      "simplified": "el NJETO",
+      "tip": "Das 'nie' als Diphthong, kurzes Wort"
+    },
+    "dialects": {
+      "es_castilla": "el nieto",
+      "es_andalucia": "el nieto",
+      "es_cataluna": "el nét",
+      "es_canarias": "el nieto",
+      "lat_mx": "el nieto",
+      "lat_ar": "el nieto",
+      "lat_co": "el nieto",
+      "lat_cl": "el nieto",
+      "lat_pe": "el nieto",
+      "lat_ve": "el nieto",
+      "lat_cu": "el nieto",
+      "lat_do": "el nieto"
+    },
+    "example_de": "Oma liebt ihre Enkel sehr.",
+    "example_es": "La abuela quiere mucho a sus nietos.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_027",
+    "de": "sich um jemanden kümmern",
+    "es": "cuidar a alguien",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "kwiˈðaɾ a ˈalɣjen",
+      "simplified": "kwi-DAR a AL-gjien",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "cuidar a alguien",
+      "es_andalucia": "cuidar",
+      "es_cataluna": "cuidar algú",
+      "es_canarias": "cuidar",
+      "lat_mx": "cuidar",
+      "lat_ar": "cuidar",
+      "lat_co": "cuidar de",
+      "lat_cl": "cuidar a",
+      "lat_pe": "cuidar a",
+      "lat_ve": "cuidar",
+      "lat_cu": "cuidar a",
+      "lat_do": "cuidar a"
+    },
+    "example_de": "Sie kümmert sich um ihre alte Mutter.",
+    "example_es": "Ella cuida a su madre mayor.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_028",
+    "de": "die Zwillinge",
+    "es": "los gemelos",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "los xeˈmelos",
+      "simplified": "los che-ME-los",
+      "tip": "Das 'g' klingt wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "los gemelos",
+      "es_andalucia": "los gemelos",
+      "es_cataluna": "els bessons",
+      "es_canarias": "los gemelos",
+      "lat_mx": "los gemelos",
+      "lat_ar": "los mellizos",
+      "lat_co": "los gemelos",
+      "lat_cl": "los mellizos",
+      "lat_pe": "los gemelos",
+      "lat_ve": "los gemelos",
+      "lat_cu": "los gemelos",
+      "lat_do": "los gemelos"
+    },
+    "example_de": "Meine Schwester bekommt Zwillinge.",
+    "example_es": "Mi hermana va a tener gemelos.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_029",
+    "de": "adoptieren",
+    "es": "adoptar",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "adoˈtaɾ",
+      "simplified": "a-dop-TAR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "adoptar",
+      "es_andalucia": "adoptar",
+      "es_cataluna": "adoptar",
+      "es_canarias": "adoptar",
+      "lat_mx": "adoptar",
+      "lat_ar": "adoptar",
+      "lat_co": "adoptar",
+      "lat_cl": "adoptar",
+      "lat_pe": "adoptar",
+      "lat_ve": "adoptar",
+      "lat_cu": "adoptar",
+      "lat_do": "adoptar"
+    },
+    "example_de": "Sie haben ein Kind adoptiert.",
+    "example_es": "Han adoptado a un niño.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_030",
+    "de": "die Scheidung",
+    "es": "el divorcio",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el diˈβoɾθjo",
+      "simplified": "el di-BOR-sjo",
+      "tip": "In Lateinamerika 'di-BOR-sjo'"
+    },
+    "dialects": {
+      "es_castilla": "el divorcio",
+      "es_andalucia": "el divorcio",
+      "es_cataluna": "el divorci",
+      "es_canarias": "el divorcio",
+      "lat_mx": "el divorcio",
+      "lat_ar": "el divorcio",
+      "lat_co": "el divorcio",
+      "lat_cl": "el divorcio",
+      "lat_pe": "el divorcio",
+      "lat_ve": "el divorcio",
+      "lat_cu": "el divorcio",
+      "lat_do": "el divorcio"
+    },
+    "example_de": "Die Scheidung war sehr schwierig.",
+    "example_es": "El divorcio fue muy difícil.",
+    "tags": [
+      "beziehungen",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_031",
+    "de": "der Stiefsohn",
+    "es": "el hijastro",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el ixˈastɾo",
+      "simplified": "el i-CHAS-tro",
+      "tip": "Das 'h' ist stumm, das 'j' wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "el hijastro",
+      "es_andalucia": "el hijastro",
+      "es_cataluna": "el fillastre",
+      "es_canarias": "el hijastro",
+      "lat_mx": "el hijastro",
+      "lat_ar": "el hijastro",
+      "lat_co": "el hijastro",
+      "lat_cl": "el hijastro",
+      "lat_pe": "el hijastro",
+      "lat_ve": "el hijastro",
+      "lat_cu": "el hijastro",
+      "lat_do": "el hijastro"
+    },
+    "example_de": "Er behandelt seinen Stiefsohn wie sein eigenes Kind.",
+    "example_es": "Trata a su hijastro como a su propio hijo.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_032",
+    "de": "die Stieftochter",
+    "es": "la hijastra",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la ixˈastɾa",
+      "simplified": "la i-CHAS-tra",
+      "tip": "Das 'h' ist stumm"
+    },
+    "dialects": {
+      "es_castilla": "la hijastra",
+      "es_andalucia": "la hijastra",
+      "es_cataluna": "la fillastra",
+      "es_canarias": "la hijastra",
+      "lat_mx": "la hijastra",
+      "lat_ar": "la hijastra",
+      "lat_co": "la hijastra",
+      "lat_cl": "la hijastra",
+      "lat_pe": "la hijastra",
+      "lat_ve": "la hijastra",
+      "lat_cu": "la hijastra",
+      "lat_do": "la hijastra"
+    },
+    "example_de": "Seine Stieftochter ist sehr klug.",
+    "example_es": "Su hijastra es muy inteligente.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_033",
+    "de": "der Stiefvater",
+    "es": "el padrastro",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el paˈðɾastɾo",
+      "simplified": "el pa-DRAS-tro",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el padrastro",
+      "es_andalucia": "el padrastro",
+      "es_cataluna": "el padrastre",
+      "es_canarias": "el padrastro",
+      "lat_mx": "el padrastro",
+      "lat_ar": "el padrastro",
+      "lat_co": "el padrastro",
+      "lat_cl": "el padrastro",
+      "lat_pe": "el padrastro",
+      "lat_ve": "el padrastro",
+      "lat_cu": "el padrastro",
+      "lat_do": "el padrastro"
+    },
+    "example_de": "Ihr Stiefvater wohnt auch hier.",
+    "example_es": "Su padrastro también vive aquí.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_034",
+    "de": "die Stiefmutter",
+    "es": "la madrastra",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la maˈðɾastɾa",
+      "simplified": "la ma-DRAS-tra",
+      "tip": "Das 'd' sehr weich, vier Silben"
+    },
+    "dialects": {
+      "es_castilla": "la madrastra",
+      "es_andalucia": "la madrastra",
+      "es_cataluna": "la madrastra",
+      "es_canarias": "la madrastra",
+      "lat_mx": "la madrastra",
+      "lat_ar": "la madrastra",
+      "lat_co": "la madrastra",
+      "lat_cl": "la madrastra",
+      "lat_pe": "la madrastra",
+      "lat_ve": "la madrastra",
+      "lat_cu": "la madrastra",
+      "lat_do": "la madrastra"
+    },
+    "example_de": "Das Märchen hat eine böse Stiefmutter.",
+    "example_es": "El cuento tiene una madrastra malvada.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_035",
+    "de": "der Pate",
+    "es": "el padrino",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el paˈðɾino",
+      "simplified": "el pa-DRI-no",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el padrino",
+      "es_andalucia": "el padrino",
+      "es_cataluna": "el padrí",
+      "es_canarias": "el padrino",
+      "lat_mx": "el padrino",
+      "lat_ar": "el padrino",
+      "lat_co": "el padrino",
+      "lat_cl": "el padrino",
+      "lat_pe": "el padrino",
+      "lat_ve": "el padrino",
+      "lat_cu": "el padrino",
+      "lat_do": "el padrino"
+    },
+    "example_de": "Er ist der Pate meines Sohnes.",
+    "example_es": "Es el padrino de mi hijo.",
+    "tags": [
+      "verwandtschaft",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_036",
+    "de": "die Patin",
+    "es": "la madrina",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la maˈðɾina",
+      "simplified": "la ma-DRI-na",
+      "tip": "Das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la madrina",
+      "es_andalucia": "la madrina",
+      "es_cataluna": "la padrina",
+      "es_canarias": "la madrina",
+      "lat_mx": "la madrina",
+      "lat_ar": "la madrina",
+      "lat_co": "la madrina",
+      "lat_cl": "la madrina",
+      "lat_pe": "la madrina",
+      "lat_ve": "la madrina",
+      "lat_cu": "la madrina",
+      "lat_do": "la madrina"
+    },
+    "example_de": "Meine Schwester ist die Patin meiner Tochter.",
+    "example_es": "Mi hermana es la madrina de mi hija.",
+    "tags": [
+      "verwandtschaft",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_037",
+    "de": "das Baby",
+    "es": "el bebé",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "el beˈβe",
+      "simplified": "el be-BE",
+      "tip": "Betonung auf letzter Silbe, das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el bebé",
+      "es_andalucia": "el bebé",
+      "es_cataluna": "el nadó",
+      "es_canarias": "el bebé",
+      "lat_mx": "el bebé",
+      "lat_ar": "el bebé",
+      "lat_co": "el bebé",
+      "lat_cl": "el bebé",
+      "lat_pe": "el bebé",
+      "lat_ve": "el bebé",
+      "lat_cu": "el bebé",
+      "lat_do": "el bebé"
+    },
+    "example_de": "Das Baby schläft gerade.",
+    "example_es": "El bebé está durmiendo ahora.",
+    "tags": [
+      "personen",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_038",
+    "de": "schwanger sein",
+    "es": "estar embarazada",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "esˈtaɾ embaɾaˈθaða",
+      "simplified": "es-TAR em-ba-ra-SA-da",
+      "tip": "In Lateinamerika 'SA' statt 'THA'"
+    },
+    "dialects": {
+      "es_castilla": "estar embarazada",
+      "es_andalucia": "estar embarazada",
+      "es_cataluna": "estar embarassada",
+      "es_canarias": "estar embarazada",
+      "lat_mx": "estar embarazada",
+      "lat_ar": "estar embarazada",
+      "lat_co": "estar embarazada",
+      "lat_cl": "estar embarazada",
+      "lat_pe": "estar embarazada",
+      "lat_ve": "estar embarazada",
+      "lat_cu": "estar embarazada",
+      "lat_do": "estar embarazada"
+    },
+    "example_de": "Meine Schwester ist schwanger.",
+    "example_es": "Mi hermana está embarazada.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_039",
+    "de": "die Schwangerschaft",
+    "es": "el embarazo",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el embaˈɾaθo",
+      "simplified": "el em-ba-RA-so",
+      "tip": "In Lateinamerika 'RA-so'"
+    },
+    "dialects": {
+      "es_castilla": "el embarazo",
+      "es_andalucia": "el embarazo",
+      "es_cataluna": "l'embaràs",
+      "es_canarias": "el embarazo",
+      "lat_mx": "el embarazo",
+      "lat_ar": "el embarazo",
+      "lat_co": "el embarazo",
+      "lat_cl": "el embarazo",
+      "lat_pe": "el embarazo",
+      "lat_ve": "el embarazo",
+      "lat_cu": "el embarazo",
+      "lat_do": "el embarazo"
+    },
+    "example_de": "Die Schwangerschaft dauert neun Monate.",
+    "example_es": "El embarazo dura nueve meses.",
+    "tags": [
+      "gesundheit",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_040",
+    "de": "ein Kind bekommen",
+    "es": "dar a luz",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "daɾ a luθ",
+      "simplified": "dar a LUS",
+      "tip": "Wörtlich 'Licht geben', in Lateinamerika 'dar a LUS'"
+    },
+    "dialects": {
+      "es_castilla": "dar a luz",
+      "es_andalucia": "dar a luz",
+      "es_cataluna": "donar a llum",
+      "es_canarias": "dar a luz",
+      "lat_mx": "dar a luz",
+      "lat_ar": "dar a luz",
+      "lat_co": "dar a luz",
+      "lat_cl": "dar a luz",
+      "lat_pe": "dar a luz",
+      "lat_ve": "dar a luz",
+      "lat_cu": "dar a luz",
+      "lat_do": "dar a luz"
+    },
+    "example_de": "Sie hat letzte Woche ein Kind bekommen.",
+    "example_es": "Dio a luz la semana pasada.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_041",
+    "de": "erziehen",
+    "es": "criar",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "kɾiˈaɾ",
+      "simplified": "kri-AR",
+      "tip": "Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "criar",
+      "es_andalucia": "criar",
+      "es_cataluna": "criar",
+      "es_canarias": "criar",
+      "lat_mx": "criar",
+      "lat_ar": "criar",
+      "lat_co": "criar",
+      "lat_cl": "criar",
+      "lat_pe": "criar",
+      "lat_ve": "criar",
+      "lat_cu": "criar",
+      "lat_do": "criar"
+    },
+    "example_de": "Kinder zu erziehen ist nicht einfach.",
+    "example_es": "Criar hijos no es fácil.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_042",
+    "de": "der Schwager",
+    "es": "el cuñado",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el kuˈɲaðo",
+      "simplified": "el ku-NYA-do",
+      "tip": "Das 'ñ' wie 'ny', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el cuñado",
+      "es_andalucia": "el cuñado",
+      "es_cataluna": "el cunyat",
+      "es_canarias": "el cuñado",
+      "lat_mx": "el cuñado",
+      "lat_ar": "el cuñado",
+      "lat_co": "el cuñado",
+      "lat_cl": "el cuñado",
+      "lat_pe": "el cuñado",
+      "lat_ve": "el cuñado",
+      "lat_cu": "el cuñado",
+      "lat_do": "el cuñado"
+    },
+    "example_de": "Mein Schwager ist sehr lustig.",
+    "example_es": "Mi cuñado es muy gracioso.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_043",
+    "de": "die Schwägerin",
+    "es": "la cuñada",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la kuˈɲaða",
+      "simplified": "la ku-NYA-da",
+      "tip": "Das 'ñ' wie 'ny', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la cuñada",
+      "es_andalucia": "la cuñada",
+      "es_cataluna": "la cunyada",
+      "es_canarias": "la cuñada",
+      "lat_mx": "la cuñada",
+      "lat_ar": "la cuñada",
+      "lat_co": "la cuñada",
+      "lat_cl": "la cuñada",
+      "lat_pe": "la cuñada",
+      "lat_ve": "la cuñada",
+      "lat_cu": "la cuñada",
+      "lat_do": "la cuñada"
+    },
+    "example_de": "Meine Schwägerin kommt zum Abendessen.",
+    "example_es": "Mi cuñada viene a cenar.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_044",
+    "de": "die Schwiegereltern",
+    "es": "los suegros",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "los ˈsweɣɾos",
+      "simplified": "los SWEGR-os",
+      "tip": "Das 'ue' als Diphthong"
+    },
+    "dialects": {
+      "es_castilla": "los suegros",
+      "es_andalucia": "los suegros",
+      "es_cataluna": "els sogres",
+      "es_canarias": "los suegros",
+      "lat_mx": "los suegros",
+      "lat_ar": "los suegros",
+      "lat_co": "los suegros",
+      "lat_cl": "los suegros",
+      "lat_pe": "los suegros",
+      "lat_ve": "los suegros",
+      "lat_cu": "los suegros",
+      "lat_do": "los suegros"
+    },
+    "example_de": "Wir fahren die Schwiegereltern besuchen.",
+    "example_es": "Vamos a visitar a los suegros.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_045",
+    "de": "lieben",
+    "es": "querer",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "keˈɾeɾ",
+      "simplified": "ke-RER",
+      "tip": "Betonung auf mittlerer Silbe"
+    },
+    "dialects": {
+      "es_castilla": "querer",
+      "es_andalucia": "querer",
+      "es_cataluna": "estimar",
+      "es_canarias": "querer",
+      "lat_mx": "querer",
+      "lat_ar": "querer",
+      "lat_co": "querer",
+      "lat_cl": "querer",
+      "lat_pe": "querer",
+      "lat_ve": "querer",
+      "lat_cu": "querer",
+      "lat_do": "querer"
+    },
+    "example_de": "Ich liebe meine Familie sehr.",
+    "example_es": "Quiero mucho a mi familia.",
+    "tags": [
+      "verben",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_046",
+    "de": "sich streiten",
+    "es": "pelearse",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "peˈleaɾse",
+      "simplified": "pe-le-AR-se",
+      "tip": "Reflexives Verb"
+    },
+    "dialects": {
+      "es_castilla": "pelearse",
+      "es_andalucia": "pelearse",
+      "es_cataluna": "barallar-se",
+      "es_canarias": "pelearse",
+      "lat_mx": "pelearse",
+      "lat_ar": "pelearse",
+      "lat_co": "pelearse",
+      "lat_cl": "pelearse",
+      "lat_pe": "pelearse",
+      "lat_ve": "pelearse",
+      "lat_cu": "pelearse",
+      "lat_do": "pelearse"
+    },
+    "example_de": "Die Geschwister streiten sich manchmal.",
+    "example_es": "Los hermanos a veces se pelean.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_047",
+    "de": "sich vertragen",
+    "es": "llevarse bien",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "ʎeˈβaɾse ˈbjen",
+      "simplified": "je-BAR-se BJEN",
+      "tip": "Das 'll' wie weiches 'j'"
+    },
+    "dialects": {
+      "es_castilla": "llevarse bien",
+      "es_andalucia": "llevarse bien",
+      "es_cataluna": "portar-se bé",
+      "es_canarias": "llevarse bien",
+      "lat_mx": "llevarse bien",
+      "lat_ar": "llevarse bien",
+      "lat_co": "llevarse bien",
+      "lat_cl": "llevarse bien",
+      "lat_pe": "llevarse bien",
+      "lat_ve": "llevarse bien",
+      "lat_cu": "llevarse bien",
+      "lat_do": "llevarse bien"
+    },
+    "example_de": "Meine Geschwister und ich vertragen uns gut.",
+    "example_es": "Mis hermanos y yo nos llevamos bien.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_048",
+    "de": "beschützen",
+    "es": "proteger",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "pɾoteˈxeɾ",
+      "simplified": "pro-te-CHER",
+      "tip": "Das 'g' vor 'e' klingt wie Rachen-'ch'"
+    },
+    "dialects": {
+      "es_castilla": "proteger",
+      "es_andalucia": "proteger",
+      "es_cataluna": "protegir",
+      "es_canarias": "proteger",
+      "lat_mx": "proteger",
+      "lat_ar": "proteger",
+      "lat_co": "proteger",
+      "lat_cl": "proteger",
+      "lat_pe": "proteger",
+      "lat_ve": "proteger",
+      "lat_cu": "proteger",
+      "lat_do": "proteger"
+    },
+    "example_de": "Eltern beschützen ihre Kinder.",
+    "example_es": "Los padres protegen a sus hijos.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_049",
+    "de": "unterstützen",
+    "es": "apoyar",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "apoˈʝaɾ",
+      "simplified": "a-po-JAR",
+      "tip": "Das 'y' klingt wie weiches 'j', Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "apoyar",
+      "es_andalucia": "apoyar",
+      "es_cataluna": "donar suport",
+      "es_canarias": "apoyar",
+      "lat_mx": "apoyar",
+      "lat_ar": "apoyar",
+      "lat_co": "apoyar",
+      "lat_cl": "apoyar",
+      "lat_pe": "apoyar",
+      "lat_ve": "apoyar",
+      "lat_cu": "apoyar",
+      "lat_do": "apoyar"
+    },
+    "example_de": "Meine Familie unterstützt mich immer.",
+    "example_es": "Mi familia siempre me apoya.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_050",
+    "de": "zusammenleben",
+    "es": "convivir",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "kombiˈβiɾ",
+      "simplified": "kon-bi-BIR",
+      "tip": "Das 'v' wie weiches 'b', Betonung auf letzter Silbe"
+    },
+    "dialects": {
+      "es_castilla": "convivir",
+      "es_andalucia": "convivir",
+      "es_cataluna": "conviure",
+      "es_canarias": "convivir",
+      "lat_mx": "convivir",
+      "lat_ar": "convivir",
+      "lat_co": "convivir",
+      "lat_cl": "convivir",
+      "lat_pe": "convivir",
+      "lat_ve": "convivir",
+      "lat_cu": "convivir",
+      "lat_do": "convivir"
+    },
+    "example_de": "Es ist schön, zusammenzuleben.",
+    "example_es": "Es bonito convivir juntos.",
+    "tags": [
+      "verben",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_051",
+    "de": "die Generation",
+    "es": "la generación",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "la xeneɾaˈθjon",
+      "simplified": "la che-ne-ra-SJON",
+      "tip": "In Lateinamerika ohne 'th'-Laut"
+    },
+    "dialects": {
+      "es_castilla": "la generación",
+      "es_andalucia": "la generación",
+      "es_cataluna": "la generació",
+      "es_canarias": "la generación",
+      "lat_mx": "la generación",
+      "lat_ar": "la generación",
+      "lat_co": "la generación",
+      "lat_cl": "la generación",
+      "lat_pe": "la generación",
+      "lat_ve": "la generación",
+      "lat_cu": "la generación",
+      "lat_do": "la generación"
+    },
+    "example_de": "Jede Generation hat ihre eigenen Herausforderungen.",
+    "example_es": "Cada generación tiene sus propios desafíos.",
+    "tags": [
+      "gesellschaft",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_052",
+    "de": "die Kindheit",
+    "es": "la infancia",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la imˈfanθja",
+      "simplified": "la in-FAN-sja",
+      "tip": "In Lateinamerika ohne 'th'-Laut"
+    },
+    "dialects": {
+      "es_castilla": "la infancia",
+      "es_andalucia": "la infancia",
+      "es_cataluna": "la infància",
+      "es_canarias": "la infancia",
+      "lat_mx": "la infancia",
+      "lat_ar": "la infancia",
+      "lat_co": "la niñez",
+      "lat_cl": "la infancia",
+      "lat_pe": "la infancia",
+      "lat_ve": "la infancia",
+      "lat_cu": "la infancia",
+      "lat_do": "la infancia"
+    },
+    "example_de": "Ich habe eine schöne Kindheit gehabt.",
+    "example_es": "Tuve una infancia feliz.",
+    "tags": [
+      "lebensphasen",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_053",
+    "de": "die Jugend",
+    "es": "la juventud",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "la xuβenˈtuð",
+      "simplified": "la chu-ben-TUD",
+      "tip": "Das 'j' wie Rachen-'ch', das 'd' am Ende sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "la juventud",
+      "es_andalucia": "la juventud",
+      "es_cataluna": "la joventut",
+      "es_canarias": "la juventud",
+      "lat_mx": "la juventud",
+      "lat_ar": "la juventud",
+      "lat_co": "la juventud",
+      "lat_cl": "la juventud",
+      "lat_pe": "la juventud",
+      "lat_ve": "la juventud",
+      "lat_cu": "la juventud",
+      "lat_do": "la juventud"
+    },
+    "example_de": "Die Jugend ist eine wichtige Phase.",
+    "example_es": "La juventud es una etapa importante.",
+    "tags": [
+      "lebensphasen",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_054",
+    "de": "das Haustier",
+    "es": "la mascota",
+    "category": "familie",
+    "difficulty": 1,
+    "pronunciation": {
+      "ipa": "la masˈkota",
+      "simplified": "la mas-KO-ta",
+      "tip": "Drei Silben, Betonung auf 'ko'"
+    },
+    "dialects": {
+      "es_castilla": "la mascota",
+      "es_andalucia": "la mascota",
+      "es_cataluna": "l'animal de companyia",
+      "es_canarias": "la mascota",
+      "lat_mx": "la mascota",
+      "lat_ar": "la mascota",
+      "lat_co": "la mascota",
+      "lat_cl": "la mascota",
+      "lat_pe": "la mascota",
+      "lat_ve": "la mascota",
+      "lat_cu": "la mascota",
+      "lat_do": "la mascota"
+    },
+    "example_de": "Unsere Familie hat zwei Haustiere.",
+    "example_es": "Nuestra familia tiene dos mascotas.",
+    "tags": [
+      "tiere",
+      "A1"
+    ]
+  },
+  {
+    "id": "fam_055",
+    "de": "die Verwandten",
+    "es": "los parientes",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "los paˈɾjentes",
+      "simplified": "los pa-RJEN-tes",
+      "tip": "Drei Silben, Betonung auf 'rjen'"
+    },
+    "dialects": {
+      "es_castilla": "los parientes",
+      "es_andalucia": "los parientes",
+      "es_cataluna": "els parents",
+      "es_canarias": "los parientes",
+      "lat_mx": "los parientes",
+      "lat_ar": "los parientes",
+      "lat_co": "los parientes",
+      "lat_cl": "los parientes",
+      "lat_pe": "los parientes",
+      "lat_ve": "los parientes",
+      "lat_cu": "los parientes",
+      "lat_do": "los parientes"
+    },
+    "example_de": "Zu Weihnachten kommen alle Verwandten.",
+    "example_es": "En Navidad vienen todos los parientes.",
+    "tags": [
+      "verwandtschaft",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_056",
+    "de": "das Neugeborene",
+    "es": "el recién nacido",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el reˈθjen naˈθiðo",
+      "simplified": "el re-SJEN na-SI-do",
+      "tip": "In Lateinamerika ohne 'th'-Laut"
+    },
+    "dialects": {
+      "es_castilla": "el recién nacido",
+      "es_andalucia": "el recién nacido",
+      "es_cataluna": "el nadó",
+      "es_canarias": "el recién nacido",
+      "lat_mx": "el recién nacido",
+      "lat_ar": "el recién nacido",
+      "lat_co": "el recién nacido",
+      "lat_cl": "el recién nacido",
+      "lat_pe": "el recién nacido",
+      "lat_ve": "el recién nacido",
+      "lat_cu": "el recién nacido",
+      "lat_do": "el recién nacido"
+    },
+    "example_de": "Das Neugeborene ist gesund.",
+    "example_es": "El recién nacido está sano.",
+    "tags": [
+      "personen",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_057",
+    "de": "der Urgroßvater",
+    "es": "el bisabuelo",
+    "category": "familie",
+    "difficulty": 3,
+    "pronunciation": {
+      "ipa": "el bisaˈβwelo",
+      "simplified": "el bi-sa-BWE-lo",
+      "tip": "Das 'v' wie weiches 'b'"
+    },
+    "dialects": {
+      "es_castilla": "el bisabuelo",
+      "es_andalucia": "el bisabuelo",
+      "es_cataluna": "el besavi",
+      "es_canarias": "el bisabuelo",
+      "lat_mx": "el bisabuelo",
+      "lat_ar": "el bisabuelo",
+      "lat_co": "el bisabuelo",
+      "lat_cl": "el bisabuelo",
+      "lat_pe": "el bisabuelo",
+      "lat_ve": "el bisabuelo",
+      "lat_cu": "el bisabuelo",
+      "lat_do": "el bisabuelo"
+    },
+    "example_de": "Mein Urgroßvater ist 95 Jahre alt.",
+    "example_es": "Mi bisabuelo tiene 95 años.",
+    "tags": [
+      "verwandtschaft",
+      "B1"
+    ]
+  },
+  {
+    "id": "fam_058",
+    "de": "vertrauen",
+    "es": "confiar",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "komˈfjaɾ",
+      "simplified": "kon-FJAR",
+      "tip": "Das 'n' vor 'f' klingt wie 'm'"
+    },
+    "dialects": {
+      "es_castilla": "confiar",
+      "es_andalucia": "confiar",
+      "es_cataluna": "confiar",
+      "es_canarias": "confiar",
+      "lat_mx": "confiar",
+      "lat_ar": "confiar",
+      "lat_co": "confiar",
+      "lat_cl": "confiar",
+      "lat_pe": "confiar",
+      "lat_ve": "confiar",
+      "lat_cu": "confiar",
+      "lat_do": "confiar"
+    },
+    "example_de": "Ich vertraue meiner Familie.",
+    "example_es": "Confío en mi familia.",
+    "tags": [
+      "verben",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_059",
+    "de": "das Zuhause",
+    "es": "el hogar",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el oˈɣaɾ",
+      "simplified": "el o-GAR",
+      "tip": "Das 'h' ist stumm, das 'g' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el hogar",
+      "es_andalucia": "el hogar",
+      "es_cataluna": "la llar",
+      "es_canarias": "el hogar",
+      "lat_mx": "el hogar",
+      "lat_ar": "el hogar",
+      "lat_co": "el hogar",
+      "lat_cl": "el hogar",
+      "lat_pe": "el hogar",
+      "lat_ve": "el hogar",
+      "lat_cu": "el hogar",
+      "lat_do": "el hogar"
+    },
+    "example_de": "Ein Zuhause ist nicht nur ein Haus.",
+    "example_es": "Un hogar no es solo una casa.",
+    "tags": [
+      "orte",
+      "A2"
+    ]
+  },
+  {
+    "id": "fam_060",
+    "de": "die Erinnerung",
+    "es": "el recuerdo",
+    "category": "familie",
+    "difficulty": 2,
+    "pronunciation": {
+      "ipa": "el reˈkweɾðo",
+      "simplified": "el re-KWER-do",
+      "tip": "Das 'ue' als Diphthong 'kwe', das 'd' sehr weich"
+    },
+    "dialects": {
+      "es_castilla": "el recuerdo",
+      "es_andalucia": "el recuerdo",
+      "es_cataluna": "el record",
+      "es_canarias": "el recuerdo",
+      "lat_mx": "el recuerdo",
+      "lat_ar": "el recuerdo",
+      "lat_co": "el recuerdo",
+      "lat_cl": "el recuerdo",
+      "lat_pe": "el recuerdo",
+      "lat_ve": "el recuerdo",
+      "lat_cu": "el recuerdo",
+      "lat_do": "el recuerdo"
+    },
+    "example_de": "Die schönsten Erinnerungen sind die mit der Familie.",
+    "example_es": "Los mejores recuerdos son los de la familia.",
+    "tags": [
+      "emotionen",
+      "A2"
+    ]
+  }
+]
